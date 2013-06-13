@@ -1,0 +1,11 @@
+w = 2;
+h = 2;
+n = 1;
+
+% puzzle = array2d(row, col, ...
+%
+puzzle = array2d(1..2, 1..2, [
+    1, 0,
+    0, 0
+]);
+region_size = [4];

@@ -1,0 +1,13 @@
+The benchmark set 'KSD15_d' is taken from following the publication.
+
+@article{Kone:ALM:11,
+	author = {Oumar Kon\'{e} and Christian Artigues and Pierre Lopez and Marcel Mongeau},
+	title = {Event-based MILP models for resource-constrained project scheduling problems},
+	journal = {Computers {\&} Operations Research},
+	volume = {38},
+	number = {1},
+	year = {2011},
+	pages = {3--13},
+	doi = {10.1016/j.cor.2009.12.011}
+}
+

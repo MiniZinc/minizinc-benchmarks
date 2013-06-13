@@ -1,0 +1,12 @@
+n = 3;
+m = 3;
+maxTime = 1140;
+delayTime = 5;
+delayTrain = 2;
+delayDuration = 5;
+distance = [5,5];
+passengerStart = [0,0,0];
+passengerFlow = [0,10,0];
+scheduledArrival = [|0,5,13, |0,15,23, |0,25,33|];
+scheduledDeparture = [|0,8,16, |10,18,26, |20,28,36|];
+capacity = 500;

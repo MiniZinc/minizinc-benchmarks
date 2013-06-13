@@ -1,0 +1,276 @@
+#!/bin/bash
+#-----------------------------------------------------------------------------#
+# vim: ts=4 sw=4 expandtab
+#-----------------------------------------------------------------------------#
+# Copyright (C) 2008 The University of Melbourne and NICTA.
+# See the file COPYING for license information.
+#-----------------------------------------------------------------------------#
+#
+# Author: Julien Fischer <juliensf@csse.unimelb.edu.au>
+#
+# This script is used for testing the MiniZinc benchmarks suite.
+# A successful test here is defined as being able to flatten the MiniZinc
+# into valid FlatZinc.  We do not attempt to evaluate the models here since
+# the time required to do that may be excessive.
+#
+# We support two directory structures for benchmarks
+#
+# (1) "NODATA", here each .mzn file in the directory is treated as a
+#      separate model.  In order to use this the directory must contain
+#      a file named "NODATA".
+#
+# (2) many model, here each directory contains several alternative models
+#     for a problem each in its own .mzn file.  The directory (and any
+#     sub-directories) also contain separate .dzn files that provide the
+#     instance data.  We try each model in turn with each data file.
+#
+# XXX This is still very much a work-in-progress.
+#
+# TODO: we may need to call cadmap to process some of the column generation
+#       benchmarks.
+#
+#
+#-----------------------------------------------------------------------------#
+
+MZN2FZN_EXEC=mzn2fzn
+FLATZINC_EXEC=flatzinc
+CADMAP_EXEC=cadmap
+FLATZINC_FLAGS="-e"
+MZN2FZN_FLAGS=""
+
+
+usage="\
+Usage: test_benchmarks [<options>] [<dirs>]
+
+    Test that the MiniZinc benchmarks in <dirs>.  If no directories
+    are specified then all the sub-directories of the current working
+    directory are tried.
+
+    A list of failing tests is placed in the current working directory
+    in the file FAILED_TESTS.
+
+OPTIONS:
+
+    -h, --help
+        Display this message.
+
+    -m <program>, --mzn2fzn <program>
+        Specify the program to use to convert MiniZinc to FlatZinc.
+        The default program is $MZN2FZN_EXEC.
+
+    --mzn2fzn-flags <flags>
+        Extra flags to pass to the program used to convert MiniZinc to
+        Flatzinc.
+
+    -f <program>, --flatzinc <program>
+        Specify the program to use to error check the generated
+        FlatZinc.  The default program is $FLATZINC_EXEC.
+
+    --flatzinc-flags <flags>
+        Options to pass to the program used to error check the generated
+        FlatZinc.  The default is: $FLATZINC_FLAGS.
+
+    -c <program>, --cadmap <program>
+        Specify the program to use to apply transformations written in
+        the Cadmium mapping language.  The default program is $CADMAP_EXEC.
+"
+
+#-----------------------------------------------------------------------------#
+#
+# Testing models without separate data files
+#
+
+# Test models that do not have any data files.
+# Convert any .mzn files in the directory into FlatZinc.
+# Check the FlatZinc for errors.
+#
+function run_nodata_test () {
+
+    for model in *.mzn
+    do
+        model_base=`basename $model .mzn`
+        fzn_file="${model_base}.fzn"
+        err_file="${model_base}.err"
+        echo "TESTING MODEL: $model"
+        if "$MZN2FZN_EXEC" $MZN2FZN_FLAGS --output-to-stdout "$model" >"$fzn_file" 2>"$err_file"
+        then
+            if "$FLATZINC_EXEC" $FLATZINC_FLAGS "$fzn_file" >> "$err_file" 2>&1
+            then
+                echo "PASSED: $model"
+                /bin/rm -f "$fzn_file" "$err_file"
+            else
+                echo "FAILED: $1, $model (error(s) in FlatZinc)" \
+                    | tee -a "$FAILED_TESTS"
+            fi
+        else
+                echo "FAILED: $1, $model (error(s) during flattening)" \
+                    | tee -a "$FAILED_TESTS"
+        fi
+    done    
+}
+
+#-----------------------------------------------------------------------------#
+#
+# Testing models with separate data files
+#
+
+function run_data_test () {
+    
+    # Find  all the .dzn files in this directory and any subdirectories.
+    # We sort these so that smaller instances are run first.  (The naming
+    # scheme used for the .dzn files for most of the benchmarks ensures this.)
+    # This is useful as it allows us to test the smaller instance even when the
+    # larger ones cause problems.
+    DATA_FILES=`find . -name "*.dzn" | sort`
+    
+    for model in *.mzn
+    do
+        model_base=`basename $model .mzn`
+        fzn_file="${model_base}.fzn"
+        err_file="${model_base}.err"
+        for data in $DATA_FILES
+        do
+            data_base=`basename $data .dzn`
+            output_dir=`dirname $data`
+            fzn_file="${output_dir}/${model_base}_${data_base}.fzn"
+            err_file="${output_dir}/${model_base}_${data_base}.err"
+            echo "TESTING MODEL: $model using $data"
+            if "$MZN2FZN_EXEC" $MZN2FZN_FLAGS --output-to-stdout --data "$data" "$model" \
+                > "$fzn_file" 2>"$err_file"
+            then
+                if
+                    "$FLATZINC_EXEC" $FLATZINC_FLAGS "$fzn_file" >> "$err_file" 2>&1
+                then
+                    echo "PASSED: ${1}, ${model}, $data"
+                    /bin/rm -f "$fzn_file" "$err_file"
+                else
+                    echo "FAILED: ${1}, ${model}, $data (error(s) in FlatZinc)" \
+                       |  tee -a "$FAILED_TESTS"
+                fi
+            else
+                echo "FAILED: ${1}, ${model}, $data (error(s) during flattening)" \
+                    | tee -a "$FAILED_TESTS"
+            fi
+        done
+    done
+}
+
+#-----------------------------------------------------------------------------#
+
+
+# Enter each directory.   If it contains a file named `NODATA' then we
+# run the test routine that does not expect data files.
+#
+function process_directory () {
+    
+    cd $1
+
+    if test -e NODATA
+    then
+        echo "ENTERING DIRECTORY: $1 (NODATA)"
+        run_nodata_test $1
+    else
+        echo "ENTERING DIRECTORY: $1"
+        run_data_test $1
+    fi
+
+    echo "LEAVING DIRECTORY: $1"
+    cd ..
+}
+
+#-----------------------------------------------------------------------------#
+#
+# Main 
+#
+
+while test $# -gt 0
+do
+    case "$1" in
+        
+        -h|--help)
+            echo "$usage"
+            exit 0
+        ;;
+
+        -m|--mzn2fzn)
+            MZN2FZN_EXEC="$2"
+            shift
+        ;;
+
+        --mzn2fzn-flags)
+            MZN2FZN_FLAGS="$MZN2FZN_FLAGS $2"
+            shift
+        ;;
+
+        -f|--flatzinc)
+            FLATZINC_EXEC="$2"
+            shift
+        ;;
+    
+        --flatzinc-flags)
+            FLATZINC_FLAGS="$2"
+            shift
+        ;;
+
+        -c|--cadmpa)
+            CADMAP_EXEC="$3"
+            shift
+        ;;
+
+        -*)
+            echo "$0: unknown option \`$1'" 1>&2
+            echo "$usage" 1>&2
+            exit 2
+        ;;
+
+        *)
+            break
+        ;;
+    
+    esac
+    shift
+
+done
+
+# Determine what directories we should process.
+#
+if test $# -eq 0
+then
+    TEST_DIRS=*
+else
+    TEST_DIRS=$*
+fi
+
+START_TIME=`date`
+echo "STARTING BENCHMARK TESTS: $START_TIME"
+echo
+echo "Using $MZN2FZN_EXEC $MZN2FZN_FLAGS to convert MiniZinc to FlatZinc."
+echo "Using $FLATZINC_EXEC $FLATZINC_FLAGS to error check FlatZinc."
+echo "Using $CADMAP_EXEC to apply model specific mappings."
+echo
+echo "Processing the following directories:"
+for test_dir in $TEST_DIRS
+do
+    echo "    $test_dir"
+done
+
+TOP_DIR=`pwd`
+FAILED_TESTS="$TOP_DIR/FAILED_TESTS"
+
+if test -e $FAILED_TESTS
+then
+    mv "$FAILED_TESTS" "$FAILED_TESTS".old.$$
+fi
+
+for test_dir in $TEST_DIRS
+do
+    if test -d "$test_dir"
+    then
+        process_directory "$test_dir"
+    fi
+done
+
+FINISH_TIME=`date`
+echo "FINISHED BENCHMARK TESTS: $FINISH_TIME"
+
+#-----------------------------------------------------------------------------#

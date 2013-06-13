@@ -1,0 +1,11 @@
+% A unital problem:
+% v = n^3 + 1, k = n + 1, lambda = 1.
+
+% v = n * n * n + 1;
+% k = n + 1;
+% lambda = 1;
+% int: n = 3;
+
+v = 28;
+k = 4;
+lambda = 1;

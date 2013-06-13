@@ -1,0 +1,862 @@
+#!/bin/sh
+#-----------------------------------------------------------------------------#
+# vim: ts=4 sw=4 expandtab
+#-----------------------------------------------------------------------------#
+# Copyright (C) 2008 The University of Melbourne and NICTA.
+# See the file COPYING for license information.
+#-----------------------------------------------------------------------------#
+#
+# Author: Julien Fischer <juliensf@csse.unimelb.edu.au>
+#
+# This script is used to run the MiniZinc benchmark suite.
+#
+# TODO:
+#
+#   - handle the single stage MiniZinc interpreter (this would also help
+#     with the Zinc compiler.)
+#
+#   - we should look for any *.exp files and as part of --check-solution
+#     compare them against the output.
+#
+#   - we need a way to take a model template and apply a number of different
+#     sets of annotations to it to produce different models, e.g. it should
+#     be possible to have single trucking model and turn into a colgen model
+#     or an fd model by defining appropriate annotations for each one.
+#
+#-----------------------------------------------------------------------------#
+
+FLATTEN=yes
+EVAL=yes
+FLATTEN_REPEATS=1
+EVAL_REPEATS=1
+
+CADMAP_EXEC=cadmap
+CADMAP_FLAGS=""
+MZN2FZN_EXEC=mzn2fzn
+MZN2FZN_FLAGS=""
+FLATZINC_EXEC=flatzinc
+FLATZINC_FLAGS=""
+TIME_CMD="time"
+TIME_FLAGS=""
+TIME_LIMIT=3600
+FLATTEN_ONLY="no"
+BATCHNAME=""
+USE_CD_MZN_MAP="no"
+USE_CD_FZN_MAP="no"
+CHECK_SOLUTION="no"
+
+usage="\
+Usage: runbenchmarks [<options>] [<dirs>]
+
+    Run the MiniZinc benchmarks in <dirs>.  If no directories
+    are specified then all the sub-directories of the current working
+    directory are tried.
+
+    Timings for the MiniZinc-to-FlatZinc conversion are put in a file
+    named FLATTTEN.<batchname>.  Timings for evaluation are put in a file
+    named EVALUATION.<batchname>.  By default, <batchname> is the process id.
+
+    Models (with or without the .mzn extension) listed in files named
+    IGNORE_MODEL or IGNORE_MODEL.<batchname> will be ignored.
+
+    Models (with or without the .mzn extension) listed in files named
+    SKIP_MODEL or SKIP_MODEL.<batchname> will be skipped.  The distinction
+    between ignoring and skipping is that no output will be written to
+    the FLATTEN.<batchname> and EVALUATION.<batchname> with the former;
+    in the latter case the output will report the time as <SKIP>.
+
+    By default all data files in the benchmark directory plus those in any
+    subdirectories will be used.  The set of data files can be restricted
+    by listing the require data files in a file named DATA.  Data files to
+    be omitted may be listed in a files named SKIP_DATA or
+    SKIP_DATA.<batchname>.
+
+    If the models are to be run without data files then the benchmark
+    directory should contain an empty file named NODATA. 
+   
+    Cadmium mapping may optionally be applied to both the MiniZinc model
+    and to the generated FlatZinc.  Given a MiniZinc model <model>.mzn
+    a Cadmium mapping named <model>_mzn.cd will be applied to it before
+    flattening if this script is invoked with --use-cd-minizinc-mapping.
+    Likewise, if <model>_fzn.cd exists and --use-cd-flatzinc-mapping is
+    given then that mapping will be applied to the FlatZinc generated
+    by flattening.
+
+    Timings for Cadmium mappings are written to CD_MZN.<batchname>
+    and CD_FZN.<batchname> for MiniZinc and FlatZinc mappings respectively.
+    It is not possible to specify a number of repetitions for Cadmium
+    mappings.
+
+    NOTE: this script requires the FlatZinc solution processsing tool,
+          solns2dzn, to be in your PATH.
+
+OPTIONS:
+
+    -h, --help
+        Display this message.
+
+    -m <program>, --mzn2fzn <program>
+        Specify the program to use to convert MiniZinc to FlatZinc.
+        The default program is $MZN2FZN_EXEC.
+
+    --mzn2fzn-flags <flags>
+        Command line arguments to pass to the MiniZinc to FlatZinc converter.
+
+    -f <program>, --flatzinc <program>
+        Specify the program to use to evaluate the generated FlatZinc.
+        The default program is $FLATZINC_EXEC.
+
+    --fzn-flags <flags>, --flatzinc-flags <flags>
+        Command line arguments to pass to the FlatZinc executable.
+
+    -c <program>, --cadmap <program>
+        Specify the program used to apply Cadmium mappings.
+        The default program is $CADMAP_EXEC.
+
+    -t <cmd>, --time-cmd <cmd>
+        Specify the command used to time.
+
+    --time-flags <flags>
+        Flags to pass to the time command.
+
+    --time-limit <n>
+        Limit the evaluation time of each problem instance to
+        n seconds.  (The default is $TIME_LIMIT.)
+
+    --flatten-repeats <n>
+        Specify the number of times flattening should be run on each
+        problem instance.
+
+    --flatten-only
+        Flatten only, do not evaluate the FlatZinc.
+        (This is useful for benchmarking mzn2fzn.)
+
+    --eval-repeats <n>
+        Specify the number of times each problem instance should be
+        evaluated.
+
+    -b <name>, --batchname <name>
+        Specify the suffix used for the results files.
+        By default this is the process id.
+
+    --cd-mzn, --use-cadmium-minizinc-mapping
+        If a file named <model>_mzn.cd exists then apply the Cadmium
+        mapping it contains to the MiniZinc model before flattening.
+
+    --cd-fzn, --use-cadmium-flatzinc-mapping
+        If a file named <model>_fzn.cd exists the apply the Cadmium
+        mapping it contains to the FlatZinc model before evaluation.
+
+    --check-solution, --check-soln
+        Treat the evaluation output as a MiniZinc data file and re-evaluate
+        the model using this file.  A log of this step is written to a file
+        named CHECK.<batchname>.
+
+        Those data instances that are expected to produce no solution should
+        have the name of their data file listed in a file named NO_SOLUTION.
+        When the output is checked if it matches \"No solution found\", then
+        that file will be consulted to see if this was expected.
+
+        Note that in the case of benchmark directories where there are
+        no separate data files, e.g. the NODATA ones, the NO_SOLUTION file
+        should instead list the names of the files containing the models.
+
+        Checking may be disabled on a directory- and batch-specific basis.
+        If a file named NOCHECK.<batchname> exists in a benchmark directory
+        then checking will be skipped for that directory.
+"
+
+#-----------------------------------------------------------------------------#
+#
+# Benchmarking models without separate data files
+#
+
+run_nodata_benchmark () {
+
+    for model in *.mzn
+    do
+        model_base=`basename $model .mzn`
+        pp_mzn_file="${model_base}_pp.mzn"
+        pp_fzn_file="${model_base}_pp.fzn"
+        fzn_file="${model_base}.fzn"
+        out_file="${model_base}.${BATCH}.out"
+        check_file="${model_base}.${BATCH}.check"
+        cd_mzn_file="${model_base}_mzn.cd"
+        cd_fzn_file="${model_base}_fzn.cd"
+
+        # Handle model ignores.
+        should_proceed="yes"
+        IGNORE_FILES=""
+    
+        # We should ignore any models listed in the file IGNORE_MODEL.
+        if test -r IGNORE_MODEL
+        then
+            IGNORE_FILES="IGNORE_MODEL"
+        fi
+
+        # And also any in the batch-specific version of the above.
+        if test -r IGNORE_MODEL.${BATCH}
+        then
+            IGNORE_FILES="$IGNORE_FILES IGNORE_MODEL.${BATCH}"
+        fi
+
+        if test $IGNORE_FILES
+        then
+            for ignored in `cat $IGNORE_FILES | grep -v "^#"`
+            do
+                if test "`basename $ignored .mzn`" = "$model_base"
+                then
+                    should_proceed="no"
+                fi
+            done
+        fi
+
+        # We do not emit any output if the model is ignored.
+        if test "$should_proceed" = "no"
+        then
+            echo "<IGNORE>: $model" 
+            continue
+        fi
+
+        # We should skip any models listed in the SKIP_MODEL.
+        SKIP_FILES=""
+        if test -r SKIP_MODEL
+        then
+            SKIP_FILES="SKIP_MODEL"
+        fi     
+   
+        # And also any in the batch-specific version of the above. 
+        if test -r SKIP_MODEL.${BATCH}
+        then
+            SKIP_FILES="$SKIP_FILES SKIP_MODEL.${BATCH}"
+        fi
+
+        if test $SKIP_FILES
+        then
+            for skipped in `cat $SKIP_FILES | grep -v "^#"`
+            do
+                if test "`basename $skipped .mzn`" = "$model_base"
+                then
+                    should_proceed="no"
+                fi
+            done
+        fi
+
+        if test "$should_proceed" = "no"
+        then
+            echo "MODEL: $model"   | tee -a "$EVAL_RESULTS"
+            echo "DATA: <NODATA>"  | tee -a "$EVAL_RESULTS"
+            echo "TIME: <SKIP>" | tee -a "$EVAL_RESULTS"
+            continue
+        fi
+
+        # Optionally apply a Cadmium MiniZinc->MiniZinc mapping.
+        #
+        if test "$USE_CD_MZN_MAP" = "yes" -a -r "$cd_mzn_file"
+        then
+            echo "MAP: $model with $cd_mzn_file" | tee -a "$CD_MZN_RESULTS"
+            "$TIME_CMD" $TIME_FLAGS "$CADMAP_EXEC" $CADMAP_FLAGS \
+                --mapping "$cd_mzn_file" --output-to-file "$pp_mzn_file" \
+                "$model" >> "$CD_MZN_RESULTS" 2>&1
+            mzn_to_flatten="$pp_mzn_file"
+        else
+            mzn_to_flatten="$model"
+        fi
+
+        repeat="$FLATTEN_REPEATS"
+        echo "FLATTENING: $model" | tee -a "$FLATTEN_RESULTS"
+
+        while test "$repeat" -gt 0
+        do
+            "$TIME_CMD" $TIME_FLAGS "$MZN2FZN_EXEC" $MZN2FZN_FLAGS \
+                --output-to-file "$fzn_file" \
+                "$mzn_to_flatten" >> "$FLATTEN_RESULTS" 2>&1
+            repeat=`expr "$repeat" - 1`
+        done
+        
+        # Clean up cadmap produced MiniZinc.
+        #
+        test -e "$pp_mzn_file" && /bin/rm -f "$pp_mzn_file"
+
+        if test "$FLATTEN_ONLY" = "no"
+        then
+           
+            echo "MODEL: $model" | tee -a "$EVAL_RESULTS" 
+        
+            if test "$USE_CD_FZN_MAP" = "yes" -a -r "$cd_fzn_file"
+            then
+                echo "MAP: $fzn_file with $cd_fzn_file" \
+                    | tee -a "$CD_FZN_RESULTS"
+                "$TIME_CMD" $TIME_FLAGS "$CADMAP_EXEC" $CADMAP_FLAGS \
+                    --mapping "$cd_fzn_file" --output-to-file "$pp_fzn_file" \
+                    "$fzn_file" >> "$CD_FZN_RESULTS" 2>&1
+                fzn_to_eval="$pp_fzn_file"
+            else
+                fzn_to_eval="$fzn_file"
+            fi
+            
+            repeat="$EVAL_REPEATS"
+            while test "$repeat" -gt 0
+            do
+                eval_abort="no"
+                echo "DATA: <NODATA>" | tee -a "$EVAL_RESULTS"
+                "$TIME_CMD" $TIME_FLAGS "$FLATZINC_EXEC" $FLATZINC_FLAGS \
+                    "$fzn_to_eval" | solns2dzn -l > "$out_file" 2>> "$EVAL_RESULTS"
+                
+                # If evaluation command does not succeed then don't
+                # attempt to check the solution because it may not be
+                # a valid data file.
+                if test $? -ne 0
+                then
+                    eval_abort="yes"
+                fi          
+                repeat=`expr "$repeat" - 1`
+            done
+
+            # Clean up cadmap produced FlatZinc.
+            test -e "$pp_fzn_file" && /bin/rm -f "$pp_fzn_file"
+
+            if test "$CHECK_SOLUTION" = "yes" -a ! -e NOCHECK.${BATCH} \
+                -a "$eval_abort" = "no"
+            then
+                
+                echo "CHECKING: $model <NODATA>"
+
+                # Did the model fail to produce a solution?
+                if grep "No solution found" "$out_file" > /dev/null
+                then
+                    
+                    # If the model is listed in NO_SOLUTION then we expect
+                    # it not to produce any solutions.           
+                    if test -r NO_SOLUTION
+                    then
+                        if grep "$model_base" NO_SOLUTION > /dev/null
+                        then
+                            echo "CHECK: $model <NODATA> - PASSED" \
+                                | tee -a "$CHECK_RESULTS"
+                        else
+                            echo "CHECK: $model <NODATA> - FAILED (no soln.)" \
+                                | tee -a "$CHECK_RESULTS"
+                        fi
+                    else
+                        echo "CHECK: $model <NODATA> - ERROR (missing NO_SOLUTION?)" \
+                            | tee -a "$CHECK_RESULTS"
+                    fi
+
+                else
+                    
+                    # Check the model by feeding the output back into the model
+                    # and repeating whatever steps we used when processing it to
+                    # produce the original solution.
+                    # 
+                    if test "$USE_CD_MZN_MAP" = "yes" -a -r "$cd_mzn_file"
+                    then
+                        "$CADMAP_EXEC" $CADMAP_FLAGS --mapping "$cd_mzn_file" \
+                            --data "$out_file" --output-to-file "$pp_mzn_file" \
+                            "$model" 2>&1
+                        DATA_FILE_FLAGS=""
+                        mzn_to_flatten="$pp_mzn_file"
+                    else
+                        DATA_FILE_FLAGS="--data $out_file"
+                        mzn_to_flatten="$model"
+                    fi
+                
+                    "$MZN2FZN_EXEC" $MZN2FZN_FLAGS $DATA_FILE_FLAGS \
+                        --output-to-file "$fzn_file" "$mzn_to_flatten"
+
+                    test -e "$pp_mzn_file" && /bin/rm -f "$pp_mzn_file"
+
+                    if test "$USE_CD_FZN_MAP" = "yes" -a -r "$cd_fzn_file"
+                    then
+                        "$CADMAP_EXEC" $CADMAP_FLAGS --mapping "$cd_fzn_file" \
+                            --output-to-file "$pp_fzn_file" "$fzn_file" 2>&1
+                        fzn_to_eval="$pp_fzn_file"
+                    else
+                        fzn_to_eval="$fzn_file"
+                    fi
+
+                    "$FLATZINC_EXEC" $FLATZINC_FLAGS "$fzn_to_eval" \
+                        | solns2dzn -l > "$check_file"
+                    
+                    diff -u "$out_file" "$check_file"
+                    if test "$?" -eq "0"
+                    then
+                        echo "CHECK: $model <NODATA> - PASSED" | \
+                            tee -a "$CHECK_RESULTS"
+                        /bin/rm -f "$check_file"
+                    else
+                        echo "CHECK: $model <NODATA> - FAILED" | \
+                            tee -a "$CHECK_RESULTS"
+                    fi
+
+                    test -e "$pp_fzn_file" && /bin/rm -f "$pp_fzn_file"
+                fi
+            fi
+        fi
+    done
+}
+
+#-----------------------------------------------------------------------------#
+#
+# Benchmarking models with separate data files
+#
+
+run_data_benchmark () {
+
+    # If the directory contains a file named DATA then run only the data
+    # instances listed in it. 
+    if test -r DATA -a -f DATA
+    then
+        DATA_FILES=`cat DATA | grep -v "^#" | sort`
+    else
+    
+        # Find  all the .dzn files in this directory and any subdirectories.
+        #
+        DATA_FILES=`find . -name "*.dzn" | sort`
+    fi
+
+    for model in *.mzn
+    do
+        model_base=`basename $model .mzn`
+        cd_mzn_file="${model_base}_mzn.cd"
+        cd_fzn_file="${model_base}_fzn.cd"
+        fzn_file="${model_base}.fzn"
+        err_file="${model_base}.err"
+        
+        # Handle model ignores.
+        should_proceed="yes"
+        IGNORE_MODEL_FILES=""
+    
+        # We should ignore any models listed in the file IGNORE_MODEL.
+        if test -r IGNORE_MODEL
+        then
+            IGNORE_MODEL_FILES="IGNORE_MODEL"
+        fi
+
+        # And also any in the batch-specific version of the above.
+        if test -r IGNORE_MODEL.${BATCH}
+        then
+            IGNORE_MODEL_FILES="$IGNORE_MODEL_FILES IGNORE_MODEL.${BATCH}"
+        fi
+
+        if test $IGNORE_MODEL_FILES
+        then
+            for ignored in `cat $IGNORE_MODEL_FILES | grep -v "^#"`
+            do
+                if test "`basename $ignored .mzn`" = "$model_base"
+                then
+                    should_proceed="no"
+                fi
+            done
+        fi
+        
+        # We do not emit any output if the model is ignored.
+        if test "$should_proceed" = "no"
+        then
+            echo "<IGNORE>: $model" 
+            continue
+        fi
+        
+        # We should skip any models listed in the SKIP_MODEL.
+        SKIP_FILES=""
+        if test -r SKIP_MODEL
+        then
+            SKIP_FILES="SKIP_MODEL"
+        fi     
+   
+        # And also any in the batch-specific version of the above. 
+        if test -r SKIP_MODEL.${BATCH}
+        then
+            SKIP_FILES="$SKIP_FILES SKIP_MODEL.${BATCH}"
+        fi
+
+        process_model="yes"
+        if test "$should_proceed" = "no"
+        then
+            process_model="no"
+        fi
+        
+        echo "MODEL: $model" | tee -a "$EVAL_RESULTS" 
+        
+        for data in $DATA_FILES
+        do
+            
+            data_base=`basename $data .dzn`
+            output_dir=`dirname $data`
+            pp_mzn_file="${output_dir}/${model_base}_${data_base}_pp.mzn"
+            fzn_file="${output_dir}/${model_base}_${data_base}.fzn"
+            pp_fzn_file="${output_dir}/${model_base}_${data_base}_pp.fzn"
+            err_file="${output_dir}/${model_base}_${data_base}.err"
+            out_file="${output_dir}/${model_base}_${data_base}.${BATCH}.out"
+            check_file="${output_dir}/${model_base}_${data_base}.${BATCH}.check"
+ 
+            # We still want to print out "results" for models we are ignoring.
+            # This is so that we can process the results files and turn them
+            # into LaTeX tables and so forth.
+            if test "$process_model" = "no"
+            then
+                echo "DATA: $data" | tee -a "$EVAL_RESULTS"
+                echo "TIME: <SKIP>" | tee -a "$EVAL_RESULTS"
+                continue
+            fi
+         
+            should_proceed="yes"
+            SKIP_DATA_FILES=""
+        
+            # We should ignore any data files listed in the file IGNORE_DATA.
+            if test -r SKIP_DATA
+            then
+                SKIP_DATA_FILES="SKIP_DATA"
+            fi
+         
+            if test -r SKIP_DATA.${BATCH}
+            then
+                SKIP_DATA_FILES="$SKIP_DATA_FILES $SKIP_DATA.${BATCH}"
+            fi
+        
+            if test $SKIP_DATA_FILES
+            then
+                for skipped in `cat $SKIP_DATA_FILES | grep -v "^#"`
+                do
+                    # FIXME: ignored data files should require the .dzn extension.
+                    # (Also we should strip off the redundant directory qualification
+                    # that find adds.)
+                    if test "$skipped" = "$data"
+                    then
+                        should_proceed="no"
+                    fi
+                done
+            fi
+
+            if test "$should_proceed" = "no"
+            then
+                echo "DATA: $data" | tee -a "$EVAL_RESULTS"
+                echo "TIME: <SKIP>" | tee -a "$EVAL_RESULTS"
+                continue
+            fi
+        
+            # Optionally apply a Cadmium MiniZinc->MiniZinc mapping.
+            # Note that if we do this then we pass the data file to cadmap rather
+            # than to mzn2fzn.  (XXX is that the right thing to do?)
+            #
+            if test "$USE_CD_MZN_MAP" = "yes" -a -r "$cd_mzn_file"
+            then
+                
+                echo "MAP: $model with --mapping $cd_mzn_file, --data $data" \
+                    | tee -a "$CD_MZN_RESULTS"
+                "$TIME_CMD" $TIME_FLAGS "$CADMAP_EXEC" $CADMAP_FLAGS \
+                    --mapping "$cd_mzn_file" --data "$data" \
+                    --output-to-file "$pp_mzn_file" "$model" \
+                    >> "$CD_MZN_RESULTS" 2>&1
+                DATA_FILE_FLAGS=""
+                mzn_to_flatten="$pp_mzn_file"
+            else
+                DATA_FILE_FLAGS="--data $data"
+                mzn_to_flatten="$model"
+            fi 
+ 
+            repeat=$FLATTEN_REPEATS
+            echo "FLATTENING: $model $DATA_FILE_FLAGS" | tee -a "$FLATTEN_RESULTS"
+
+            while test "$repeat" -gt 0
+            do
+                "$TIME_CMD" $TIME_FLAGS "$MZN2FZN_EXEC" $MZN2FZN_FLAGS \
+                    $DATA_FILE_FLAGS --output-to-file "$fzn_file" \
+                    "$mzn_to_flatten" >> "$FLATTEN_RESULTS" 2>&1
+                repeat=`expr "$repeat" - 1`
+            done
+        
+            # Clean up cadmap produced MiniZinc.
+            #
+            test -e "$pp_mzn_file" && /bin/rm -f "$pp_mzn_file"
+        
+            if test "$FLATTEN_ONLY" = "no"
+            then
+        
+                if test "$USE_CD_FZN_MAP" = "yes" -a -r "$cd_fzn_file"
+                then
+                    echo "MAP: $fzn_file with $cd_fzn_file" \
+                        | tee -a "$CD_FZN_RESULTS"
+                    "$TIME_CMD" $TIME_FLAGS "$CADMAP_EXEC" $CADMAP_FLAGS \
+                        --mapping "$cd_fzn_file" --output-to-file "$pp_fzn_file" \
+                        "$fzn_file" >> "$CD_FZN_RESULTS" 2>&1
+                    fzn_to_eval="$pp_fzn_file"
+                else
+                    fzn_to_eval="$fzn_file"
+                fi
+               
+                repeat="$EVAL_REPEATS"
+                while test "$repeat" -gt 0
+                do
+                    eval_abort="no"
+                    echo "DATA: $data" | tee -a "$EVAL_RESULTS"
+                    "$TIME_CMD" $TIME_FLAGS "$FLATZINC_EXEC" $FLATZINC_FLAGS \
+                        "$fzn_to_eval" | solns2dzn -l > "$out_file" 2>> "$EVAL_RESULTS"
+                
+                    # If evaluation command does not succeed then don't
+                    # attempt to check the solution because it may not be
+                    # a valid data file.
+                    if test $? -ne 0
+                    then
+                        eval_abort="yes"
+                    fi
+                    repeat=`expr "$repeat" - 1`
+                done
+             
+                # Clean up cadmap produced FlatZinc.
+                test -e "$pp_fzn_file" && /bin/rm -f "$pp_fzn_file"
+            
+                if test "$CHECK_SOLUTION" = "yes" -a ! -e NOCHECK.${BATCH} \
+                    -a "$eval_abort" = "no"
+                then
+                
+                    echo "CHECKING: $model with $data"
+
+                    # Did the model/data instance fail to produce a solution?
+                    if grep "No solution found" "$out_file" > /dev/null
+                    then
+                        # If the _data file_ is listed in NO_SOLUTION then we
+                        # expect there to be no solution.
+                        if test -r NO_SOLUTION
+                        then
+                            if grep "$data_base" NO_SOLUTION > /dev/null
+                            then
+                                echo "CHECK: $model with $data - PASSED" | \
+                                    tee -a "$CHECK_RESULTS"
+                            else
+                                echo "CHECK: $model with $data - FAILED (no soln.)" | \
+                                    tee -a "$CHECK_RESULTS"
+                            fi
+
+                        else
+                        
+                            echo "CHECK: $model with $data - ERROR (missing NO_SOLUTION?)" | \
+                                tee -a "$CHECK_RESULTS"
+                        fi
+                    
+                    else
+
+                        if test "$USE_CD_MZN_MAP" = "yes" -a -r "$cd_mzn_file"
+                        then
+                            "$CADMAP_EXEC" $CADMAP_FLAGS \
+                                --mapping "$cd_mzn_file" --data "$data" \
+                                --data "$out_file" \
+                                --output-to-file "$pp_mzn_file" "$model" 2>&1
+                            DATA_FILE_FLAGS=""
+                            mzn_to_flatten="$pp_mzn_file"
+                        else
+                            DATA_FILE_FLAGS="--data $data --data $out_file"
+                            mzn_to_flatten="$model"
+                        fi 
+
+                        "$MZN2FZN_EXEC" $MZN2FZN_FLAGS $DATA_FILE_FLAGS \
+                            --output-to-file "$fzn_file" "$mzn_to_flatten" 2>&1
+
+                        test -e "$pp_mzn_file" && /bin/rm -f "$pp_mzn_file"
+
+                        if test "$USE_CD_FZN_MAP" = "yes" -a -r "$cd_fzn_file"
+                        then
+                            "$CADMAP_EXEC" $CADMAP_FLAGS --mapping "$cd_fzn_file" \
+                                --output-to-file "$pp_fzn_file" "$fzn_file" 2>&1
+                            fzn_to_eval="$pp_fzn_file"
+                        else
+                            fzn_to_eval="$pp_fzn_file"
+                        fi 
+
+                        "$FLATZINC_EXEC" $FLATZINC_FLAGS "$fzn_file" \
+                            | solns2dzn -l > "$check_file"
+                    
+                        diff -u "$out_file" "$check_file"
+                        if test "$?" -eq "0"
+                        then
+                            echo "CHECK: $model with $data - PASSED" | \
+                                tee -a "$CHECK_RESULTS"
+                            /bin/rm -f "$check_file"
+                        else
+                            echo "CHECK: $model with $data - FAILED" | \
+                                tee -a "$CHECK_RESULTS"
+                        fi
+                    
+                        test -e "$pp_fzn_file" && /bin/rm -f "$pp_fzn_file"
+                    fi
+                fi
+            fi
+        done
+    done
+}
+
+#-----------------------------------------------------------------------------#
+
+process_directory () {
+
+    prev_dir=`pwd`
+    
+    cd $1
+
+    if test -e NODATA
+    then
+        echo "ENTERING DIRECTORY: $1 (NODATA)"
+        run_nodata_benchmark $1
+    else
+        echo "ENTERING DIRECTORY: $1"
+        run_data_benchmark $1
+    fi
+
+    cd "$prev_dir"
+}
+
+#-----------------------------------------------------------------------------#
+#
+# Main 
+#
+
+while test $# -gt 0
+do
+    
+    case "$1" in 
+
+        -h|--help)
+            echo "$usage"
+            exit 0
+        ;;
+        
+        -m|--mzn2fzn)
+            MZN2FZN_EXEC="$2"
+            shift
+        ;;
+
+        --mzn2fzn-flags)
+            MZN2FZN_FLAGS="$2"
+            shift
+        ;;
+
+        -f|--flatzinc)
+            FLATZINC_EXEC="$2"
+            shift
+        ;;
+    
+        --fzn-flags|--flatzinc-flags)
+            FLATZINC_FLAGS="$2"
+            shift
+        ;;
+      
+        -c|--cadmap)
+            CADMAP_EXEC="$2"
+            shift
+        ;;
+
+        --cadmap-flags)
+            CADMAP_FLAGS="$2"
+            shift
+        ;;
+
+        --flatten-repeats)
+            FLATTEN_REPEATS="$2"
+            shift
+        ;;
+
+        --flatten-only)
+            FLATTEN_ONLY="yes"
+        ;;
+        
+        --eval-repeats)
+            EVAL_REPEATS="$2"
+            shift
+        ;;
+
+        --time-cmd)
+            TIME_CMD="$2"
+            shift
+        ;;
+
+        --time-flags)
+            TIME_FLAGS="$2"
+            shift
+        ;;
+
+        --time-limit)
+            TIME_LIMIT="$2"
+            shift
+        ;;
+
+        -b|--batchname)
+            BATCHNAME="$2"
+            shift
+        ;;
+    
+        --cd-mzn|--use-cadmium-minizinc-mapping)
+            USE_CD_MZN_MAP="yes"
+        ;;
+
+        --cd-fzn|--use-cadmium-flatzinc-mapping)
+            USE_CD_FZN_MAP="yes"
+        ;;
+
+        --check-solution|--check-soln)
+            CHECK_SOLUTION="yes"
+        ;;
+
+        -*)
+            echo "$0: unknown option \`$1'" 1>&2
+            echo "$usage" 1>&2
+            exit 2
+        ;;
+
+        *)
+            break
+        ;;
+    
+    esac
+    shift
+
+done
+
+# Determine what directories we should process.
+#
+if test $# -eq 0
+then
+    TEST_DIRS=*
+else
+    TEST_DIRS=$*
+fi
+
+START_TIME=`date`
+echo "STARTING BENCHMARKS: $START_TIME"
+echo
+echo "Using $MZN2FZN_EXEC to convert MiniZinc to FlatZinc."
+echo "Using $FLATZINC_EXEC $FLATZINC_FLAGS to evaluate FlatZinc."
+echo
+echo "Processing the following directories:"
+for test_dir in $TEST_DIRS
+do
+    echo "    $test_dir"
+done
+
+TOP_DIR=`pwd`
+if test "$BATCHNAME" = ""
+then
+    BATCH=$$
+else
+    BATCH=$BATCHNAME
+fi
+
+FLATTEN_RESULTS="$TOP_DIR/FLATTEN.${BATCH}"
+EVAL_RESULTS="$TOP_DIR/EVALUATION.${BATCH}"
+CD_MZN_RESULTS="$TOP_DIR/CD_MZN.${BATCH}"
+CD_FZN_RESULTS="$TOP_DIR/CD_FZN.${BATCH}"
+CHECK_RESULTS="$TOP_DIR/CHECK.${BATCH}"
+            
+ulimit -t $TIME_LIMIT
+
+for test_dir in $TEST_DIRS
+do
+    if test -d "$test_dir"
+    then
+        process_directory "$test_dir"
+    fi
+done
+
+FINISH_TIME=`date`
+echo "FINISHED BENCHMARKS: $FINISH_TIME"
+
+#-----------------------------------------------------------------------------#

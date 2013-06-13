@@ -1,0 +1,12 @@
+% Affine plane problem:
+% v = n^2, k = n, lambda = 1
+
+v = 4;
+k = 2;
+lambda = 1;
+
+% A solution:
+%   001011
+%   010101
+%   100110
+%   111000

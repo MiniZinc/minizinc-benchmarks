@@ -1,0 +1,14 @@
+The benchmark set 'BL' is taken from following the publication.
+
+@ARTICLE{Baptiste:LP:00,
+	author = {Baptiste, Philippe and Le Pape, Claude},
+    title = {Constraint Propagation and Decomposition Techniques for Highly Disjunctive
+		and Highly Cumulative Project Scheduling Problems},
+	journal = {Constraints},
+	year = {2000},
+	volume = {5},
+	pages = {119--139},
+	number = {1-2},
+    address = {Hingham, MA, USA},
+	publisher = {Kluwer Academic Publishers},
+}

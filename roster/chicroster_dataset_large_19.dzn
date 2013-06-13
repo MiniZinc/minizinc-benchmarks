@@ -1,0 +1,31 @@
+%
+% ECLiPSe SAMPLE CODE: Rostering Problem Benchmark
+%
+% This code was developed in 1999 in the context of
+%
+%	ESPRIT PROJECT 22165 CHIC-2, www.icparc.ic.ac.uk/chic2
+%
+% and contains contributions from
+%
+% 	IC-Parc, Imperial College, London, www.icparc.ic.ac.uk
+% 	Bouygues research, Paris, www.bouygues.fr
+% 	EuroDecision, Paris, www.eurodecision.fr
+%
+% The results were reported in CHIC-2 deliverable D 4.3.2 and
+% are to appear in an article in the Constraints Journal.
+%
+% For the problem definition see roster.txt
+%
+
+%----------------------------------------------------------------------
+% Data set
+%----------------------------------------------------------------------
+
+weeks = 30 ;
+reqt =   [| 9, 9,10, 9,10,14,10
+          | 0, 0, 0, 0, 0, 0, 0
+          |10, 9, 8, 8, 7, 4,10
+          |10,12,12,13,13,12,10
+          | 1, 0, 0, 0, 0, 0, 0|] ;
+
+minobj = 0 ;

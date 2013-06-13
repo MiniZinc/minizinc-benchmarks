@@ -1,0 +1,8 @@
+X = 5;
+Y = 5;
+N = 2;
+
+end_points_start_x = [3, 2];
+end_points_start_y = [4, 2];
+end_points_end_x = [5, 4];
+end_points_end_y = [1, 2];

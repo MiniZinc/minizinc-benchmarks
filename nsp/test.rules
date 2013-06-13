@@ -1,0 +1,7 @@
+% Regulation rules
+
+n_rules = 2;
+rules_sets = [{4},{3}];
+rules_lbs = [1, 0];	
+rules_ubs = [2, 1];
+rules_windows = [3, 3];

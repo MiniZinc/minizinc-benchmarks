@@ -1,0 +1,40 @@
+This benchmark set is based on the Lawrence benchmark set 'LA' for Job Shop 
+Scheduling. The resource-constrained project scheduling problem were retrieved
+by duplicating (triplicating) the jobs and increasing the resource capacity to
+2 (3) where the resource requirements of tasks remain unchanged.
+
+The naming of the instances are 'la<no>_x<mult>' where 'no' refers to the
+Lawrence's instance number and 'mult' to number of identical jobs. E.g. the
+instance 'la01_x3' is constructed from the Lawrence instance 'la01' and by
+triplicating the jobs and increasing the resource capacities to 3.
+
+NOTE: Subsets of this set are refers in the literature as follows.
+Set A: la01_x[2|3] - la10_x[2|3]
+Set B: la11_x[2|3] - la20_x[2|3]
+Set C: la21_x[2|3] - la30_x[2|3]
+Set D: la31_x[2|3] - la40_x[2|3]
+
+
+Reference to the Lawrence benchmark set:
+
+@techreport{Lawrence:84,
+	author = "S. Lawrence",
+	title = "Resource Constrained Project Scheduling: An Experimental Investigation of Heuristic Scheduling Techniques (Supplement)",
+	institution="Graduate School of Industrial Administration, Carnegie Mellon University",
+	year = "1984"
+}
+
+
+Reference for the retrieval of this set:
+
+@article{Nuijten:A:96,
+	author = {Nuijten, Wilhelmus Petronella Maria and Aarts, E. H. L.},
+	title = {A Computational Study of Constraint Satisfaction for Multiple Capacitated Job Shop Scheduling},
+	journal = {European Journal of Operational Research},
+	year = {1996},
+	volume = {90},
+	pages = {269--284},
+	number = {2},
+	doi = "10.1016/0377-2217(95)00354-1"
+}
+

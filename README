@@ -1,0 +1,98 @@
+Each problem should be placed in a separate directory.
+
+Each directory should contain model files (.mzn) and data files (.dzn).
+The data files may be in subdirectories, but said subdirectories should
+NOT be named 'data' (or any case-based variation thereof).  The
+runbenchmarks script treats a file named DATA specially, and on
+case-insensitive filesystems a subdirectory named 'data' causes a name
+clash.
+
+A directory may only contain multiple models if each of the models
+are compatible with all of the data files.  Incompatible models and
+data files should be separated into different directories.
+
+MiniZinc Challenge 2008 Problems
+--------------------------------
+The models and data files used in the 2008 MiniZinc challenge are in the
+following directories:
+
+        debruijn_binary
+        nmseq
+        pentominoes
+        quasigroup7
+        radiation
+        rcpsp
+        search_stress
+        shortest_path
+        slow_convergence
+        trucking**
+
+** trucking.mzn was trucking_no_colgen.mzn at the time.
+
+MiniZinc Challenge 2009 Problems
+--------------------------------
+The models and data files used in the 2009 MiniZinc challenge are in the
+following directories:
+
+        black-hole
+        fillomino
+        nonogram
+        p1f
+        prop_stress
+        rectangle-packing
+        roster
+        search_stress2
+        still_life2             (**)
+        vrp
+
+** This was called "still_life" in the challenge, but we already had something
+of that name in the benchmark suite.
+
+MiniZinc Challenge 2010 Problems
+--------------------------------
+The models and data files used in the 2010 MiniZinc challenge are in
+the following directories:
+
+	bacp
+	costas-array
+	depot-placement
+	filters
+	ghoulomb
+	grid-colouring
+	rcpsp-max
+	solbat
+	sugiyama
+	wwtp-random
+	wwtp-real
+
+In addition the following were problems were submitted for the 2010
+challenge but no instances were selected by the judges:
+
+	evilshop
+	jobshop2
+
+MiniZinc Challenge 2012 Problems
+--------------------------------
+The models and data files used in the 2012 MiniZinc challenge are in
+the following directories:
+
+	amaze	(contains both amaze.mzn and amaze2.mzn)
+	carpet-cutting
+	fast-food
+	filters
+	league
+	mspsp
+	nonogram
+	parity-learning
+	pattern-set-mining
+	project-planning
+	radiation
+	ship-schedule
+	solbat
+	still-life-wastage
+	tpp
+	train
+	vrp
+
+Note that the directories above typically contain more instances than were actually
+used in the challenge.

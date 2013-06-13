@@ -1,0 +1,12 @@
+Data files names have the form:
+
+   x<k>-<n>.dzn
+
+where x is either "s" for satisfiable or "u" for unsatisfiable.
+
+<k> indicates the difficult of the problem:
+
+   3 - trivial
+   4 - moderately hard
+   5 - really hard
+   6 - impossible

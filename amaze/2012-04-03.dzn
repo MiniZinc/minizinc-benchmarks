@@ -1,0 +1,8 @@
+X = 9;
+Y = 9;
+N = 7;
+
+end_points_start_x = [6, 1, 2, 6, 3, 6, 5];
+end_points_start_y = [9, 9, 2, 2, 2, 5, 8];
+end_points_end_x = [8, 4, 2, 9, 4, 7, 6];
+end_points_end_y = [1, 4, 9, 1, 8, 7, 6];

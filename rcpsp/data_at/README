@@ -1,0 +1,16 @@
+The benchmark set 'AT' is taken from following the publication.
+
+@inbook{Alvarez:T:89,
+	author = "Alvarez-Vald\'{e}s, Ram\'{o}n and Tamarit, Jos\'{e} Manuel",
+	chapter = "Heuristic algorithms for resource-constrained project scheduling: A review and an empirical analysis",
+	pages = "113--134",
+	title = "Advances in Project Scheduling",
+	editor = "Slowinski, Roman and Weglarz, Jan",
+	publisher = "Elsevier",
+	year = "1989"
+}
+
+NOTE: The first possible start time is assumed to be 1 for the instances instead
+of 0. This only matters when comparing the computed makespans with reported 
+makespans in the literature.
+
