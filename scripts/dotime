@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/bin/time -f "TIME: %U" $*
