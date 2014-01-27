@@ -1,0 +1,6 @@
+M=1;
+Smax=5;
+N=16;
+Np=13;
+coef = array1d(P,[61]);
+RP = array2d(S,P,[5, 3, -10, 19, -2]);

@@ -94,5 +94,14 @@ the following directories:
 	train
 	vrp
 
+MiniZinc Challenge 2013 Problems
+--------------------------------
+The models and data files used in the 2013 MiniZinc challenge are
+in the following directories:
+
+       cargo
+       celar
+       flexible-jobshop
+
 Note that the directories above typically contain more instances than were actually
 used in the challenge.
