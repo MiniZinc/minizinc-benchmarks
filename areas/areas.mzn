@@ -36,11 +36,11 @@ include "globals.mzn";
 int: w;                                 % The width of the grid.
 int: h;                                 % The height of the grid.
 int: n;                                 % The number of regions.
-set of int: row = 1..h;
-set of int: col = 1..w;
+set of int: ROW = 1..h;
+set of int: COL = 1..w;
 set of int: region = 1..n;
 set of int: maybe_region = 0..n;        % 0 indicates 'undecided'.
-array [row, col] of maybe_region: puzzle;
+array [ROW, COL] of maybe_region: puzzle;
                                         % The initial state of the puzzle.
                                         % Each cell is either 0 or a region
                                         % number.
@@ -50,9 +50,9 @@ int: max_size = max(region_size);
 set of int: step = 1..max_size;
 
 % This is where our solution goes.
-array [row, col] of var region: grid;
+array [ROW, COL] of var region: grid;
 
-array [row, col] of var step: when;     % The step when a grid cell is decided.
+array [ROW, COL] of var step: when;     % The step when a grid cell is decided.
                                         %   We use this array to ensure that
                                         %   regions are contiguous.
 
@@ -64,7 +64,7 @@ array [row, col] of var step: when;     % The step when a grid cell is decided.
     % that was decided in the previous step.
     %
 constraint
-    forall (r in row, c in col) (
+    forall (r in ROW, c in COL) (
         if puzzle[r, c] != 0 then
             grid[r, c] = puzzle[r, c]
         /\  when[r, c] = 1
@@ -76,7 +76,7 @@ constraint
         endif
     );
 
-predicate copies_neighbour(row: r, col: c, int: rn, int: cn)  =
+predicate copies_neighbour(ROW: r, COL: c, int: rn, int: cn)  =
         if on_grid(rn, cn)
         then grid[r, c] = grid[rn, cn] /\  when[r, c] = when[rn, cn] + 1
         else false
@@ -88,14 +88,14 @@ test on_grid(int: r, int: c)  =  1 <= r /\ r <= h /\ 1 <= c /\ c <= w;
     % can remove R from the domain of that grid cell.
     %
 constraint
-    forall (Rr in row, Rc in col where puzzle[Rr, Rc] != 0) (
+    forall (Rr in ROW, Rc in COL where puzzle[Rr, Rc] != 0) (
         let
         {
             region: R = puzzle[Rr, Rc],
             int: Rs = region_size[R]
         }
         in
-            forall (r in row, c in col) (
+            forall (r in ROW, c in COL) (
                 if abs(r - Rr) + abs(c - Rc) >= Rs then
                     grid[r, c] != R
                 else
@@ -110,13 +110,13 @@ constraint
 constraint
     forall (R1, R2 in region
             where R1 < R2 /\ region_size[R1] = region_size[R2]) (
-        forall (r in row, c in col) (
+        forall (r in ROW, c in COL) (
             exclude_neighbours(r, c, r + 1, c, R1, R2)
         /\  exclude_neighbours(r, c, r, c + 1, R1, R2)
         )
     );
 
-predicate exclude_neighbours(par row: r1, par col: c1,
+predicate exclude_neighbours(par ROW: r1, par COL: c1,
         par int: r2, par int: c2, par region: R1, par region: R2)  =
     if on_grid(r2, c2) then
         ( grid[r1, c1] = R1  ->  grid[r2, c2] != R2 )
@@ -129,14 +129,14 @@ predicate exclude_neighbours(par row: r1, par col: c1,
     %
 constraint
     forall (R in region) (
-        sum (r in row, c in col) (bool2int(grid[r, c] = R))  =  region_size[R]
+        sum (r in ROW, c in COL) (bool2int(grid[r, c] = R))  =  region_size[R]
     );
 
     % Any solution will do.
     %
 solve
     :: int_search(
-        [grid[r, c] | r in row, c in col],
+        [grid[r, c] | r in ROW, c in COL],
         first_fail,
         indomain_split,
         complete
@@ -145,7 +145,7 @@ solve
 
 output [
     ( if c = 1 then "\n" else "" endif ) ++ show(region_size[grid[r, c]])
-     |   r in row, c in col
+     |   r in ROW, c in COL
 ];
 
 %----------------------------------------------------------------------------%
