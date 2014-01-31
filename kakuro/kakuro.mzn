@@ -11,14 +11,14 @@ include "globals.mzn";
 
 int: h;                                 % The number of rows in the grid.
 int: w;                                 % The number of columns in the grid.
-set of int: row = 1..h;
-set of int: col = 1..w;
+set of int: ROW = 1..h;
+set of int: COL = 1..w;
 set of int: digit = 0..9;               % 0 indicates "blacked out".
 
-array [row, col] of 0..1: grid_data;    % "Blacked out" squares.  As above
+array [ROW, COL] of 0..1: grid_data;    % "Blacked out" squares.  As above
                                         % 0 indicates blacked out.
 
-array [row, col] of var digit: grid;
+array [ROW, COL] of var digit: grid;
                                         % The puzzle grid.
 int: n_h;                               % The number of horizontal clues in
                                         %   the puzzle.
@@ -43,8 +43,8 @@ int: clue_sum = 4;
 % for grid as MiniZinc data in the solution.  We cannot feed that solution
 % back into the original model if the data files refer to grid directly.
 %
-constraint forall (r in row) (
-    forall (c in col) (
+constraint forall (r in ROW) (
+    forall (c in COL) (
         if grid_data[r, c] = 0 then grid[r, c] = 0 else true endif)
     );
 
