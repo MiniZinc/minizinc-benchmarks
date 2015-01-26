@@ -109,20 +109,15 @@ constraint
 
 % Any solution will do.  Try labelling by area.
 solve
-    :: int_search( [area[r, c] | r in row, c in col],
-            input_order, indomain_min, complete )
-%     :: seq_search([
-%         int_search( [area[1, c] | c in col],
-%             input_order, indomain_min, complete ),
-%         int_search( [area[r, cols] | r in row],
-%             input_order, indomain_min, complete ),
-%         int_search( [area[rows, c] | c in col],
-%             input_order, indomain_min, complete ),
-%         int_search( [area[r, 1] | r in row],
-%             input_order, indomain_min, complete ),
-%         int_search( [area[r, c] | r in row, c in col],
-%             input_order, indomain_min, complete )
-%     ])
+    :: seq_search([
+        int_search([area[r, c] | r in row, c in col],
+            input_order, indomain_min, complete),
+        int_search(array1d(1..rows*cols, when), first_fail, indomain_min, complete)
+    ])
     satisfy;
 
-output ["what = ", show(what), "\n"];
+output [
+    "what = array2d(", show(row), ", ", show(col), ", ", show(what), ");\n",
+    "when = array2d(", show(row), ", ", show(col), ", ", show(when), ");\n",
+    "area = array2d(", show(row), ", ", show(col), ", ", show(area), ");\n"
+];
