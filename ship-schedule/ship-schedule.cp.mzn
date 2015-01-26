@@ -124,8 +124,12 @@ solve
 		int_search(TransitStartTimeSlot, input_order, indomain_min, complete),
   		int_search(ShipSails, input_order, indomain_max, complete)
   	])
-    maximize sum(ship in 1..NShips)(objective_function[ship]);    
+    maximize objective;    
    
+int: minObj = lb(sum(ship in 1..NShips)(objective_function[ship]));
+int: maxObj = ub(sum(ship in 1..NShips)(objective_function[ship]));
+var minObj..maxObj: objective = sum(ship in 1..NShips)(objective_function[ship]);
+
 int: objective_function_min = min(i in 1..NShips)(lb(ShipSails[i] * Draft_cm[i] * TonnesPerCmDraft[i]));
 int: objective_function_max = max(i in 1..NShips)(ub(ShipSails[i] * Draft_cm[i] * TonnesPerCmDraft[i]));
 array [1..NShips] of var objective_function_min..objective_function_max: objective_function = [ 
@@ -136,15 +140,19 @@ array [1..NShips] of var objective_function_min..objective_function_max: objecti
 
 %%%%%%%%%%%%%%%%%%% OUTPUT %%%%%%%%%%%%%%%%%%%
 output 
-[ "Drafts and sailing slots for each ship:\n"] ++ 
+[ "% Drafts and sailing slots for each ship:\n% "] ++ 
 [ "Ship " ++ show(i) ++ 
 	": ship sails: " ++ show(ShipSails[i] > 0) ++ 
 	", draft " ++ show(Draft_cm[i]) ++ 
 	", time " ++ show(TransitStartTimeSlot[i]) ++ 
-	", obj. fun. value " ++ show(objective_function[i]) ++ "\n" |
+	", obj. fun. value " ++ show(objective_function[i]) ++ "\n% " |
     	i in 1..NShips ] ++ 
-[ "TOTAL OBJ FUN VALUE: " ++ show(sum(ship in 1..NShips)(objective_function[ship])) ++"\n"] ++
-[ "\n" ];
+[ "TOTAL OBJ FUN VALUE: " ++ show(objective) ++"\n"] ++ 
+[
+    "TransitStartTimeSlot = ", show(TransitStartTimeSlot), ";\n",
+    "ShipSails = ", show(ShipSails), ";\n",
+    "constraint objective = ", show(objective), ";\n"
+];
 
     % Number of tugs available for this schedule
 int: NTugs;
