@@ -136,13 +136,24 @@ constraint forall(j in COLS)(
            );           
 
 
-solve :: int_search([ fill[i,j] | i in ROWS, j in COLS], 
-      		  input_order, indomain_min, complete)
-      satisfy;
+solve 
+    :: seq_search([
+        int_search([ fill[i,j] | i in ROWS, j in COLS], 
+            input_order, indomain_min, complete),
+        int_search([ board[i, j] | i in ROWS, j in COLS], 
+            first_fail, indomain_min, complete)
+    ])
+    satisfy;
 
-output [ code[fix(board[i,j])] ++ 
-		 if j == width then " " ++ show(rowsum[i]) ++ "\n"
-		 else "" endif
-	   | i in ROWS, j in COLS ]  ++
-	   [ show(colsum[j]) | j in COLS ] ++ ["\n"];
+output [ "% " ] ++ [ 
+    code[fix(board[i,j])] ++ 
+    if j == width then " " ++ show(rowsum[i]) ++ "\n% "
+    else "" endif
+| i in ROWS, j in COLS ] ++ [ 
+    show(colsum[j]) 
+| j in COLS ] ++ [
+    "\n"
+] ++ [
+    "board = array2d(", show(XROWS), ", ", show(XCOLS), ", ", show(board), ");\n"
+];
 	   
