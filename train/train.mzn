@@ -15,7 +15,7 @@
 %----------------------------------------------------------------------------%
 %----------------------------------------------------------------------------%
 
-include "globals.mzn";
+%include "globals.mzn";
 
 int : n;
 int : m;
@@ -143,18 +143,34 @@ constraint forall (i in 1..n, j in 1..m)
 array [1..n, 1..m] of var 0..maxTime : dwell;
 constraint forall (i in 1..n, j in 1..m) (dwell[i,j] = departure[i,j] - arrival[i,j]);
 
-int: cost_min = lb(sum(i in 1..n)(load[i,m]*arrival[i,m]));
-int: cost_max = ub(sum(i in 1..n)(load[i,m]*arrival[i,m]));
-var cost_min..cost_max: cost = sum(i in 1..n)(load[i,m]*arrival[i,m]);
+int: objective_min = lb(sum(i in 1..n)(load[i,m]*arrival[i,m]));
+int: objective_max = ub(sum(i in 1..n)(load[i,m]*arrival[i,m]));
+var objective_min..objective_max: objective = sum(i in 1..n)(load[i,m]*arrival[i,m]);
 
-solve :: int_search(
-                    [arrival[i,m-j+1] | j in 1..m, i in 1..n] ++
-                    [departure[i,m-j+1] | j in 1..m, i in 1..n] ++
-                    [sigmaUpper[i,m-j+1] | j in 1..m, i in 1..n] ++
-                    [sigmaLower[i,m-j+1] | j in 1..m, i in 1..n]
-                    , input_order, indomain_min, complete)
-  minimize cost;
+solve 
+    :: seq_search([
+        int_search(
+            [arrival[i,m-j+1] | j in 1..m, i in 1..n] ++
+            [departure[i,m-j+1] | j in 1..m, i in 1..n] ++
+            [sigmaUpper[i,m-j+1] | j in 1..m, i in 1..n] ++
+            [sigmaLower[i,m-j+1] | j in 1..m, i in 1..n],
+            input_order, indomain_min, complete
+        ),
+        int_search(
+            array1d(1..n*m, collect) ++ array1d(1..n*m, load) ++ array1d(1..n*m, dwell),
+            first_fail, indomain_min, complete
+        )
+    ])
+    minimize objective;
 
-output 
- [show(cost)]
+output [
+    "arrival = array2d(1..", show(n), ", 1..", show(m), ", ", show(arrival), ");\n",
+    "departure = array2d(1..", show(n), ", 1..", show(m), ", ", show(departure), ");\n",
+    "sigmaLower = array2d(1..", show(n), ", 1..", show(m), ", ", show(sigmaLower), ");\n",
+    "sigmaUpper = array2d(1..", show(n), ", 1..", show(m), ", ", show(sigmaUpper), ");\n",
+    "collect = array2d(1..", show(n), ", 1..", show(m), ", ", show(collect), ");\n",
+    "load = array2d(1..", show(n), ", 1..", show(m), ", ", show(load), ");\n",
+    "dwell = array2d(1..", show(n), ", 1..", show(m), ", ", show(dwell), ");\n",
+    "constraint objective = ", show(objective), ";\n"
+];
 
