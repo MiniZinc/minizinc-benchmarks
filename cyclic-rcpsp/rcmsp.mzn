@@ -25,7 +25,7 @@
 % 
 %------------------------------------------------------------------------------%
 
-include "globals.mzn";
+include "cumulative.mzn";
 
 %------------------------------------------------------------------------------%
 % Model parameters.
@@ -165,8 +165,8 @@ output [
    "% rcmsp\n",
    "s = " ++ show( s ) ++ ";\n",
    "k = " ++ show( k ) ++ ";\n",
-   "C_max = " ++ show( makespan ) ++ ";\n",
-   "objective = " ++ show( objective ) ++ ";\n"
+   "constraint makespan = " ++ show( makespan ) ++ ";\n",
+   "constraint objective = " ++ show( objective ) ++ ";\n"
 ];
 
 %-----------------------------------------------------------------------------%
