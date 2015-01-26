@@ -63,4 +63,10 @@ solve
 	])
 	maximize objective;
 
-output ["Mario earned " ++ show(objective) ++ "gold coins with " ++ show(fuel) ++ "L of fuel" ];
+output [
+    "%% Mario earned " ++ show(objective) ++ " gold coins with " ++ show(fuel) ++ "L of fuel\n" 
+] ++ [
+    "succ = ", show(succ), ";\n",
+    "objective = ", show(objective), ";\n"
+];
+
