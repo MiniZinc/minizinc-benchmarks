@@ -71,7 +71,7 @@ predicate upper_bound_on_increments(var int: N_b, array[int] of var int: L) =
 %-----------------------------------------------------------------------------%
 % Objective
 %-----------------------------------------------------------------------------%
-var int: obj = (ub(K) + 1) * Beamtime + K;
+var int: obj = (m*n + 1) * Beamtime + K;
 solve 
     :: int_search(
 		[Beamtime] ++ N ++
