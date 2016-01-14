@@ -75,8 +75,6 @@ array [1..flatsize+6] of var 1..5: longflatroster ;
 
 constraint objective >= minobj;
 
-constraint
-    forall (d in 1..6) (longflatroster[flatsize+d] = flatroster[d]); 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hard Constraints
@@ -107,6 +105,12 @@ constraint
 
 constraint 
     forall (w in 1..weeks, d in 1..7) (flatroster[7*(w-1)+d] = roster[w,d]) ; %:: defines_var(roster) ;
+
+constraint
+    forall (d in 1..flatsize) (longflatroster[d] = flatroster[d]) ;
+
+constraint
+    forall (d in 1..6) (longflatroster[flatsize+d] = flatroster[d]) ;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,13 +169,13 @@ constraint
 % Too Much Rest Constraint
 %
 % Description:
-% Ensure that there is no sequence of three Rest days in a row
+% Ensure that there is no sequence of more than three Rest days in a row
 %
 % Example violation:
-%       roster = [1,2,4,2,2,2,2,  
+%       roster = [1,1,4,2,2,2,2,
 %                 3,3,4,3,3,1,1]
-% This solution has three Rest days in a row, starting on the Saturday of
-% week 2 and ending on the Monday of week 1
+% This solution has four Rest days in a row, starting on the Saturday of
+% week 2 and ending on the Tuesday of week 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 constraint
