@@ -72,7 +72,7 @@ predicate union_circuit( array[int] of var int: x,
 	  %% Must be hamiltonian curcuit
 	  circuit(c) /\
 	  %% Symmetry breaking
-	  c[1] == x[1]
+	  symmetry_breaking_constraint(c[1] == x[1])
 ;
 
 
@@ -97,8 +97,9 @@ int: m = n-1;
 array[1..m, 1..n] of var 1..n: p;
 
 % Objective for ordering of solutions
-var int: objective;
-
+int: obj_lb = sum(i in 1..n)(i);
+int: obj_ub = sum(i in 1..n)(i * n);
+var obj_lb..obj_ub: objective = sum(i in 1..n) (i * p[1, i]);
 
 %------------------------------------------------------------------------%
 % Constraints
@@ -146,28 +147,28 @@ constraint
 % Symmetry breaking for order of factors
 constraint
 	forall(row in 1..m-1) (
-	let {
-		array[1..n] of var int: ra = [p[row  , i] | i in 1..n],
-		array[1..n] of var int: rb = [p[row+1, i] | i in 1..n]
-	} in
-		lex_less(ra, rb)
+        symmetry_breaking_constraint(
+	        let {
+	        	array[1..n] of var int: ra = [p[row  , i] | i in 1..n],
+	        	array[1..n] of var int: rb = [p[row+1, i] | i in 1..n]
+	        } in
+	        	lex_less(ra, rb)
+        )
 	);
-
-% Compute sum of first row with index as coefficient
-constraint
-	(sum(i in 1..n) (i * p[1, i])) == objective;
 
 %------------------------------------------------------------------------%
 % Search
 %------------------------------------------------------------------------%
 
-solve :: int_search([p[i,j] | i in 1..m, j in 1..n], 
-      	            input_order, 
-		    indomain_min, 
-		    complete) 
-minimize objective;
+solve 
+    :: int_search(
+            [p[i,j] | i in 1..m, j in 1..n], 
+            input_order, indomain_min, complete
+    ) 
+    minimize objective;
 
 output [
-    "p = ", show(p), "\n",
-    "objective = ", show(objective), "\n"
+    "p = \(p);\n",
+    "objective = \(objective);\n"
 ];
+

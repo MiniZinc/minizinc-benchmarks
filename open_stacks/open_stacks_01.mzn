@@ -22,38 +22,36 @@ array[Prods] of var Prods: s; % schedule of products
 
 %-- Auxilliary variables ------------------------------------------------------
 
-array[Custs,0..p] of var int: o ; % orders filled after time t
-%% array[Prods] of var int: open; 
-var int: objective;
+array[Custs,0..p] of var 0..max(norders): o ; % orders filled after time t
+var 0..c: objective;
 
 %-- Constraints ---------------------------------------------------------------
 
 constraint alldifferent(s); % each product scheduled once
 
-constraint
-        forall (i in Custs)(o[i,0] = 0) /\   % no orders at time 0
-	forall(t in 1..p, i in Custs)(
-               o[i,t] = o[i,t-1] + orders[i,s[t]] );
+constraint forall (i in Custs)(o[i,0] = 0);   % no orders at time 0
+	
+constraint forall(t in 1..p, i in Custs)(o[i,t] = o[i,t-1] + orders[i,s[t]]);
 
-%% constraint objective = max(j in Prods)(open[j]);
-%% constraint forall(j in Prods)(
-%% 	   	     open[j] == sum(i in Custs)(
-%% 		     	   bool2int( o[i,j-1] < norders[i] /\ o[i,j] > 0 )
-%% 		     )
-%% 	       );
-constraint objective = max(j in Prods)(
-  	                   sum(i in Custs)(
-		     	       bool2int( o[i,j-1] < norders[i] /\ o[i,j] > 0 )
-		           )
-	               );
+constraint objective = 
+    max(j in Prods)(
+  	    sum(i in Custs)(
+		    bool2int( o[i,j-1] < norders[i] /\ o[i,j] > 0 )
+	    )
+    );
 
 %-- Solving objective and solution output -------------------------------------
 
 solve ::
-      int_search(s, input_order, indomain, complete)
+      int_search(s, input_order, indomain_min, complete)
       minimize objective;
 
 output [
-    "s = ", show(s), "\n",
-    "objective = ", show(objective), "\n"
+    "s = \(s);\n",
+    "objective = \(objective);\n",
+] ++ [
+    if t = 1 then "% " else "" endif ++
+    "\(o[i,t])" ++ 
+    if t = p then "\n" else " " endif
+| i in Custs, t in 1..p
 ];

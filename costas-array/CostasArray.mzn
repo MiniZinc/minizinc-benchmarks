@@ -1,3 +1,4 @@
+%------------------------------------------------------------------------------%
 % new zinc file CostasArray.mzn
 % 
 % The Costas Array problem: costas.mod
@@ -13,40 +14,47 @@
 % Barry O'Sullivan -- b.osullivan@cs.ucc.ie
 % Cork Constraint Computation Centre, Cork, Ireland
 % September 2009
+%------------------------------------------------------------------------------%
 
-include "all_different.mzn";
+include "alldifferent.mzn";
 
-% // Size of Costas Array
-% int n << "Order of Costas Array: ";
-int: n;
+%------------------------------------------------------------------------------%
+% Parameters
 
-% struct pair { int i; int j; };
-% setof(pair) pairs = { <i,j> | ordered i,j in 1..n };
+int: n; % Size of Costas array
 
-% var int costas[1..n] in 1..n;
-% var int differences[pairs] in -n+1..n-1;
+%------------------------------------------------------------------------------%
+% Variables
 
 array[1..n] of var 1..n: costas;
 array[1..n,1..n] of var -n+1..n-1: differences;
 
-constraint all_different( costas );
+%------------------------------------------------------------------------------%
+% Constraints
+
+constraint 
+    alldifferent(costas);
 
 % // How do the positions in the Costas array relate to the elements of the distance triangle.
 % forall( ordered i,j in 1..n ) 
 %    differences[<i,j>] = costas[j] - costas[j-i];
 
-constraint forall( i,j in 1..n)(
-	if i < j then
-		differences[i,j] = costas[j] - costas[j-i]
-	else    differences[i,j] = 0 endif % defensive modelling
+constraint 
+    forall(i,j in 1..n)(
+	    if i < j then
+		    differences[i,j] = costas[j] - costas[j-i]
+	    else    
+            differences[i,j] = 0 
+        endif % defensive modelling
 	);
 	
 
 % // All entries in a particular row of the difference triangle must be distint.
 % forall( i in 1..n-1 ) 
 %    alldifferent( all (j in 1..n: j>i) differences[<i,j>] );
-constraint forall( i in 1..n-1 )(
-	all_different( j in 1..n where j > i )(differences[i,j])
+constraint 
+    forall(i in 1..n-1)(
+	    alldifferent(j in 1..n where i < j)(differences[i,j])
 	);
 
 
@@ -54,24 +62,43 @@ constraint forall( i in 1..n-1 )(
 
 % // Symmetry Breaking
 % costas[1] < costas[n];
-constraint costas[1] < costas[n];
+constraint 
+    symmetry_breaking_constraint(
+        if 1 < n then costas[1] < costas[n] else true endif
+    );
 
 
 % // We can never place a 'token' in the same row as any other.
 % forall (p in pairs) differences[p] <> 0;
-constraint forall(i,j in 1..n where i < j)(
-	differences[i,j] != 0
+constraint 
+    redundant_constraint(
+        forall(i,j in 1..n where i < j)(
+	        differences[i,j] != 0
+        )
 	);
 
 
 %forall ( ordered k,l in 3..n )
 %    differences[<k-2,l-1>] + differences[<k,l>] = differences[<k-1,l-1>] + differences[<k-1,l>];
-constraint forall(k,l in 3..n where k < l)(
-	 differences[k-2,l-1] + differences[k,l] = 
-	 differences[k-1,l-1] + differences[k-1,l]
-	 );
+constraint 
+    redundant_constraint(
+        forall(k,l in 3..n where k < l)(
+	        differences[k-2,l-1] + differences[k,l] = 
+	        differences[k-1,l-1] + differences[k-1,l]
+        )
+    );
 
-solve :: int_search(costas, input_order, indomain_min, complete) satisfy;
+%------------------------------------------------------------------------------%
+% Search and solve item
+
+solve 
+    :: int_search(costas, input_order, indomain_min, complete) 
+    satisfy;
+
+%------------------------------------------------------------------------------%
+% Output item
 
 output ["costas = ",show(costas),";\n"];
+
+%------------------------------------------------------------------------------%
 

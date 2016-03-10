@@ -25,7 +25,7 @@
 % This MiniZinc model was created by Simon de Givry, degivry@toulouse.inra.fr
 %
 
-include "globals.mzn"; 
+include "table.mzn"; 
 
 int: num_variables;
 

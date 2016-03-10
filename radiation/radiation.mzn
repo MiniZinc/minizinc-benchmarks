@@ -1,8 +1,6 @@
 %-----------------------------------------------------------------------------%
-% Radiation problem, Minizinc version
+% Radiation problem, MiniZinc 2.0.4 version
 %
-% Sebastian Brand
-% 05/2007
 %-----------------------------------------------------------------------------%
 
 %-----------------------------------------------------------------------------%
@@ -71,22 +69,26 @@ predicate upper_bound_on_increments(var int: N_b, array[int] of var int: L) =
 %-----------------------------------------------------------------------------%
 % Objective
 %-----------------------------------------------------------------------------%
-var int: obj = (m*n + 1) * Beamtime + K;
+int: obj_min = lb((m*n + 1) * Beamtime + K);
+int: obj_max = ub((m*n + 1) * Beamtime + K);
+var obj_min..obj_max: objective = (m*n + 1) * Beamtime + K;
+
 solve 
     :: int_search(
 		[Beamtime] ++ N ++
-	    [Q[i,j,b] | i in Rows, j in Columns, b in BTimes ],
+	    	[Q[i,j,b] | i in Rows, j in Columns, b in BTimes ],
 		input_order, indomain_split, complete)
-	minimize obj;
+	minimize objective;
 		% really: (Beamtime, K),  i.e. in lexicographic order
 
 %-----------------------------------------------------------------------------%
 
 output [
-    "Beamtime = ", show(Beamtime), "\n",
-    "K = ", show(K), "\n",
-    "N = ", show(N), "\n",
-    "Q = ", show(Q), "\n"
+	"objective = \(objective);\n",
+    "Beamtime = \(Beamtime);\n",
+    "K = \(K);\n",
+    "N = \(N);\n",
+    "Q = array3d(\(Rows), \(Columns), \(BTimes), \(Q));\n"
 ];
 
 %-----------------------------------------------------------------------------%

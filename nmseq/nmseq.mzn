@@ -27,7 +27,9 @@ constraint
 solve :: int_search(s, input_order, indomain_min, complete)
 	satisfy;
 
-output [show(s), "\n"];
+output
+    ["n = ", show(n), ";\n"] ++
+    ["s = ", show(s), ";\n"];
 
 %------------------------------------------------------------------------%
 %------------------------------------------------------------------------%

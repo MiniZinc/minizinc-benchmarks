@@ -58,7 +58,7 @@ int:Joker=5;
 var 0..flatsize: evemorn ;
 var 0..flatsize: isolated ;
 
-var 0..2*flatsize: objective = evemorn + isolated;
+var minobj..2*flatsize: objective = evemorn + isolated;
 
 % The roster is an array of decision variables: each variable has domain 1..5
 % representing possible shifts Rest,Morn,Day,Eve or Joker roster is a
@@ -73,8 +73,8 @@ array [1..flatsize+6] of var 1..5: longflatroster ;
 % Constraints
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-constraint objective >= minobj;
-
+constraint
+    forall (d in 1..6) (longflatroster[flatsize+d] = flatroster[d]); 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hard Constraints
@@ -105,12 +105,6 @@ constraint objective >= minobj;
 
 constraint 
     forall (w in 1..weeks, d in 1..7) (flatroster[7*(w-1)+d] = roster[w,d]) ; %:: defines_var(roster) ;
-
-constraint
-    forall (d in 1..flatsize) (longflatroster[d] = flatroster[d]) ;
-
-constraint
-    forall (d in 1..6) (longflatroster[flatsize+d] = flatroster[d]) ;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -169,13 +163,13 @@ constraint
 % Too Much Rest Constraint
 %
 % Description:
-% Ensure that there is no sequence of more than three Rest days in a row
+% Ensure that there is no sequence of three Rest days in a row
 %
 % Example violation:
-%       roster = [1,1,4,2,2,2,2,
+%       roster = [1,2,4,2,2,2,2,  
 %                 3,3,4,3,3,1,1]
-% This solution has four Rest days in a row, starting on the Saturday of
-% week 2 and ending on the Tuesday of week 1
+% This solution has three Rest days in a row, starting on the Saturday of
+% week 2 and ending on the Monday of week 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 constraint
@@ -265,8 +259,18 @@ solve
 % one row for each week.
 % The number of isolated rests and morning after evening violations is also shown.
 
-output ["Roster: \n"] 
-       ++ [show([roster[i,j]|j in 1..7])++"\n"|i in 1..weeks] 
-       ++ ["Isolated Rests: " ++ show(isolated) ++ "\n"] 
-       ++ ["Morning after evening: " ++ show(evemorn) ++ "\n"];
+output [
+    "roster = array2d(1..\(weeks), 1..7, \(roster));\n",
+    "evemorn = \(evemorn);\n",
+    "isolated = \(isolated);\n",
+    "objective = \(objective);\n"
+] ++ [
+    "% Roster: \n",
+    "% Week:  M T W T F S S\n"
+] ++ [
+    if j = 1 then "%    \(i):  " else "" endif ++
+    "\(roster[i,j])" ++
+    if j = 7 then "\n" else " " endif
+| i in 1..weeks, j in 1..7
+];
   
