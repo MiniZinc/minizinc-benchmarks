@@ -181,9 +181,10 @@ constraint
 % Model improvements.
 %
     % Symmetry breaking rules
-constraint
+constraint symmetry_breaking_constraint(
         2 * X[n] <= (Width  - n) 
-    /\  2 * Y[n] <= (Height - n);
+    /\  2 * Y[n] <= (Height - n)
+);
 
     % Empty Strip Dominance Criterion 
     % NOTE: Here only an adaption of it from H. Simonis, B. O'Sullivan, "Search
@@ -198,7 +199,7 @@ array [1..45] of int: fgaps = [0, 2, 3, 2, 3, 3, 3, 3, 4, 4,
                                9, 9, 9, 9, 10];
 
     % Forbidden gaps for the x-origin
-constraint
+constraint redundant_constraint(
     forall( i in Squares where consider_square(i) ) (
         if 2 * fgaps[i] + 2 <= max_width - i then
             let {
@@ -219,10 +220,11 @@ constraint
             /\  ( not( b_left ) -> X[i] >= Width - i )
             )
         endif
-    );
+    )
+);
 
     % Forbidden gaps for the y-origin
-constraint
+constraint redundant_constraint(
     forall( i in Squares where consider_square(i) ) (
         if 2 * fgaps[i] + 2 <= max_height - i then
             let {
@@ -243,7 +245,8 @@ constraint
             /\  ( not( b_left ) -> Y[i] >= Height - i )
             )
         endif
-    );
+    )
+);
 
 %-----------------------------------------------------------------------------%
 % Objective.

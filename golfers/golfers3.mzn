@@ -42,10 +42,11 @@ constraint
 
     % Symmetry breaking.
     %
-% constraint
+% constraint symmetry_breaking_constraint(
 %     forall (r in rounds, g in groups where g < n_groups) (
 %         round_group_golfers[r, g] < round_group_golfers[r, g + 1]
-%     );
+%     )
+%);
 
     % Each pair may play together at most once.
     %

@@ -283,8 +283,9 @@ constraint
 % We can simply choose week1 to be any week (since the roster is cyclic).
 % Let's arbitrarily choose a week which starts with a rest day
 % This avoids searching among similar rosters.
-constraint
-    roster[1,1] = Rest ;
+constraint symmetry_breaking_constraint(
+    roster[1,1] = Rest
+);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

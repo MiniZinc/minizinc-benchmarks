@@ -417,7 +417,7 @@ constraint redundant_constraint(
 );
 
 % Ad hoc: detect symmetry among location values 1..31
-constraint redundant_constraint (
+constraint symmetry_breaking_constraint (
   forall(i in index_set_1of2(funLocDomain))(
     let {int: lo = funLocDomain[i,2],
          int: hi = funLocDomain[i,3]} in

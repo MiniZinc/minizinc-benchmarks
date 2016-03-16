@@ -44,15 +44,19 @@ constraint
 
     % Break row symmetry in the incidence matrix.
     %
-constraint forall(i in rows diff {max(rows)})(
+constraint symmetry_breaking_constraint(
+    forall(i in rows diff {max(rows)})(
         lex_lesseq([m[i, j] | j in cols], [m[i+1, j] | j in cols])
-    );
+    )
+);
 
     % Break column symmetry in the incidence matrix.
     %
-constraint forall(j in cols diff {max(cols)})(
+constraint symmetry_breaking_constraint(
+    forall(j in cols diff {max(cols)})(
         lex_lesseq([m[i, j] | i in rows], [m[i, j+1] | i in rows])
-    );
+    )
+);
 
 solve :: bool_search([m[i, j] | i in rows, j in cols],
     input_order, indomain_min, complete)
