@@ -90,7 +90,7 @@ constraint
 
     % Redundant non-overlapping constraints for the workers
     %
-constraint
+constraint redundant_constraint(
     forall ( j in Workers )
     (
         let {
@@ -110,11 +110,12 @@ constraint
                 true
             endif
         )
-    );
+    )
+);
 
     % Redundant non-overlapping constraints
     %
-constraint
+constraint redundant_constraint(
 	forall ( 
 		i, j in Tasks
 	where 
@@ -128,11 +129,12 @@ constraint
         else
             true
         endif
-	);
+	)
+);
 
-    % Redudant cumulative resource constraints
+    % Redundant cumulative resource constraints
     %
-constraint
+constraint redundant_constraint(
     forall ( k in Skills )
     (
         let { 
@@ -150,7 +152,8 @@ constraint
                 true
             endif
         )
-    );
+    )
+);
 
     % Makespan constraints
     %

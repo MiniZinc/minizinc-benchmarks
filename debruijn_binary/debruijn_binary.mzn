@@ -72,7 +72,7 @@ constraint alldifferent(x) ;
 
 % Symmetry breaking: the minimum element should be the first element.
 %
-constraint minimum(x[1], x);
+constraint symmetry_breaking_constraint(minimum(x[1], x));
 
 % Converts x <-> binary (for all_different(x) )
 %

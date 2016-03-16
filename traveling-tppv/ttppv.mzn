@@ -50,7 +50,7 @@ constraint forall (i in Teams, k in Rounds) (opponent[opponent[i,k],k] = i);
 constraint forall (i in Teams) (alldifferent([opponent[i,k] | k in Rounds]));
 
 % for each round k, all opponents are different (implied constraint)
-constraint forall (k in Rounds) (alldifferent([opponent[i,k] | i in Teams]));
+constraint redundant_constraint(forall (k in Rounds) (alldifferent([opponent[i,k] | i in Teams])));
 
 % for each team i, there can be at most 3 consecutive home games and at most 3 consecutive away games
 int: nbStates = 7;
@@ -66,7 +66,7 @@ array[States,1..2] of int: delta =
 constraint forall (i in Teams) (regular( [venue[i,k] | k in Rounds], nbStates, 2, delta, 1, States));
 
 % symmetry breaking: distances are symmetric so reversing the rounds yields a schedule of same cost
-constraint (opponent[1,1] < opponent[1,nbRounds]);
+constraint symmetry_breaking_constraint(opponent[1,1] < opponent[1,nbRounds]);
 
 % define travel variables wrt venues of current- and next-round games
 constraint forall (i in Teams) (

@@ -51,7 +51,7 @@ predicate ghoulomb(array[int] of var int: mark,
     /\  forall ( i in 1..m-1) ( mark[i] < mark[i+1] )
     /\  distinct(differences) :: bounds
         % Symmetry breaking
-    /\  differences[1] < differences[(m*(m-1)) div 2]
+    /\  symmetry_breaking_constraint(differences[1] < differences[(m*(m-1)) div 2])
     );
 
 

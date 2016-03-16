@@ -34,9 +34,11 @@ constraint forall(p1, p2 in PIZZA)((how[p1] < how[p2] /\ how[p1] = -how[p2])
 
 
 % symmetry breaking
-%constraint forall(v1, v2 in VOUCHER where v1 < v2 /\ buy[v1] = buy[v2] /\ free[v1] = free[v2])
+%constraint symmetry_breaking_constraint(
+%           forall(v1, v2 in VOUCHER where v1 < v2 /\ buy[v1] = buy[v2] /\ free[v1] = free[v2])
 %                 (forall(p1, p2 in PIZZA where price[p1] < price[p2])
-%                        (how[p1] = -v2 -> how[p2] != -v1));
+%                        (how[p1] = -v2 -> how[p2] != -v1))
+%);
 
                   
 

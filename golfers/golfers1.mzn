@@ -35,13 +35,14 @@ constraint
 
     % Break some symmetry by strictly ordering each group in each round.
     %
-constraint
+constraint symmetry_breaking_constraint(
     forall (r in rounds, p in places) (
         if p mod n_per_group != 0
         then round_place_golfer[r, p] < round_place_golfer[r, p + 1]
         else true
         endif
-    );
+    )
+);
 
     % Each pair can play together at most once.
     %

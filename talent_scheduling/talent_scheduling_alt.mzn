@@ -70,13 +70,18 @@ constraint forall(j in Actors)(
 %-- Redundant Constraints -----------------------------------------------------
 
 %% implied constraint from Barbara Smith: cost on waiting time
-constraint forall(j in Actors)(
+constraint
+    redundant_constraint(
+           forall(j in Actors)(
 	   	  wait[j] >= lastSlot[j] - firstSlot[j] - 
 		  	     card({ i | i in Scenes where ia[j,i] == 1 })
-		  );
+		  )
+    );
 
 % implied constraints on ordering of scenes
-constraint forall(i,j in Scenes where a[i] superset a[j])(
+constraint
+    redundant_constraint(
+           forall(i,j in Scenes where a[i] superset a[j])(
 	   let {
 	         set of Actors: diffn = a[i] diff a[j]
 	   } in 
@@ -91,7 +96,8 @@ constraint forall(i,j in Scenes where a[i] superset a[j])(
 	     else
 		true
 	     endif endif
-	  );
+	  )
+    );
 
 %-- calculating the objective function
 
@@ -103,7 +109,7 @@ constraint cost = sum(j in Actors)(
                   );   
 
 %-- symmetry breaking constraint
-constraint s[1] < s[numScenes];
+constraint symmetry_breaking_constraint(s[1] < s[numScenes]);
 
 %-- Solving objective and solution output -------------------------------------
 

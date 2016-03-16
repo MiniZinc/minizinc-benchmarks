@@ -51,7 +51,7 @@ constraint
 
 % Symmetry constraints.
 % Variations with the same demand are symmetric.
-constraint
+constraint symmetry_breaking_constraint(
 	forall(i in 1..n-1) (
 		if d[i] == d[i+1] then
 			lex_lesseq([p[i,  j] | j in 1..t],
@@ -59,10 +59,11 @@ constraint
 		else
 			true
 		endif
-	);
+	)
+);
 
 % pseudo symmetry
-constraint
+constraint symmetry_breaking_constraint(
 	forall(i in 1..n-1) (
 		if d[i] < d[i+1] then
 		       sum (j in 1..t) (p[i,j]*R[j])
@@ -70,7 +71,8 @@ constraint
 		else
 			true
 		endif
-	);
+	)
+);
 
 % implied constraints on the surplus
 
@@ -79,32 +81,37 @@ constraint
 % sum(R[i]) constraint would produce the same amount of propagation
 
 % Set up surplus, which is bounded as production is bounded.
-constraint
-	Surplus = Production*S - sum(i in 1..n)(d[i]);
+constraint redundant_constraint(
+	Surplus = Production*S - sum(i in 1..n)(d[i])
+);
 
 % The surplus of each variation is also limited by the surplus.
-constraint
+constraint redundant_constraint(
 	forall(k in 1..n)
-		 (sum(j in 1..t)(p[k,j]*R[j]-d[k]) <= Surplus);
+		 (sum(j in 1..t)(p[k,j]*R[j]-d[k]) <= Surplus)
+);
 
 % The surplus of the first k variations is limited by the surplus.
-constraint
+constraint redundant_constraint(
 	forall(k in 2..n-1)
-		 (sum(j in 1..t, m in 1..k)( p[m,j]*R[j]-d[m] ) <= Surplus);
+		 (sum(j in 1..t, m in 1..k)( p[m,j]*R[j]-d[m] ) <= Surplus)
+);
 
 % Implied constraints on the run length.
-constraint
+constraint redundant_constraint(
 	if t=2 then (
 		R[1] <= Production div 2
 	/\	R[2] >= Production div 2
-	) else true endif;
+	) else true endif
+);
 
-constraint
+constraint redundant_constraint(
 	if t=3 then (
 		R[1] <= Production div 3
 	/\	R[2] <= Production div 2
 	/\	R[3] >= Production div 3
-	) else true endif;
+	) else true endif
+);
 
 % Minimize the production.
 solve :: int_search(array1d(1..n*t,p) ++ R, input_order, indomain_min, complete)
