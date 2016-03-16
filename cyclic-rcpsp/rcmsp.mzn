@@ -97,14 +97,15 @@ constraint
 
     % Redundant non-overlapping constraints
     %
-constraint
+constraint redundant_constraint(
     forall(i, j in Tasks where i < j)(
         if exists(r in Res)(rreq[i, r] + rreq[j, r] > rcap[r]) then
 		    s[i] + d[i] <= s[j]	 \/  s[j] + d[j] <= s[i] 
         else
             true
         endif
-    );
+    )
+);
 
     % Cumulative resource constraints
     %
@@ -140,8 +141,9 @@ constraint
 
     % Symmetry breaking constraint
     %
-constraint
-    s[1] = 0 /\ k[1] = 0;
+constraint symmetry_breaking_constraint(
+    s[1] = 0 /\ k[1] = 0
+);
 
 %-----------------------------------------------------------------------------%
 % Objective.

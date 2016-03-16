@@ -55,13 +55,14 @@ constraint % closed on positives: an Item is in, iff all Trans_pos where the Ite
     );
 
 % Canonical form (breaking symmetry)
-constraint % lexicographic ordering of the trans
+constraint symmetry_breaking_constraint(% lexicographic ordering of the trans
     forall(d in 1..K-1) (
         lex_less([TransP[d,t]|t in 1..NrT_pos],
                  [TransP[d+1,t]|t in 1..NrT_pos])
     /\  lex_less([TransN[d,t]|t in 1..NrT_neg],
                  [TransN[d+1,t]|t in 1..NrT_neg])
-    );
+    )
+);
 
 % Joint coverage
 constraint % covered when OR of any pattern

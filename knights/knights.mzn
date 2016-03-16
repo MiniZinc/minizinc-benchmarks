@@ -19,10 +19,10 @@ constraint alldifferent([n * r[i] + c[i] | i in 1..m]);
 
     % Break some symmetries by forcing the first moves.
     %
-constraint r[1] = 1;
-constraint c[1] = 1;
-constraint r[2] = 2;
-constraint c[2] = 3;
+constraint symmetry_breaking_constraint(r[1] = 1);
+constraint symmetry_breaking_constraint(c[1] = 1);
+constraint symmetry_breaking_constraint(r[2] = 2);
+constraint symmetry_breaking_constraint(c[2] = 3);
 
     % There is only one place for the last move.
     %

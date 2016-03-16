@@ -57,13 +57,15 @@ predicate prerequisite(courses: a, courses: b) =
 
 % add some redundant linear constraints
 
-constraint forall(p in 0..n_periods-1) (
+constraint redundant_constraint(
+    forall(p in 0..n_periods-1) (
     let {
 		var 0..max_course_load: l = sum(c in courses) (bool2int(course_period[c] > p) * course_load[c])
 	} in 
         l >= (n_periods-p) * load_per_period_lb /\
         l <= (n_periods-p) * objective
-    );
+    )
+);
 
 solve :: seq_search([
       int_search([x[i,j] | i in periods, j in courses], input_order, indomain_max, complete),

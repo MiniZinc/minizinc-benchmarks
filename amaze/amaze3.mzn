@@ -86,9 +86,9 @@ constraint
         endif
     );
 
-    % Some redudant constraints
+    % Some redundant constraints
     %
-constraint
+constraint redundant_constraint(
     forall(i in Pairs)(
         let {
             int: x1 = min(end_points_start_x[i], end_points_end_x[i]),
@@ -111,7 +111,8 @@ constraint
                 true
             endif
         )
-    );
+    )
+);
 
 %------------------------------------------------------------------------------%
 % Search

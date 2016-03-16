@@ -66,10 +66,11 @@ constraint alldifferent(line_o);
 constraint forall(i in R, j in Ii[i]) (line_i[j] < line_o[i]);
 
 %symmetry breaking of the program
-constraint 
+constraint symmetry_breaking_constraint(
 	forall(i in M..M+Np-2) (line_o[i]   < line_o[i+1]) % all plus are equivalent
  /\ forall(i in M+Np..M+N-2)(line_o[i] < line_o[i+1])  % all minus are equivalent
- /\ forall(i in M..M+Np-1)(line_i[min(Ii[i])] <= line_i[min(Ii[i])+1]); % plus is commutative
+ /\ forall(i in M..M+Np-1)(line_i[min(Ii[i])] <= line_i[min(Ii[i])+1]) % plus is commutative
+);
 
 
 

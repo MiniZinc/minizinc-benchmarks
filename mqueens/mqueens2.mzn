@@ -69,7 +69,7 @@ constraint forall(i in 1..n)(
 
 constraint objective = sum(i in 1..n)(bool2int(q[i] > 0));
 
-constraint rot_sqr_sym(f);  
+constraint symmetry_breaking_constraint(rot_sqr_sym(f));
 
 %------------------------------------------------------------------------------%
 % Search

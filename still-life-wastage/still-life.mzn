@@ -72,7 +72,7 @@ constraint 4*OBJECTIVE = 2*n*n + 4*n - wastage_sum[n+1];
 
 % redundant constraints using results from Chu et al. (2012).
 
-constraint forall (i in 0..n) (wastage_sum[n+1] >= wastage_sum[i] + 2*((n-i) div 3) + n div 3);
+constraint redundant_constraint(forall (i in 0..n) (wastage_sum[n+1] >= wastage_sum[i] + 2*((n-i) div 3) + n div 3));
 
 % solve goal
 
