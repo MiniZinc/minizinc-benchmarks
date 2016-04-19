@@ -169,6 +169,9 @@ constraint
 
 constraint nvalue(nGroups, assignedGroup);
 
+constraint objective = deadLinePenalty * 100 + nGroups;
+
+constraint redundant_constraint(objective >= 0);
 
 %------------------------------------------------------------------------------%
 % Search and solve item
