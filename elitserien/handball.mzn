@@ -284,44 +284,51 @@ constraint
 %% IMPLIED CONSTRAINTS
     
 % channel contestant <---> hap (3)
-constraint
+constraint redundant_constraint(
     forall(t in teams, p in period)(
         contestant[t,p]=t <-> hap[t,p]=B
-    );
+    )
+);
 
 % exactly six aligned breaks per division (10)
-constraint
+constraint redundant_constraint(
     sum(t in north_teams )(bool2int(break[t]>0)) = 6 /\
-    sum(t in south_teams)(bool2int(break[t]>0)) = 6;
+    sum(t in south_teams)(bool2int(break[t]>0)) = 6
+);
 
 % The byes that each division has in Part~I occur in different weeks -- (11)
-% constraint
+% constraint redundant_constraint(
 %     let {array[1..14] of var 1..14: bye} in (
 %         forall(t in 1.. 7)(hap[t,bye[t]] = B) /\
 %         forall(t in 8..14)(hap[t,bye[t]-7] = B) /\
 % 	alldifferent(bye) :: domain
-%     );
+%     )
+% );
 
 % exactly two occurrences of every break period (12)
-constraint
-    global_cardinality_closed(break, [0,9,11,13,15,17,19], [2,2,2,2,2,2,2]);
+constraint redundant_constraint(
+    global_cardinality_closed(break, [0,9,11,13,15,17,19], [2,2,2,2,2,2,2])
+);
 
 %% SYMMETRY-BREAKING CONSTAINTS
 
 % SYMMETRY: global home/away (13)
-% constraint
-%     hap[1,2] = H /\ hap[2,1] = A;
+% constraint symmetry_breaking_constraint(
+%     hap[1,2] = H /\ hap[2,1] = A
+% );
 
 % SYMMETRY: North/South division (14)
-% constraint
-%     lex_greater([break[i] | i in 1..2], [break[i] | i in 8..9]);
+% constraint symmetry_breaking_constraint(
+%     lex_greater([break[i] | i in 1..2], [break[i] | i in 8..9])
+% );
 
 % SYMMETRY: fix bye period (15)
-constraint
+constraint symmetry_breaking_constraint(
     forall(t in north_teams)(
         hap[t,t] = B /\ 
         hap[t+divsize,t] = B
-    );
+    )
+);
 
 % each division must have 3 pairs of complementary schedules (16)
 % - only 1/2, 2/3, 3/4, 4/5, 5/6, 6/7 can be complementary

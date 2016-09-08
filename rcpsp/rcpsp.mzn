@@ -61,7 +61,7 @@ constraint
 
     % Redundant non-overlapping constraints
     %
-constraint
+constraint redundant_constraint(
     forall ( i, j in Tasks where i < j )
     (
         if exists(r in Res)(rr[r, i] + rr[r, j] > rc[r]) then
@@ -69,7 +69,8 @@ constraint
         else
             true
         endif
-    );
+    )
+);
 
     % Cumulative resource constraints
     %

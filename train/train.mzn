@@ -137,8 +137,11 @@ constraint forall (i in 1..n, j in 2..m)
         (((capacity-load[i,j-1] < 100) -> (collect[i,j] <= dwell[i,j]*20)) /\
          ((capacity-load[i,j-1] >= 100) -> (collect[i,j] <= dwell[i,j]*50)));
 % (Redundant for j>=2 (but necessary for j=1))
-constraint forall (i in 1..n, j in 1..m)
-        (collect[i,j] <= (departure[i,j]-arrival[i,j])*50);
+constraint forall (i in 1..n, j in 2..m)
+        (if j == 1
+         then collect[i,j] <= (departure[i,j]-arrival[i,j])*50
+         else redundant_constraint(collect[i,j] <= (departure[i,j]-arrival[i,j])*50)
+         endif);
 
 array [1..n, 1..m] of var 0..maxTime : dwell;
 constraint forall (i in 1..n, j in 1..m) (dwell[i,j] = departure[i,j] - arrival[i,j]);

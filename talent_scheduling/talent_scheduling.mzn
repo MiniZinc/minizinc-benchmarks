@@ -55,7 +55,7 @@ constraint cost = sum(i in Scenes)(
                   );   
 
 %-- symmetry breaking constraint
-constraint s[1] < s[numScenes];
+constraint symmetry_breaking_constraint(s[1] < s[numScenes]);
 
 %-- Solving objective and solution output -------------------------------------
 

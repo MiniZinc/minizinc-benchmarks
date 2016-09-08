@@ -78,7 +78,7 @@ constraint
     );
 
     % Redundant non-overlapping (dijunctive) constraints
-constraint
+constraint redundant_constraint(
     forall (i, j in Tasks where i < j) (
         if exists(res in Res where rr[res, i] + rr[res, j] > rcap[res])(true) then
                 % Activities i, and j cannot run in parallel
@@ -112,7 +112,8 @@ constraint
         else
             true
         endif
-    );
+    )
+);
 
     % Cumulative resource constraints
 constraint
