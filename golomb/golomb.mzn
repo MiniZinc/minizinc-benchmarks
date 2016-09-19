@@ -29,7 +29,7 @@ constraint forall ( i in 1..m-1 ) ( mark[i] < mark[i+1] );
 constraint alldifferent(differences);
 
     % Symmetry breaking
-constraint differences[1] < differences[(m*(m-1)) div 2];
+constraint symmetry_breaking_constraint(differences[1] < differences[(m*(m-1)) div 2]);
 
 solve :: int_search(mark, input_order, indomain, complete)
     minimize mark[m];

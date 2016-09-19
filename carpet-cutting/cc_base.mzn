@@ -191,7 +191,7 @@ constraint
     );
 
     % Symmetry breaking constraints between steps of a stair carpet
-constraint
+constraint symmetry_breaking_constraint(
     forall(i in Stairs, j1 in st_rec_ids[i] where (j1 + 1) in st_rec_ids[i])(
         let {
             int: j2 = j1 + 1
@@ -201,7 +201,8 @@ constraint
             ->  st_rec_x[j1] + st_rec_len[j1] <= st_rec_x[j2]
             )
         )
-    );
+    )
+);
 
     % Minimal steps and maximal breaks constraints
 constraint

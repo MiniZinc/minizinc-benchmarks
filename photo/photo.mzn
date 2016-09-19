@@ -46,8 +46,9 @@ constraint
   alldifferent(pos);
 
 % Break some symmetry
-constraint
-  pos[0] < pos[1];
+constraint symmetry_breaking_constraint(
+  pos[0] < pos[1]
+);
 
 solve :: int_search(pos, first_fail, indomain, complete) 
     maximize satisfies;

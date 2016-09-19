@@ -24,7 +24,7 @@ constraint
     forall(i in 1..nb, j in i+1..nb) ( card(sets[i] intersect sets[j]) <= 1 );
 
 % Symmetry breaking:
-constraint forall(i in 1..nb-1) ( sets[i] >= sets[i+1] );
+constraint symmetry_breaking_constraint(forall(i in 1..nb-1) ( sets[i] >= sets[i+1] ));
 
 solve :: set_search(sets, input_order, indomain_min, complete) satisfy;
 

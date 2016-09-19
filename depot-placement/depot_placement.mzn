@@ -148,8 +148,8 @@ constraint
 % Actually, because of the previous constraint, this is REDUNDANT for minimising
 % distance - as the data satisfies the triangle inequality
 %
-constraint alldifferent([TourALoc[N]|N in 2..ASize]) ;
-constraint alldifferent([TourBLoc[N]|N in 2..BSize]) ;
+constraint redundant_constraint(alldifferent([TourALoc[N]|N in 2..ASize])) ;
+constraint redundant_constraint(alldifferent([TourBLoc[N]|N in 2..BSize])) ;
 
 % The warehouse must be visited first
 %
@@ -158,11 +158,11 @@ constraint TourALoc[1] = AWHouse ;
 % REDUNDANT constraint - don't come back to the Warehouse until all the
 % deliveries are done!
 %
-constraint forall (N in 3..ASize) (TourALoc[N] != AWHouse) ;
+constraint redundant_constraint(forall (N in 3..ASize) (TourALoc[N] != AWHouse)) ;
 
 % REDUNDANT constraint.
 %
-constraint forall (N in 1..ASize) (TourALoc[N] != BWHouse) ;
+constraint redundant_constraint(forall (N in 1..ASize) (TourALoc[N] != BWHouse)) ;
 
 constraint TourBLoc[1] = BWHouse ;
 constraint forall (N in 3..BSize) (TourBLoc[N] != BWHouse) ;

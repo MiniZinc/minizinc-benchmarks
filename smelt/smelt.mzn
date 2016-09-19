@@ -56,7 +56,7 @@ constraint
 	);
 
 %% redundant lines constraint
-constraint cumulative(start, duration, [1| i in 1..r], nl);
+constraint redundant_constraint(cumulative(start, duration, [1| i in 1..r], nl));
 
 %% Each line only has one product at a time 
 constraint forall(i in 1..nl)(
