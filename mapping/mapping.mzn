@@ -155,12 +155,12 @@ output [
     "objective = \(objective);\n",
     "communication_cost = \(communication_cost);\n",
     "flow_processor = \(flow_processor);\n",
-    "total_flow = \(total_flow);\n",
+    "constraint total_flow = \(total_flow);\n",
     "cpu_loads = \(cpu_loads);\n",
     "inFlow = array2d(1..\(no_flows), 1..\(k), \(inFlow));\n",
     "outFlow = array2d(1..\(no_flows), 1..\(k), \(outFlow));\n",
-    "commFlow = array2d(1..\(no_flows), 1..\(k), \(commFlow));\n",
-    "flows = array2d(1..\(no_flows), 1..\(k), \(flows));\n",
-    "actor_processor = \(actor_processor);\n"
+    "commFlow = array2d(1..\(no_flows), 1..\(no_links), \(commFlow));\n",
+    "constraint flows = array2d(1..\(no_flows), 1..\(m), \(flows));\n",
+    "constraint actor_processor = \(actor_processor);\n"
 ];
 

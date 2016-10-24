@@ -34,7 +34,9 @@ array[1..numproducts] of var 0..maxprice: purchaseCost;
 % total cost (to be minimized)
 int: totalCost_min = lb(sum(travelCost) + sum(purchaseCost));
 int: totalCost_max = ub(sum(travelCost) + sum(purchaseCost));
-var totalCost_min..totalCost_max: totalCost = sum(travelCost) + sum(purchaseCost);
+var totalCost_min..totalCost_max: objective;
+
+constraint objective = sum(travelCost) + sum(purchaseCost);
 
 % travel cost depends on successor
 % travel cost has domain >= 0 so dist for chosen successor cannot be negative
@@ -62,11 +64,11 @@ constraint succ[numcities] != numcities;
 solve :: seq_search([
      int_search(succ, input_order, indomain_min, complete),
      int_search(purchaseLoc, input_order, indomain_min, complete) 
-   ]) minimize totalCost;
+   ]) minimize objective;
 
-output [ if i <= numcities 
-         then "successor of " ++ show(i) ++ ": " ++ show(succ[i]) ++ "\n" 
-         else "product " ++ show(i-numcities) ++ " bought at: " ++ 
-           show(purchaseLoc[(i-numcities)]) ++ "\n" 
-         endif
-       | i in 1..numcities+numproducts];
+output 
+[
+    "succ = \(succ);\n",
+    "purchaseLoc = \(purchaseLoc);\n",
+    "objective = \(objective);"
+];

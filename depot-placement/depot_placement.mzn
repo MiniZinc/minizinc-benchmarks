@@ -89,11 +89,11 @@ int: BSize = TourLength + 1;
 % in the order of visits.
 % Each truck can visit any location.
 %
-array[1..ASize] of var 1..TSize: TourALoc;
+array[1..ASize] of var 1..TSize: TourALoc ;
 
 % The tour for truck B.
 %
-array[1..BSize] of var 1..TSize: TourBLoc;
+array[1..BSize] of var 1..TSize: TourBLoc ;
 
 % Set the complete distance table (see the .dzn files for actua numbers).
 %
@@ -114,7 +114,7 @@ array[1..BSize] of var 0..MaxLeg: BLegDist ;
 var 0..MaxTotDist: ADist;
 var 0..MaxTotDist: BDist;
 
-var 0..MaxTotDist: MaxDist; 
+var 0..MaxTotDist: objective; 
 
 %----------------------------------------------------------------------------%
 
@@ -122,7 +122,7 @@ var 0..MaxTotDist: MaxDist;
 %
 constraint ADist = sum(ALegDist) ;
 constraint BDist = sum(BLegDist) ;
-constraint MaxDist = max(ADist,BDist) ;
+constraint objective = max(ADist,BDist) ;
 
 % The distance between the Nth and (N+1)th locations.
 %
@@ -140,33 +140,37 @@ constraint BLegDist[BSize] = AllDist[TourBLoc[BSize],TourBLoc[1]] ;
 
 % Ensure all location are visited by at least one of the tours A or B.
 %
-constraint
-    forall (C in 1..TSize) ( exists (Y in TourALoc++TourBLoc) (Y = C) );
+constraint forall (C in 1..TSize) ( exists (Y in TourALoc++TourBLoc) (Y = C) );
 
 % Constraints
 % Ensure each tour visits different locations.
-% Actually, because of the previous constraint, this is REDUNDANT for minimising
-% distance - as the data satisfies the triangle inequality
+% BEWARE that these constraint are NOT redundant with the previous one, because they 
+% exclude consecutive visits of non-warehouse locations!
 %
-constraint alldifferent([TourALoc[N]|N in 2..ASize]) ;
-constraint alldifferent([TourBLoc[N]|N in 2..BSize]) ;
+constraint alldifferent([TourALoc[N]|N in 2..ASize]);
+constraint alldifferent([TourBLoc[N]|N in 2..BSize]);
 
 % The warehouse must be visited first
 %
 constraint TourALoc[1] = AWHouse ;
+constraint TourBLoc[1] = BWHouse ;
 
-% REDUNDANT constraint - don't come back to the Warehouse until all the
+% Don't come back to the Warehouse until all the
 % deliveries are done!
 %
-constraint forall (N in 3..ASize) (TourALoc[N] != AWHouse) ;
+constraint forall (N in 3..ASize-1) (TourALoc[N] != AWHouse);
+constraint forall (N in 3..BSize-1) (TourBLoc[N] != BWHouse);
 
-% REDUNDANT constraint.
+% Symmetry breaking constraints
+% A second visit of the warehouse must be at the second position
 %
-constraint forall (N in 1..ASize) (TourALoc[N] != BWHouse) ;
+constraint symmetry_breaking_constraint( TourALoc[ASize] != AWHouse );
+constraint symmetry_breaking_constraint( TourALoc[BSize] != BWHouse );
 
-constraint TourBLoc[1] = BWHouse ;
-constraint forall (N in 3..BSize) (TourBLoc[N] != BWHouse) ;
-constraint forall (N in 1..BSize) (TourBLoc[N] != AWHouse) ;
+% Warehouses cannot be visit by different trucks
+%
+constraint forall (N in 1..ASize) (TourALoc[N] != BWHouse);
+constraint forall (N in 1..BSize) (TourBLoc[N] != AWHouse);
 
 %----------------------------------------------------------------------------%
 %
@@ -199,18 +203,22 @@ constraint
 %----------------------------------------------------------------------------%
 
 solve 
-  :: int_search(TourALoc ++ TourBLoc, first_fail, indomain, complete)
-      minimize MaxDist; 
+    :: seq_search([
+        int_search(TourALoc ++ TourBLoc, first_fail, indomain_min, complete),
+        int_search([Depot], input_order, indomain_min, complete)
+    ])
+    minimize objective; 
 
 %----------------------------------------------------------------------------%
 
-output[ "Maximum Tour Distance: ", show(MaxDist), 
-       " \n Depot = ", show(Depot), 
-       " \n ADist is: ",show(ADist), 
-       " \n BDist is: ", show(BDist),       
-       " \n ARoute = ",  show(TourALoc), 
-       " \n BRoute = ", show(TourBLoc), 
-       "\n" ] ;
+output[ "%% Maximum Tour Distance: ", show(objective), 
+       ";\nDepot = ", show(Depot), 
+       ";\n%% ADist is: ",show(ADist), 
+       ";\n%% BDist is: ", show(BDist),       
+       ";\nTourALoc = ",  show(TourALoc), 
+       ";\nTourBLoc = ", show(TourBLoc), 
+       ";\nobjective = ", show(objective),
+       ";\n" ] ;
 
 %----------------------------------------------------------------------------%
 %----------------------------------------------------------------------------%

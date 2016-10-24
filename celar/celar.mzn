@@ -21,8 +21,6 @@
 % This MiniZinc model was created by Simon de Givry, degivry@toulouse.inra.fr
 %
 
-include "globals.mzn"; 
-
 % objective function weights
 % (mobility costs are not taken into account)
 array[1..4] of int: costs;

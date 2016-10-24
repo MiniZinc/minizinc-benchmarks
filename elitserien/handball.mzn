@@ -390,7 +390,7 @@ output [
 %| t in teams, p in period
 %] ++ [
 	"hap = array2d(", show(teams), ", ", show(period), ", ", show(hap), ");\n",
-	"contestant = array2d(", show(teams), ", ", show(period), ", ", show(contestant), ";\n",
+	"contestant = array2d(", show(teams), ", ", show(period), ", ", show(contestant), ");\n",
 	"row = ", show(row), ";\n",
 	"objective = ", show(objective), ";\n"
 ];

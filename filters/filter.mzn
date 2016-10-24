@@ -20,10 +20,7 @@ array[1..n] of var 1..10 : r;
 array[1..n] of var 1..10 : d = [ if i in add then del_add else del_mul endif | i in 1..n ];
 array[1..card(add)] of var 0..1000 : t_add = [t[i] | i in add];
 array[1..card(mul)] of var 0..1000 : t_mul = [t[i] | i in mul];
-var int: end;
-
-var 1..number_add: limit_adders;
-var 1..number_mul: limit_multipliers;
+var 0..1000: objective;
 
 constraint  % to be sure that the model is correct- can be removed
 	add intersect mul = {}
@@ -68,15 +65,17 @@ constraint
       array[1..card(Last)] of var 0..1000 : opp = [ t[i] + d[i] | i in Last]
     }
     in
-      maximum(end, opp);
+      maximum(objective, opp);
 
-solve :: seq_search([
-      int_search(t, smallest, indomain_min, complete),
-      int_search(r, input_order, indomain_min, complete)
-]) minimize end;
+solve 
+	:: seq_search([
+    	int_search(t, smallest, indomain_min, complete),
+      	int_search(r, input_order, indomain_min, complete)
+	]) 
+	minimize objective;
 
 output [
-   show(end),
-   show(t),
-   show(r)
+   "objective = ", show(objective), ";\n",
+   "t = ", show(t), ";\n",
+   "r = ", show(r), ";\n"
 ];
