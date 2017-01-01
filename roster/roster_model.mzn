@@ -136,10 +136,9 @@ constraint
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 constraint 
-    forall (shift in 1..5)
-            (forall (day in 1..7) 
-                    (exactly(reqt[shift,day],[roster[week,day] | week in 1..weeks],shift))
-            );
+    (forall (day in 1..7)
+            (global_cardinality([roster[week,day] | week in 1..weeks], Rest..Joker, [reqt[shift,day] | shift in Rest..Joker]))
+    );
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
