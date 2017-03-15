@@ -125,7 +125,8 @@ constraint
 
 % capacity restrictions for each option
 predicate row_sequence (int: i) = 
-		sequence ([b_seq_confs[i,j] | j in cars ], k[i], min_caps[i], max_caps[i]);
+		%sequence ([b_seq_confs[i,j] | j in cars ], k[i], min_caps[i], max_caps[i]);
+        sliding_sum(min_caps[i], max_caps[i], k[i], [b_seq_confs[i,j] | j in cars ]);
 
 % capacity restriction		
 constraint
