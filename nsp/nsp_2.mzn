@@ -51,7 +51,7 @@ set of int: rules            = 1..n_rules;
 
 
 
-array [period, shifts] of nurses: nurses_coverage;
+array [period, shifts] of 0..n_nurses: nurses_coverage;
 % nurses_coverage[i,j] -- required number of nurses for shift j in day i
 
 % additional regulation rules
@@ -129,7 +129,7 @@ predicate apply_rule_for_nurse (int: i, int: j) =
 				(nurses_schedule[j,k] in rules_sets[i])<-> rule_for_nurse[k] = 1
 			)
 			/\
-			sequence (rule_for_nurse, rules_windows[i], rules_lbs[i], rules_ubs[i])
+            sliding_sum (rules_lbs[i], rules_ubs[i], rules_windows[i], rule_for_nurse)
 		)
 );
 constraint
