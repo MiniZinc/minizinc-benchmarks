@@ -522,5 +522,5 @@ constraint all_different([v_18, v_38, v_58, v_78, v_98, v_118, v_138, v_158, v_1
 
 constraint all_different([v_19, v_39, v_59, v_79, v_99, v_119, v_139, v_159, v_179, v_199, v_219, v_239, v_259, v_279, v_299, v_319, v_339, v_359, v_379, v_399]);
 
-solve ::int_search(var_array, "first_fail", "indomain", "complete") satisfy;
+solve ::int_search(var_array, first_fail, indomain, complete) satisfy;
 include "globals.mzn";
