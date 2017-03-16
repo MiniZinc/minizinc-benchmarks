@@ -31,7 +31,7 @@ array [rg, rg, rg] of var 0.0..1.0: x_lp;
 
 constraint
     forall (i, j, k in rg) (
-        channel_fd_int_to_lp_float(x[i, j, k], x_lp[i, j, k])
+        x[i, j, k] = x_lp[i, j, k]
     );
 
 constraint forall (i, j in rg) (sum (k in rg) (x[i, j, k]) = 1);
