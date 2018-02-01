@@ -46,7 +46,9 @@ constraint sum (x,y in N where x<y)
 
 int: obj_min = sum(x, y in N where x < y)( lb(sp[x, y, n]) );
 int: obj_max = sum(x, y in N where x < y)( ub(sp[x, y, n]) );
-var obj_min..obj_max: objective = sum (x,y in N where x<y) (sp[x,y,n]);
+var obj_min..obj_max: objective;
+
+constraint objective = sum (x,y in N where x<y) (sp[x,y,n]);
 
 solve 
 	:: seq_search([
@@ -57,5 +59,5 @@ solve
 
 output [ 
     "construct = array2d(", show(N), ", ", show(N), ", ", show(construct), ");\n",
-    "constraint objective = ", show(objective), ";\n" 
+    "objective = ", show(objective), ";\n" 
 ];

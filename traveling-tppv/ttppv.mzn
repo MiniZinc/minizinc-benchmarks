@@ -83,7 +83,8 @@ constraint forall (i in Teams) (
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 int: maxObj = sum(i in Teams, k in Travels)(ub(travel[i, k]));
-var 0..maxObj: objective = sum (i in Teams, k in Travels) (travel[i,k]);
+var 0..maxObj: objective; 
+constraint objective = sum (i in Teams, k in Travels) (travel[i,k]);
 
 solve 
     :: seq_search([
@@ -104,5 +105,5 @@ output [
     "opponent = array2d(", show(Teams), ", ", show(Rounds), ", ", show(opponent), ");\n",
     "venue = array2d(", show(Teams), ", ", show(Rounds), ", ", show(venue), ");\n",
     "travel = array2d(", show(Teams), ", ", show(Travels), ", ", show(travel), ");\n",
-    "constraint objective = ", show(objective), ";\n"
+    "objective = ", show(objective), ";\n"
 ];

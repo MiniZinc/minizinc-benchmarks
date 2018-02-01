@@ -35,7 +35,8 @@ array[VISIT1] of var VISIT1: next;
 array[VISIT1] of var VISIT1: prev;
 array[VISIT1] of var TIME: tvar;
 
-var TIME: objective = tvar[n+1];
+var TIME: objective;
+constraint objective = tvar[n+1];
 
     % NOTE atposition variables only for search!
     %

@@ -1,0 +1,7 @@
+output ["x = array2d(0.."++format(R)++", 0.."++format(bl-1)++", "++format(x)++");\n","xp = array2d(0.."++format(R-1)++", 0.."++format(bl-1)++", "++format(xp)++");\n","prb = array1d(0.."++format(16*R-1)++", "++format(prb)++");\n","objective = "++format(objective)++";\n"];
+int: R = 15;
+int: bl = 64;
+array [0..R,0..bl-1] of int: x;
+array [0..R-1,0..bl-1] of int: xp;
+array [0..16*R-1] of int: prb;
+int: objective;

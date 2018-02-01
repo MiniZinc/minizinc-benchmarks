@@ -130,7 +130,9 @@ array[1..len] of var 0..1: char_start;
 var 0..len: n_unknown;
 
 int: maxObj = len * (max(i in 1..256)(eucjp_score[i] + sjis_score[i] + utf8_score[i]) + 1000);
-var 0..maxObj: objective
+var 0..maxObj: objective;
+
+constraint objective
   = sum (i in 1..len) (
       bool2int(encoding[i] == e_euc_jp) * eucjp_score[stream[i]+1]
       + bool2int(encoding[i] == e_sjis) * sjis_score[stream[i]+1]
@@ -411,5 +413,5 @@ output [
     "byte_status = ", show(byte_status), ";\n",
     "char_start = ", show(char_start), ";\n",
     "n_unknown = ", show(n_unknown), ";\n",
-    "constraint objective = ", show(objective), ";\n"
-]
+    "objective = ", show(objective), ";\n"
+];
