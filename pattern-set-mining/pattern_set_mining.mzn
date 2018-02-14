@@ -40,6 +40,9 @@ array [1..K,1..NrT_neg] of var bool: TransN;
 array [1..NrT_pos] of var bool: Trans_pos;
 array [1..NrT_neg] of var bool: Trans_neg;
 
+var -NrT_neg..NrT_pos : objective = 
+  sum(t in 1..NrT_pos) (bool2int(Trans_pos[t])) -
+  sum(t in 1..NrT_neg) (bool2int(Trans_neg[t]));
 % Pattern 1
 constraint % encode TDB: every Trans its complement has no supported Items
     forall(d in 1..K, t in 1..NrT_pos) (
@@ -75,7 +78,9 @@ constraint % covered when OR of any pattern
     
 solve
     :: bool_search(array1d(1..K*NrI,Items), input_order, indomain_max, complete)
-    maximize sum(t in 1..NrT_pos) (bool2int(Trans_pos[t])) -
-             sum(t in 1..NrT_neg) (bool2int(Trans_neg[t]));
+	maximize objective;
 
-output [show(Items), "\n"];
+output [
+	"objective = ", show(objective), ";\n",
+	"Items = ", show(Items), ";\n"
+];
