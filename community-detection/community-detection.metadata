@@ -1,0 +1,2 @@
+METHOD=max
+TAGS=model2017,con_global_cardinality,con_global_cardinality_low_up,con_value_precede,con_value_precede_chain

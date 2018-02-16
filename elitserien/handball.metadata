@@ -1,0 +1,2 @@
+METHOD=min
+TAGS=model2014,model2016,con_alldifferent,con_exactly,con_global_cardinality,con_global_cardinality_closed,con_inverse,con_lex_greater,con_regular,con_alldifferent,con_exactly,con_global_cardinality,con_global_cardinality_closed,con_inverse,con_lex_greater,con_regular
