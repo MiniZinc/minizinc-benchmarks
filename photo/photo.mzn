@@ -26,7 +26,7 @@ array[1..n_prefs, 0..1] of int: prefs;
 % Model
 
 array[0..n_names-1] of var 0..n_names-1: pos;
-var 0..n_names-1: satisfies;
+var 0..n_prefs: satisfies;
 
 array[1..n_prefs] of var bool: ful;
 
