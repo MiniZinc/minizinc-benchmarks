@@ -99,7 +99,7 @@ predicate ARK(array[0..n-2,0..3,0..BC-1] of var 0..1: DY, array[0..n-1,0..3,0..B
 )
 ;
 %Shiftrows
-predicate SR(array[0..n-1,0..3,0..BC-1] of var 0..1: DX,array[0..n-2,0..3,0..BC-1] of var 0..1: DSR) =
+predicate SR(array[0..n-1,0..BC-1,0..3] of var 0..1: DX,array[0..n-1,0..BC-1,0..3] of var 0..1: DSR) =
    forall(r in 0..n-1,j in 0..BC-1, i in 0..3) (
        DSR[r,j,i]=DX[r,((j+i) mod BC),i]
 );        
