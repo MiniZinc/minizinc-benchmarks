@@ -9,11 +9,12 @@
 
 include "circuit.mzn";
 
-int: N; % number of nodes in the MIP model
+int: N; % number of nodes, node 0 corresponds to the depot
+int: K; % number of vehicles
 int: Capacity; % maximum capacity of each vehicle
 
-int: nbVehicles = N; % maximum number of vehicles
 int: nbCustomers = N;
+int: nbVehicles = K;
 int: timeBudget = sum (i in 1..N) (max([ Distance[i,j] | j in 1..N]) ); % the maximal of time that we got
 
 set of int: VEHICLE = 1..nbVehicles;

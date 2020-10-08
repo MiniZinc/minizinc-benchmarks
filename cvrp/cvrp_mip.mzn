@@ -10,7 +10,7 @@ int: N;
     % Vehicle capacity
 int: Capacity;
     % Maximum number of vehicles
-int: K = N;    
+int: K;
     % Demand at Node
 array[1..N] of int: Demand;
     % Distances between the nodes

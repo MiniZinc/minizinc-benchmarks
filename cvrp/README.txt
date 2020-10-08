@@ -9,13 +9,13 @@ cvrp_cp.mzn       CP formulation (using the formulation from the CP
 
 simple*.dzn       simple instances made by hand (only for testing)
 
-A-n*.dzn          A-set benchmarks (random customer locations and demand)
-B-n*.dzn          B-set benchmarks (clustered locations)
-P-n*.dzn          P-set benchmarks (modified instances from literature)
+A-n*-k*.dzn       A-set benchmarks (random customer locations and demand)
+B-n*-k*.dzn       B-set benchmarks (clustered locations)
+P-n*-k*.dzn       P-set benchmarks (modified instances from literature)
 
-                  The A,B,P benchmarks come from Augerat et al [1] where
-                  n is the number of customers. They are also available
-                  in text format at [2].
+                  The A, B, and P instances come from Augerat et al [1] where
+                  n is the number of customers and k is the number of vehicles.
+                  The instances are also available in text format at [2].
 
 The best known solutions for all the instances of the A, B and P sets are
 available from the website at [3].
