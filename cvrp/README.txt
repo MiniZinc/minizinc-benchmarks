@@ -1,25 +1,24 @@
 Capacitated Vehicle Routing Problem
 ===================================
 
-Note that we already have this problem (with the same instances) in the MiniZinc 
-benchmark suite ('vrp'), however that is a MIP model.
+cvrp_mip.mzn      MIP formulation
 
-cvrp.mzn		  CP formulation (using the formulation from the CP
-                          handbook with the giant tour representation and 
-                          the circuit constraint). No sym breaking constraints.
+cvrp_cp.mzn       CP formulation (using the formulation from the CP
+                  handbook with the giant tour representation and
+                  the circuit constraint). No sym breaking constraints.
 
-simple*.dzn		  simple instances made by hand (only for testing)  
+simple*.dzn       simple instances made by hand (only for testing)
 
-A-n*.dzn                  A-set benchmarks (random customer locations and demand)
-B-n*.dzn                  B-set benchmarks (clustered locations)
-P-n*.dzn 		  P-set benchmarks (modified instances from literature)
+A-n*.dzn          A-set benchmarks (random customer locations and demand)
+B-n*.dzn          B-set benchmarks (clustered locations)
+P-n*.dzn          P-set benchmarks (modified instances from literature)
 
-			  The A,B,P benchmarks come from Augerat et al [1] where 
-                          n is the number of customers. They are also available
-                          in text format at [2].
+                  The A,B,P benchmarks come from Augerat et al [1] where
+                  n is the number of customers. They are also available
+                  in text format at [2].
 
-best_known_solutions.txt  The best known solutions for all the instances of the 
-                          A,B and P set, as obtained from the website at [3]
+The best known solutions for all the instances of the A, B and P sets are
+available from the website at [3].
 
 
 
