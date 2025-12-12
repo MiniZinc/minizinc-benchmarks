@@ -1,0 +1,13 @@
+{
+  "type": "real",
+  "globals": [
+    "all_different",
+    "strictly_increasing"
+  ],
+  "kind": "min",
+  "sbc": true,
+  "rc": false,
+  "challenges": [
+    "2025"
+  ]
+}

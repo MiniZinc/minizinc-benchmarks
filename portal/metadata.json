@@ -1,0 +1,10 @@
+{
+  "type": "puzzle",
+  "globals": [],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2024"
+  ]
+}

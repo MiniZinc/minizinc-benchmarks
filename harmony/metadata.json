@@ -1,0 +1,15 @@
+{
+  "type": "puzzle",
+  "globals": [
+    "all_equal",
+    "count_eq",
+    "min",
+    "strictly_decreasing"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2024"
+  ]
+}

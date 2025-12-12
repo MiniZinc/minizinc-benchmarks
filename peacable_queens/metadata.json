@@ -1,0 +1,15 @@
+{
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "count",
+    "regular",
+    "value_precede"
+  ],
+  "challenges": [
+    "2021",
+    "2024"
+  ]
+}

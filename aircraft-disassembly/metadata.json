@@ -1,0 +1,12 @@
+{
+  "type": "real",
+  "globals": [
+    "cumulative"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2024"
+  ]
+}

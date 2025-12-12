@@ -1,0 +1,13 @@
+{
+  "type": "puzzle",
+  "globals": [
+    "all_different_except_0",
+    "connected"
+  ],
+  "kind": "max",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2025"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "monomatch.mzn",
+    "data/data_n_4_percentage_0.75.json",
+    "data/data_n_5_percentage_0.5.json",
+    "data/data_n_3_percentage_0.97.json",
+    "data/data_n_4_percentage_0.97.json",
+    "data/data_n_6_percentage_0.5.json"
+  ],
+  "openFiles": [
+    "monomatch.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

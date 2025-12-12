@@ -1,0 +1,13 @@
+{
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_different",
+    "decreasing"
+  ],
+  "challenges": [
+    "2023"
+  ]
+}

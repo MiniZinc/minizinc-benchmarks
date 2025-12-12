@@ -1,0 +1,13 @@
+{
+  "type": "puzzle",
+  "kind": "max",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "global_cardinality",
+    "lex_lesseq"
+  ],
+  "challenges": [
+    "2023"
+  ]
+}

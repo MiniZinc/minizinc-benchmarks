@@ -4,82 +4,71 @@
 % The problem is to find communities in the graph with maximum modularity value 
 % satisfying must-link and cannot-link constraints which indicate whether a 
 % pair of vertices must assign to same or different communities.
+%
+% Adapted from original community-detection problem used in 2017.
 %------------------------------------------------------------------------------%
 % Includes
 
 include "globals.mzn";
-include "global_cardinality_low_up.mzn";
-include "value_precede_chain.mzn";
 
 %------------------------------------------------------------------------------%
 % Input and Derived Parameters
 
-int:n;
-int:k;
-int:maxsize;
-%int:minsize;
-int: nML;
-int: nCL;
-set of int: must = 1..nML;
-set of int: cannot = 1..nCL;
-array[must,1..2] of int: ML;
-array[cannot,1..2] of int: CL;
-array[1..n,1..n] of int: W;
-array[1..n,1..n] of int: A;
-array[1..n] of int: deg;
-array[1..n] of set of 1..n: nbh =[ {j | j in 1..n where A[i,j] > 0} | i in 1..n];
-int: dum = sum(i in 1..n)(W[i,i]);
+array [int, int] of int: A; % Adjacency matrix
+set of int: NODE = assert(
+    index_set_1of2(A) = index_set_2of2(A),
+    "Invalid adjacency matrix",
+    index_set_1of2(A)
+);
+int: N = card(NODE);
+
+int: max_communities; % Max number of communities
+set of int: COMMUNITY = 1..max_communities;
+
+% Pairs of nodes which must be in the same community
+array [int, 1..2] of int: same_community;
+set of int: SAME = index_set_1of2(same_community);
+
+% Pairs of nodes which must not be in the same community
+array [int, 1..2] of int: diff_community;
+set of int: DIFF = index_set_1of2(diff_community);
+
+int: l = sum (array1d(A)); % Number of stubs
+array [NODE] of int: k = [sum (j in NODE) (A[i, j]) | i in NODE]; % Node degrees
+
+% Modularity matrix (multiplied by l so no fractions)
+array [NODE, NODE] of int: B = array2d(NODE, NODE, [l * A[i, j] - k[i] * k[j] | i, j in NODE]);
+
+% Objective bounds (compiler should be able to tighten using same/diff_community)
+int: obj_lb = sum (i, j in NODE where i < j /\ B[i, j] < 0) (B[i, j]);
+int: obj_ub = sum (i, j in NODE where i < j /\ B[i, j] > 0) (B[i, j]);
 
 %------------------------------------------------------------------------------%
 % Variables
 
-array[1..n] of var 1..k: x;
-var 1..k: kk = max(x);
+array [NODE] of var COMMUNITY: x :: add_to_output;
 
-int: objub = 2*sum(i,j in 1..n where i < j)(W[i,j]) + dum;
-var 0..objub: objective;
+var obj_lb..obj_ub: objective = sum (i, j in NODE where i < j /\ x[i] = x[j]) (B[i, j]);
 
 %------------------------------------------------------------------------------%
 % Constraints
 
-constraint value_precede_chain([i|i in 1..k], x);
+constraint symmetry_breaking_constraint(seq_precede_chain(x));
 
-constraint forall(m in must)( x[ML[m,1]] = x[ML[m,2]] );
+constraint forall (s in SAME) (x[same_community[s, 1]]  = x[same_community[s, 2]]);
+constraint forall (d in DIFF) (x[diff_community[d, 1]] != x[diff_community[d, 2]]);
 
-constraint forall(c in cannot)( x[CL[c,1]] != x[CL[c,2]] );
-
-constraint 
-    global_cardinality_low_up(
-        x, 
-        [i | i in 1..k], 
-        [0 | i in 1..k],
-        [n | i in 1..k]
-    );
-
-    % Objective
-    %
-constraint
-    objective = 2 * ( 
-        sum(i in 1..n)(
-            sum(j in 1..n where j < i)(
-                bool2int(x[i] = x[j]) * W[i,j]
-            )
-        )
-    ) + dum;
+constraint global_cardinality_low_up(
+    x, 
+    [c | c in COMMUNITY],
+    [0 | c in COMMUNITY],
+    [N | c in COMMUNITY]
+);
 
 %------------------------------------------------------------------------------%
 % Solve item and search
 
-solve 
-    :: int_search(x,input_order,indomain_min, complete) 
-    maximize objective;
+solve :: int_search(x, input_order, indomain_min, complete) maximize objective;
 
-%------------------------------------------------------------------------------%
-% Output
-
-output [
-    "x = \(x);\n",
-%    "kk = \(kk);\n",
-    "objective = \(objective);\n"
-];
-
+% Use to output actual modularity value
+% float: modularity :: output_only :: add_to_output = (2 * fix(objective) + sum (i in NODE) (B[i, i])) / l / l;

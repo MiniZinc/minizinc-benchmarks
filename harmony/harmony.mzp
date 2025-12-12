@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "harmony.mzn",
+    "data/brother.json",
+    "data/canon.json",
+    "data/ode.json",
+    "data/twinkle.json",
+    "data/minuet.json"
+  ],
+  "openFiles": [
+    "harmony.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

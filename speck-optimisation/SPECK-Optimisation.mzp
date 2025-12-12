@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "SPECK-Optimisation.mzn",
+    "data/medium_6.json",
+    "data/easy_1.json",
+    "data/easy_3.json",
+    "data/hard_0.json",
+    "data/very_hard_5.json"
+  ],
+  "openFiles": [
+    "SPECK-Optimisation.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

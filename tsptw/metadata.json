@@ -1,0 +1,12 @@
+{
+  "type": "real",
+  "globals": [
+    "circuit"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2025"
+  ]
+}

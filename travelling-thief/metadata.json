@@ -1,0 +1,13 @@
+{
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different",
+    "inverse"
+  ],
+  "challenges": [
+    "2023"
+  ]
+}

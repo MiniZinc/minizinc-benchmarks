@@ -1,0 +1,21 @@
+{
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_equal",
+    "all_different",
+    "circuit",
+    "cumulative",
+    "diffn",
+    "increasing",
+    "table",
+    "value_precede",
+    "value_precede_chain"
+  ],
+  "challenges": [
+    "2022",
+    "2023"
+  ]
+}

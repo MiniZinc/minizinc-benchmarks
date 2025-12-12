@@ -1,0 +1,10 @@
+{
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    "2022"
+  ]
+}

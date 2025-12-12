@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "model4_opt.mzn",
+    "data/i09.json",
+    "data/test05.json",
+    "data/i02.json",
+    "data/i07.json",
+    "data/test03.json"
+  ],
+  "openFiles": [
+    "model4_opt.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

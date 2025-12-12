@@ -1,0 +1,14 @@
+{
+  "type": "real",
+  "globals": [
+    "all_different",
+    "cumulative",
+    "disjunctive"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2024"
+  ]
+}

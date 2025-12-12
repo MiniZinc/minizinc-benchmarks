@@ -1,0 +1,10 @@
+{
+  "type": "real",
+  "globals": [],
+  "kind": "min",
+  "sbc": false,
+  "rc": true,
+  "challenges": [
+    "2025"
+  ]
+}

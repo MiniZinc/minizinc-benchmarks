@@ -1,0 +1,301 @@
+{
+  "STOP": {
+    "set": [
+      { "e": "A" },
+      { "e": "B" },
+      { "e": "C" },
+      { "e": "D" },
+      { "e": "E" },
+      { "e": "F" },
+      { "e": "G" },
+      { "e": "H" },
+      { "e": "I" },
+      { "e": "J" },
+      { "e": "K" },
+      { "e": "dummy" }
+    ]
+  },
+  "dstop": { "e": "dummy" },
+  "minimal_wait": [10, 4, 8, 8, 4, 10, 10, 8, 10, 6, 10, 0],
+  "travel_time": [
+    [0, 7, null, null, null, null, null, null, null, null, null, 0],
+    [7, 0, 8, null, null, null, 12, null, null, null, null, 0],
+    [null, 9, 0, 10, null, null, null, null, null, 5, null, 0],
+    [null, null, 10, 0, 8, null, null, 4, null, null, null, 0],
+    [null, null, null, 8, 0, 15, null, null, null, null, null, 0],
+    [null, null, null, null, 15, 0, null, null, null, null, null, 0],
+    [null, 12, null, null, null, null, 0, null, null, null, null, 0],
+    [null, null, null, 4, null, null, null, 0, 6, null, null, 0],
+    [null, null, null, null, null, null, null, 6, 0, null, null, 0],
+    [null, null, 6, null, null, null, null, null, null, 0, 10, 0],
+    [null, null, null, null, null, null, null, null, null, 10, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "platform": [2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 2, 0],
+  "stype": [
+    { "e": "TERMINUS" },
+    { "e": "ORDINARY" },
+    { "e": "HUB" },
+    { "e": "HUB" },
+    { "e": "ORDINARY" },
+    { "e": "TERMINUS" },
+    { "e": "TERMINUS" },
+    { "e": "ORDINARY" },
+    { "e": "TERMINUS" },
+    { "e": "ORDINARY" },
+    { "e": "TERMINUS" },
+    { "e": "ORDINARY" }
+  ],
+  "skip_cost": [0, 6, 0, 0, 20, 0, 0, 5, 0, 5, 0, 0],
+  "line": [
+    [
+      { "e": "NONE" },
+      { "e": "SING" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "SING" },
+      { "e": "NONE" },
+      { "e": "QUAD" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "QUAD" },
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "SING" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "SING" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "SING" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "SING" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "DOUB" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "SING" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "SING" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ],
+    [
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" },
+      { "e": "NONE" }
+    ]
+  ],
+  "ROUTE": { "c": "Route", "e": { "set": [[1, 5]] } },
+  "max_route_length": 6,
+  "rlength": [6, 5, 6, 6, 5],
+  "route": [
+    [
+      { "e": "A" },
+      { "e": "B" },
+      { "e": "C" },
+      { "e": "D" },
+      { "e": "E" },
+      { "e": "F" }
+    ],
+    [
+      { "e": "G" },
+      { "e": "B" },
+      { "e": "C" },
+      { "e": "J" },
+      { "e": "K" },
+      { "e": "dummy" }
+    ],
+    [
+      { "e": "F" },
+      { "e": "E" },
+      { "e": "D" },
+      { "e": "C" },
+      { "e": "B" },
+      { "e": "A" }
+    ],
+    [
+      { "e": "K" },
+      { "e": "J" },
+      { "e": "C" },
+      { "e": "D" },
+      { "e": "H" },
+      { "e": "I" }
+    ],
+    [
+      { "e": "I" },
+      { "e": "H" },
+      { "e": "D" },
+      { "e": "E" },
+      { "e": "F" },
+      { "e": "dummy" }
+    ]
+  ],
+  "SERVICE": {
+    "set": [
+      { "e": "R1a" },
+      { "e": "R2a" },
+      { "e": "R3a" },
+      { "e": "R4a" },
+      { "e": "R5a" }
+    ]
+  },
+  "sroute": [
+    { "e": "ROUTE", "i": 1 },
+    { "e": "ROUTE", "i": 2 },
+    { "e": "ROUTE", "i": 3 },
+    { "e": "ROUTE", "i": 4 },
+    { "e": "ROUTE", "i": 5 }
+  ],
+  "makespan": 240,
+  "min_sep": 4,
+  "service_start": [0, 0, 0, 0, 0],
+  "service_end": [120, 120, 120, 120, 120],
+  "ENGINE": {
+    "set": [
+      { "e": "E1" },
+      { "e": "E2" },
+      { "e": "E3" },
+      { "e": "E4" },
+      { "e": "E5" }
+    ]
+  },
+  "start": [
+    { "e": "A" },
+    { "e": "G" },
+    { "e": "F" },
+    { "e": "K" },
+    { "e": "I" }
+  ]
+}

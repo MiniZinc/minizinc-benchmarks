@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "flowshop-workers.mzn",
+    "data/5stat_ex6.json",
+    "data/ex4.json",
+    "data/real_ex2.json",
+    "data/8s_ex3.json",
+    "data/5stat_ex3.json"
+  ],
+  "openFiles": [
+    "flowshop-workers.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

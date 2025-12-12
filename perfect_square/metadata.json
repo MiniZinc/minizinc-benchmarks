@@ -1,0 +1,10 @@
+{
+  "type": "puzzle",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    "2021"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "stripboard.mzn",
+    "data/common-emitter-simple.json",
+    "data/common-emitter-complex.json",
+    "data/opamp-integrator.json",
+    "data/envelope-detector.json",
+    "data/nand-gate.json"
+  ],
+  "openFiles": [
+    "stripboard.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

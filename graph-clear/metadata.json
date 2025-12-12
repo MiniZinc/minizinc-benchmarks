@@ -1,0 +1,12 @@
+{
+  "type": "combi",
+  "globals": [
+    "all_different"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2024"
+  ]
+}

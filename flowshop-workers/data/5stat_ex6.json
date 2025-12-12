@@ -1,0 +1,19 @@
+{
+  "horizon" : 100000,
+  "numberWorkers" : 3,
+  "numberStations" : 5,
+  "numberProducts" : 6,
+  "numberProductTypes" : 4,
+  "currentStation" : [0, 0, 0, 0, 0, 0],
+  "currentStep" : [0, 0, 0, 0, 0, 0],
+  "currentBuffer" : [4, 2, 0, 0, 0, 0],
+  "releaseTime" : [0, 0, 0, 0, 0, 0],
+  "workerInitial" : [1, 2, 3],
+  "releaseTimeW" : [0, 0, 0],
+  "numberManualWorksteps" : [[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 2, 1]],
+  "setupTimes" : [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 10, 0]],
+  "takedownTimes" : [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 10, 0]],
+  "workerMovementMatrix" : [[0, 10, 20, 30, 40], [10, 0, 10, 20, 30], [20, 10, 0, 10, 20], [30, 20, 10, 0, 10], [40, 30, 20, 10, 0]],
+  "productionTimeMatrix" : [[100, 100, 100, 100, 100], [100, 500, 500, 100, 50], [50, 50, 50, 50, 500], [100, 500, 100, 780, 500]],
+  "productType" : [1, 4, 1, 4, 1, 4]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "real",
+  "globals": [
+    "bin_packing_load",
+    "cumulative",
+    "nvalue"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2025"
+  ]
+}

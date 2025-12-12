@@ -1,0 +1,14 @@
+{
+  "type": "real",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "global_cardinality_low_up",
+    "regular",
+    "sliding_sum"
+  ],
+  "challenges": [
+    "2022"
+  ]
+}

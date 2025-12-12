@@ -1,0 +1,14 @@
+{
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "value_precede_chain",
+    "global_cardinality_low_up"
+  ],
+  "challenges": [
+    "2017",
+    "2024"
+  ]
+}

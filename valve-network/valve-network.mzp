@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "valve-network.mzn",
+    "data/horizon28.json",
+    "data/horizon12.json",
+    "data/horizon6.json",
+    "data/horizon19.json",
+    "data/horizon20.json"
+  ],
+  "openFiles": [
+    "valve-network.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

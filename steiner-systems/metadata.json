@@ -1,0 +1,10 @@
+{
+  "type": "combi",
+  "kind": "sat",
+  "rc": false,
+  "sbc": true,
+  "globals": [],
+  "challenges": [
+    "2021"
+  ]
+}

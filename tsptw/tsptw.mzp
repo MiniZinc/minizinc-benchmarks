@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "tsptw.mzn",
+    "data/n20w180.004.json",
+    "data/n20w140.005.json",
+    "data/n100w120.003.json",
+    "data/n20w160.001.json",
+    "data/n80w180.003.json"
+  ],
+  "openFiles": [
+    "tsptw.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

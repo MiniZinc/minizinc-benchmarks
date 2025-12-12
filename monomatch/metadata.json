@@ -1,0 +1,12 @@
+{
+  "type": "",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    "2021"
+  ]
+}

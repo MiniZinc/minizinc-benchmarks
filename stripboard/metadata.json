@@ -1,0 +1,16 @@
+{
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "all_different",
+    "diffn",
+    "disjunctive",
+    "strictly_decreasing"
+  ],
+  "challenges": [
+    "2022",
+    "2025"
+  ]
+}

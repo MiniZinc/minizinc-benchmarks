@@ -1,0 +1,16 @@
+{
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_equal",
+    "global_cardinality",
+    "lex_lesseq",
+    "regular",
+    "value_precede_chain"
+  ],
+  "challenges": [
+    "2022"
+  ]
+}

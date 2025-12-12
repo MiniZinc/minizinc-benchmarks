@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "FBD1.mzn",
+    "data/FBDk09.json",
+    "data/FBDk08.json",
+    "data/FBDk04.json",
+    "data/FBDk06.json",
+    "data/FBDk07.json"
+  ],
+  "openFiles": [
+    "FBD1.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "combi",
+  "globals": [
+    "global_cardinality"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2024"
+  ]
+}

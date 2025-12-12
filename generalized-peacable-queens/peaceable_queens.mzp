@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "peaceable_queens.mzn",
+    "data/n11_q5.json",
+    "data/n13_q5.json",
+    "data/n9_q5.json",
+    "data/n25_q4.json",
+    "data/n8_q3.json"
+  ],
+  "openFiles": [
+    "peaceable_queens.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

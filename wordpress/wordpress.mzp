@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "wordpress.mzn",
+    "data/Wordpress11_Offers500.json",
+    "data/Wordpress10_Offers500.json",
+    "data/Wordpress8_Offers500.json",
+    "data/Wordpress7_Offers500.json",
+    "data/Wordpress12_Offers500.json"
+  ],
+  "openFiles": [
+    "wordpress.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

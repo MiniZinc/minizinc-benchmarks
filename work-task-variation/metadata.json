@@ -1,0 +1,13 @@
+{
+  "type": "real",
+  "globals": [
+    "global_cardinality",
+    "regular"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    "2025"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "cgt.mzn",
+    "data/cgt_8_h16_r0.05_s0.5_3.json",
+    "data/cgt_5_h27_r0.05_s0.8_0.json",
+    "data/cgt_3_h39_r0.05_s1_3.json",
+    "data/cgt_12_h27_r0.05_s0.5_3.json",
+    "data/cgt_3_h39_r0.05_s0.5_0.json"
+  ],
+  "openFiles": [
+    "cgt.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

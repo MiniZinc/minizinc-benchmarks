@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "perfect_square.mzn",
+    "data/205.json",
+    "data/102.json",
+    "data/92.json",
+    "data/195.json",
+    "data/57.json"
+  ],
+  "openFiles": [
+    "perfect_square.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

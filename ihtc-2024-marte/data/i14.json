@@ -1,0 +1,10217 @@
+{
+  "age_groups": [
+    "infant",
+    "adult",
+    "elderly"
+  ],
+  "days": 14,
+  "genders": [
+    "A",
+    "B"
+  ],
+  "nurses": [
+    {
+      "id": "n000",
+      "index": 1,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n001",
+      "index": 2,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 2,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 3,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 6,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 10,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 13,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 12,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n002",
+      "index": 3,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 5,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 7,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 12,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n003",
+      "index": 4,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 12,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n004",
+      "index": 5,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n005",
+      "index": 6,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n006",
+      "index": 7,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 10,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 14,
+          "max_load": 15,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n007",
+      "index": 8,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 5,
+          "shift": "night"
+        },
+        {
+          "day": 8,
+          "max_load": 5,
+          "shift": "night"
+        },
+        {
+          "day": 9,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 11,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 5,
+          "shift": "night"
+        },
+        {
+          "day": 14,
+          "max_load": 15,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n008",
+      "index": 9,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n009",
+      "index": 10,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 15,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n010",
+      "index": 11,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 5,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 8,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 15,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n011",
+      "index": 12,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 2,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 5,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 6,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 9,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 11,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 13,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 14,
+          "max_load": 12,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n012",
+      "index": 13,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 3,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 7,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 8,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 11,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 5,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n013",
+      "index": 14,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 2,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 7,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 10,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 14,
+          "max_load": 5,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n014",
+      "index": 15,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 12,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n015",
+      "index": 16,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 3,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 11,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 12,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n016",
+      "index": 17,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 7,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 14,
+          "max_load": 15,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n017",
+      "index": 18,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n018",
+      "index": 19,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n019",
+      "index": 20,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 3,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 7,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 13,
+          "max_load": 5,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n020",
+      "index": 21,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n021",
+      "index": 22,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 13,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 12,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n022",
+      "index": 23,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n023",
+      "index": 24,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 7,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 5,
+          "shift": "night"
+        },
+        {
+          "day": 13,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 15,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n024",
+      "index": 25,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 10,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 13,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 5,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n025",
+      "index": 26,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n026",
+      "index": 27,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n027",
+      "index": 28,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 6,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 12,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n028",
+      "index": 29,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n029",
+      "index": 30,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 1,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 10,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n030",
+      "index": 31,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 2,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 5,
+          "shift": "night"
+        },
+        {
+          "day": 8,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 15,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n031",
+      "index": 32,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 2,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 5,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 10,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 12,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n032",
+      "index": 33,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 2,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 5,
+          "shift": "night"
+        },
+        {
+          "day": 5,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 7,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 5,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 14,
+          "max_load": 15,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n033",
+      "index": 34,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 2,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n034",
+      "index": 35,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n035",
+      "index": 36,
+      "skill_level": 1,
+      "working_shifts": [
+        {
+          "day": 2,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 12,
+          "shift": "night"
+        },
+        {
+          "day": 6,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 8,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 12,
+          "shift": "late"
+        },
+        {
+          "day": 12,
+          "max_load": 12,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 12,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n036",
+      "index": 37,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 3,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 10,
+          "shift": "late"
+        },
+        {
+          "day": 9,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 10,
+          "shift": "night"
+        },
+        {
+          "day": 12,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 10,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n037",
+      "index": 38,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 3,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 4,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 6,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 8,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 5,
+          "shift": "late"
+        },
+        {
+          "day": 11,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 13,
+          "max_load": 15,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n038",
+      "index": 39,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 2,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 3,
+          "max_load": 15,
+          "shift": "night"
+        },
+        {
+          "day": 4,
+          "max_load": 5,
+          "shift": "night"
+        },
+        {
+          "day": 7,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "late"
+        },
+        {
+          "day": 13,
+          "max_load": 5,
+          "shift": "night"
+        }
+      ]
+    },
+    {
+      "id": "n039",
+      "index": 40,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 2,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 5,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 7,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 9,
+          "max_load": 5,
+          "shift": "early"
+        },
+        {
+          "day": 10,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 12,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 14,
+          "max_load": 15,
+          "shift": "late"
+        }
+      ]
+    },
+    {
+      "id": "n040",
+      "index": 41,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 8,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 15,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n041",
+      "index": 42,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 10,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n042",
+      "index": 43,
+      "skill_level": 2,
+      "working_shifts": [
+        {
+          "day": 7,
+          "max_load": 15,
+          "shift": "early"
+        },
+        {
+          "day": 11,
+          "max_load": 15,
+          "shift": "early"
+        }
+      ]
+    },
+    {
+      "id": "n043",
+      "index": 44,
+      "skill_level": 0,
+      "working_shifts": [
+        {
+          "day": 8,
+          "max_load": 10,
+          "shift": "early"
+        }
+      ]
+    }
+  ],
+  "occupants": [
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a00",
+      "index": 1,
+      "length_of_stay": 1,
+      "room_id": "r12",
+      "skill_level_required": [
+        2,
+        1,
+        0
+      ],
+      "workload_produced": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a01",
+      "index": 2,
+      "length_of_stay": 2,
+      "room_id": "r16",
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "workload_produced": [
+        1,
+        3,
+        1,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a02",
+      "index": 3,
+      "length_of_stay": 2,
+      "room_id": "r02",
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "workload_produced": [
+        1,
+        3,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a03",
+      "index": 4,
+      "length_of_stay": 2,
+      "room_id": "r10",
+      "skill_level_required": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a04",
+      "index": 5,
+      "length_of_stay": 1,
+      "room_id": "r13",
+      "skill_level_required": [
+        1,
+        0,
+        0
+      ],
+      "workload_produced": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a05",
+      "index": 6,
+      "length_of_stay": 1,
+      "room_id": "r03",
+      "skill_level_required": [
+        0,
+        2,
+        0
+      ],
+      "workload_produced": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a06",
+      "index": 7,
+      "length_of_stay": 3,
+      "room_id": "r17",
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "workload_produced": [
+        2,
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a07",
+      "index": 8,
+      "length_of_stay": 5,
+      "room_id": "r04",
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "workload_produced": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "infant",
+      "gender": "B",
+      "id": "a08",
+      "index": 9,
+      "length_of_stay": 3,
+      "room_id": "r04",
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "workload_produced": [
+        3,
+        2,
+        1,
+        1,
+        3,
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a09",
+      "index": 10,
+      "length_of_stay": 3,
+      "room_id": "r06",
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "workload_produced": [
+        3,
+        1,
+        1,
+        3,
+        3,
+        1,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a10",
+      "index": 11,
+      "length_of_stay": 1,
+      "room_id": "r05",
+      "skill_level_required": [
+        2,
+        2,
+        1
+      ],
+      "workload_produced": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a11",
+      "index": 12,
+      "length_of_stay": 1,
+      "room_id": "r09",
+      "skill_level_required": [
+        0,
+        0,
+        0
+      ],
+      "workload_produced": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "a12",
+      "index": 13,
+      "length_of_stay": 4,
+      "room_id": "r07",
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "workload_produced": [
+        3,
+        3,
+        1,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a13",
+      "index": 14,
+      "length_of_stay": 2,
+      "room_id": "r14",
+      "skill_level_required": [
+        2,
+        2,
+        1,
+        2,
+        0,
+        0
+      ],
+      "workload_produced": [
+        1,
+        3,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a14",
+      "index": 15,
+      "length_of_stay": 3,
+      "room_id": "r13",
+      "skill_level_required": [
+        1,
+        2,
+        1,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "workload_produced": [
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a15",
+      "index": 16,
+      "length_of_stay": 6,
+      "room_id": "r18",
+      "skill_level_required": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "workload_produced": [
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        1,
+        3,
+        3,
+        1,
+        3,
+        2,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "infant",
+      "gender": "B",
+      "id": "a16",
+      "index": 17,
+      "length_of_stay": 1,
+      "room_id": "r15",
+      "skill_level_required": [
+        2,
+        0,
+        0
+      ],
+      "workload_produced": [
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a17",
+      "index": 18,
+      "length_of_stay": 1,
+      "room_id": "r15",
+      "skill_level_required": [
+        0,
+        2,
+        1
+      ],
+      "workload_produced": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a18",
+      "index": 19,
+      "length_of_stay": 8,
+      "room_id": "r11",
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        2,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a19",
+      "index": 20,
+      "length_of_stay": 2,
+      "room_id": "r00",
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        2,
+        1,
+        0
+      ],
+      "workload_produced": [
+        2,
+        3,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a20",
+      "index": 21,
+      "length_of_stay": 1,
+      "room_id": "r09",
+      "skill_level_required": [
+        2,
+        2,
+        1
+      ],
+      "workload_produced": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a21",
+      "index": 22,
+      "length_of_stay": 1,
+      "room_id": "r11",
+      "skill_level_required": [
+        0,
+        1,
+        1
+      ],
+      "workload_produced": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a22",
+      "index": 23,
+      "length_of_stay": 1,
+      "room_id": "r03",
+      "skill_level_required": [
+        2,
+        1,
+        0
+      ],
+      "workload_produced": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a23",
+      "index": 24,
+      "length_of_stay": 1,
+      "room_id": "r19",
+      "skill_level_required": [
+        0,
+        2,
+        0
+      ],
+      "workload_produced": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a24",
+      "index": 25,
+      "length_of_stay": 1,
+      "room_id": "r17",
+      "skill_level_required": [
+        0,
+        1,
+        0
+      ],
+      "workload_produced": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a25",
+      "index": 26,
+      "length_of_stay": 7,
+      "room_id": "r05",
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "workload_produced": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "a26",
+      "index": 27,
+      "length_of_stay": 1,
+      "room_id": "r19",
+      "skill_level_required": [
+        2,
+        2,
+        0
+      ],
+      "workload_produced": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a27",
+      "index": 28,
+      "length_of_stay": 6,
+      "room_id": "r02",
+      "skill_level_required": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "workload_produced": [
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "a28",
+      "index": 29,
+      "length_of_stay": 5,
+      "room_id": "r12",
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "workload_produced": [
+        2,
+        1,
+        1,
+        2,
+        3,
+        1,
+        1,
+        2,
+        1,
+        3,
+        3,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a29",
+      "index": 30,
+      "length_of_stay": 2,
+      "room_id": "r00",
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      "workload_produced": [
+        2,
+        1,
+        1,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a30",
+      "index": 31,
+      "length_of_stay": 3,
+      "room_id": "r18",
+      "skill_level_required": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "workload_produced": [
+        2,
+        3,
+        1,
+        2,
+        1,
+        1,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "infant",
+      "gender": "B",
+      "id": "a31",
+      "index": 32,
+      "length_of_stay": 1,
+      "room_id": "r13",
+      "skill_level_required": [
+        0,
+        2,
+        1
+      ],
+      "workload_produced": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "a32",
+      "index": 33,
+      "length_of_stay": 2,
+      "room_id": "r14",
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "workload_produced": [
+        2,
+        1,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "a33",
+      "index": 34,
+      "length_of_stay": 2,
+      "room_id": "r08",
+      "skill_level_required": [
+        2,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "a34",
+      "index": 35,
+      "length_of_stay": 8,
+      "room_id": "r09",
+      "skill_level_required": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "workload_produced": [
+        2,
+        3,
+        1,
+        1,
+        3,
+        1,
+        3,
+        2,
+        1,
+        3,
+        3,
+        1,
+        1,
+        2,
+        1,
+        3,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "a35",
+      "index": 36,
+      "length_of_stay": 2,
+      "room_id": "r01",
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        2,
+        2,
+        0
+      ],
+      "workload_produced": [
+        3,
+        3,
+        1,
+        3,
+        1,
+        1
+      ]
+    }
+  ],
+  "operating_theaters": [
+    {
+      "availability": [
+        480,
+        720,
+        720,
+        720,
+        600,
+        0,
+        0,
+        600,
+        600,
+        600,
+        0,
+        600,
+        600,
+        600
+      ],
+      "id": "t0",
+      "index": 1
+    },
+    {
+      "availability": [
+        600,
+        600,
+        720,
+        600,
+        0,
+        0,
+        0,
+        600,
+        600,
+        720,
+        600,
+        720,
+        0,
+        720
+      ],
+      "id": "t1",
+      "index": 2
+    },
+    {
+      "availability": [
+        600,
+        720,
+        600,
+        600,
+        600,
+        480,
+        480,
+        720,
+        600,
+        720,
+        480,
+        720,
+        480,
+        720
+      ],
+      "id": "t2",
+      "index": 3
+    },
+    {
+      "availability": [
+        480,
+        720,
+        720,
+        720,
+        720,
+        600,
+        480,
+        600,
+        480,
+        720,
+        480,
+        720,
+        480,
+        720
+      ],
+      "id": "t3",
+      "index": 4
+    }
+  ],
+  "patients": [
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p000",
+      "incompatible_room_ids": [
+        "r10",
+        "r11",
+        "r15"
+      ],
+      "index": 1,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 8,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        3,
+        3,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p001",
+      "incompatible_room_ids": [
+        "r03",
+        "r14",
+        "r15",
+        "r19"
+      ],
+      "index": 2,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 9,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p002",
+      "incompatible_room_ids": [],
+      "index": 3,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p003",
+      "incompatible_room_ids": [
+        "r17",
+        "r20"
+      ],
+      "index": 4,
+      "length_of_stay": 5,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 8,
+      "surgery_duration": 90,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        2,
+        3,
+        2,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p004",
+      "incompatible_room_ids": [
+        "r00",
+        "r10",
+        "r17"
+      ],
+      "index": 5,
+      "length_of_stay": 5,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p005",
+      "incompatible_room_ids": [
+        "r00",
+        "r07",
+        "r18"
+      ],
+      "index": 6,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 14,
+      "surgery_duration": 90,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        2,
+        1,
+        2,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p006",
+      "incompatible_room_ids": [],
+      "index": 7,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p007",
+      "incompatible_room_ids": [
+        "r04"
+      ],
+      "index": 8,
+      "length_of_stay": 5,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p008",
+      "incompatible_room_ids": [
+        "r19"
+      ],
+      "index": 9,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        1,
+        2,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p009",
+      "incompatible_room_ids": [
+        "r00",
+        "r15"
+      ],
+      "index": 10,
+      "length_of_stay": 6,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 240,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p010",
+      "incompatible_room_ids": [
+        "r09",
+        "r17",
+        "r19"
+      ],
+      "index": 11,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 8,
+      "surgery_duration": 90,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p011",
+      "incompatible_room_ids": [
+        "r01",
+        "r08"
+      ],
+      "index": 12,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 10,
+      "surgery_duration": 90,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        3,
+        3,
+        2,
+        3,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p012",
+      "incompatible_room_ids": [
+        "r18",
+        "r19"
+      ],
+      "index": 13,
+      "length_of_stay": 8,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 7,
+      "surgery_duration": 120,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p013",
+      "incompatible_room_ids": [
+        "r10"
+      ],
+      "index": 14,
+      "length_of_stay": 10,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 12,
+      "surgery_duration": 120,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p014",
+      "incompatible_room_ids": [
+        "r15"
+      ],
+      "index": 15,
+      "length_of_stay": 7,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        2,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 12,
+      "surgery_duration": 90,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p015",
+      "incompatible_room_ids": [
+        "r01",
+        "r07",
+        "r11",
+        "r17",
+        "r18"
+      ],
+      "index": 16,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 12,
+      "surgery_duration": 180,
+      "surgery_release_day": 1,
+      "workload_produced": [
+        3,
+        3,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1,
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p016",
+      "incompatible_room_ids": [
+        "r07",
+        "r13"
+      ],
+      "index": 17,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 7,
+      "surgery_duration": 120,
+      "surgery_release_day": 7,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p017",
+      "incompatible_room_ids": [
+        "r05"
+      ],
+      "index": 18,
+      "length_of_stay": 5,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 14,
+      "surgery_duration": 120,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p018",
+      "incompatible_room_ids": [
+        "r14"
+      ],
+      "index": 19,
+      "length_of_stay": 5,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p019",
+      "incompatible_room_ids": [],
+      "index": 20,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 12,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p020",
+      "incompatible_room_ids": [
+        "r16",
+        "r18"
+      ],
+      "index": 21,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 120,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p021",
+      "incompatible_room_ids": [
+        "r12",
+        "r13",
+        "r14"
+      ],
+      "index": 22,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p022",
+      "incompatible_room_ids": [
+        "r08"
+      ],
+      "index": 23,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p023",
+      "incompatible_room_ids": [
+        "r04",
+        "r14"
+      ],
+      "index": 24,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 180,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        3,
+        3,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p024",
+      "incompatible_room_ids": [
+        "r10",
+        "r16"
+      ],
+      "index": 25,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 4,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p025",
+      "incompatible_room_ids": [
+        "r01",
+        "r06",
+        "r14"
+      ],
+      "index": 26,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        3,
+        1,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p026",
+      "incompatible_room_ids": [
+        "r05",
+        "r09"
+      ],
+      "index": 27,
+      "length_of_stay": 9,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        2,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p027",
+      "incompatible_room_ids": [],
+      "index": 28,
+      "length_of_stay": 5,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p028",
+      "incompatible_room_ids": [
+        "r01"
+      ],
+      "index": 29,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 10,
+      "surgery_duration": 180,
+      "surgery_release_day": 1,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p029",
+      "incompatible_room_ids": [
+        "r14",
+        "r16"
+      ],
+      "index": 30,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p030",
+      "incompatible_room_ids": [
+        "r04",
+        "r14",
+        "r17"
+      ],
+      "index": 31,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p031",
+      "incompatible_room_ids": [
+        "r18"
+      ],
+      "index": 32,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        2,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 10,
+      "surgery_duration": 90,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        2,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p032",
+      "incompatible_room_ids": [
+        "r07",
+        "r10"
+      ],
+      "index": 33,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p033",
+      "incompatible_room_ids": [
+        "r00",
+        "r05",
+        "r15",
+        "r16",
+        "r17"
+      ],
+      "index": 34,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        2,
+        1,
+        0,
+        1,
+        2,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p034",
+      "incompatible_room_ids": [
+        "r18"
+      ],
+      "index": 35,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p035",
+      "incompatible_room_ids": [
+        "r15",
+        "r20"
+      ],
+      "index": 36,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p036",
+      "incompatible_room_ids": [
+        "r02",
+        "r06",
+        "r11"
+      ],
+      "index": 37,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        1,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p037",
+      "incompatible_room_ids": [
+        "r08"
+      ],
+      "index": 38,
+      "length_of_stay": 7,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p038",
+      "incompatible_room_ids": [
+        "r00",
+        "r05"
+      ],
+      "index": 39,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p039",
+      "incompatible_room_ids": [
+        "r16"
+      ],
+      "index": 40,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 180,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        3,
+        3,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p040",
+      "incompatible_room_ids": [
+        "r01"
+      ],
+      "index": 41,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 12,
+      "workload_produced": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p041",
+      "incompatible_room_ids": [
+        "r10",
+        "r20"
+      ],
+      "index": 42,
+      "length_of_stay": 9,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 4,
+      "surgery_duration": 60,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        3,
+        3,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        1,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p042",
+      "incompatible_room_ids": [
+        "r06",
+        "r10",
+        "r11"
+      ],
+      "index": 43,
+      "length_of_stay": 11,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 10,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        3,
+        3,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        1,
+        3,
+        2,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p043",
+      "incompatible_room_ids": [
+        "r15"
+      ],
+      "index": 44,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 14,
+      "surgery_duration": 120,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p044",
+      "incompatible_room_ids": [
+        "r04",
+        "r17",
+        "r18"
+      ],
+      "index": 45,
+      "length_of_stay": 8,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        2,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p045",
+      "incompatible_room_ids": [
+        "r16",
+        "r17"
+      ],
+      "index": 46,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        2,
+        1,
+        3,
+        3,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p046",
+      "incompatible_room_ids": [
+        "r00",
+        "r11"
+      ],
+      "index": 47,
+      "length_of_stay": 7,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        0,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p047",
+      "incompatible_room_ids": [
+        "r16"
+      ],
+      "index": 48,
+      "length_of_stay": 5,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 8,
+      "surgery_duration": 60,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        3,
+        3,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p048",
+      "incompatible_room_ids": [
+        "r00",
+        "r01",
+        "r15",
+        "r16",
+        "r19"
+      ],
+      "index": 49,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 90,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p049",
+      "incompatible_room_ids": [
+        "r06"
+      ],
+      "index": 50,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 10,
+      "surgery_duration": 90,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p050",
+      "incompatible_room_ids": [
+        "r10",
+        "r16"
+      ],
+      "index": 51,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 10,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p051",
+      "incompatible_room_ids": [
+        "r11"
+      ],
+      "index": 52,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p052",
+      "incompatible_room_ids": [
+        "r06",
+        "r20"
+      ],
+      "index": 53,
+      "length_of_stay": 8,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 180,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p053",
+      "incompatible_room_ids": [],
+      "index": 54,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p054",
+      "incompatible_room_ids": [
+        "r00",
+        "r03"
+      ],
+      "index": 55,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        0,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p055",
+      "incompatible_room_ids": [
+        "r01",
+        "r06",
+        "r09",
+        "r15",
+        "r18"
+      ],
+      "index": 56,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 120,
+      "surgery_release_day": 11,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p056",
+      "incompatible_room_ids": [
+        "r08",
+        "r16"
+      ],
+      "index": 57,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 8,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        1,
+        2,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p057",
+      "incompatible_room_ids": [
+        "r00",
+        "r08",
+        "r10",
+        "r19"
+      ],
+      "index": 58,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p058",
+      "incompatible_room_ids": [
+        "r10"
+      ],
+      "index": 59,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p059",
+      "incompatible_room_ids": [
+        "r14"
+      ],
+      "index": 60,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 12,
+      "surgery_duration": 180,
+      "surgery_release_day": 10,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p060",
+      "incompatible_room_ids": [
+        "r02",
+        "r20"
+      ],
+      "index": 61,
+      "length_of_stay": 7,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 1,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p061",
+      "incompatible_room_ids": [
+        "r02",
+        "r13",
+        "r14"
+      ],
+      "index": 62,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 9,
+      "surgery_duration": 90,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p062",
+      "incompatible_room_ids": [
+        "r13",
+        "r15"
+      ],
+      "index": 63,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        3,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p063",
+      "incompatible_room_ids": [
+        "r20"
+      ],
+      "index": 64,
+      "length_of_stay": 7,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        0,
+        1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 120,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p064",
+      "incompatible_room_ids": [
+        "r13"
+      ],
+      "index": 65,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        2,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p065",
+      "incompatible_room_ids": [
+        "r00",
+        "r15",
+        "r20"
+      ],
+      "index": 66,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 180,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p066",
+      "incompatible_room_ids": [
+        "r08",
+        "r13",
+        "r19"
+      ],
+      "index": 67,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 10,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        3,
+        3,
+        2,
+        3,
+        2,
+        1,
+        2,
+        1,
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p067",
+      "incompatible_room_ids": [],
+      "index": 68,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 9,
+      "surgery_duration": 90,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p068",
+      "incompatible_room_ids": [
+        "r04",
+        "r13",
+        "r15"
+      ],
+      "index": 69,
+      "length_of_stay": 5,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 10,
+      "surgery_duration": 120,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p069",
+      "incompatible_room_ids": [
+        "r05"
+      ],
+      "index": 70,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 9,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        2,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p070",
+      "incompatible_room_ids": [
+        "r09",
+        "r17",
+        "r18",
+        "r20"
+      ],
+      "index": 71,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p071",
+      "incompatible_room_ids": [
+        "r20"
+      ],
+      "index": 72,
+      "length_of_stay": 12,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
+        1,
+        2,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p072",
+      "incompatible_room_ids": [],
+      "index": 73,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 10,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p073",
+      "incompatible_room_ids": [],
+      "index": 74,
+      "length_of_stay": 5,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        1,
+        0,
+        1,
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 1,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p074",
+      "incompatible_room_ids": [
+        "r05",
+        "r13",
+        "r14"
+      ],
+      "index": 75,
+      "length_of_stay": 5,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 300,
+      "surgery_release_day": 10,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1,
+        3,
+        3,
+        2,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p075",
+      "incompatible_room_ids": [
+        "r00",
+        "r08",
+        "r10",
+        "r20"
+      ],
+      "index": 76,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p076",
+      "incompatible_room_ids": [],
+      "index": 77,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        3,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p077",
+      "incompatible_room_ids": [
+        "r00",
+        "r19"
+      ],
+      "index": 78,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 14,
+      "surgery_duration": 120,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p078",
+      "incompatible_room_ids": [
+        "r12",
+        "r14"
+      ],
+      "index": 79,
+      "length_of_stay": 9,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p079",
+      "incompatible_room_ids": [
+        "r01",
+        "r03",
+        "r07",
+        "r09"
+      ],
+      "index": 80,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 9,
+      "surgery_duration": 120,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p080",
+      "incompatible_room_ids": [],
+      "index": 81,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 12,
+      "surgery_duration": 90,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        1,
+        2,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p081",
+      "incompatible_room_ids": [
+        "r00"
+      ],
+      "index": 82,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        3,
+        2,
+        3,
+        3,
+        2,
+        3,
+        2,
+        1,
+        3,
+        3,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p082",
+      "incompatible_room_ids": [
+        "r01",
+        "r07",
+        "r09",
+        "r20"
+      ],
+      "index": 83,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 120,
+      "surgery_release_day": 12,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        3,
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p083",
+      "incompatible_room_ids": [
+        "r01",
+        "r05",
+        "r08",
+        "r11",
+        "r14"
+      ],
+      "index": 84,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 11,
+      "surgery_duration": 120,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        3,
+        3,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1,
+        3,
+        3,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p084",
+      "incompatible_room_ids": [
+        "r00",
+        "r07"
+      ],
+      "index": 85,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 7,
+      "surgery_duration": 120,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p085",
+      "incompatible_room_ids": [
+        "r02",
+        "r07",
+        "r20"
+      ],
+      "index": 86,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p086",
+      "incompatible_room_ids": [
+        "r00",
+        "r02",
+        "r05",
+        "r10",
+        "r12",
+        "r16"
+      ],
+      "index": 87,
+      "length_of_stay": 8,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        2,
+        0,
+        1,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 12,
+      "surgery_duration": 180,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p087",
+      "incompatible_room_ids": [],
+      "index": 88,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p088",
+      "incompatible_room_ids": [
+        "r13",
+        "r19"
+      ],
+      "index": 89,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 8,
+      "surgery_duration": 90,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        1,
+        2,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p089",
+      "incompatible_room_ids": [
+        "r07"
+      ],
+      "index": 90,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 10,
+      "surgery_duration": 90,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p090",
+      "incompatible_room_ids": [
+        "r10"
+      ],
+      "index": 91,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p091",
+      "incompatible_room_ids": [
+        "r01"
+      ],
+      "index": 92,
+      "length_of_stay": 6,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p092",
+      "incompatible_room_ids": [
+        "r11"
+      ],
+      "index": 93,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        0,
+        1,
+        2,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 12,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        3,
+        3,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p093",
+      "incompatible_room_ids": [],
+      "index": 94,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 8,
+      "surgery_duration": 120,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p094",
+      "incompatible_room_ids": [
+        "r11",
+        "r13",
+        "r14"
+      ],
+      "index": 95,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 90,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p095",
+      "incompatible_room_ids": [
+        "r04"
+      ],
+      "index": 96,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 4,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p096",
+      "incompatible_room_ids": [
+        "r07",
+        "r08",
+        "r09"
+      ],
+      "index": 97,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        3,
+        1,
+        2,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p097",
+      "incompatible_room_ids": [
+        "r20"
+      ],
+      "index": 98,
+      "length_of_stay": 9,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 90,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        1,
+        2,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p098",
+      "incompatible_room_ids": [
+        "r13",
+        "r14",
+        "r18",
+        "r19"
+      ],
+      "index": 99,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p099",
+      "incompatible_room_ids": [
+        "r02",
+        "r07"
+      ],
+      "index": 100,
+      "length_of_stay": 11,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        2,
+        1,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p100",
+      "incompatible_room_ids": [
+        "r03",
+        "r04",
+        "r07"
+      ],
+      "index": 101,
+      "length_of_stay": 6,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        2,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p101",
+      "incompatible_room_ids": [
+        "r15",
+        "r18"
+      ],
+      "index": 102,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p102",
+      "incompatible_room_ids": [
+        "r01",
+        "r09",
+        "r11"
+      ],
+      "index": 103,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 12,
+      "surgery_duration": 90,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p103",
+      "incompatible_room_ids": [
+        "r02",
+        "r11"
+      ],
+      "index": 104,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 90,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        3,
+        3,
+        2,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p104",
+      "incompatible_room_ids": [
+        "r07",
+        "r16"
+      ],
+      "index": 105,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 10,
+      "workload_produced": [
+        2,
+        1,
+        2,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p105",
+      "incompatible_room_ids": [
+        "r02",
+        "r13",
+        "r17",
+        "r19"
+      ],
+      "index": 106,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p106",
+      "incompatible_room_ids": [
+        "r07",
+        "r15"
+      ],
+      "index": 107,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p107",
+      "incompatible_room_ids": [],
+      "index": 108,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 3,
+      "surgery_duration": 90,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p108",
+      "incompatible_room_ids": [
+        "r03",
+        "r08",
+        "r10",
+        "r15",
+        "r16"
+      ],
+      "index": 109,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 90,
+      "surgery_release_day": 12,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p109",
+      "incompatible_room_ids": [
+        "r05",
+        "r06"
+      ],
+      "index": 110,
+      "length_of_stay": 10,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 10,
+      "surgery_duration": 60,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p110",
+      "incompatible_room_ids": [
+        "r04",
+        "r08",
+        "r15"
+      ],
+      "index": 111,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 12,
+      "surgery_duration": 90,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        3,
+        3,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p111",
+      "incompatible_room_ids": [
+        "r04",
+        "r19",
+        "r20"
+      ],
+      "index": 112,
+      "length_of_stay": 4,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 180,
+      "surgery_release_day": 5,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p112",
+      "incompatible_room_ids": [
+        "r06",
+        "r09"
+      ],
+      "index": 113,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        2,
+        1,
+        0,
+        1,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 180,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        3,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p113",
+      "incompatible_room_ids": [],
+      "index": 114,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p114",
+      "incompatible_room_ids": [
+        "r01",
+        "r09",
+        "r15",
+        "r18",
+        "r19",
+        "r20"
+      ],
+      "index": 115,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 12,
+      "surgery_duration": 120,
+      "surgery_release_day": 11,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "A",
+      "id": "p115",
+      "incompatible_room_ids": [
+        "r04",
+        "r11",
+        "r16"
+      ],
+      "index": 116,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        1,
+        2,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p116",
+      "incompatible_room_ids": [
+        "r11"
+      ],
+      "index": 117,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 10,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p117",
+      "incompatible_room_ids": [
+        "r09",
+        "r20"
+      ],
+      "index": 118,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        2,
+        0,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p118",
+      "incompatible_room_ids": [
+        "r10"
+      ],
+      "index": 119,
+      "length_of_stay": 5,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 180,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p119",
+      "incompatible_room_ids": [
+        "r05",
+        "r13",
+        "r17",
+        "r19"
+      ],
+      "index": 120,
+      "length_of_stay": 3,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 14,
+      "surgery_duration": 60,
+      "surgery_release_day": 10,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p120",
+      "incompatible_room_ids": [
+        "r03"
+      ],
+      "index": 121,
+      "length_of_stay": 5,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 180,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "adult",
+      "gender": "B",
+      "id": "p121",
+      "incompatible_room_ids": [
+        "r02",
+        "r11",
+        "r15",
+        "r16"
+      ],
+      "index": 122,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        2,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 11,
+      "workload_produced": [
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p122",
+      "incompatible_room_ids": [
+        "r12",
+        "r15"
+      ],
+      "index": 123,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p123",
+      "incompatible_room_ids": [],
+      "index": 124,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 9,
+      "surgery_duration": 90,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p124",
+      "incompatible_room_ids": [
+        "r10",
+        "r14",
+        "r19"
+      ],
+      "index": 125,
+      "length_of_stay": 5,
+      "mandatory": true,
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 14,
+      "surgery_duration": 240,
+      "surgery_release_day": 14,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1,
+        2,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p125",
+      "incompatible_room_ids": [
+        "r01",
+        "r07",
+        "r18",
+        "r19"
+      ],
+      "index": 126,
+      "length_of_stay": 8,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        2,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 8,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p126",
+      "incompatible_room_ids": [
+        "r05",
+        "r10",
+        "r13",
+        "r14"
+      ],
+      "index": 127,
+      "length_of_stay": 6,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        2,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 180,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p127",
+      "incompatible_room_ids": [
+        "r05",
+        "r08",
+        "r11"
+      ],
+      "index": 128,
+      "length_of_stay": 6,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        1,
+        0,
+        1,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 8,
+      "surgery_duration": 90,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p128",
+      "incompatible_room_ids": [
+        "r02"
+      ],
+      "index": 129,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        2,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 180,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        2,
+        2,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p129",
+      "incompatible_room_ids": [
+        "r07",
+        "r17"
+      ],
+      "index": 130,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 12,
+      "surgery_duration": 120,
+      "surgery_release_day": 9,
+      "workload_produced": [
+        3,
+        1,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p130",
+      "incompatible_room_ids": [
+        "r08"
+      ],
+      "index": 131,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 11,
+      "surgery_duration": 90,
+      "surgery_release_day": 8,
+      "workload_produced": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p131",
+      "incompatible_room_ids": [
+        "r02",
+        "r03"
+      ],
+      "index": 132,
+      "length_of_stay": 7,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p132",
+      "incompatible_room_ids": [
+        "r02",
+        "r18",
+        "r20"
+      ],
+      "index": 133,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 7,
+      "workload_produced": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p133",
+      "incompatible_room_ids": [],
+      "index": 134,
+      "length_of_stay": 3,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 120,
+      "surgery_release_day": 2,
+      "workload_produced": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p134",
+      "incompatible_room_ids": [],
+      "index": 135,
+      "length_of_stay": 2,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s0",
+      "surgery_due_day": 0,
+      "surgery_duration": 90,
+      "surgery_release_day": 12,
+      "workload_produced": [
+        3,
+        1,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p135",
+      "incompatible_room_ids": [
+        "r03",
+        "r05"
+      ],
+      "index": 136,
+      "length_of_stay": 4,
+      "mandatory": false,
+      "skill_level_required": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "surgeon_id": "s1",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 4,
+      "workload_produced": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "B",
+      "id": "p136",
+      "incompatible_room_ids": [
+        "r09",
+        "r10"
+      ],
+      "index": 137,
+      "length_of_stay": 2,
+      "mandatory": true,
+      "skill_level_required": [
+        0,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 11,
+      "surgery_duration": 60,
+      "surgery_release_day": 10,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "age_group": "elderly",
+      "gender": "A",
+      "id": "p137",
+      "incompatible_room_ids": [
+        "r07",
+        "r08",
+        "r12"
+      ],
+      "index": 138,
+      "length_of_stay": 5,
+      "mandatory": false,
+      "skill_level_required": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      "surgeon_id": "s2",
+      "surgery_due_day": 0,
+      "surgery_duration": 60,
+      "surgery_release_day": 3,
+      "workload_produced": [
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        3,
+        2,
+        3,
+        1,
+        2
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "capacity": 4,
+      "id": "r00",
+      "index": 1
+    },
+    {
+      "capacity": 2,
+      "id": "r01",
+      "index": 2
+    },
+    {
+      "capacity": 4,
+      "id": "r02",
+      "index": 3
+    },
+    {
+      "capacity": 3,
+      "id": "r03",
+      "index": 4
+    },
+    {
+      "capacity": 2,
+      "id": "r04",
+      "index": 5
+    },
+    {
+      "capacity": 4,
+      "id": "r05",
+      "index": 6
+    },
+    {
+      "capacity": 3,
+      "id": "r06",
+      "index": 7
+    },
+    {
+      "capacity": 2,
+      "id": "r07",
+      "index": 8
+    },
+    {
+      "capacity": 3,
+      "id": "r08",
+      "index": 9
+    },
+    {
+      "capacity": 3,
+      "id": "r09",
+      "index": 10
+    },
+    {
+      "capacity": 2,
+      "id": "r10",
+      "index": 11
+    },
+    {
+      "capacity": 2,
+      "id": "r11",
+      "index": 12
+    },
+    {
+      "capacity": 4,
+      "id": "r12",
+      "index": 13
+    },
+    {
+      "capacity": 4,
+      "id": "r13",
+      "index": 14
+    },
+    {
+      "capacity": 4,
+      "id": "r14",
+      "index": 15
+    },
+    {
+      "capacity": 4,
+      "id": "r15",
+      "index": 16
+    },
+    {
+      "capacity": 3,
+      "id": "r16",
+      "index": 17
+    },
+    {
+      "capacity": 4,
+      "id": "r17",
+      "index": 18
+    },
+    {
+      "capacity": 2,
+      "id": "r18",
+      "index": 19
+    },
+    {
+      "capacity": 2,
+      "id": "r19",
+      "index": 20
+    },
+    {
+      "capacity": 2,
+      "id": "r20",
+      "index": 21
+    }
+  ],
+  "shift_types": [
+    "early",
+    "late",
+    "night"
+  ],
+  "skill_levels": 3,
+  "surgeons": [
+    {
+      "id": "s0",
+      "index": 1,
+      "max_surgery_time": [
+        0,
+        480,
+        360,
+        360,
+        480,
+        0,
+        600,
+        480,
+        360,
+        480,
+        0,
+        480,
+        0,
+        360
+      ]
+    },
+    {
+      "id": "s1",
+      "index": 2,
+      "max_surgery_time": [
+        0,
+        480,
+        0,
+        600,
+        360,
+        0,
+        0,
+        480,
+        480,
+        0,
+        0,
+        360,
+        0,
+        480
+      ]
+    },
+    {
+      "id": "s2",
+      "index": 3,
+      "max_surgery_time": [
+        360,
+        480,
+        480,
+        600,
+        480,
+        0,
+        0,
+        480,
+        600,
+        600,
+        480,
+        480,
+        0,
+        480
+      ]
+    }
+  ],
+  "weights": {
+    "continuity_of_care": 5,
+    "nurse_eccessive_workload": 5,
+    "open_operating_theater": 50,
+    "patient_delay": 5,
+    "room_mixed_age": 1,
+    "room_nurse_skill": 1,
+    "surgeon_transfer": 1,
+    "unscheduled_optional": 350
+  }
+}

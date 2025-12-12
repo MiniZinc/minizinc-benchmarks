@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "pennies.mzn",
+    "data/n5.json",
+    "data/n7.json",
+    "data/n9.json",
+    "data/n8.json",
+    "data/n12.json"
+  ],
+  "openFiles": [
+    "pennies.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

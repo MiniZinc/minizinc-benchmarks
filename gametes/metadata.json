@@ -1,0 +1,14 @@
+{
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_different_except_0",
+    "count",
+    "increasing"
+  ],
+  "challenges": [
+    "2023"
+  ]
+}

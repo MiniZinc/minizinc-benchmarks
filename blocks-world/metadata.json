@@ -1,0 +1,13 @@
+{
+  "type": "puzzle",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "global_cardinality_closed",
+    "increasing"
+  ],
+  "challenges": [
+    "2022"
+  ]
+}

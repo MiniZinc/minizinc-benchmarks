@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "atsp.mzn",
+    "data/instance5_0p15.json",
+    "data/instance9_0p25.json",
+    "data/instance16_0p35.json",
+    "data/instance19_0p35.json",
+    "data/instance10_0p25.json"
+  ],
+  "openFiles": [
+    "atsp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

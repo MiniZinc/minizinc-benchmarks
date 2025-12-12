@@ -1,0 +1,15 @@
+{
+  "type": "real",
+  "globals": [
+    "diffn_nonstrict_k",
+    "increasing",
+    "lex_chain_lesseq",
+    "seq_precede_chain"
+  ],
+  "kind": "min",
+  "sbc": true,
+  "rc": false,
+  "challenges": [
+    "2025"
+  ]
+}

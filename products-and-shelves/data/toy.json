@@ -1,0 +1,10 @@
+{
+  "Product": { "c": "P", "e": { "set": [[1, 2]] } },
+  "shelves": [8, 4, 4],
+  "product_size": [
+    [4, 4, 4],
+    [8, 4, 4]
+  ],
+  "nr_shelves": 20,
+  "nr_products": [10, 1]
+}

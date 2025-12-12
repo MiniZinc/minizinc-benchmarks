@@ -1,0 +1,1936 @@
+{
+  "STOCK": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "trades": [
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 9,
+      "price": 11740
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 10,
+      "price": 10917
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 13,
+      "price": 8239
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 10,
+      "price": 11046
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 10,
+      "price": 11016
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 10,
+      "price": 10672
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 10,
+      "price": 10619
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 10,
+      "price": 10601
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 9,
+      "price": 11856
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 11,
+      "price": 9344
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 11,
+      "price": 9345
+    },
+    {
+      "date": 0,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 10,
+      "price": 11022
+    },
+    {
+      "date": 1,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 11587
+    },
+    {
+      "date": 1,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10395
+    },
+    {
+      "date": 1,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8036
+    },
+    {
+      "date": 1,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10717
+    },
+    {
+      "date": 1,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 10795
+    },
+    {
+      "date": 1,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 10716
+    },
+    {
+      "date": 1,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11693
+    },
+    {
+      "date": 1,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 2,
+      "price": 8988
+    },
+    {
+      "date": 1,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 9279
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 11481
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10480
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8047
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 11107
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10609
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11172
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 10552
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11640
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 9049
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 9482
+    },
+    {
+      "date": 2,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11091
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10899
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10475
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8156
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 11085
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10507
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 10970
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 10784
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 9106
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 9360
+    },
+    {
+      "date": 3,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11131
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10936
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10283
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8391
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 10933
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10452
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 10940
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11172
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 10695
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 12038
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 9019
+    },
+    {
+      "date": 4,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 9326
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10768
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8523
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 11107
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10225
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 10995
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 10973
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 11167
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11989
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 9017
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 9683
+    },
+    {
+      "date": 5,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11349
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "A",
+      "units": 2,
+      "price": 10895
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "B",
+      "units": 2,
+      "price": 10524
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "C",
+      "units": 2,
+      "price": 8413
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "D",
+      "units": 2,
+      "price": 11000
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "E",
+      "units": 2,
+      "price": 10311
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "F",
+      "units": 2,
+      "price": 11054
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "G",
+      "units": 2,
+      "price": 11209
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "H",
+      "units": 2,
+      "price": 11045
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "I",
+      "units": 2,
+      "price": 11666
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "J",
+      "units": 2,
+      "price": 8889
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "K",
+      "units": 2,
+      "price": 9894
+    },
+    {
+      "date": 6,
+      "trade": "Sell",
+      "stock": "L",
+      "units": 2,
+      "price": 11221
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "A",
+      "units": 1,
+      "price": 10684
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "B",
+      "units": 1,
+      "price": 10578
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "C",
+      "units": 1,
+      "price": 8545
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "D",
+      "units": 1,
+      "price": 11242
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "E",
+      "units": 1,
+      "price": 10327
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "F",
+      "units": 1,
+      "price": 10848
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "G",
+      "units": 1,
+      "price": 11334
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "H",
+      "units": 1,
+      "price": 11073
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "I",
+      "units": 1,
+      "price": 11687
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "J",
+      "units": 1,
+      "price": 8775
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "K",
+      "units": 1,
+      "price": 9926
+    },
+    {
+      "date": 7,
+      "trade": "Sell",
+      "stock": "L",
+      "units": 1,
+      "price": 11714
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10662
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10665
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8223
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 11058
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10346
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 10887
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 11093
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11695
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 8917
+    },
+    {
+      "date": 8,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11592
+    },
+    {
+      "date": 9,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10675
+    },
+    {
+      "date": 9,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10677
+    },
+    {
+      "date": 9,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 11041
+    },
+    {
+      "date": 9,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 10786
+    },
+    {
+      "date": 9,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11209
+    },
+    {
+      "date": 9,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11783
+    },
+    {
+      "date": 9,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 2,
+      "price": 8394
+    },
+    {
+      "date": 9,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10240
+    },
+    {
+      "date": 9,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11502
+    },
+    {
+      "date": 10,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10572
+    },
+    {
+      "date": 10,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10472
+    },
+    {
+      "date": 10,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 2,
+      "price": 8080
+    },
+    {
+      "date": 10,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10445
+    },
+    {
+      "date": 10,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 10934
+    },
+    {
+      "date": 10,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11068
+    },
+    {
+      "date": 10,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 8377
+    },
+    {
+      "date": 10,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11787
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10538
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10676
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8160
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 11312
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10471
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11195
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 12289
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11835
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 8414
+    },
+    {
+      "date": 11,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10431
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "A",
+      "units": 2,
+      "price": 10596
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "B",
+      "units": 2,
+      "price": 11008
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "C",
+      "units": 2,
+      "price": 8111
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "D",
+      "units": 2,
+      "price": 11353
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "E",
+      "units": 2,
+      "price": 10371
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "F",
+      "units": 2,
+      "price": 11096
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "G",
+      "units": 2,
+      "price": 11367
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "H",
+      "units": 2,
+      "price": 12201
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "I",
+      "units": 2,
+      "price": 11523
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "J",
+      "units": 2,
+      "price": 8746
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "K",
+      "units": 2,
+      "price": 10348
+    },
+    {
+      "date": 12,
+      "trade": "Sell",
+      "stock": "L",
+      "units": 2,
+      "price": 11611
+    },
+    {
+      "date": 13,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8161
+    },
+    {
+      "date": 13,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 11365
+    },
+    {
+      "date": 13,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10233
+    },
+    {
+      "date": 13,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11074
+    },
+    {
+      "date": 13,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11369
+    },
+    {
+      "date": 13,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 11896
+    },
+    {
+      "date": 13,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11738
+    },
+    {
+      "date": 13,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10242
+    },
+    {
+      "date": 13,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11791
+    },
+    {
+      "date": 14,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 11122
+    },
+    {
+      "date": 14,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10795
+    },
+    {
+      "date": 14,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10199
+    },
+    {
+      "date": 14,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11215
+    },
+    {
+      "date": 14,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 11801
+    },
+    {
+      "date": 14,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11570
+    },
+    {
+      "date": 14,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 8665
+    },
+    {
+      "date": 14,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10410
+    },
+    {
+      "date": 14,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11636
+    },
+    {
+      "date": 15,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10520
+    },
+    {
+      "date": 15,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8463
+    },
+    {
+      "date": 15,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 11226
+    },
+    {
+      "date": 15,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10318
+    },
+    {
+      "date": 15,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11445
+    },
+    {
+      "date": 15,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 11698
+    },
+    {
+      "date": 15,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11324
+    },
+    {
+      "date": 15,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10280
+    },
+    {
+      "date": 16,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 11347
+    },
+    {
+      "date": 16,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10322
+    },
+    {
+      "date": 16,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8469
+    },
+    {
+      "date": 16,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 10914
+    },
+    {
+      "date": 16,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11259
+    },
+    {
+      "date": 16,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 11566
+    },
+    {
+      "date": 16,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11258
+    },
+    {
+      "date": 16,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 8703
+    },
+    {
+      "date": 16,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11964
+    },
+    {
+      "date": 17,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 11069
+    },
+    {
+      "date": 17,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10144
+    },
+    {
+      "date": 17,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 10766
+    },
+    {
+      "date": 17,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10353
+    },
+    {
+      "date": 17,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11156
+    },
+    {
+      "date": 17,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11898
+    },
+    {
+      "date": 17,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11249
+    },
+    {
+      "date": 17,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 8887
+    },
+    {
+      "date": 17,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10177
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "A",
+      "units": 2,
+      "price": 10852
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "B",
+      "units": 2,
+      "price": 10211
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "C",
+      "units": 2,
+      "price": 8669
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "D",
+      "units": 2,
+      "price": 10626
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "E",
+      "units": 2,
+      "price": 10162
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "F",
+      "units": 2,
+      "price": 11230
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "G",
+      "units": 2,
+      "price": 12220
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "H",
+      "units": 2,
+      "price": 11802
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "I",
+      "units": 2,
+      "price": 11098
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "J",
+      "units": 2,
+      "price": 8688
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "K",
+      "units": 2,
+      "price": 10252
+    },
+    {
+      "date": 18,
+      "trade": "Sell",
+      "stock": "L",
+      "units": 2,
+      "price": 11858
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "A",
+      "units": 1,
+      "price": 10800
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "B",
+      "units": 1,
+      "price": 10009
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "C",
+      "units": 1,
+      "price": 8722
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "D",
+      "units": 1,
+      "price": 10352
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "E",
+      "units": 1,
+      "price": 9976
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "F",
+      "units": 1,
+      "price": 11054
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "G",
+      "units": 1,
+      "price": 12056
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "H",
+      "units": 1,
+      "price": 11777
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "I",
+      "units": 1,
+      "price": 10908
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "J",
+      "units": 1,
+      "price": 8631
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "K",
+      "units": 1,
+      "price": 10236
+    },
+    {
+      "date": 19,
+      "trade": "Sell",
+      "stock": "L",
+      "units": 1,
+      "price": 11825
+    },
+    {
+      "date": 20,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10716
+    },
+    {
+      "date": 20,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 9971
+    },
+    {
+      "date": 20,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 10542
+    },
+    {
+      "date": 20,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10200
+    },
+    {
+      "date": 20,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11858
+    },
+    {
+      "date": 20,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 10836
+    },
+    {
+      "date": 20,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10369
+    },
+    {
+      "date": 20,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 12087
+    },
+    {
+      "date": 21,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10784
+    },
+    {
+      "date": 21,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 9779
+    },
+    {
+      "date": 21,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8905
+    },
+    {
+      "date": 21,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 10443
+    },
+    {
+      "date": 21,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11705
+    },
+    {
+      "date": 21,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 12681
+    },
+    {
+      "date": 21,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 2,
+      "price": 8538
+    },
+    {
+      "date": 21,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 12092
+    },
+    {
+      "date": 22,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 10505
+    },
+    {
+      "date": 22,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 2,
+      "price": 10208
+    },
+    {
+      "date": 22,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11997
+    },
+    {
+      "date": 22,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11148
+    },
+    {
+      "date": 22,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 8337
+    },
+    {
+      "date": 22,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10323
+    },
+    {
+      "date": 22,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11716
+    },
+    {
+      "date": 23,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 11171
+    },
+    {
+      "date": 23,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10361
+    },
+    {
+      "date": 23,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 9168
+    },
+    {
+      "date": 23,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11810
+    },
+    {
+      "date": 23,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 11985
+    },
+    {
+      "date": 23,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 1,
+      "price": 8570
+    },
+    {
+      "date": 23,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10555
+    },
+    {
+      "date": 23,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11673
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "A",
+      "units": 2,
+      "price": 10983
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "B",
+      "units": 2,
+      "price": 10381
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "C",
+      "units": 2,
+      "price": 8941
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "D",
+      "units": 2,
+      "price": 10678
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "E",
+      "units": 2,
+      "price": 10456
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "F",
+      "units": 2,
+      "price": 11689
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "G",
+      "units": 2,
+      "price": 12311
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "H",
+      "units": 2,
+      "price": 13345
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "I",
+      "units": 2,
+      "price": 11705
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "J",
+      "units": 3,
+      "price": 8380
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "K",
+      "units": 2,
+      "price": 10452
+    },
+    {
+      "date": 24,
+      "trade": "Sell",
+      "stock": "L",
+      "units": 2,
+      "price": 11841
+    },
+    {
+      "date": 25,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 11122
+    },
+    {
+      "date": 25,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 10099
+    },
+    {
+      "date": 25,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 9046
+    },
+    {
+      "date": 25,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 10886
+    },
+    {
+      "date": 25,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10369
+    },
+    {
+      "date": 25,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11719
+    },
+    {
+      "date": 25,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 13081
+    },
+    {
+      "date": 25,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 12008
+    },
+    {
+      "date": 25,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 2,
+      "price": 8293
+    },
+    {
+      "date": 26,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 9859
+    },
+    {
+      "date": 26,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 9054
+    },
+    {
+      "date": 26,
+      "trade": "Buy",
+      "stock": "D",
+      "units": 1,
+      "price": 10895
+    },
+    {
+      "date": 26,
+      "trade": "Buy",
+      "stock": "E",
+      "units": 1,
+      "price": 10335
+    },
+    {
+      "date": 26,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11714
+    },
+    {
+      "date": 26,
+      "trade": "Buy",
+      "stock": "G",
+      "units": 1,
+      "price": 12468
+    },
+    {
+      "date": 26,
+      "trade": "Buy",
+      "stock": "H",
+      "units": 1,
+      "price": 13612
+    },
+    {
+      "date": 26,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10468
+    },
+    {
+      "date": 26,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 12066
+    },
+    {
+      "date": 27,
+      "trade": "Buy",
+      "stock": "A",
+      "units": 1,
+      "price": 10827
+    },
+    {
+      "date": 27,
+      "trade": "Buy",
+      "stock": "B",
+      "units": 1,
+      "price": 9823
+    },
+    {
+      "date": 27,
+      "trade": "Buy",
+      "stock": "C",
+      "units": 1,
+      "price": 8975
+    },
+    {
+      "date": 27,
+      "trade": "Buy",
+      "stock": "F",
+      "units": 1,
+      "price": 11339
+    },
+    {
+      "date": 27,
+      "trade": "Buy",
+      "stock": "I",
+      "units": 1,
+      "price": 11875
+    },
+    {
+      "date": 27,
+      "trade": "Buy",
+      "stock": "J",
+      "units": 2,
+      "price": 8266
+    },
+    {
+      "date": 27,
+      "trade": "Buy",
+      "stock": "K",
+      "units": 1,
+      "price": 10379
+    },
+    {
+      "date": 27,
+      "trade": "Buy",
+      "stock": "L",
+      "units": 1,
+      "price": 11866
+    }
+  ]
+}

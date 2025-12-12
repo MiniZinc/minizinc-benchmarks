@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "aircraft.mzn",
+    "data/B737NG-600-01-Anon.json",
+    "data/B737NG-600-06-Anon.json",
+    "data/B737NG-600-09-Anon.json",
+    "data/B737NG-600-02-Anon.json",
+    "data/B737NG-600-04-Anon.json"
+  ],
+  "openFiles": [
+    "aircraft.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

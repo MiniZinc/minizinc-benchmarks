@@ -1,9 +1,25 @@
-The MiniZinc Benchmark Suite
-============================
+# The MiniZinc Benchmark Suite
 
-This is a collection of MiniZinc benchmark instances including instances from
-the 2008-2012 MiniZinc challenges.
+This is a collection of MiniZinc benchmark instances.
 
-All models and data files have been placed in the public domain and are available under the MIT license.
+They are derived from models used in the MiniZinc Challenge.
 
-There is further information in the README and LICENSE files.
+## TODO
+
+**Work in progress! Not ready for general use**
+
+- [ ] Expand to all Challenge models
+- [x] Use LLM to generate descriptions of problems for readmes
+- [ ] Review the readmes
+- [x] Generate projects openable in the IDE/playground
+- [x] Check that models run with current MiniZinc
+- [ ] Update models to use best current MiniZinc practices
+- [x] Generate metadata for models
+- [ ] Generate a searchable website as a catalogue of the benchmarks.
+
+## Structure
+
+- `/<problem>/<model>.mzp` A project file which can be opened in the MiniZincIDE or playground
+- `/<problem>/<model>.mzn` The model file for the problem
+- `/<problem>/data/<data>.json` The data files in JSON format
+- `/<problem>/metadata.json` Metadata for the problem
