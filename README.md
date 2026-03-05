@@ -25,3 +25,20 @@ They are derived from models used in the MiniZinc Challenge.
 - `/<problem>/<model>.mzn` The model file for the problem
 - `/<problem>/data/<data>.json` The data files in JSON format
 - `/<problem>/metadata.json` Metadata for the problem
+
+## Quality criteria
+
+All models in this repository should satisfy the following quality criteria:
+
+- Compile successfully with the most recent version of MiniZinc
+- Consistent comments
+  - Short problem description (not replicating the `README.md`)
+  - Comments on "interesting" constraints
+- Use idiomatic MiniZinc
+  - Use enums and option types where possible
+  - Use Boolean variables instead of 0/1 variables
+  - Only have domains on defined variables when necessary
+- Have no infinite domains (`var int`) in the generated FlatZinc
+- Do not use `lb`, `ub`, `dom`, unless well justified (such as in user-defined predicates)
+- Do not use multiple model files instead of data files unless absolutely necessary
+- Comply with MiniZinc challenge search strategy rules
