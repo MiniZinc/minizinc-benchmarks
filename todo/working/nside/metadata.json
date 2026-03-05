@@ -1,0 +1,23 @@
+{
+  "name": "nside",
+  "type": "real",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative",
+    "global_cardinality_low_up"
+  ],
+  "challenges": [
+    {
+      "year": 2019,
+      "instances": [
+        "EASY_200_50.json",
+        "HARD_2000_500.json",
+        "HARD_200_50.json",
+        "MEDIUM_1000_100.json",
+        "MEDIUM_200_50.json"
+      ]
+    }
+  ]
+}

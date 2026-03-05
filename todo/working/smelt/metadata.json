@@ -1,0 +1,22 @@
+{
+  "name": "smelt",
+  "type": "puzzle",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "smelt_11.json",
+        "smelt_2.json",
+        "smelt_3.json",
+        "smelt_4.json",
+        "smelt_5.json"
+      ]
+    }
+  ]
+}

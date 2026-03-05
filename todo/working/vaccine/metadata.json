@@ -1,0 +1,24 @@
+{
+  "name": "vaccine",
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "global_cardinality_low_up",
+    "lex_lesseq"
+  ],
+  "challenges": [
+    {
+      "year": 2022,
+      "instances": [
+        "LICENSE",
+        "v11.json",
+        "v7.json",
+        "v8.json",
+        "v857.json",
+        "v946.json"
+      ]
+    }
+  ]
+}

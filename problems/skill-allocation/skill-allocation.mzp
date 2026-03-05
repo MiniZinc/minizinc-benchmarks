@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "skill_allocation_only.mzn",
+    "data/skill_allocation_mzn_1m_2.json",
+    "data/skill_allocation_mzn_2m_2.json",
+    "data/skill_allocation_mzn_2w_2.json",
+    "data/skill_allocation_mzn_3m_3.json",
+    "data/skill_allocation_mzn_5d_1.json"
+  ],
+  "openFiles": [
+    "skill_allocation_only.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

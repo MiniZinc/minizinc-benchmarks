@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "spot5.mzn",
+    "data/1401.json",
+    "data/1405.json",
+    "data/1502.json",
+    "data/1506.json",
+    "data/28.json",
+    "data/29.json",
+    "data/404.json",
+    "data/412.json",
+    "data/414.json",
+    "data/42.json",
+    "data/5.json",
+    "data/503.json",
+    "data/507.json",
+    "data/509.json",
+    "data/54.json"
+  ],
+  "openFiles": [
+    "spot5.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

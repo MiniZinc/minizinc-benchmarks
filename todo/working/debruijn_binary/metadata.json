@@ -1,0 +1,29 @@
+{
+  "name": "debruijn_binary",
+  "type": "combi",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different",
+    "global_cardinality"
+  ],
+  "challenges": [
+    {
+      "year": 2008,
+      "instances": [
+        "02_03.json",
+        "02_07.json",
+        "02_08.json",
+        "02_09.json",
+        "02_10.json",
+        "03_06.json",
+        "03_07.json",
+        "03_08.json",
+        "04_06.json",
+        "04_07.json",
+        "04_08.json"
+      ]
+    }
+  ]
+}

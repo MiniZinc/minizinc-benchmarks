@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "sugiyama2.mzn",
+    "data/g3_8_8_2.json",
+    "data/g3_8_8_4.json",
+    "data/g3_8_8_6.json",
+    "data/g4_7_7_7_3.json",
+    "data/g5_7_7_7_7_2.json"
+  ],
+  "openFiles": [
+    "sugiyama2.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

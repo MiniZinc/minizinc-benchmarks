@@ -1,0 +1,25 @@
+{
+  "name": "rotating-workforce-scheduling",
+  "type": "real",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "global_cardinality_low_up",
+    "regular",
+    "sliding_sum"
+  ],
+  "challenges": [
+    {
+      "year": 2022,
+      "instances": [
+        "LICENSE",
+        "rws-instance-e-100-s-2.json",
+        "rws-instance-e-25-s-7.json",
+        "rws-instance-e-30-s-9.json",
+        "rws-instance-e-80-s-1.json",
+        "rws-instance-e-90-s-2.json"
+      ]
+    }
+  ]
+}

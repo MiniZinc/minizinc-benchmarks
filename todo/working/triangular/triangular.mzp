@@ -1,0 +1,28 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "triangular.mzn",
+    "data/n10.json",
+    "data/n11.json",
+    "data/n14.json",
+    "data/n16.json",
+    "data/n17.json",
+    "data/n18.json",
+    "data/n20.json",
+    "data/n22.json",
+    "data/n23.json",
+    "data/n24.json",
+    "data/n28.json",
+    "data/n29.json",
+    "data/n30.json",
+    "data/n31.json",
+    "data/n37.json",
+    "data/n39.json",
+    "data/n9.json"
+  ],
+  "openFiles": [
+    "triangular.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

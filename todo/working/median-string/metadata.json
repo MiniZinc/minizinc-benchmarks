@@ -1,0 +1,20 @@
+{
+  "name": "median-string",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2019,
+      "instances": [
+        "p1_15_20-1.json",
+        "p2_10_8-0.json",
+        "p2_10_8-3.json",
+        "p2_2_20-2.json",
+        "p2_4_20-0.json"
+      ]
+    }
+  ]
+}

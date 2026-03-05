@@ -1,0 +1,22 @@
+{
+  "name": "multi-agent-graph-coverage",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "rnd_n10_p1500_c15_s1.json",
+        "rnd_n10_p2000_c15_s1.json",
+        "rnd_n20_p1000_c10_s1.json",
+        "rnd_n40_p1000_c20_s1.json",
+        "rnd_n75_p1000_c50_s1.json"
+      ]
+    }
+  ]
+}

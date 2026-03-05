@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "pillars-planks-solution.mzn",
+    "data/p-d10.json",
+    "data/p-d12.json",
+    "data/p-d17.json",
+    "data/p-d2.json",
+    "data/p-d7.json"
+  ],
+  "openFiles": [
+    "pillars-planks-solution.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

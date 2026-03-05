@@ -1,0 +1,28 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "roster_model.mzn",
+    "data/chicroster_dataset_10.json",
+    "data/chicroster_dataset_11.json",
+    "data/chicroster_dataset_12.json",
+    "data/chicroster_dataset_14.json",
+    "data/chicroster_dataset_17.json",
+    "data/chicroster_dataset_2.json",
+    "data/chicroster_dataset_3.json",
+    "data/chicroster_dataset_5.json",
+    "data/chicroster_dataset_7.json",
+    "data/chicroster_dataset_8.json",
+    "data/chicroster_dataset_9.json",
+    "data/chicroster_dataset_large_13.json",
+    "data/chicroster_dataset_large_15.json",
+    "data/chicroster_dataset_large_16.json",
+    "data/chicroster_dataset_large_18.json",
+    "data/chicroster_dataset_large_19.json",
+    "data/chicroster_dataset_large_20.json"
+  ],
+  "openFiles": [
+    "roster_model.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,25 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "gbac.mzn",
+    "data/reduced_UD10-gbac.json",
+    "data/reduced_UD2-gbac.json",
+    "data/reduced_UD3-gbac.json",
+    "data/reduced_UD4-gbac.json",
+    "data/reduced_UD5-gbac.json",
+    "data/reduced_UD6-gbac.json",
+    "data/reduced_UD7-gbac.json",
+    "data/UD10-gbac.json",
+    "data/UD2-gbac.json",
+    "data/UD3-gbac.json",
+    "data/UD4-gbac.json",
+    "data/UD5-gbac.json",
+    "data/UD8-gbac.json",
+    "data/UD9-gbac.json"
+  ],
+  "openFiles": [
+    "gbac.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

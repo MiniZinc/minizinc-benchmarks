@@ -5,6 +5,15 @@
   "sbc": false,
   "rc": false,
   "challenges": [
-    "2024"
+    {
+      "year": 2024,
+      "data": [
+        "data/easy_instance_04.json",
+        "data/hard_instance_18.json",
+        "data/medium_instance_06.json",
+        "data/medium_instance_11.json",
+        "data/medium_instance_13.json"
+      ]
+    }
   ]
 }

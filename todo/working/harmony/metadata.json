@@ -1,0 +1,25 @@
+{
+  "name": "harmony",
+  "type": "puzzle",
+  "globals": [
+    "all_equal",
+    "count_eq",
+    "min",
+    "strictly_decreasing"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2024,
+      "instances": [
+        "brother.json",
+        "canon.json",
+        "minuet.json",
+        "ode.json",
+        "twinkle.json"
+      ]
+    }
+  ]
+}

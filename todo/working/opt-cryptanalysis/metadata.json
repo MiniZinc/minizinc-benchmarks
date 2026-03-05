@@ -1,0 +1,42 @@
+{
+  "name": "opt-cryptanalysis",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "table"
+  ],
+  "challenges": [
+    {
+      "year": 2017,
+      "instances": [
+        "r11.json",
+        "r15.json",
+        "r5.json",
+        "r7.json",
+        "r9.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "r10.json",
+        "r12.json",
+        "r14.json",
+        "r6.json",
+        "r8.json"
+      ]
+    },
+    {
+      "year": 2021,
+      "instances": [
+        "r1.json",
+        "r13.json",
+        "r2.json",
+        "r3.json",
+        "r4.json"
+      ]
+    }
+  ]
+}

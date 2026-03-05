@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "concert-hall-cap.mzn",
+    "data/concert-cap.mznc2018.02.json",
+    "data/concert-cap.mznc2018.03.json",
+    "data/concert-cap.mznc2018.04.json",
+    "data/concert-cap.mznc2018.06.json",
+    "data/concert-cap.mznc2018.148.json",
+    "data/concert-cap.mznc2018.318.json",
+    "data/concert_100_20.json",
+    "data/concert_150_20.json",
+    "data/concert_200_20.json",
+    "data/concert_60_50.json"
+  ],
+  "openFiles": [
+    "concert-hall-cap.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

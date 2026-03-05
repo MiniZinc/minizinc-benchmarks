@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "openshop.mzn",
+    "data/gp10-4.json",
+    "data/j7per10-1.json",
+    "data/j8per0-2.json",
+    "data/tai20-4.json",
+    "data/tai20-6.json"
+  ],
+  "openFiles": [
+    "openshop.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

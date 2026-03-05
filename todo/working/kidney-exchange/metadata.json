@@ -1,0 +1,34 @@
+{
+  "name": "kidney-exchange",
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_different",
+    "bin_packing",
+    "seq_precede_chain"
+  ],
+  "challenges": [
+    {
+      "year": 2019,
+      "instances": [
+        "3_20_0.25_2.json",
+        "3_20_0.25_5.json",
+        "3_20_0.30_5.json",
+        "3_20_0.40_3.json",
+        "3_25_0.20_3.json"
+      ]
+    },
+    {
+      "year": 2023,
+      "instances": [
+        "3_20_0.15_3.json",
+        "3_20_0.30_4.json",
+        "3_20_0.40_2.json",
+        "3_25_0.10_2.json",
+        "3_25_0.15_4.json"
+      ]
+    }
+  ]
+}

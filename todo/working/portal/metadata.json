@@ -1,0 +1,20 @@
+{
+  "name": "portal",
+  "type": "puzzle",
+  "globals": [],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2024,
+      "instances": [
+        "random_10_0_100.json",
+        "random_10_9_10.json",
+        "random_20_1_100.json",
+        "random_20_9_100.json",
+        "small_3.json"
+      ]
+    }
+  ]
+}

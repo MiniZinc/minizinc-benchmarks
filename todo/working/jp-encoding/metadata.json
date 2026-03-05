@@ -1,0 +1,32 @@
+{
+  "name": "jp-encoding",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "count"
+  ],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "data100.json",
+        "data1000.json",
+        "data1700.json",
+        "data400.json",
+        "data800.json"
+      ]
+    },
+    {
+      "year": 2017,
+      "instances": [
+        "data1400.json",
+        "data1900.json",
+        "data200.json",
+        "data300.json",
+        "data900.json"
+      ]
+    }
+  ]
+}

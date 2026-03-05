@@ -1,0 +1,21 @@
+{
+  "name": "steiner-systems",
+  "type": "combi",
+  "kind": "sat",
+  "rc": false,
+  "sbc": true,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2021,
+      "instances": [
+        "LICENSE",
+        "steiner_t2_k7_N21.json",
+        "steiner_t3_k3_N11.json",
+        "steiner_t3_k4_N8.json",
+        "steiner_t4_k4_N10.json",
+        "steiner_t6_k6_N7.json"
+      ]
+    }
+  ]
+}

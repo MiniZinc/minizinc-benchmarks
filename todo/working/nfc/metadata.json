@@ -1,0 +1,32 @@
+{
+  "name": "nfc",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "network_flow_cost"
+  ],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "12_2_10.json",
+        "12_2_5.json",
+        "18_3_10.json",
+        "18_3_5.json",
+        "24_4_10.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "12_2_11.json",
+        "18_3_12.json",
+        "24_4_2.json",
+        "30_5_12.json",
+        "30_5_6.json"
+      ]
+    }
+  ]
+}

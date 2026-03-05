@@ -1,0 +1,44 @@
+{
+  "num_staff": 2,
+  "work_load": [
+    100,
+    80
+  ],
+  "num_days": 200,
+  "weekend_offset": 2,
+  "unavailable": [
+    {
+      "set": [
+        [
+          14,
+          15
+        ],
+        [
+          24,
+          25
+        ],
+        32,
+        34,
+        45
+      ]
+    },
+    {
+      "set": []
+    }
+  ],
+  "fixed": [
+    {
+      "set": []
+    },
+    {
+      "set": [
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  ],
+  "adj_days_str": 1,
+  "wed_before_weekend_str": 1
+}

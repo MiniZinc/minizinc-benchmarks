@@ -1,0 +1,30 @@
+{
+  "name": "road-construction",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "road_11.json",
+        "road_14.json",
+        "road_16.json",
+        "road_20.json",
+        "road_9.json"
+      ]
+    },
+    {
+      "year": 2017,
+      "instances": [
+        "road_17.json",
+        "road_18.json",
+        "road_25.json",
+        "road_26.json",
+        "road_33.json"
+      ]
+    }
+  ]
+}

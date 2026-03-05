@@ -1,0 +1,20 @@
+{
+  "name": "atsp",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2025,
+      "instances": [
+        "instance11_0p25.json",
+        "instance14_0p25.json",
+        "instance1_0p05.json",
+        "instance20_0p35.json",
+        "instance4_0p15.json"
+      ]
+    }
+  ]
+}

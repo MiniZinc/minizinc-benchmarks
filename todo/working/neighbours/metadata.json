@@ -1,0 +1,44 @@
+{
+  "name": "neighbours",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "lex_lesseq"
+  ],
+  "challenges": [
+    {
+      "year": 2018,
+      "instances": [
+        "LICENSE",
+        "neighbours1.json",
+        "neighbours3.json",
+        "neighbours5.json",
+        "neighbours7.json",
+        "neighbours9.json"
+      ]
+    },
+    {
+      "year": 2021,
+      "instances": [
+        "LICENSE",
+        "neightbours-new-14.json",
+        "neightbours-new-17.json",
+        "neightbours-new-19.json",
+        "neightbours-new-20.json",
+        "neightbours-new-4.json"
+      ]
+    },
+    {
+      "year": 2024,
+      "instances": [
+        "neightbours-new-15.json",
+        "neightbours-new-2.json",
+        "neightbours-new-5.json",
+        "neightbours-new-6.json",
+        "neightbours-new-7.json"
+      ]
+    }
+  ]
+}

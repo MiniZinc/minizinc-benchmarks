@@ -1,0 +1,32 @@
+{
+  "name": "cyclic-rcpsp",
+  "type": "combi",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2011,
+      "instances": [
+        "easy_4.json",
+        "easy_6.json",
+        "hard_11.json",
+        "medium_1.json",
+        "medium_3.json"
+      ]
+    },
+    {
+      "year": 2014,
+      "instances": [
+        "easy_3.json",
+        "easy_5.json",
+        "hard_1.json",
+        "hard_2.json",
+        "medium_2.json"
+      ]
+    }
+  ]
+}

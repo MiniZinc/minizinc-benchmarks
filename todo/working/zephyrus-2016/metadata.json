@@ -1,0 +1,33 @@
+{
+  "name": "zephyrus-2016",
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "lex_greatereq",
+    "lex_less"
+  ],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "12__6__8__3.json",
+        "12__8__6__3.json",
+        "14__10__8__3.json",
+        "14__6__8__3.json",
+        "14__8__6__3.json"
+      ]
+    },
+    {
+      "year": 2019,
+      "instances": [
+        "12__10__8__3.json",
+        "12__6__6__3.json",
+        "12__8__6__3.json",
+        "14__10__6__3.json",
+        "14__6__6__3.json"
+      ]
+    }
+  ]
+}

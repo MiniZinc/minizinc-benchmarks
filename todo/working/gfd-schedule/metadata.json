@@ -1,0 +1,23 @@
+{
+  "name": "gfd-schedule",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "nvalue",
+    "at_most"
+  ],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "n120f5d50m50k20.json",
+        "n180f7d50m30k18.json",
+        "n30f3d30m7k4.json",
+        "n50f7d40m10k4.json",
+        "n75f5d30m20k20.json"
+      ]
+    }
+  ]
+}

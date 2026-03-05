@@ -1,0 +1,27 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "train.mzn",
+    "data/instance.1.json",
+    "data/instance.10.json",
+    "data/instance.12.json",
+    "data/instance.13.json",
+    "data/instance.14.json",
+    "data/instance.15.json",
+    "data/instance.16.json",
+    "data/instance.17.json",
+    "data/instance.2.json",
+    "data/instance.3.json",
+    "data/instance.4.json",
+    "data/instance.5.json",
+    "data/instance.6.json",
+    "data/instance.7.json",
+    "data/instance.8.json",
+    "data/instance.9.json"
+  ],
+  "openFiles": [
+    "train.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

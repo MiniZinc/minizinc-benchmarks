@@ -1,0 +1,22 @@
+{
+  "name": "cvrp",
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "circuit"
+  ],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "A-n37-k5.vrp.json",
+        "A-n64-k9.vrp.json",
+        "B-n45-k5.vrp.json",
+        "P-n16-k8.vrp.json",
+        "simple2.json"
+      ]
+    }
+  ]
+}

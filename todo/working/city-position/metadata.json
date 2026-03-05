@@ -1,0 +1,20 @@
+{
+  "name": "city-position",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2017,
+      "instances": [
+        "city-5-05.json",
+        "city-5-06.json",
+        "city-5-08.json",
+        "city-7-04.json",
+        "city-8-06.json"
+      ]
+    }
+  ]
+}

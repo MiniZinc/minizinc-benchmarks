@@ -1,0 +1,45 @@
+{
+  "name": "nmseq",
+  "type": "combi",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2008,
+      "instances": [
+        "020.json",
+        "040.json",
+        "060.json",
+        "080.json",
+        "100.json",
+        "150.json",
+        "200.json",
+        "300.json",
+        "400.json",
+        "500.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "143.json",
+        "202.json",
+        "395.json",
+        "478.json",
+        "99.json"
+      ]
+    },
+    {
+      "year": 2015,
+      "instances": [
+        "176.json",
+        "207.json",
+        "269.json",
+        "393.json",
+        "83.json"
+      ]
+    }
+  ]
+}

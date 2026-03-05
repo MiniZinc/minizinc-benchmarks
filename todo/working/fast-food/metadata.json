@@ -1,0 +1,30 @@
+{
+  "name": "fast-food",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2011,
+      "instances": [
+        "ff10.json",
+        "ff2.json",
+        "ff21.json",
+        "ff53.json",
+        "ff71.json"
+      ]
+    },
+    {
+      "year": 2012,
+      "instances": [
+        "ff3.json",
+        "ff58.json",
+        "ff59.json",
+        "ff61.json",
+        "ff63.json"
+      ]
+    }
+  ]
+}

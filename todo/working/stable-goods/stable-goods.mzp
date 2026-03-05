@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "stable-goods-solution.mzn",
+    "data/s-d16.json",
+    "data/s-d19.json",
+    "data/s-d6.json",
+    "data/s-d7.json",
+    "data/s-d8.json"
+  ],
+  "openFiles": [
+    "stable-goods-solution.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "ctw.mzn",
+    "data/A022.json",
+    "data/A031.json",
+    "data/A033.json",
+    "data/A041.json",
+    "data/A046.json",
+    "data/A073.json",
+    "data/R046.json",
+    "data/R189.json",
+    "data/R193.json",
+    "data/R196.json"
+  ],
+  "openFiles": [
+    "ctw.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

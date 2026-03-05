@@ -1,0 +1,52 @@
+{
+  "name": "depot-placement",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "a280_4.json",
+        "a280_6.json",
+        "att48_5.json",
+        "rat99_4.json",
+        "rat99_5.json",
+        "rat99_6.json",
+        "st70_4.json",
+        "st70_5.json",
+        "st70_6.json",
+        "ts225_5.json",
+        "u159_4.json",
+        "u159_6.json",
+        "ulysses16_5.json",
+        "ulysses22_4.json",
+        "ulysses22_6.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "att48_5.json",
+        "rat99_5.json",
+        "st70_6.json",
+        "ts225_6.json",
+        "ulysses16_5.json"
+      ]
+    },
+    {
+      "year": 2016,
+      "instances": [
+        "att48_6.json",
+        "rat99_5.json",
+        "rat99_6.json",
+        "st70_5.json",
+        "ulysses22_5.json"
+      ]
+    }
+  ]
+}

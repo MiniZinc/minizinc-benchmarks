@@ -1,0 +1,32 @@
+{
+  "name": "amaze3",
+  "type": "puzzle",
+  "kind": "sat",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "count"
+  ],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "2012-04-27.json",
+        "2012-05-31.json",
+        "2012-06-15.json",
+        "mod2012-03-19.json",
+        "mod2012-06-22.json"
+      ]
+    },
+    {
+      "year": 2019,
+      "instances": [
+        "2012-03-19.json",
+        "2012-03-29.json",
+        "2012-07-13.json",
+        "2012-07-27.json",
+        "mod2012-03-29.json"
+      ]
+    }
+  ]
+}

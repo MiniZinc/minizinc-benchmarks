@@ -1,0 +1,40 @@
+{
+  "name": "ship-schedule",
+  "type": "real",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2011,
+      "instances": [
+        "4Ships.json",
+        "5ShipsMixed.json",
+        "6ShipsMixedUnconst.json",
+        "7ShipsUnconst.json",
+        "8Ships.json"
+      ]
+    },
+    {
+      "year": 2012,
+      "instances": [
+        "5Ships.json",
+        "6ShipsMixed.json",
+        "7ShipsMixed.json",
+        "7ShipsMixedUnconst.json",
+        "8ShipsUnconst.json"
+      ]
+    },
+    {
+      "year": 2014,
+      "instances": [
+        "3Ships.json",
+        "6Ships.json",
+        "7Ships.json",
+        "8ShipsMixed.json",
+        "8ShipsMixedUnconstr.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "vrp-submission",
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "circuit"
+  ],
+  "challenges": [
+    {
+      "year": 2021,
+      "instances": [
+        "A_1v_7l_w_reload.json",
+        "A_4v_22l.json",
+        "A_7v_48l.json",
+        "D_3v_25l_w_reload.json",
+        "LICENSE",
+        "toy_D_2v_4l_w_reload.json"
+      ]
+    }
+  ]
+}

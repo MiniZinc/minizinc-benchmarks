@@ -1,0 +1,37 @@
+{
+  "name": "ghoulomb",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "3-10-20.json",
+        "3-7-20.json",
+        "3-8-20.json",
+        "3-9-16.json",
+        "4-10-16.json",
+        "4-7-16.json",
+        "4-8-16.json",
+        "4-9-10.json",
+        "4-9-14.json",
+        "4-9-18.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "3-11-29.json",
+        "3-9-16.json",
+        "4-9-10.json",
+        "4-9-20.json",
+        "5-7-22.json"
+      ]
+    }
+  ]
+}

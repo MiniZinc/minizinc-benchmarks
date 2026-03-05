@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "pattern_set_mining.mzn",
+    "data/anneal-k1.json",
+    "data/audiology-k2.json",
+    "data/german-credit-k1.json",
+    "data/german-credit-k2.json",
+    "data/hepatitis-k2.json",
+    "data/hypothyroid-k1.json",
+    "data/ionosphere-k1.json",
+    "data/kr-vs-kp-k2.json",
+    "data/mushroom-k1.json",
+    "data/pendigits-k1.json",
+    "data/segment-k2.json",
+    "data/sonar-k2.json",
+    "data/splice-1-k1.json",
+    "data/vehicle-k1.json",
+    "data/yeast-k2.json"
+  ],
+  "openFiles": [
+    "pattern_set_mining.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "stripboard.mzn",
+    "data/common-emitter-complex.json",
+    "data/common-emitter-simple.json",
+    "data/envelope-detector.json",
+    "data/nand-gate.json",
+    "data/opamp-integrator.json",
+    "data/stripboard_w10_h10_l12_c4_n24.json",
+    "data/stripboard_w15_h10_l12_c6_n12.json",
+    "data/stripboard_w20_h15_l12_c6_n12.json",
+    "data/stripboard_w20_h15_l4_c4_n24.json",
+    "data/stripboard_w20_h15_l7_c6_n24.json"
+  ],
+  "openFiles": [
+    "stripboard.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

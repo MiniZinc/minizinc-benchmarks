@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "foxgeesecorn.mzn",
+    "data/fgc_06_07_08_00.json",
+    "data/fgc_06_26_08_00.json",
+    "data/fgc_20_20_22_00.json",
+    "data/fgc_50_50_50_00.json",
+    "data/foxgeesecorn_13.json",
+    "data/foxgeesecorn_17.json",
+    "data/foxgeesecorn_19.json",
+    "data/foxgeesecorn_54.json",
+    "data/foxgeesecorn_60.json",
+    "data/foxgeesecorn_61.json"
+  ],
+  "openFiles": [
+    "foxgeesecorn.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

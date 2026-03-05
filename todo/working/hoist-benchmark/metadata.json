@@ -1,0 +1,31 @@
+{
+  "name": "hoist-benchmark",
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "PU_1_2_2.json",
+        "PU_2_8_1.json",
+        "PU_3_2_5.json",
+        "PU_3_4_1.json",
+        "PU_3_8_5.json",
+        "README.txt"
+      ]
+    },
+    {
+      "year": 2024,
+      "instances": [
+        "PU_2_2_3.json",
+        "PU_2_4_3.json",
+        "PU_2_8_4.json",
+        "PU_3_2_1.json",
+        "PU_3_4_3.json"
+      ]
+    }
+  ]
+}

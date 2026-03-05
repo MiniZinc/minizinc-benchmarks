@@ -1,0 +1,187 @@
+{
+  "max_w": 20,
+  "max_h": 15,
+  "max_links": 12,
+  "COMPONENT": [
+    "COMPONENT_0",
+    "COMPONENT_1",
+    "COMPONENT_2",
+    "COMPONENT_3",
+    "COMPONENT_4",
+    "COMPONENT_5"
+  ],
+  "PIN": [
+    "PIN_0_0",
+    "PIN_0_1",
+    "PIN_1_0",
+    "PIN_1_1",
+    "PIN_2_0",
+    "PIN_2_1",
+    "PIN_3_0",
+    "PIN_3_1",
+    "PIN_4_0",
+    "PIN_4_1",
+    "PIN_5_0",
+    "PIN_5_1"
+  ],
+  "NET": [
+    "NET_0",
+    "NET_1",
+    "NET_2",
+    "NET_3",
+    "NET_4",
+    "NET_5",
+    "NET_6",
+    "NET_7",
+    "NET_8",
+    "NET_9",
+    "NET_10",
+    "NET_11"
+  ],
+  "footprint_w": [
+    3,
+    5,
+    3,
+    5,
+    3,
+    3
+  ],
+  "footprint_h": [
+    3,
+    5,
+    3,
+    5,
+    3,
+    3
+  ],
+  "allowed_orientation": [
+    {
+      "set": [
+        "Upright",
+        "Clockwise",
+        "UpsideDown",
+        "Anticlockwise"
+      ]
+    },
+    {
+      "set": [
+        "Upright",
+        "Clockwise",
+        "UpsideDown",
+        "Anticlockwise"
+      ]
+    },
+    {
+      "set": [
+        "Upright",
+        "Clockwise",
+        "UpsideDown",
+        "Anticlockwise"
+      ]
+    },
+    {
+      "set": [
+        "Upright",
+        "Clockwise",
+        "UpsideDown",
+        "Anticlockwise"
+      ]
+    },
+    {
+      "set": [
+        "Upright",
+        "Clockwise",
+        "UpsideDown",
+        "Anticlockwise"
+      ]
+    },
+    {
+      "set": [
+        "Upright",
+        "Clockwise",
+        "UpsideDown",
+        "Anticlockwise"
+      ]
+    }
+  ],
+  "pin_dx": [
+    1,
+    3,
+    1,
+    5,
+    1,
+    3,
+    1,
+    5,
+    1,
+    3,
+    1,
+    3
+  ],
+  "pin_dy": [
+    2,
+    2,
+    3,
+    3,
+    2,
+    2,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2
+  ],
+  "pin_net": [
+    "NET_6",
+    "NET_9",
+    "NET_5",
+    "NET_7",
+    "NET_10",
+    "NET_1",
+    "NET_4",
+    "NET_0",
+    "NET_3",
+    "NET_11",
+    "NET_2",
+    "NET_8"
+  ],
+  "pins": [
+    {
+      "set": [
+        "PIN_0_0",
+        "PIN_0_1"
+      ]
+    },
+    {
+      "set": [
+        "PIN_1_0",
+        "PIN_1_1"
+      ]
+    },
+    {
+      "set": [
+        "PIN_2_0",
+        "PIN_2_1"
+      ]
+    },
+    {
+      "set": [
+        "PIN_3_0",
+        "PIN_3_1"
+      ]
+    },
+    {
+      "set": [
+        "PIN_4_0",
+        "PIN_4_1"
+      ]
+    },
+    {
+      "set": [
+        "PIN_5_0",
+        "PIN_5_1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "lot-sizing",
+  "type": "combi",
+  "kind": "min",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "all_different",
+    "at_least",
+    "at_most",
+    "global_cardinality"
+  ],
+  "challenges": [
+    {
+      "year": 2019,
+      "instances": [
+        "pigment15a.psp.json",
+        "pigment15d.psp.json",
+        "pigment20a.psp.json",
+        "pigment20c.psp.json",
+        "pigment30b.psp.json"
+      ]
+    },
+    {
+      "year": 2020,
+      "instances": [
+        "pigment15b.psp.json",
+        "pigment15c.psp.json",
+        "pigment20b.psp.json",
+        "pigment30a.psp.json",
+        "pigment30c.psp.json"
+      ]
+    }
+  ]
+}

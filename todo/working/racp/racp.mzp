@@ -1,0 +1,20 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "racp.mzn",
+    "data/j30_13_6_1.25.json",
+    "data/j30_14_7_1.25.json",
+    "data/j30_26_2_1.0.json",
+    "data/j60_10_6_1.25.json",
+    "data/j60_13_4_1.0.json",
+    "data/j60_14_7_1.25.json",
+    "data/j60_29_10_1.0.json",
+    "data/j60_48_9_1.0.json",
+    "data/j60_9_9_1.25.json"
+  ],
+  "openFiles": [
+    "racp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

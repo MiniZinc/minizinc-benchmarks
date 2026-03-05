@@ -1,0 +1,22 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "tpp.mzn",
+    "data/tpp_3_3_30_1.json",
+    "data/tpp_3_5_20_1.json",
+    "data/tpp_4_5_20_1.json",
+    "data/tpp_5_3_20_1.json",
+    "data/tpp_5_3_30_1.json",
+    "data/tpp_5_5_20_1.json",
+    "data/tpp_6_3_20_1.json",
+    "data/tpp_7_3_20_1.json",
+    "data/tpp_7_3_30_1.json",
+    "data/tpp_7_5_20_1.json",
+    "data/tpp_7_5_30_1.json"
+  ],
+  "openFiles": [
+    "tpp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

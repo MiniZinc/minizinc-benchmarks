@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "nfc.mzn",
+    "data/12_2_10.json",
+    "data/12_2_11.json",
+    "data/12_2_5.json",
+    "data/18_3_10.json",
+    "data/18_3_12.json",
+    "data/18_3_5.json",
+    "data/24_4_10.json",
+    "data/24_4_2.json",
+    "data/30_5_12.json",
+    "data/30_5_6.json"
+  ],
+  "openFiles": [
+    "nfc.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

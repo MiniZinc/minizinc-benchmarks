@@ -1,0 +1,18 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "CostasArray.mzn",
+    "data/14.json",
+    "data/15.json",
+    "data/16.json",
+    "data/17.json",
+    "data/18.json",
+    "data/19.json",
+    "data/20.json"
+  ],
+  "openFiles": [
+    "CostasArray.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

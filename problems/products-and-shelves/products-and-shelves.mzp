@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "product-and-shelves.mzn",
+    "data/ps-25-01.json",
+    "data/ps-25-03.json",
+    "data/ps-50-06.json",
+    "data/ps-50-09.json",
+    "data/toy.json"
+  ],
+  "openFiles": [
+    "product-and-shelves.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

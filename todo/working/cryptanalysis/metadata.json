@@ -1,0 +1,20 @@
+{
+  "name": "cryptanalysis",
+  "type": "real",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "kb128_n5_obj11.json",
+        "kb128_n5_obj14.json",
+        "kb128_n5_obj16.json",
+        "kb128_n5_obj17.json",
+        "kb192_n7_obj10.json"
+      ]
+    }
+  ]
+}

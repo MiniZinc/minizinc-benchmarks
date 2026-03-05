@@ -1,0 +1,32 @@
+{
+  "name": "rcpsp-wet",
+  "type": "combi",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "j30_27_5-wet.json",
+        "j30_44_8-wet.json",
+        "j60_36_8-wet.json",
+        "j90_10_10-wet.json",
+        "j90_19_7-wet.json"
+      ]
+    },
+    {
+      "year": 2017,
+      "instances": [
+        "j30_1_3-wet.json",
+        "j30_43_10-wet.json",
+        "j60_19_6-wet.json",
+        "j60_28_3-wet.json",
+        "j90_48_4-wet.json"
+      ]
+    }
+  ]
+}

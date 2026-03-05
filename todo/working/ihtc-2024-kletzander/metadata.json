@@ -1,0 +1,22 @@
+{
+  "name": "ihtc-2024-kletzander",
+  "type": "real",
+  "globals": [
+    "cumulative"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2025,
+      "instances": [
+        "i02.json",
+        "i07.json",
+        "i09.json",
+        "test03.json",
+        "test05.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "vrplc",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "circuit",
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2018,
+      "instances": [
+        "vrplc11_5_15_s3.json",
+        "vrplc13_11_15_s3.json",
+        "vrplc9_5_10_s1.json",
+        "vrplc9_5_10_s3.json",
+        "vrplc9_5_15_s3.json"
+      ]
+    },
+    {
+      "year": 2023,
+      "instances": [
+        "vrplc10_5_20_s3.json",
+        "vrplc11_5_15_s4.json",
+        "vrplc13_11_20_s4.json",
+        "vrplc9_5_10_s2.json",
+        "vrplc9_5_15_s2.json"
+      ]
+    }
+  ]
+}

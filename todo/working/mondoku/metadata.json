@@ -1,0 +1,23 @@
+{
+  "name": "mondoku",
+  "type": "puzzle",
+  "globals": [
+    "global_cardinality",
+    "value_precede_chain"
+  ],
+  "kind": "min",
+  "sbc": true,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2025,
+      "instances": [
+        "10-10-6.json",
+        "12-12-8.json",
+        "14-14-8.json",
+        "20-18-9.json",
+        "8-8-4.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "ttppv.mzn",
+    "data/circ14anonbal.json",
+    "data/circ14bnonbal.json",
+    "data/circ14cnonbal.json",
+    "data/circ14enonbal.json",
+    "data/circ20bnonbal.json",
+    "data/circ20fnonbal.json",
+    "data/circ20gnonbal.json",
+    "data/circ20hnonbal.json",
+    "data/circ20inonbal.json",
+    "data/circ20jnonbal.json",
+    "data/circ8abal.json",
+    "data/circ8bbal.json",
+    "data/circ8cbal.json",
+    "data/circ8dbal.json",
+    "data/circ8ebal.json"
+  ],
+  "openFiles": [
+    "ttppv.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

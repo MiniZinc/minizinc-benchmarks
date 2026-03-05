@@ -1,0 +1,20 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "mapf.mzn",
+    "data/ins_g16_p10_a10.json",
+    "data/ins_g16_p10_a20.json",
+    "data/ins_g16_p10_a30.json",
+    "data/ins_g16_p20_a20.json",
+    "data/ins_g16_p20_a30.json",
+    "data/ins_g16_p20_a40.json",
+    "data/ins_g24_p10_a05.json",
+    "data/ins_g24_p20_a10.json",
+    "data/ins_g32_p20_a10.json"
+  ],
+  "openFiles": [
+    "mapf.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

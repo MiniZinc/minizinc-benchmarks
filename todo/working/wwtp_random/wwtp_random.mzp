@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "wwtpp.mzn",
+    "data/ex05100_2600_100.json",
+    "data/ex12300_2600_100.json",
+    "data/ex16000_2600_100.json",
+    "data/ex19500_2600_100.json",
+    "data/ex23200_2600_100.json"
+  ],
+  "openFiles": [
+    "wwtpp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

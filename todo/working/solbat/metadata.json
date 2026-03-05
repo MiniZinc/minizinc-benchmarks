@@ -1,0 +1,70 @@
+{
+  "name": "solbat",
+  "type": "combi",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "sb_12_12_5_0.json",
+        "sb_12_12_5_2.json",
+        "sb_12_12_5_4.json",
+        "sb_12_12_6_1.json",
+        "sb_12_12_6_3.json",
+        "sb_13_13_5_0.json",
+        "sb_13_13_6_4.json",
+        "sb_14_14_6_1.json",
+        "sb_14_14_6_3.json",
+        "sb_15_15_6_0.json",
+        "sb_15_15_6_2.json",
+        "sb_15_15_6_4.json",
+        "sb_15_15_7_0.json",
+        "sb_15_15_7_2.json",
+        "sb_15_15_7_4.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "sb_12_12_5_3.json",
+        "sb_13_13_5_1.json",
+        "sb_13_13_5_3.json",
+        "sb_14_14_6_2.json",
+        "sb_15_15_7_3.json"
+      ]
+    },
+    {
+      "year": 2012,
+      "instances": [
+        "sb_12_12_5_1.json",
+        "sb_13_13_5_4.json",
+        "sb_14_14_6_0.json",
+        "sb_14_14_6_4.json",
+        "sb_15_15_6_3.json"
+      ]
+    },
+    {
+      "year": 2014,
+      "instances": [
+        "sb_13_13_5_5.json",
+        "sb_13_13_6_5.json",
+        "sb_15_15_6_1.json",
+        "sb_15_15_7_1.json",
+        "sb_15_15_7_6.json"
+      ]
+    },
+    {
+      "year": 2016,
+      "instances": [
+        "sb_13_13_5_1.json",
+        "sb_13_13_5_5.json",
+        "sb_15_15_6_0.json",
+        "sb_15_15_7_3.json",
+        "sb_15_15_7_5.json"
+      ]
+    }
+  ]
+}

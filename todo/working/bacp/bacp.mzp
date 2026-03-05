@@ -1,0 +1,31 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "curriculum.mzn",
+    "data/bacp-1.json",
+    "data/bacp-10.json",
+    "data/bacp-11.json",
+    "data/bacp-12.json",
+    "data/bacp-14.json",
+    "data/bacp-16.json",
+    "data/bacp-18.json",
+    "data/bacp-19.json",
+    "data/bacp-2.json",
+    "data/bacp-21.json",
+    "data/bacp-22.json",
+    "data/bacp-23.json",
+    "data/bacp-24.json",
+    "data/bacp-25.json",
+    "data/bacp-27.json",
+    "data/bacp-28.json",
+    "data/bacp-4.json",
+    "data/bacp-6.json",
+    "data/bacp-8.json",
+    "data/bacp-9.json"
+  ],
+  "openFiles": [
+    "curriculum.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

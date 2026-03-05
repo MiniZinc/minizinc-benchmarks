@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "celar.mzn",
+    "data/CELAR6-SUB0.json",
+    "data/CELAR6-SUB2.json",
+    "data/CELAR6-SUB3.json",
+    "data/CELAR6-SUB4.json",
+    "data/CELAR7-SUB3.json",
+    "data/CELAR7-SUB4.json",
+    "data/graph05.json",
+    "data/graph11.json",
+    "data/scen06.json",
+    "data/scen07.json"
+  ],
+  "openFiles": [
+    "celar.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

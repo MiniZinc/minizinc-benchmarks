@@ -1,0 +1,35 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "non.mzn",
+    "data/dom_06.json",
+    "data/dom_08.json",
+    "data/dom_10.json",
+    "data/dom_12.json",
+    "data/dom_14.json",
+    "data/non_awful_1.json",
+    "data/non_awful_2.json",
+    "data/non_awful_3.json",
+    "data/non_awful_4.json",
+    "data/non_awful_5.json",
+    "data/non_fast_1.json",
+    "data/non_fast_10.json",
+    "data/non_fast_11.json",
+    "data/non_fast_3.json",
+    "data/non_fast_4.json",
+    "data/non_fast_5.json",
+    "data/non_fast_6.json",
+    "data/non_fast_7.json",
+    "data/non_fast_8.json",
+    "data/non_fast_9.json",
+    "data/non_med_1.json",
+    "data/non_med_2.json",
+    "data/non_med_3.json",
+    "data/non_med_4.json"
+  ],
+  "openFiles": [
+    "non.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

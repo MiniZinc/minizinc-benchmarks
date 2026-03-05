@@ -1,0 +1,20 @@
+{
+  "name": "multi-knapsack",
+  "type": "combi",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "mknap1-6.json",
+        "mknap2-1.json",
+        "mknap2-10.json",
+        "mknap2-20.json",
+        "mknap2-31.json"
+      ]
+    }
+  ]
+}

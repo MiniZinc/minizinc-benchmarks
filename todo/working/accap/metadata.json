@@ -1,0 +1,42 @@
+{
+  "name": "accap",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "diffn"
+  ],
+  "challenges": [
+    {
+      "year": 2019,
+      "instances": [
+        "accap_instance3.json",
+        "accap_instance5.json",
+        "accap_instance6.json",
+        "accap_instance8.json",
+        "accap_instance9.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "accap_a12_f100_t60.json",
+        "accap_a18_f140_t85.json",
+        "accap_a40_f800_t180.json",
+        "accap_a4_f30_t15.json",
+        "accap_a5_f40_t20.json"
+      ]
+    },
+    {
+      "year": 2024,
+      "instances": [
+        "accap_a10_f80_t50.json",
+        "accap_a20_f160_t90.json",
+        "accap_a30_f300_t120.json",
+        "accap_a3_f20_t10.json",
+        "accap_a8_f50_t30.json"
+      ]
+    }
+  ]
+}

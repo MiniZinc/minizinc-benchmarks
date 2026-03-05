@@ -1,0 +1,32 @@
+{
+  "routing_GCM_0001.mzn": {
+    "years": [
+      2017
+    ],
+    "chosen_year": 2017
+  },
+  "routing_GCM_0005.mzn": {
+    "years": [
+      2017
+    ],
+    "chosen_year": 2017
+  },
+  "routing_GCM_0006.mzn": {
+    "years": [
+      2017
+    ],
+    "chosen_year": 2017
+  },
+  "routing_GCM_0007.mzn": {
+    "years": [
+      2017
+    ],
+    "chosen_year": 2017
+  },
+  "routing_GCM_0022.mzn": {
+    "years": [
+      2017
+    ],
+    "chosen_year": 2017
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "amaze2",
+  "type": "puzzle",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2012,
+      "instances": [
+        "2012-03-08.json",
+        "2012-03-15.json",
+        "2012-06-22.json",
+        "2012-06-28.json",
+        "2012-06-29.json",
+        "2012-07-04.json"
+      ]
+    }
+  ]
+}

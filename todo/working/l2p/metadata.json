@@ -1,0 +1,22 @@
+{
+  "name": "l2p",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2013,
+      "instances": [
+        "l2p1.json",
+        "l2p12.json",
+        "l2p13.json",
+        "l2p16.json",
+        "l2p2.json"
+      ]
+    }
+  ]
+}

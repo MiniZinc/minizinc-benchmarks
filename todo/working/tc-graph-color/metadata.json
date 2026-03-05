@@ -1,0 +1,20 @@
+{
+  "name": "tc-graph-color",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2017,
+      "instances": [
+        "k10_31.json",
+        "k10_34.json",
+        "k2_42.json",
+        "k5_05.json",
+        "k9_39.json"
+      ]
+    }
+  ]
+}

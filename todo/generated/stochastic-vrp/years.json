@@ -1,0 +1,57 @@
+{
+  "vrp-s2-v2-c7_vrp-v2-c7_det.mzn": {
+    "years": [
+      2014
+    ],
+    "chosen_year": 2014
+  },
+  "vrp-s3-v2-c6_vrp-v2-c6_det.mzn": {
+    "years": [
+      2014
+    ],
+    "chosen_year": 2014
+  },
+  "vrp-s3-v2-c7_vrp-v2-c7_det.mzn": {
+    "years": [
+      2014,
+      2019
+    ],
+    "chosen_year": 2019
+  },
+  "vrp-s4-v2-c6_vrp-v2-c6_det.mzn": {
+    "years": [
+      2014
+    ],
+    "chosen_year": 2014
+  },
+  "vrp-s5-v2-c8_vrp-v2-c8_det.mzn": {
+    "years": [
+      2014
+    ],
+    "chosen_year": 2014
+  },
+  "vrp-s2-v2-c8_vrp-v2-c8_det.mzn": {
+    "years": [
+      2019
+    ],
+    "chosen_year": 2019
+  },
+  "vrp-s2-v2-c9_vrp-v2-c9_det.mzn": {
+    "years": [
+      2019
+    ],
+    "chosen_year": 2019
+  },
+  "vrp-s4-v2-c3_svrp-v2-c3_det.mzn": {
+    "years": [
+      2019
+    ],
+    "chosen_year": 2019
+  },
+  "vrp-s5-v2-c6_vrp-v2-c6_det.mzn": {
+    "years": [
+      2019
+    ],
+    "chosen_year": 2019
+  }
+}

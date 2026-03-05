@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "oocsp_racks.mzn",
+    "data/oocsp_racks_030_e6_cc.json",
+    "data/oocsp_racks_030_ea4_cc.json",
+    "data/oocsp_racks_030_f7.json",
+    "data/oocsp_racks_030_f7_cc.json",
+    "data/oocsp_racks_030_mii8.json",
+    "data/oocsp_racks_030_mii8_cc.json",
+    "data/oocsp_racks_050_e5.json",
+    "data/oocsp_racks_050_r1.json",
+    "data/oocsp_racks_100_r1.json",
+    "data/oocsp_racks_100_r1_cc.json"
+  ],
+  "openFiles": [
+    "oocsp_racks.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "pax_model.mzn",
+    "data/pax_period_20_1c.json",
+    "data/pax_period_20_2b.json",
+    "data/pax_period_20_3b.json",
+    "data/pax_period_20_5a.json",
+    "data/pax_period_20_5b.json"
+  ],
+  "openFiles": [
+    "pax_model.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

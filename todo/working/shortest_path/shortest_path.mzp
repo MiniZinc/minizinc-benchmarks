@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "shortest_path.mzn",
+    "data/00.json",
+    "data/01.json",
+    "data/02.json",
+    "data/03.json",
+    "data/04.json",
+    "data/05.json",
+    "data/06.json",
+    "data/07.json",
+    "data/08.json",
+    "data/09.json"
+  ],
+  "openFiles": [
+    "shortest_path.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

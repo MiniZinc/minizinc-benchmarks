@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "stack-cutstock-cumu.mzn",
+    "data/d14.json",
+    "data/d3.json",
+    "data/d5.json",
+    "data/d7.json",
+    "data/d8.json"
+  ],
+  "openFiles": [
+    "stack-cutstock-cumu.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

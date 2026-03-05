@@ -1,0 +1,20 @@
+{
+  "name": "valve-network",
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "horizon12.json",
+        "horizon19.json",
+        "horizon20.json",
+        "horizon28.json",
+        "horizon6.json"
+      ]
+    }
+  ]
+}

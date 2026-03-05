@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "whirlpool-x.mzn",
+    "data/d12.json",
+    "data/d21.json",
+    "data/d29.json",
+    "data/d30.json",
+    "data/d8.json"
+  ],
+  "openFiles": [
+    "whirlpool-x.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "hoist-benchmark.mzn",
+    "data/PU_1_2_2.json",
+    "data/PU_2_2_3.json",
+    "data/PU_2_4_3.json",
+    "data/PU_2_8_1.json",
+    "data/PU_2_8_4.json",
+    "data/PU_3_2_1.json",
+    "data/PU_3_2_5.json",
+    "data/PU_3_4_1.json",
+    "data/PU_3_4_3.json",
+    "data/PU_3_8_5.json"
+  ],
+  "openFiles": [
+    "hoist-benchmark.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

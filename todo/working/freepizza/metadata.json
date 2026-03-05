@@ -1,0 +1,20 @@
+{
+  "name": "freepizza",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "pizza27.json",
+        "pizza39.json",
+        "pizza45.json",
+        "pizza6.json",
+        "pizza78.json"
+      ]
+    }
+  ]
+}

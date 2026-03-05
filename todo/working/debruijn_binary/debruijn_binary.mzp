@@ -1,0 +1,22 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "debruijn_binary.mzn",
+    "data/02_03.json",
+    "data/02_07.json",
+    "data/02_08.json",
+    "data/02_09.json",
+    "data/02_10.json",
+    "data/03_06.json",
+    "data/03_07.json",
+    "data/03_08.json",
+    "data/04_06.json",
+    "data/04_07.json",
+    "data/04_08.json"
+  ],
+  "openFiles": [
+    "debruijn_binary.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

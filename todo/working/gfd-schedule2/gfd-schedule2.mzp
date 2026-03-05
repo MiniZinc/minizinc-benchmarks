@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "gfd-schedule2.mzn",
+    "data/n100f7d50m20k10.json",
+    "data/n180f7d50m30k18.json",
+    "data/n180f7d50m30k18_10124.json",
+    "data/n200f5d50m40k6.json",
+    "data/n200f5d50m40k6_10124.json",
+    "data/n25f5d20m10k3.json",
+    "data/n35f5d20m10k3.json",
+    "data/n55f2d50m30k3.json",
+    "data/n55f2d50m30k3_10124.json",
+    "data/n60f7d50m30k10.json",
+    "data/n60f7d50m30k10_10124.json",
+    "data/n65f2d50m20k10.json",
+    "data/n80f7d30m7k7.json",
+    "data/n85f3d50m8k20_10124.json",
+    "data/n90f5d40m30k6.json"
+  ],
+  "openFiles": [
+    "gfd-schedule2.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

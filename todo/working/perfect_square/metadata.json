@@ -1,0 +1,21 @@
+{
+  "name": "perfect_square",
+  "type": "puzzle",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2021,
+      "instances": [
+        "LICENSE",
+        "data\\102.json",
+        "data\\195.json",
+        "data\\205.json",
+        "data\\57.json",
+        "data\\92.json"
+      ]
+    }
+  ]
+}

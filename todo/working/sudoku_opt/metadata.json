@@ -1,0 +1,23 @@
+{
+  "name": "sudoku_opt",
+  "type": "puzzle",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2022,
+      "instances": [
+        "LICENSE",
+        "sudoku_p20.json",
+        "sudoku_p22.json",
+        "sudoku_p23.json",
+        "sudoku_p29.json",
+        "sudoku_p90.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "mspsp",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2012,
+      "instances": [
+        "easy_01.json",
+        "hard_01.json",
+        "hard_03.json",
+        "medium_02.json",
+        "medium_03.json",
+        "medium_05.json"
+      ]
+    }
+  ]
+}

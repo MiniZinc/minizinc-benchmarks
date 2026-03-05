@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "pentominoes.mzn",
+    "data/size_10_tiles_10_seed_17_strategy_target.json",
+    "data/size_15_tiles_15_seed_17_strategy_source.json",
+    "data/size_20_tiles_10_seed_42_strategy_far.json",
+    "data/size_20_tiles_15_seed_4711_strategy_source.json",
+    "data/size_5_tiles_20_seed_17_strategy_close.json"
+  ],
+  "openFiles": [
+    "pentominoes.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

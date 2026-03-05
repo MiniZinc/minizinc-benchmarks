@@ -1,0 +1,33 @@
+{
+  "name": "mrcpsp",
+  "type": "combi",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "cumulative",
+    "element"
+  ],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "j30_15_5.json",
+        "j30_17_10.json",
+        "j30_1_10.json",
+        "j30_37_4.json",
+        "j30_53_3.json"
+      ]
+    },
+    {
+      "year": 2023,
+      "instances": [
+        "j30_25_5.json",
+        "j30_29_3.json",
+        "j30_33_5.json",
+        "j30_41_8.json",
+        "j30_54_2.json"
+      ]
+    }
+  ]
+}

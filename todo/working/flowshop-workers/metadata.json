@@ -1,0 +1,21 @@
+{
+  "name": "flowshop-workers",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2021,
+      "instances": [
+        "5stat_ex3.json",
+        "5stat_ex6.json",
+        "8s_ex3.json",
+        "LICENSE",
+        "ex4.json",
+        "real_ex2.json"
+      ]
+    }
+  ]
+}

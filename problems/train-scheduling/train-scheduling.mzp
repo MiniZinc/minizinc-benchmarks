@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "trains.mzn",
+    "data/trains05.json",
+    "data/trains09.json",
+    "data/trains12.json",
+    "data/trains15.json",
+    "data/trains18.json"
+  ],
+  "openFiles": [
+    "trains.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "model.mzn",
+    "data/d10n780-1.json",
+    "data/d10n780-2.json",
+    "data/d24n600-3.json",
+    "data/d26n600-2.json",
+    "data/d30n600-5.json"
+  ],
+  "openFiles": [
+    "model.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

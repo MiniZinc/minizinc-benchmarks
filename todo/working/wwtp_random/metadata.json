@@ -1,0 +1,20 @@
+{
+  "name": "wwtp_random",
+  "type": "real",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "ex05100_2600_100.json",
+        "ex12300_2600_100.json",
+        "ex16000_2600_100.json",
+        "ex19500_2600_100.json",
+        "ex23200_2600_100.json"
+      ]
+    }
+  ]
+}

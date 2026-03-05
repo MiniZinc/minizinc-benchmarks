@@ -1,0 +1,20 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "ecp.mzn",
+    "data/xIGData_22_12_22_5.json",
+    "data/xIGData_22_17_16_1.json",
+    "data/xIGData_24_16_14_2.json",
+    "data/xIGData_24_24_16_1.json",
+    "data/xIGData_26_16_20_4.json",
+    "data/xIGData_28_22_7_4.json",
+    "data/xIGData_28_23_16_1.json",
+    "data/xIGData_28_23_9_2.json",
+    "data/xIGData_30_25_15_4.json"
+  ],
+  "openFiles": [
+    "ecp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

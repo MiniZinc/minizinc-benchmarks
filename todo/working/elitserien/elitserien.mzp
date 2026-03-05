@@ -1,0 +1,31 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "handball.mzn",
+    "data/handball1.json",
+    "data/handball10.json",
+    "data/handball11.json",
+    "data/handball12.json",
+    "data/handball13.json",
+    "data/handball14.json",
+    "data/handball15.json",
+    "data/handball16.json",
+    "data/handball17.json",
+    "data/handball18.json",
+    "data/handball19.json",
+    "data/handball2.json",
+    "data/handball20.json",
+    "data/handball3.json",
+    "data/handball4.json",
+    "data/handball5.json",
+    "data/handball6.json",
+    "data/handball7.json",
+    "data/handball8.json",
+    "data/handball9.json"
+  ],
+  "openFiles": [
+    "handball.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

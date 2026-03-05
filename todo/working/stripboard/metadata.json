@@ -1,0 +1,36 @@
+{
+  "name": "stripboard",
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "all_different",
+    "diffn",
+    "disjunctive",
+    "strictly_decreasing"
+  ],
+  "challenges": [
+    {
+      "year": 2022,
+      "instances": [
+        "LICENSE",
+        "common-emitter-complex.json",
+        "common-emitter-simple.json",
+        "envelope-detector.json",
+        "nand-gate.json",
+        "opamp-integrator.json"
+      ]
+    },
+    {
+      "year": 2025,
+      "instances": [
+        "stripboard_w10_h10_l12_c4_n24.json",
+        "stripboard_w15_h10_l12_c6_n12.json",
+        "stripboard_w20_h15_l12_c6_n12.json",
+        "stripboard_w20_h15_l4_c4_n24.json",
+        "stripboard_w20_h15_l7_c6_n24.json"
+      ]
+    }
+  ]
+}

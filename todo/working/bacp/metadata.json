@@ -1,0 +1,40 @@
+{
+  "name": "bacp",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "bacp-1.json",
+        "bacp-10.json",
+        "bacp-11.json",
+        "bacp-12.json",
+        "bacp-14.json",
+        "bacp-16.json",
+        "bacp-18.json",
+        "bacp-2.json",
+        "bacp-21.json",
+        "bacp-23.json",
+        "bacp-25.json",
+        "bacp-27.json",
+        "bacp-4.json",
+        "bacp-6.json",
+        "bacp-8.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "bacp-19.json",
+        "bacp-22.json",
+        "bacp-24.json",
+        "bacp-28.json",
+        "bacp-9.json"
+      ]
+    }
+  ]
+}

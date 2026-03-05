@@ -1,0 +1,33 @@
+{
+  "name": "concert-hall-cap",
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_different_except_0",
+    "value_precede_chain"
+  ],
+  "challenges": [
+    {
+      "year": 2018,
+      "instances": [
+        "concert-cap.mznc2018.02.json",
+        "concert-cap.mznc2018.03.json",
+        "concert-cap.mznc2018.06.json",
+        "concert-cap.mznc2018.148.json",
+        "concert-cap.mznc2018.318.json"
+      ]
+    },
+    {
+      "year": 2024,
+      "instances": [
+        "concert-cap.mznc2018.04.json",
+        "concert_100_20.json",
+        "concert_150_20.json",
+        "concert_200_20.json",
+        "concert_60_50.json"
+      ]
+    }
+  ]
+}

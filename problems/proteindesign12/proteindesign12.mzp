@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "wcsp.mzn",
+    "data/1HZ5.12p.19aa.usingEref_self.json",
+    "data/1HZ5.12p.9aa.usingEref_self.json",
+    "data/1UBI.13p.19aa.usingEref_self.json",
+    "data/1UBI.13p.9aa.usingEref_self_x.json",
+    "data/2TRX.11p.8aa.usingEref_self_x.json"
+  ],
+  "openFiles": [
+    "wcsp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

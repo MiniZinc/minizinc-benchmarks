@@ -1,0 +1,31 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "mapping.mzn",
+    "data/full2x2.json",
+    "data/full2x2_mp3.json",
+    "data/mesh2x2_1.json",
+    "data/mesh2x2_2.json",
+    "data/mesh2x2_mp3.json",
+    "data/mesh2x2_mpeg.json",
+    "data/mesh3x3_2.json",
+    "data/mesh3x3_4.json",
+    "data/mesh3x3_mp3.json",
+    "data/mesh3x3_mp3_2.json",
+    "data/mesh3x3_mpeg.json",
+    "data/mesh3x3_mpeg_2.json",
+    "data/mesh4x4_1.json",
+    "data/mesh4x4_2.json",
+    "data/mesh_star_2.json",
+    "data/mesh_star_mpeg.json",
+    "data/ring_1.json",
+    "data/ring_2.json",
+    "data/ring_3.json",
+    "data/ring_mp3.json"
+  ],
+  "openFiles": [
+    "mapping.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

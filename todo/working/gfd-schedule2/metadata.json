@@ -1,0 +1,44 @@
+{
+  "name": "gfd-schedule2",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "at_most",
+    "cumulative",
+    "nvalue"
+  ],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "n180f7d50m30k18.json",
+        "n25f5d20m10k3.json",
+        "n35f5d20m10k3.json",
+        "n55f2d50m30k3.json",
+        "n60f7d50m30k10.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "n100f7d50m20k10.json",
+        "n200f5d50m40k6.json",
+        "n65f2d50m20k10.json",
+        "n80f7d30m7k7.json",
+        "n90f5d40m30k6.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "n180f7d50m30k18_10124.json",
+        "n200f5d50m40k6_10124.json",
+        "n55f2d50m30k3_10124.json",
+        "n60f7d50m30k10_10124.json",
+        "n85f3d50m8k20_10124.json"
+      ]
+    }
+  ]
+}

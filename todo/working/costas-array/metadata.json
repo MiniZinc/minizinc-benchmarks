@@ -1,0 +1,42 @@
+{
+  "name": "costas-array",
+  "type": "combi",
+  "kind": "sat",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "14.json",
+        "15.json",
+        "16.json",
+        "17.json",
+        "18.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "14.json",
+        "15.json",
+        "16.json",
+        "17.json",
+        "18.json"
+      ]
+    },
+    {
+      "year": 2015,
+      "instances": [
+        "16.json",
+        "17.json",
+        "18.json",
+        "19.json",
+        "20.json"
+      ]
+    }
+  ]
+}

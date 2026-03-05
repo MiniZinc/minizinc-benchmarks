@@ -1,0 +1,20 @@
+{
+  "name": "steiner-tree",
+  "type": "combi",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2018,
+      "instances": [
+        "es10fst03.stp.json",
+        "es10fst10.stp.json",
+        "es20fst08.stp.json",
+        "es20fst09.stp.json",
+        "es20fst14.stp.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "mspsp.mzn",
+    "data/easy_01.json",
+    "data/hard_01.json",
+    "data/hard_03.json",
+    "data/medium_02.json",
+    "data/medium_03.json",
+    "data/medium_05.json"
+  ],
+  "openFiles": [
+    "mspsp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "hitori",
+  "type": "puzzle",
+  "globals": [
+    "all_different_except_0",
+    "connected"
+  ],
+  "kind": "max",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2025,
+      "instances": [
+        "h11-1.json",
+        "h14-1.json",
+        "h15-1.json",
+        "h20-2.json",
+        "h5-1.json"
+      ]
+    }
+  ]
+}

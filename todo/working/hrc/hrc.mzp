@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "hrc.mzn",
+    "data/exp1-1-5110.json",
+    "data/exp1-1-5145.json",
+    "data/exp1-1-5425.json",
+    "data/exp1-1-5460.json",
+    "data/exp1-1-5670.json",
+    "data/exp1-1-945.json",
+    "data/exp2-1-4795.json",
+    "data/exp2-1-5145.json",
+    "data/exp2-1-5180.json",
+    "data/exp2-1-5600.json"
+  ],
+  "openFiles": [
+    "hrc.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

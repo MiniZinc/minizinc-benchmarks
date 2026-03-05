@@ -9,6 +9,15 @@
   "sbc": false,
   "rc": false,
   "challenges": [
-    "2024"
+    {
+      "year": 2024,
+      "data": [
+        "data/trains05.json",
+        "data/trains09.json",
+        "data/trains12.json",
+        "data/trains15.json",
+        "data/trains18.json"
+      ]
+    }
   ]
 }

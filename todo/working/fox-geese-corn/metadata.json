@@ -1,0 +1,30 @@
+{
+  "name": "fox-geese-corn",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": true,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2019,
+      "instances": [
+        "fgc_06_07_08_00.json",
+        "fgc_50_50_50_00.json",
+        "foxgeesecorn_13.json",
+        "foxgeesecorn_54.json",
+        "foxgeesecorn_60.json"
+      ]
+    },
+    {
+      "year": 2024,
+      "instances": [
+        "fgc_06_26_08_00.json",
+        "fgc_20_20_22_00.json",
+        "foxgeesecorn_17.json",
+        "foxgeesecorn_19.json",
+        "foxgeesecorn_61.json"
+      ]
+    }
+  ]
+}

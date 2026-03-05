@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "rect_packing.mzn",
+    "data/rpp05_true.json",
+    "data/rpp09_false.json",
+    "data/rpp12_true.json",
+    "data/rpp14_false.json",
+    "data/rpp15_true.json",
+    "data/rpp18_true.json",
+    "data/rpp19_false.json",
+    "data/rpp21_false.json",
+    "data/rpp22_false.json",
+    "data/rpp22_true.json",
+    "data/rpp23_false.json",
+    "data/rpp24_false.json",
+    "data/rpp26_false.json",
+    "data/rpp26_true.json",
+    "data/rpp30_false.json"
+  ],
+  "openFiles": [
+    "rect_packing.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

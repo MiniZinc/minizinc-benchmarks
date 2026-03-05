@@ -1,0 +1,30 @@
+{
+  "name": "celar",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2013,
+      "instances": [
+        "CELAR6-SUB2.json",
+        "CELAR6-SUB3.json",
+        "CELAR7-SUB3.json",
+        "graph11.json",
+        "scen06.json"
+      ]
+    },
+    {
+      "year": 2016,
+      "instances": [
+        "CELAR6-SUB0.json",
+        "CELAR6-SUB4.json",
+        "CELAR7-SUB4.json",
+        "graph05.json",
+        "scen07.json"
+      ]
+    }
+  ]
+}

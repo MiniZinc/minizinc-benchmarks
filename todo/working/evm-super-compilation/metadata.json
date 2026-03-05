@@ -1,0 +1,22 @@
+{
+  "name": "evm-super-compilation",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "global_cardinality_low_up"
+  ],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "BDARUMA_run_code_of_0_block_108_233_1_extended_input.json",
+        "BDARUMA_run_code_of_0_block_284_170_0_input.json",
+        "Kongu_run_code_of_0_block_240_0_input.json",
+        "PlaylinkAirdrop_run_code_of_0_block_216_0_input.json",
+        "isolated_block_6_0_input.json"
+      ]
+    }
+  ]
+}

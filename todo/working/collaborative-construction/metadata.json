@@ -1,0 +1,20 @@
+{
+  "name": "collaborative-construction",
+  "type": "combi",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "175.json",
+        "307.json",
+        "37.json",
+        "455.json",
+        "46.json"
+      ]
+    }
+  ]
+}

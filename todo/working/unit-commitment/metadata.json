@@ -1,0 +1,20 @@
+{
+  "name": "unit-commitment",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "L10-T48G10L10.json",
+        "L12-T48G15L10.json",
+        "L15-T48G30L15.json",
+        "L3-T6G5L5.json",
+        "L7-T12G5L5.json"
+      ]
+    }
+  ]
+}

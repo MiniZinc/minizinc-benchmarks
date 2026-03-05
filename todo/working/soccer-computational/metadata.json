@@ -1,0 +1,32 @@
+{
+  "name": "soccer-computational",
+  "type": "real",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2018,
+      "instances": [
+        "xIGData_22_12_22_5.json",
+        "xIGData_22_17_16_1.json",
+        "xIGData_24_16_14_2.json",
+        "xIGData_26_16_20_4.json",
+        "xIGData_28_23_9_2.json"
+      ]
+    },
+    {
+      "year": 2020,
+      "instances": [
+        "xIGData_22_12_22_5.json",
+        "xIGData_24_24_16_1.json",
+        "xIGData_28_22_7_4.json",
+        "xIGData_28_23_16_1.json",
+        "xIGData_30_25_15_4.json"
+      ]
+    }
+  ]
+}

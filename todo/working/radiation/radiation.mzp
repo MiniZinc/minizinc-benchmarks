@@ -1,0 +1,39 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "radiation.mzn",
+    "data/01.json",
+    "data/02.json",
+    "data/03.json",
+    "data/04.json",
+    "data/05.json",
+    "data/06.json",
+    "data/07.json",
+    "data/08.json",
+    "data/09.json",
+    "data/i14-9.json",
+    "data/i6-11.json",
+    "data/i6-21.json",
+    "data/i6-7.json",
+    "data/i6-9.json",
+    "data/i7-15.json",
+    "data/i7-21.json",
+    "data/i7-9.json",
+    "data/i8-40.json",
+    "data/i8-7.json",
+    "data/i8-9.json",
+    "data/i9-11.json",
+    "data/i9-21.json",
+    "data/i9-23.json",
+    "data/m06_15_15.json",
+    "data/m07_07_20.json",
+    "data/m12_10_20.json",
+    "data/m18_12_05.json",
+    "data/m40_10_02.json"
+  ],
+  "openFiles": [
+    "radiation.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "compression",
+  "type": "combi",
+  "globals": [
+    "global_cardinality"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2024,
+      "instances": [
+        "bin_10.json",
+        "bin_20.json",
+        "bin_7.json",
+        "bin_8.json",
+        "lipsum_10.json"
+      ]
+    }
+  ]
+}

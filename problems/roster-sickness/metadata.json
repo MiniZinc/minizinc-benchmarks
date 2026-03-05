@@ -5,6 +5,15 @@
   "sbc": false,
   "globals": [],
   "challenges": [
-    "2022"
+    {
+      "year": 2022,
+      "data": [
+        "data/large-2-2.json",
+        "data/large-2.json",
+        "data/large-4-2.json",
+        "data/large-4.json",
+        "data/small-4.json"
+      ]
+    }
   ]
 }

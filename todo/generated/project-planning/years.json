@@ -1,0 +1,74 @@
+{
+  "project-planning.mzn.model": {
+    "years": [
+      2012
+    ],
+    "chosen_year": 2012
+  },
+  "ProjectPlannertest_12_8.mzn": {
+    "years": [
+      2012
+    ],
+    "chosen_year": 2012
+  },
+  "ProjectPlannertest_13_6.mzn": {
+    "years": [
+      2012
+    ],
+    "chosen_year": 2012
+  },
+  "ProjectPlannertest_13_8.mzn": {
+    "years": [
+      2012
+    ],
+    "chosen_year": 2012
+  },
+  "ProjectPlannertest_14_8.mzn": {
+    "years": [
+      2012
+    ],
+    "chosen_year": 2012
+  },
+  "ProjectPlannertest_16_7.mzn": {
+    "years": [
+      2012
+    ],
+    "chosen_year": 2012
+  },
+  "ProjectPlannertest_17_9.mzn": {
+    "years": [
+      2012
+    ],
+    "chosen_year": 2012
+  },
+  "ProjectPlannertest_12_7.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  },
+  "ProjectPlannertest_14_7.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  },
+  "ProjectPlannertest_15_6.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  },
+  "ProjectPlannertest_16_6.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  },
+  "ProjectPlannertest_16_8.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  }
+}

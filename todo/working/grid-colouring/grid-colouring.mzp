@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "GridColoring.mzn",
+    "data/10_10.json",
+    "data/10_5.json",
+    "data/12_13.json",
+    "data/13_11.json",
+    "data/15_16.json",
+    "data/19_17.json",
+    "data/4_11.json",
+    "data/4_8.json",
+    "data/5_6.json",
+    "data/7_8.json"
+  ],
+  "openFiles": [
+    "GridColoring.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

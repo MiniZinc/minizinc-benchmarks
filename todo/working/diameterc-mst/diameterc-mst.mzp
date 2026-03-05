@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "dcmst.mzn",
+    "data/c_v15_a105_d6.json",
+    "data/c_v15_a105_d7.json",
+    "data/c_v15_a105_d9.json",
+    "data/c_v20_a190_d4.json",
+    "data/c_v20_a190_d5.json",
+    "data/c_v20_a190_d9.json",
+    "data/s_v20_a50_d4.json",
+    "data/s_v20_a50_d5.json",
+    "data/s_v40_a100_d5.json",
+    "data/s_v40_a100_d7.json"
+  ],
+  "openFiles": [
+    "dcmst.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

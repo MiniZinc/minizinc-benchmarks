@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "fjsp.mzn",
+    "data/easy01.json",
+    "data/easy02.json",
+    "data/hard19.json",
+    "data/med04.json",
+    "data/med10.json"
+  ],
+  "openFiles": [
+    "fjsp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ptv",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "count"
+  ],
+  "challenges": [
+    {
+      "year": 2019,
+      "instances": [
+        "pax_period_20_1c.json",
+        "pax_period_20_2b.json",
+        "pax_period_20_3b.json",
+        "pax_period_20_5a.json",
+        "pax_period_20_5b.json"
+      ]
+    }
+  ]
+}

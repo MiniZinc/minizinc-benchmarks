@@ -1,0 +1,22 @@
+{
+  "name": "fjsp",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2013,
+      "instances": [
+        "easy01.json",
+        "easy02.json",
+        "hard19.json",
+        "med04.json",
+        "med10.json"
+      ]
+    }
+  ]
+}

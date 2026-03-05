@@ -1,0 +1,44 @@
+{
+  "name": "pentominoes",
+  "type": "puzzle",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "regular"
+  ],
+  "challenges": [
+    {
+      "year": 2008,
+      "instances": [
+        "01.json",
+        "02.json",
+        "03.json",
+        "04.json",
+        "05.json",
+        "06.json",
+        "07.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "02.json",
+        "04.json",
+        "05.json",
+        "06.json",
+        "07.json"
+      ]
+    },
+    {
+      "year": 2020,
+      "instances": [
+        "02.json",
+        "04.json",
+        "05.json",
+        "06.json",
+        "07.json"
+      ]
+    }
+  ]
+}

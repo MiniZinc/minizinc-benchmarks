@@ -8,6 +8,15 @@
   "sbc": false,
   "rc": false,
   "challenges": [
-    "2025"
+    {
+      "year": 2025,
+      "data": [
+        "data/n13_ub20_50.0_BEST.json",
+        "data/n7_ub20_75.0_BEST.json",
+        "data/n9_ub10_50.0_BEST.json",
+        "data/n9_ub10_75.0_BEST.json",
+        "data/n9_ub30_35.0_BEST.json"
+      ]
+    }
   ]
 }

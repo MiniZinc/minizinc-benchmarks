@@ -1,0 +1,43 @@
+{
+  "name": "gbac",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "bin_packing_load",
+    "global_cardinality_low_up_closed"
+  ],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "UD3-gbac.json",
+        "UD5-gbac.json",
+        "reduced_UD10-gbac.json",
+        "reduced_UD3-gbac.json",
+        "reduced_UD6-gbac.json"
+      ]
+    },
+    {
+      "year": 2017,
+      "instances": [
+        "UD2-gbac.json",
+        "UD4-gbac.json",
+        "UD5-gbac.json",
+        "UD8-gbac.json",
+        "reduced_UD4-gbac.json"
+      ]
+    },
+    {
+      "year": 2020,
+      "instances": [
+        "UD10-gbac.json",
+        "UD9-gbac.json",
+        "reduced_UD2-gbac.json",
+        "reduced_UD5-gbac.json",
+        "reduced_UD7-gbac.json"
+      ]
+    }
+  ]
+}

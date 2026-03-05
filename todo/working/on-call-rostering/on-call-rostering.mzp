@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "oc-roster.mzn",
+    "data/10s-100d-C.json",
+    "data/10s-150d.json",
+    "data/10s-50d.json",
+    "data/20s-100d-B.json",
+    "data/20s-200d.json",
+    "data/2s-200d.json",
+    "data/30s-400d-A.json",
+    "data/4s-100d.json",
+    "data/4s-10d.json",
+    "data/4s-23d.json"
+  ],
+  "openFiles": [
+    "oc-roster.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

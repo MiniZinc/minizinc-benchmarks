@@ -21,10 +21,10 @@ They are derived from models used in the MiniZinc Challenge.
 
 ## Structure
 
-- `/<problem>/<model>.mzp` A project file which can be opened in the MiniZincIDE or playground
-- `/<problem>/<model>.mzn` The model file for the problem
-- `/<problem>/data/<data>.json` The data files in JSON format
-- `/<problem>/metadata.json` Metadata for the problem
+- `problems/<problem>/<model>.mzp` A project file which can be opened in the MiniZincIDE or playground
+- `problems/<problem>/<model>.mzn` The model file for the problem
+- `problems/<problem>/data/<data>.json` The data files in JSON format
+- `problems/<problem>/metadata.json` Metadata for the problem
 
 ## Quality criteria
 

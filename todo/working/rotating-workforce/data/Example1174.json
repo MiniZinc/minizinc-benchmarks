@@ -1,0 +1,59 @@
+{
+  "week_length": 7,
+  "nb_workers": 25,
+  "min_daysoff": 2,
+  "max_daysoff": 3,
+  "min_work": 4,
+  "max_work": 7,
+  "nb_shifts": 2,
+  "shift_name": [
+    "D",
+    "A"
+  ],
+  "shift_start": [
+    360,
+    840
+  ],
+  "shift_length": [
+    480,
+    480
+  ],
+  "shift_block_min": [
+    2,
+    2
+  ],
+  "shift_block_max": [
+    6,
+    4
+  ],
+  "temp_req": [
+    [
+      11,
+      10,
+      10,
+      10,
+      10,
+      3,
+      3
+    ],
+    [
+      11,
+      10,
+      10,
+      10,
+      10,
+      3,
+      3
+    ]
+  ],
+  "nb_forbidden": 1,
+  "forbidden_before": [
+    2
+  ],
+  "forbidden_after": [
+    1
+  ],
+  "forbidden_daysoff": [
+    false
+  ]
+}

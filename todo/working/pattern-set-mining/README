@@ -1,0 +1,25 @@
+Mining itemsets with maximal accuracy
+
+Submitted by Tias Guns, Siegfried Nijssen, and Guido Tack.
+
+A traditional task in machine learning is the task of concept learning.
+Given a dataset of positive and negative examples, the aim is here to find a 
+formula in disjunctive normal form which characterizes the positive examples 
+as accurately as possible. In this challenge this task is modeled as a 
+discrete constraint optimization problem; the aim is to find a formula which 
+is as accurate as possible.
+
+The model is based on the link between DNF formulas and pattern sets in the 
+data mining literature. It represents the formula as a set of itemsets, and 
+imposes constraints on both the itemsets and the set of itemsets. It is based 
+on the 'Constraint Programming for Itemset Mining' framework (CP4IM); see 
+
+http://dtai.cs.kuleuven.be/CP4IM/
+
+See AIJ article 'Itemset mining: A constraint programming perspective'
+http://dx.doi.org/10.1016/j.artint.2011.05.002
+
+To run, use either pattern_set_mining_k1.mzn or pattern_set_mining_k2.mzn,
+together with any of the dzn files in the data directory. The two models are
+identical except for a different value of the parameter K (1 or 2), which
+determines the size of the pattern set to be determined.

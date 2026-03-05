@@ -1,0 +1,15 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "still_life.mzn",
+    "data/still_life_5.json",
+    "data/still_life_6.json",
+    "data/still_life_7.json",
+    "data/still_life_9.json"
+  ],
+  "openFiles": [
+    "still_life.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

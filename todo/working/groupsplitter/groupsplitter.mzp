@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "group.mzn",
+    "data/u12g1pref0.json",
+    "data/u12g1pref1.json",
+    "data/u12g2pref0.json",
+    "data/u12g2pref1.json",
+    "data/u12g2pref2.json",
+    "data/u15g1pref2.json",
+    "data/u15g3pref0.json",
+    "data/u15g3pref2.json",
+    "data/u15g5pref0.json",
+    "data/u15g5pref1.json",
+    "data/u5g1pref0.json",
+    "data/u6g1pref1.json",
+    "data/u6g3pref0.json",
+    "data/u7g2pref1.json",
+    "data/u9g1pref1.json"
+  ],
+  "openFiles": [
+    "group.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

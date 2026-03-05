@@ -1,0 +1,43 @@
+{
+  "name": "tower",
+  "type": "real",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "argmax"
+  ],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "tower_070_070_15_070-04.json",
+        "tower_070_070_15_070-06.json",
+        "tower_070_070_15_100-04.json",
+        "tower_070_070_15_100-05.json",
+        "tower_070_070_30_100-05.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "100_100_20_100-04.json",
+        "LICENSE",
+        "tower_070_070_15_070-09.json",
+        "tower_070_070_15_085-09.json",
+        "tower_300_300_40_200-00.json",
+        "tower_500_500_50_300-01.json"
+      ]
+    },
+    {
+      "year": 2025,
+      "instances": [
+        "tower_050_050_10_050-03.json",
+        "tower_070_070_15_070-02.json",
+        "tower_070_070_15_070-08.json",
+        "tower_070_070_30_100-02.json",
+        "tower_500_500_50_300-05.json"
+      ]
+    }
+  ]
+}

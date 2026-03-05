@@ -1,0 +1,43 @@
+{
+  "name": "pattern-set-mining",
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "lex_less"
+  ],
+  "challenges": [
+    {
+      "year": 2011,
+      "instances": [
+        "README",
+        "german-credit-k1.json",
+        "hepatitis-k2.json",
+        "pendigits-k1.json",
+        "sonar-k2.json",
+        "vehicle-k1.json"
+      ]
+    },
+    {
+      "year": 2012,
+      "instances": [
+        "audiology-k2.json",
+        "german-credit-k2.json",
+        "ionosphere-k1.json",
+        "mushroom-k1.json",
+        "segment-k2.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "anneal-k1.json",
+        "hypothyroid-k1.json",
+        "kr-vs-kp-k2.json",
+        "splice-1-k1.json",
+        "yeast-k2.json"
+      ]
+    }
+  ]
+}

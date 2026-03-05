@@ -1,0 +1,27 @@
+{
+  "name": "generalized-peacable-queens",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_equal",
+    "global_cardinality",
+    "lex_lesseq",
+    "regular",
+    "value_precede_chain"
+  ],
+  "challenges": [
+    {
+      "year": 2022,
+      "instances": [
+        "LICENSE",
+        "n11_q5.json",
+        "n13_q5.json",
+        "n25_q4.json",
+        "n8_q3.json",
+        "n9_q5.json"
+      ]
+    }
+  ]
+}

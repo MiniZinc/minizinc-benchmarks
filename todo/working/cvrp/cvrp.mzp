@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "cvrp.mzn",
+    "data/A-n37-k5.vrp.json",
+    "data/A-n64-k9.vrp.json",
+    "data/B-n45-k5.vrp.json",
+    "data/P-n16-k8.vrp.json",
+    "data/simple2.json"
+  ],
+  "openFiles": [
+    "cvrp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

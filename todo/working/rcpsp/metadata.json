@@ -1,0 +1,37 @@
+{
+  "name": "rcpsp",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2008,
+      "instances": [
+        "00.json",
+        "01.json",
+        "02.json",
+        "03.json",
+        "04.json",
+        "05.json",
+        "06.json",
+        "07.json",
+        "08.json",
+        "09.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "11.json",
+        "12.json",
+        "13.json",
+        "14.json",
+        "15.json"
+      ]
+    }
+  ]
+}

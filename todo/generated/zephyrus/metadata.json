@@ -1,0 +1,20 @@
+{
+  "name": "zephyrus",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "zephyrus-FH-2-15.mzn",
+        "zephyrus_15_10.mzn",
+        "zephyrus_20_20.mzn",
+        "zephyrus_5_20.mzn",
+        "zephyrus_5_4.mzn"
+      ]
+    }
+  ]
+}

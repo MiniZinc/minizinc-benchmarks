@@ -1,0 +1,25 @@
+{
+  "inputBoard": [
+    "XXXXXXXXXXXXXXXXXXXX",
+    "X    ON      !   X X",
+    "X     NNNNN      X X",
+    "X            O   X X",
+    "X      O         X X",
+    "X   O  O         X X",
+    "X      OXXXXXXXXXX X",
+    "XNNN    X    OXOXX X",
+    "XN NXXXXX   O X XX X",
+    "XN NX         X XX X",
+    "XN NXX      NNXXXX X",
+    "X  N X      N   O  X",
+    "X  N X      N      X",
+    "X  N X      N  O   X",
+    "X    X<     N      X",
+    "X    X   O  N  NNNNX",
+    "XO   XXX   XN  NNNNX",
+    "X   O NNNNNNNNNN   X",
+    "X      NXXXXNNNN   X",
+    "XXXXXXXXXXXXXXXXXXXX"
+  ],
+  "maxTime": 100
+}

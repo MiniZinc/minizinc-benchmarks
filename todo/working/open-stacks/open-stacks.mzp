@@ -1,0 +1,30 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "open_stacks_01.mzn",
+    "data/gp50by50_1.json",
+    "data/nrwsLarger4_1.json",
+    "data/problem_10_20_1.json",
+    "data/problem_15_15.json",
+    "data/problem_15_15_1.json",
+    "data/problem_20_10_1.json",
+    "data/problem_20_20_1.json",
+    "data/problem_30_15_1.json",
+    "data/wbop_15_30_1.json",
+    "data/wbop_20_10_1.json",
+    "data/wbo_10_20_1.json",
+    "data/wbo_15_30_1.json",
+    "data/wbo_20_20_1.json",
+    "data/wbo_30_15_1.json",
+    "data/wbo_30_30_1.json",
+    "data/wbp_15_30_1.json",
+    "data/wbp_20_10_1.json",
+    "data/wbp_20_20_1.json",
+    "data/wbp_30_10_1.json"
+  ],
+  "openFiles": [
+    "open_stacks_01.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "speck-optimisation",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_equal"
+  ],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "easy_1.json",
+        "easy_3.json",
+        "hard_0.json",
+        "medium_6.json",
+        "very_hard_5.json"
+      ]
+    }
+  ]
+}

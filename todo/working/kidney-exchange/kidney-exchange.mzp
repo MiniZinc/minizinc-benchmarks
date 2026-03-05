@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "ccmcp.mzn",
+    "data/3_20_0.15_3.json",
+    "data/3_20_0.25_2.json",
+    "data/3_20_0.25_5.json",
+    "data/3_20_0.30_4.json",
+    "data/3_20_0.30_5.json",
+    "data/3_20_0.40_2.json",
+    "data/3_20_0.40_3.json",
+    "data/3_25_0.10_2.json",
+    "data/3_25_0.15_4.json",
+    "data/3_25_0.20_3.json"
+  ],
+  "openFiles": [
+    "ccmcp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

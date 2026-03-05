@@ -5,6 +5,15 @@
   "sbc": false,
   "globals": [],
   "challenges": [
-    "2021"
+    {
+      "year": 2021,
+      "data": [
+        "data/102.json",
+        "data/195.json",
+        "data/205.json",
+        "data/57.json",
+        "data/92.json"
+      ]
+    }
   ]
 }

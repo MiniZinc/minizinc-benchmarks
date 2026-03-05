@@ -1,0 +1,17 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "amaze2.mzn",
+    "data/2012-03-08.json",
+    "data/2012-03-15.json",
+    "data/2012-06-22.json",
+    "data/2012-06-28.json",
+    "data/2012-06-29.json",
+    "data/2012-07-04.json"
+  ],
+  "openFiles": [
+    "amaze2.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,14 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "search_stress.mzn",
+    "data/04_04.json",
+    "data/08_04.json",
+    "data/08_08.json"
+  ],
+  "openFiles": [
+    "search_stress.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

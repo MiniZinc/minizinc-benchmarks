@@ -1,0 +1,30 @@
+{
+  "name": "skill-allocation",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "skill_allocation_mzn_1m_1.json",
+        "skill_allocation_mzn_2m_1.json",
+        "skill_allocation_mzn_2m_3.json",
+        "skill_allocation_mzn_2w_1.json",
+        "skill_allocation_mzn_3m_3.json"
+      ]
+    },
+    {
+      "year": 2025,
+      "instances": [
+        "skill_allocation_mzn_1m_2.json",
+        "skill_allocation_mzn_2m_2.json",
+        "skill_allocation_mzn_2w_2.json",
+        "skill_allocation_mzn_3m_3.json",
+        "skill_allocation_mzn_5d_1.json"
+      ]
+    }
+  ]
+}

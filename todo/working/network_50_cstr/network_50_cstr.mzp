@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "efm_cstr.mzn",
+    "data/MODEL1507180015.json",
+    "data/MODEL1507180022.json",
+    "data/MODEL2204150001.json",
+    "data/MODEL2204190004.json",
+    "data/toy_network_1000_m.json"
+  ],
+  "openFiles": [
+    "efm_cstr.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

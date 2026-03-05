@@ -1,0 +1,20 @@
+{
+  "name": "roster-shifts-bool",
+  "type": "combi",
+  "kind": "max",
+  "rc": true,
+  "sbc": true,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "large.json",
+        "s100_e20_c8.json",
+        "s200_e50_c8.json",
+        "s50_e50_c3.json",
+        "small.json"
+      ]
+    }
+  ]
+}

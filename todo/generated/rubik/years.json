@@ -1,0 +1,38 @@
+{
+  "4-cube.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "5-cube.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "6-cube.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "7-cube.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "8-cube.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "empty.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  }
+}

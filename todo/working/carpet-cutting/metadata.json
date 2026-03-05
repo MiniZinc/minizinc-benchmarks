@@ -1,0 +1,63 @@
+{
+  "name": "carpet-cutting",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "cumulative",
+    "diffn"
+  ],
+  "challenges": [
+    {
+      "year": 2011,
+      "instances": [
+        "mzn_rnd_test.04.json",
+        "mzn_rnd_test.07.json",
+        "mzn_rnd_test.08.json",
+        "mzn_rnd_test.15.json",
+        "mzn_rnd_test.18.json"
+      ]
+    },
+    {
+      "year": 2012,
+      "instances": [
+        "mzn_rnd_test.05.json",
+        "mzn_rnd_test.10.json",
+        "mzn_rnd_test.14.json",
+        "mzn_rnd_test.16.json",
+        "mzn_rnd_test.17.json"
+      ]
+    },
+    {
+      "year": 2016,
+      "instances": [
+        "mzn_rnd_test.02.json",
+        "mzn_rnd_test.06.json",
+        "mzn_rnd_test.11.json",
+        "mzn_rnd_test.13.json",
+        "mzn_rnd_test.20.json"
+      ]
+    },
+    {
+      "year": 2021,
+      "instances": [
+        "mzn_rnd_test.01.json",
+        "mzn_rnd_test.03.json",
+        "mzn_rnd_test.09.json",
+        "mzn_rnd_test.12.json",
+        "mzn_rnd_test.19.json"
+      ]
+    },
+    {
+      "year": 2025,
+      "instances": [
+        "cc_rnd_12_3.json",
+        "cc_rnd_16_1.json",
+        "cc_rnd_4_4.json",
+        "cc_rnd_8_1.json",
+        "cc_rnd_8_2.json"
+      ]
+    }
+  ]
+}

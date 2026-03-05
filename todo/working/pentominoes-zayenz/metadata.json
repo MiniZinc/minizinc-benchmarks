@@ -1,0 +1,23 @@
+{
+  "name": "pentominoes-zayenz",
+  "type": "",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "regular"
+  ],
+  "challenges": [
+    {
+      "year": 2021,
+      "instances": [
+        "LICENSE",
+        "size_10_tiles_10_seed_17_strategy_target.json",
+        "size_15_tiles_15_seed_17_strategy_source.json",
+        "size_20_tiles_10_seed_42_strategy_far.json",
+        "size_20_tiles_15_seed_4711_strategy_source.json",
+        "size_5_tiles_20_seed_17_strategy_close.json"
+      ]
+    }
+  ]
+}

@@ -5,6 +5,15 @@
   "sbc": true,
   "globals": [],
   "challenges": [
-    "2021"
+    {
+      "year": 2021,
+      "data": [
+        "data/steiner_t2_k7_N21.json",
+        "data/steiner_t3_k3_N11.json",
+        "data/steiner_t3_k4_N8.json",
+        "data/steiner_t4_k4_N10.json",
+        "data/steiner_t6_k6_N7.json"
+      ]
+    }
   ]
 }

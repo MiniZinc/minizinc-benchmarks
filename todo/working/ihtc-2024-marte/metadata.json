@@ -1,0 +1,26 @@
+{
+  "name": "ihtc-2024-marte",
+  "type": "real",
+  "globals": [
+    "bin_packing_load",
+    "cumulative",
+    "nvalue"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2025,
+      "instances": [
+        "LICENSE.txt",
+        "README.txt",
+        "i01.json",
+        "i03.json",
+        "i06.json",
+        "i11.json",
+        "i14.json"
+      ]
+    }
+  ]
+}

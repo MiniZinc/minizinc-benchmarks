@@ -1,0 +1,1236 @@
+{
+  "CITY": [
+    {
+      "c": "City",
+      "e": {
+        "set": [
+          [
+            1,
+            10
+          ]
+        ]
+      }
+    }
+  ],
+  "ITEM": [
+    {
+      "c": "Item",
+      "e": {
+        "set": [
+          [
+            1,
+            135
+          ]
+        ]
+      }
+    }
+  ],
+  "knapsack_capacity": 5000,
+  "min_speed": 10000,
+  "max_speed": 11000,
+  "renting_ratio": 49,
+  "distances": [
+    [
+      0,
+      477,
+      400,
+      502,
+      354,
+      667,
+      261,
+      361,
+      290,
+      768
+    ],
+    [
+      477,
+      0,
+      679,
+      36,
+      499,
+      424,
+      233,
+      706,
+      606,
+      412
+    ],
+    [
+      400,
+      679,
+      0,
+      714,
+      752,
+      594,
+      466,
+      94,
+      110,
+      757
+    ],
+    [
+      502,
+      36,
+      714,
+      0,
+      501,
+      449,
+      264,
+      740,
+      640,
+      424
+    ],
+    [
+      354,
+      499,
+      752,
+      501,
+      0,
+      862,
+      425,
+      714,
+      643,
+      900
+    ],
+    [
+      667,
+      424,
+      594,
+      449,
+      862,
+      0,
+      446,
+      670,
+      591,
+      175
+    ],
+    [
+      261,
+      233,
+      466,
+      264,
+      425,
+      446,
+      0,
+      481,
+      382,
+      519
+    ],
+    [
+      361,
+      706,
+      94,
+      740,
+      714,
+      670,
+      481,
+      0,
+      100,
+      827
+    ],
+    [
+      290,
+      606,
+      110,
+      640,
+      643,
+      591,
+      382,
+      100,
+      0,
+      742
+    ],
+    [
+      768,
+      412,
+      757,
+      424,
+      900,
+      175,
+      519,
+      827,
+      742,
+      0
+    ]
+  ],
+  "items": [
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 5887,
+      "weight": 9060
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 6860,
+      "weight": 8916
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 3366,
+      "weight": 8888
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 7048,
+      "weight": 1248
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 4476,
+      "weight": 1284
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 4221,
+      "weight": 3009
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 1682,
+      "weight": 2574
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 1061,
+      "weight": 3431
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 7114,
+      "weight": 835
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 965,
+      "weight": 1594
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 8502,
+      "weight": 7786
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 8310,
+      "weight": 6166
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 1726,
+      "weight": 5223
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 757,
+      "weight": 2174
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 2
+      },
+      "profit": 8807,
+      "weight": 643
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 7363,
+      "weight": 2200
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 6574,
+      "weight": 7408
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 503,
+      "weight": 8693
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 4523,
+      "weight": 1580
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 4196,
+      "weight": 5431
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 1505,
+      "weight": 5045
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 660,
+      "weight": 6395
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 1052,
+      "weight": 4376
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 5231,
+      "weight": 2230
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 4364,
+      "weight": 6328
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 2019,
+      "weight": 5076
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 1641,
+      "weight": 7060
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 4120,
+      "weight": 8336
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 9228,
+      "weight": 3465
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 3
+      },
+      "profit": 5508,
+      "weight": 5648
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 8444,
+      "weight": 6507
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 9670,
+      "weight": 7983
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 1815,
+      "weight": 2225
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 7450,
+      "weight": 8681
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 9252,
+      "weight": 9625
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 8620,
+      "weight": 8875
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 595,
+      "weight": 4873
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 2672,
+      "weight": 3376
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 6167,
+      "weight": 6477
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 8637,
+      "weight": 5412
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 1695,
+      "weight": 6809
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 5758,
+      "weight": 2170
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 9519,
+      "weight": 1162
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 813,
+      "weight": 5023
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 4
+      },
+      "profit": 8843,
+      "weight": 5238
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 6941,
+      "weight": 4987
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 5323,
+      "weight": 5877
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 4567,
+      "weight": 5429
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 8621,
+      "weight": 8309
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 241,
+      "weight": 8720
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 2096,
+      "weight": 2537
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 5295,
+      "weight": 5434
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 5466,
+      "weight": 9489
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 1227,
+      "weight": 7502
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 4681,
+      "weight": 7959
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 7540,
+      "weight": 6066
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 6334,
+      "weight": 1380
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 9585,
+      "weight": 1019
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 2304,
+      "weight": 898
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 5
+      },
+      "profit": 8680,
+      "weight": 8163
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 9530,
+      "weight": 4227
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 4120,
+      "weight": 9500
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 5648,
+      "weight": 6024
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 6164,
+      "weight": 6695
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 5136,
+      "weight": 7711
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 9901,
+      "weight": 5677
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 8818,
+      "weight": 8415
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 2849,
+      "weight": 576
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 2530,
+      "weight": 4198
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 3723,
+      "weight": 9320
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 2285,
+      "weight": 1947
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 3124,
+      "weight": 6835
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 920,
+      "weight": 1725
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 9040,
+      "weight": 4453
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 6
+      },
+      "profit": 1852,
+      "weight": 3447
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 4387,
+      "weight": 1194
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 9458,
+      "weight": 8724
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 1386,
+      "weight": 1292
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 3661,
+      "weight": 2940
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 8480,
+      "weight": 7179
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 457,
+      "weight": 9772
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 6131,
+      "weight": 8073
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 4748,
+      "weight": 3703
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 3383,
+      "weight": 9898
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 8187,
+      "weight": 3953
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 7070,
+      "weight": 7508
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 6115,
+      "weight": 9020
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 3193,
+      "weight": 7999
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 1291,
+      "weight": 4303
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 7
+      },
+      "profit": 6773,
+      "weight": 3399
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 235,
+      "weight": 8816
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 6337,
+      "weight": 8526
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 8080,
+      "weight": 1351
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 6714,
+      "weight": 8456
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 9574,
+      "weight": 9678
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 7072,
+      "weight": 757
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 5864,
+      "weight": 7611
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 204,
+      "weight": 3209
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 5004,
+      "weight": 190
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 8960,
+      "weight": 2066
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 5058,
+      "weight": 8496
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 5270,
+      "weight": 8996
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 9471,
+      "weight": 9133
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 4728,
+      "weight": 8711
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 8
+      },
+      "profit": 6840,
+      "weight": 8980
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 8584,
+      "weight": 6789
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 9975,
+      "weight": 9620
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 5142,
+      "weight": 7514
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 5046,
+      "weight": 2245
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 8395,
+      "weight": 7377
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 9705,
+      "weight": 2399
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 9111,
+      "weight": 2770
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 4240,
+      "weight": 257
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 7049,
+      "weight": 9371
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 693,
+      "weight": 6135
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 6995,
+      "weight": 6688
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 4712,
+      "weight": 400
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 1582,
+      "weight": 1575
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 178,
+      "weight": 6381
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 9
+      },
+      "profit": 4505,
+      "weight": 7708
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 4555,
+      "weight": 6205
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 7987,
+      "weight": 5613
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 6464,
+      "weight": 7573
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 2008,
+      "weight": 8025
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 5908,
+      "weight": 2470
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 6902,
+      "weight": 2529
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 397,
+      "weight": 2919
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 4363,
+      "weight": 6125
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 2182,
+      "weight": 9759
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 4804,
+      "weight": 6865
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 4325,
+      "weight": 8517
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 4806,
+      "weight": 6993
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 4583,
+      "weight": 7202
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 5603,
+      "weight": 8059
+    },
+    {
+      "city": {
+        "c": "City",
+        "e": 10
+      },
+      "profit": 3630,
+      "weight": 8150
+    }
+  ]
+}

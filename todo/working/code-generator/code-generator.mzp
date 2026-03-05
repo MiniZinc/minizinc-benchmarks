@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "unison.mzn",
+    "data/hexagon_gcc.reload1.gen_reload.json",
+    "data/mips_gcc.cfgbuild.control_flow_insn_p.json",
+    "data/mips_gcc.cfgrtl.update_br_prob_note.json",
+    "data/mips_gcc.flow.find_regno_partial.json",
+    "data/mips_gcc.function.use_return_register.json",
+    "data/mips_gcc.real.eiremain.json",
+    "data/mips_gcc.varasm.default_named_section_asm_out_destructor.json",
+    "data/mips_gobmk.helpers.dragon_weak.json",
+    "data/mips_gobmk.patterns.autohelperpat1114.json",
+    "data/mips_gobmk.patterns.autohelperpat508.json",
+    "data/mips_mesa.eval.gl_Map1f.json",
+    "data/mips_mesa.shapes.auxWireBox.json",
+    "data/mips_pegwit.ec_vlong.vlShortLshift.json",
+    "data/mips_pgp.crypto.encryptfile.json",
+    "data/mips_rasta.mapping.comp_Jboundaries.json"
+  ],
+  "openFiles": [
+    "unison.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

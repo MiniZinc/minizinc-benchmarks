@@ -1,0 +1,32 @@
+{
+  "name": "ma-path-finding",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2017,
+      "instances": [
+        "LICENSE",
+        "ins_g16_p10_a10.json",
+        "ins_g16_p10_a20.json",
+        "ins_g16_p20_a20.json",
+        "ins_g16_p20_a40.json",
+        "ins_g24_p10_a05.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "LICENSE",
+        "ins_g16_p10_a20.json",
+        "ins_g16_p10_a30.json",
+        "ins_g16_p20_a30.json",
+        "ins_g24_p20_a10.json",
+        "ins_g32_p20_a10.json"
+      ]
+    }
+  ]
+}

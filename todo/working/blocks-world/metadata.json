@@ -1,0 +1,24 @@
+{
+  "name": "blocks-world",
+  "type": "puzzle",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "global_cardinality_closed",
+    "increasing"
+  ],
+  "challenges": [
+    {
+      "year": 2022,
+      "instances": [
+        "16-4-13.json",
+        "16-4-40.json",
+        "16-4-45.json",
+        "16-4-5.json",
+        "16-4-83.json",
+        "LICENSE"
+      ]
+    }
+  ]
+}

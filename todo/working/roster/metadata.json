@@ -1,0 +1,59 @@
+{
+  "name": "roster",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "at_least",
+    "at_most",
+    "exactly"
+  ],
+  "challenges": [
+    {
+      "year": 2009,
+      "instances": [
+        "chicroster_dataset_11.json",
+        "chicroster_dataset_14.json",
+        "chicroster_dataset_17.json",
+        "chicroster_dataset_3.json",
+        "chicroster_dataset_5.json",
+        "chicroster_dataset_7.json",
+        "chicroster_dataset_8.json",
+        "chicroster_dataset_large_13.json",
+        "chicroster_dataset_large_15.json",
+        "chicroster_dataset_large_19.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "chicroster_dataset_10.json",
+        "chicroster_dataset_12.json",
+        "chicroster_dataset_large_16.json",
+        "chicroster_dataset_large_18.json",
+        "chicroster_dataset_large_20.json"
+      ]
+    },
+    {
+      "year": 2015,
+      "instances": [
+        "chicroster_dataset_11.json",
+        "chicroster_dataset_17.json",
+        "chicroster_dataset_2.json",
+        "chicroster_dataset_5.json",
+        "chicroster_dataset_7.json"
+      ]
+    },
+    {
+      "year": 2023,
+      "instances": [
+        "chicroster_dataset_10.json",
+        "chicroster_dataset_12.json",
+        "chicroster_dataset_8.json",
+        "chicroster_dataset_9.json",
+        "chicroster_dataset_large_16.json"
+      ]
+    }
+  ]
+}

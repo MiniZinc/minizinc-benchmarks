@@ -1,0 +1,32 @@
+{
+  "name": "multi-knapsack-global",
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "knapsack"
+  ],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "mknap1-6.json",
+        "mknap2-1.json",
+        "mknap2-2.json",
+        "mknap2-20.json",
+        "mknap2-32.json"
+      ]
+    },
+    {
+      "year": 2019,
+      "instances": [
+        "mknap1-5.json",
+        "mknap2-1.json",
+        "mknap2-10.json",
+        "mknap2-2.json",
+        "mknap2-40.json"
+      ]
+    }
+  ]
+}

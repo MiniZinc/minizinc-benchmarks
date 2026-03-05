@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "smelt.mzn",
+    "data/smelt_11.json",
+    "data/smelt_2.json",
+    "data/smelt_3.json",
+    "data/smelt_4.json",
+    "data/smelt_5.json"
+  ],
+  "openFiles": [
+    "smelt.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

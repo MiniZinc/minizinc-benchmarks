@@ -1,0 +1,41 @@
+{
+  "name": "yumi-dynamic",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_equal",
+    "all_different",
+    "circuit",
+    "cumulative",
+    "diffn",
+    "increasing",
+    "table",
+    "value_precede",
+    "value_precede_chain"
+  ],
+  "challenges": [
+    {
+      "year": 2021,
+      "instances": [
+        "LICENSE",
+        "p_10_SSSSSS_SSSS_yumi_grid_setup_3_3_zones.json",
+        "p_4_GG_GG_yumi_grid_setup_3_4_zones.json",
+        "p_4_GG_GG_yumi_grid_setup_7_7_zones.json",
+        "p_4_SG_SG_yumi_grid_setup_3_4_zones.json",
+        "p_7_SGSG_GSG_yumi_grid_setup_5_5_zones.json"
+      ]
+    },
+    {
+      "year": 2024,
+      "instances": [
+        "p_4_GG_GG_yumi_grid_setup_5_5_zones.json",
+        "p_5_GG_GGG_yumi_grid_setup_5_5_zones.json",
+        "p_5_GSS_SG_yumi_grid_setup_3_4_zones.json",
+        "p_7_SSSS_SSS_yumi_grid_setup_3_3_zones.json",
+        "p_9_GSGS_GSGSG_yumi_grid_setup_7_7_zones.json"
+      ]
+    }
+  ]
+}

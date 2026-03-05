@@ -1,0 +1,30 @@
+{
+  "name": "prize-collecting",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2011,
+      "instances": [
+        "25-5-5-9.json",
+        "28-4-7-4.json",
+        "30-5-6-7.json",
+        "32-4-8-0.json",
+        "32-4-8-2.json"
+      ]
+    },
+    {
+      "year": 2016,
+      "instances": [
+        "28-4-7-1.json",
+        "30-5-6-2.json",
+        "30-5-6-8.json",
+        "32-4-8-2.json",
+        "32-4-8-5.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "test-scheduling.mzn",
+    "data/t100m10r3-2.json",
+    "data/t100m20r3-14.json",
+    "data/t20m10r10-17.json",
+    "data/t30m10r10-5.json",
+    "data/t30m10r3-15.json",
+    "data/t30m20r3-20.json",
+    "data/t500m100r10-13.json",
+    "data/t500m50r10-8.json",
+    "data/t50m10r5-6.json",
+    "data/t50m20r10-17.json"
+  ],
+  "openFiles": [
+    "test-scheduling.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

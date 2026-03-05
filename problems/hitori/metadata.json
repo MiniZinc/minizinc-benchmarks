@@ -8,6 +8,15 @@
   "sbc": false,
   "rc": false,
   "challenges": [
-    "2025"
+    {
+      "year": 2025,
+      "data": [
+        "data/h11-1.json",
+        "data/h14-1.json",
+        "data/h15-1.json",
+        "data/h20-2.json",
+        "data/h5-1.json"
+      ]
+    }
   ]
 }

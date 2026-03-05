@@ -1,0 +1,32 @@
+{
+  "name": "on-call-rostering",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "count"
+  ],
+  "challenges": [
+    {
+      "year": 2013,
+      "instances": [
+        "10s-150d.json",
+        "10s-50d.json",
+        "20s-200d.json",
+        "4s-10d.json",
+        "4s-23d.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "10s-100d-C.json",
+        "20s-100d-B.json",
+        "2s-200d.json",
+        "30s-400d-A.json",
+        "4s-100d.json"
+      ]
+    }
+  ]
+}

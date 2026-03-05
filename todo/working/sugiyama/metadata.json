@@ -1,0 +1,20 @@
+{
+  "name": "sugiyama",
+  "type": "puzzle",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "g3_8_8_2.json",
+        "g3_8_8_4.json",
+        "g3_8_8_6.json",
+        "g4_7_7_7_3.json",
+        "g5_7_7_7_7_2.json"
+      ]
+    }
+  ]
+}

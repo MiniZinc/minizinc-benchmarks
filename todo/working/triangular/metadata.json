@@ -1,0 +1,52 @@
+{
+  "name": "triangular",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "inverse"
+  ],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "n10.json",
+        "n16.json",
+        "n22.json",
+        "n28.json",
+        "n37.json"
+      ]
+    },
+    {
+      "year": 2019,
+      "instances": [
+        "n10.json",
+        "n17.json",
+        "n23.json",
+        "n29.json",
+        "n37.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "n10.json",
+        "n18.json",
+        "n24.json",
+        "n30.json",
+        "n39.json"
+      ]
+    },
+    {
+      "year": 2024,
+      "instances": [
+        "n11.json",
+        "n14.json",
+        "n20.json",
+        "n31.json",
+        "n9.json"
+      ]
+    }
+  ]
+}

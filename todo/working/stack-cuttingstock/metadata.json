@@ -1,0 +1,22 @@
+{
+  "name": "stack-cuttingstock",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2019,
+      "instances": [
+        "d14.json",
+        "d3.json",
+        "d5.json",
+        "d7.json",
+        "d8.json"
+      ]
+    }
+  ]
+}

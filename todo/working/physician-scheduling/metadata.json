@@ -1,0 +1,25 @@
+{
+  "name": "physician-scheduling",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "global_cardinality_low_up",
+    "nvalue"
+  ],
+  "challenges": [
+    {
+      "year": 2021,
+      "instances": [
+        "LICENSE",
+        "README.txt",
+        "instance03_0.34.json",
+        "instance10-duplicated_0.23.json",
+        "instance13-duplicated_0.56.json",
+        "instance17_oneweek_real.json",
+        "instance18_real.json"
+      ]
+    }
+  ]
+}

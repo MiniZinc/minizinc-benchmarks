@@ -1,0 +1,21 @@
+{
+  "name": "sdn-chain",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "README.md",
+        "d10n780-1.json",
+        "d10n780-2.json",
+        "d24n600-3.json",
+        "d26n600-2.json",
+        "d30n600-5.json"
+      ]
+    }
+  ]
+}

@@ -3,10 +3,10 @@
   "projectFiles": [
     "yumi-static.mzn",
     "data/example_instance_4_GS_SG_yumi_grid_setup_7_7.json",
-    "data/p_4_GS_SG_yumi_grid_setup_3_3.json",
-    "data/p_8_SSSSS_SSS_yumi_grid_setup_3_4.json",
     "data/p_10_GGGGG_GGGGG_yumi_grid_setup_5_5.json",
-    "data/p_4_GG_GG_yumi_grid_setup_3_3.json"
+    "data/p_4_GG_GG_yumi_grid_setup_3_3.json",
+    "data/p_4_GS_SG_yumi_grid_setup_3_3.json",
+    "data/p_8_SSSSS_SSS_yumi_grid_setup_3_4.json"
   ],
   "openFiles": [
     "yumi-static.mzn"

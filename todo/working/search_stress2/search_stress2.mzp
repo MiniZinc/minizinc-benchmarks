@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "search_stress2.mzn",
+    "data/02_07.json",
+    "data/03_06.json",
+    "data/04_05.json",
+    "data/04_06.json",
+    "data/05_05.json",
+    "data/05_06.json",
+    "data/06_04.json",
+    "data/06_05.json",
+    "data/06_06.json",
+    "data/07_02.json"
+  ],
+  "openFiles": [
+    "search_stress2.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

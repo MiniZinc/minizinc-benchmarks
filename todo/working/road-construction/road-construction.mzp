@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "road_naive.mzn",
+    "data/road_11.json",
+    "data/road_14.json",
+    "data/road_16.json",
+    "data/road_17.json",
+    "data/road_18.json",
+    "data/road_20.json",
+    "data/road_25.json",
+    "data/road_26.json",
+    "data/road_33.json",
+    "data/road_9.json"
+  ],
+  "openFiles": [
+    "road_naive.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

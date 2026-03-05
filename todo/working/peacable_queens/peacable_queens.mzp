@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "peaceable_queens_mznc2021.mzn",
+    "data/11.json",
+    "data/25.json",
+    "data/40.json",
+    "data/50.json",
+    "data/8.json",
+    "data/pq_n12.json",
+    "data/pq_n19.json",
+    "data/pq_n35.json",
+    "data/pq_n7.json",
+    "data/pq_n9.json"
+  ],
+  "openFiles": [
+    "peaceable_queens_mznc2021.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sudoku_fixed",
+  "type": "puzzle",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "sudoku_p20.json",
+        "sudoku_p26.json",
+        "sudoku_p28.json",
+        "sudoku_p48.json",
+        "sudoku_p89.json"
+      ]
+    }
+  ]
+}

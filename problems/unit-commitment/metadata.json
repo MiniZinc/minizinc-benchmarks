@@ -5,6 +5,15 @@
   "sbc": false,
   "globals": [],
   "challenges": [
-    "2023"
+    {
+      "year": 2023,
+      "data": [
+        "data/L10-T48G10L10.json",
+        "data/L12-T48G15L10.json",
+        "data/L15-T48G30L15.json",
+        "data/L3-T6G5L5.json",
+        "data/L7-T12G5L5.json"
+      ]
+    }
   ]
 }

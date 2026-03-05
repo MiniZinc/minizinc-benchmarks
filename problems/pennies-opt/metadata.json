@@ -8,6 +8,15 @@
     "decreasing"
   ],
   "challenges": [
-    "2023"
+    {
+      "year": 2023,
+      "data": [
+        "data/n12.json",
+        "data/n5.json",
+        "data/n7.json",
+        "data/n8.json",
+        "data/n9.json"
+      ]
+    }
   ]
 }

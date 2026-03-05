@@ -1,0 +1,20 @@
+{
+  "name": "stable-goods",
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "s-d16.json",
+        "s-d19.json",
+        "s-d6.json",
+        "s-d7.json",
+        "s-d8.json"
+      ]
+    }
+  ]
+}

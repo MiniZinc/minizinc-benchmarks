@@ -1,0 +1,24 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "ghoulomb.mzn",
+    "data/3-10-20.json",
+    "data/3-11-29.json",
+    "data/3-7-20.json",
+    "data/3-8-20.json",
+    "data/3-9-16.json",
+    "data/4-10-16.json",
+    "data/4-7-16.json",
+    "data/4-8-16.json",
+    "data/4-9-10.json",
+    "data/4-9-14.json",
+    "data/4-9-18.json",
+    "data/4-9-20.json",
+    "data/5-7-22.json"
+  ],
+  "openFiles": [
+    "ghoulomb.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

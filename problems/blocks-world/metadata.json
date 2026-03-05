@@ -8,6 +8,15 @@
     "increasing"
   ],
   "challenges": [
-    "2022"
+    {
+      "year": 2022,
+      "data": [
+        "data/16-4-13.json",
+        "data/16-4-40.json",
+        "data/16-4-45.json",
+        "data/16-4-5.json",
+        "data/16-4-83.json"
+      ]
+    }
   ]
 }

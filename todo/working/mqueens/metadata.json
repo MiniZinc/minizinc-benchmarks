@@ -1,0 +1,22 @@
+{
+  "name": "mqueens",
+  "type": "puzzle",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "lex_lesseq"
+  ],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "n11.json",
+        "n12.json",
+        "n13.json",
+        "n20.json",
+        "n31.json"
+      ]
+    }
+  ]
+}

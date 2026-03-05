@@ -1,0 +1,42 @@
+{
+  "name": "mario",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "subcircuit"
+  ],
+  "challenges": [
+    {
+      "year": 2013,
+      "instances": [
+        "mario_easy_2.json",
+        "mario_easy_4.json",
+        "mario_n_medium_2.json",
+        "mario_n_medium_4.json",
+        "mario_t_hard_1.json"
+      ]
+    },
+    {
+      "year": 2014,
+      "instances": [
+        "mario_easy_5.json",
+        "mario_n_medium_3.json",
+        "mario_n_medium_5.json",
+        "mario_t_hard_2.json",
+        "mario_t_hard_5.json"
+      ]
+    },
+    {
+      "year": 2017,
+      "instances": [
+        "mario_medium_1.json",
+        "mario_medium_3.json",
+        "mario_medium_4.json",
+        "mario_medium_5.json",
+        "mario_n_medium_1.json"
+      ]
+    }
+  ]
+}

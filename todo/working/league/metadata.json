@@ -1,0 +1,33 @@
+{
+  "name": "league",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "count"
+  ],
+  "challenges": [
+    {
+      "year": 2012,
+      "instances": [
+        "model100-21-12.json",
+        "model20-3-5.json",
+        "model30-4-6.json",
+        "model50-4-4.json",
+        "model55-3-12.json",
+        "model90-18-20.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "model15-4-3.json",
+        "model20-5-4.json",
+        "model30-8-4.json",
+        "model40-5-11.json",
+        "model55-13-15.json"
+      ]
+    }
+  ]
+}

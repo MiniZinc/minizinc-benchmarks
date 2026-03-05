@@ -1,0 +1,36 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "vrp.mzn",
+    "data/A-n32-k5.vrp.json",
+    "data/A-n33-k6.vrp.json",
+    "data/A-n34-k5.vrp.json",
+    "data/A-n38-k5.vrp.json",
+    "data/A-n44-k7.vrp.json",
+    "data/A-n55-k9.vrp.json",
+    "data/A-n62-k8.vrp.json",
+    "data/A-n63-k10.vrp.json",
+    "data/A-n64-k9.vrp.json",
+    "data/A-n65-k9.vrp.json",
+    "data/B-n39-k5.vrp.json",
+    "data/B-n43-k6.vrp.json",
+    "data/B-n50-k8.vrp.json",
+    "data/B-n51-k7.vrp.json",
+    "data/B-n52-k7.vrp.json",
+    "data/B-n56-k7.vrp.json",
+    "data/B-n64-k9.vrp.json",
+    "data/P-n16-k8.vrp.json",
+    "data/P-n19-k2.vrp.json",
+    "data/P-n20-k2.vrp.json",
+    "data/P-n45-k5.vrp.json",
+    "data/P-n50-k10.vrp.json",
+    "data/P-n51-k10.vrp.json",
+    "data/P-n55-k7.vrp.json",
+    "data/P-n60-k15.vrp.json"
+  ],
+  "openFiles": [
+    "vrp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

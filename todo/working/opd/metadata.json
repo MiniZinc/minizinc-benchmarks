@@ -1,0 +1,32 @@
+{
+  "name": "opd",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "lex_greatereq"
+  ],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "flener_et_al_10_350_100.json",
+        "medium_10_100_30.json",
+        "small_bibd_10_30_09.json",
+        "small_bibd_11_22_10.json",
+        "small_bibd_13_26_06.json"
+      ]
+    },
+    {
+      "year": 2017,
+      "instances": [
+        "flener_et_al_15_350_100.json",
+        "medium_13_250_80.json",
+        "small_bibd_06_50_25.json",
+        "small_bibd_06_60_30.json",
+        "small_bibd_08_28_14.json"
+      ]
+    }
+  ]
+}

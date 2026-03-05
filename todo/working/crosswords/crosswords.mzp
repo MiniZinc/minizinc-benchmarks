@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "crossword_opt.mzn",
+    "data/grid-05.02_dict-55.json",
+    "data/grid-05.04_dict-80.json",
+    "data/grid-19.05_dict-80.json",
+    "data/grid-23.10_dict-35.json",
+    "data/grid-puzzle06_dict-55.json"
+  ],
+  "openFiles": [
+    "crossword_opt.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

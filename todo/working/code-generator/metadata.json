@@ -1,0 +1,50 @@
+{
+  "name": "code-generator",
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "all_different",
+    "cumulative",
+    "decreasing",
+    "diffn",
+    "diffn_nonstrict",
+    "maximum",
+    "minimum",
+    "table",
+    "value_precede_chain"
+  ],
+  "challenges": [
+    {
+      "year": 2019,
+      "instances": [
+        "mips_gcc.cfgrtl.update_br_prob_note.json",
+        "mips_gcc.function.use_return_register.json",
+        "mips_gobmk.helpers.dragon_weak.json",
+        "mips_gobmk.patterns.autohelperpat1114.json",
+        "mips_mesa.shapes.auxWireBox.json"
+      ]
+    },
+    {
+      "year": 2020,
+      "instances": [
+        "hexagon_gcc.reload1.gen_reload.json",
+        "mips_gcc.cfgbuild.control_flow_insn_p.json",
+        "mips_gcc.real.eiremain.json",
+        "mips_gobmk.patterns.autohelperpat508.json",
+        "mips_pgp.crypto.encryptfile.json"
+      ]
+    },
+    {
+      "year": 2023,
+      "instances": [
+        "mips_gcc.flow.find_regno_partial.json",
+        "mips_gcc.varasm.default_named_section_asm_out_destructor.json",
+        "mips_mesa.eval.gl_Map1f.json",
+        "mips_pegwit.ec_vlong.vlShortLshift.json",
+        "mips_rasta.mapping.comp_Jboundaries.json"
+      ]
+    }
+  ]
+}

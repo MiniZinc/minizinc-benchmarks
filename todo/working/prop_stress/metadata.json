@@ -1,0 +1,25 @@
+{
+  "name": "prop_stress",
+  "type": "combi",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2009,
+      "instances": [
+        "0100.json",
+        "0200.json",
+        "0300.json",
+        "0400.json",
+        "0500.json",
+        "0600.json",
+        "0700.json",
+        "0800.json",
+        "0900.json",
+        "1000.json"
+      ]
+    }
+  ]
+}

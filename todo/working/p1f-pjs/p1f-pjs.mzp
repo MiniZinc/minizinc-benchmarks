@@ -1,0 +1,20 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "p1f-pjs.mzn",
+    "data/10.json",
+    "data/12.json",
+    "data/14.json",
+    "data/16.json",
+    "data/17.json",
+    "data/18.json",
+    "data/20.json",
+    "data/21.json",
+    "data/22.json"
+  ],
+  "openFiles": [
+    "p1f-pjs.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

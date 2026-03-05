@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "full.mzn",
+    "data/EASY_200_50.json",
+    "data/HARD_2000_500.json",
+    "data/HARD_200_50.json",
+    "data/MEDIUM_1000_100.json",
+    "data/MEDIUM_200_50.json"
+  ],
+  "openFiles": [
+    "full.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

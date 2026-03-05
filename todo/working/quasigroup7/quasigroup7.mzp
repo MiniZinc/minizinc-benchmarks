@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "quasigroup7.mzn",
+    "data/05.json",
+    "data/06.json",
+    "data/07.json",
+    "data/08.json",
+    "data/09.json",
+    "data/10.json",
+    "data/11.json",
+    "data/12.json",
+    "data/13.json",
+    "data/14.json"
+  ],
+  "openFiles": [
+    "quasigroup7.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

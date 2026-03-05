@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "tdtsp.mzn",
+    "data/inst_10_24_10.json",
+    "data/inst_10_34_00.json",
+    "data/inst_10_35_20.json",
+    "data/inst_10_42_00.json",
+    "data/inst_10_42_10.json",
+    "data/inst_10_58_20.json",
+    "data/inst_20_14_10.json",
+    "data/inst_20_25_00.json",
+    "data/inst_20_26_00.json",
+    "data/inst_20_36_10.json"
+  ],
+  "openFiles": [
+    "tdtsp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

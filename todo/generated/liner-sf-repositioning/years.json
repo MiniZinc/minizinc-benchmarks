@@ -1,0 +1,62 @@
+{
+  "fm3_11.mzn": {
+    "years": [
+      2014
+    ],
+    "chosen_year": 2014
+  },
+  "fm3_5.mzn": {
+    "years": [
+      2014
+    ],
+    "chosen_year": 2014
+  },
+  "tp7_0.mzn": {
+    "years": [
+      2014
+    ],
+    "chosen_year": 2014
+  },
+  "tp7_10.mzn": {
+    "years": [
+      2014
+    ],
+    "chosen_year": 2014
+  },
+  "tp7_8.mzn": {
+    "years": [
+      2014
+    ],
+    "chosen_year": 2014
+  },
+  "fm3_0.mzn": {
+    "years": [
+      2019
+    ],
+    "chosen_year": 2019
+  },
+  "fm3_3.mzn": {
+    "years": [
+      2019
+    ],
+    "chosen_year": 2019
+  },
+  "tp7_12.mzn": {
+    "years": [
+      2019
+    ],
+    "chosen_year": 2019
+  },
+  "tp7_2.mzn": {
+    "years": [
+      2019
+    ],
+    "chosen_year": 2019
+  },
+  "tp7_4.mzn": {
+    "years": [
+      2019
+    ],
+    "chosen_year": 2019
+  }
+}

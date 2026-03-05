@@ -1,0 +1,35 @@
+{
+  "name": "peacable_queens",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "count",
+    "regular",
+    "value_precede"
+  ],
+  "challenges": [
+    {
+      "year": 2021,
+      "instances": [
+        "11.json",
+        "25.json",
+        "40.json",
+        "50.json",
+        "8.json",
+        "LICENSE"
+      ]
+    },
+    {
+      "year": 2024,
+      "instances": [
+        "pq_n12.json",
+        "pq_n19.json",
+        "pq_n35.json",
+        "pq_n7.json",
+        "pq_n9.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "amaze",
+  "type": "puzzle",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "count"
+  ],
+  "challenges": [
+    {
+      "year": 2012,
+      "instances": [
+        "2012-03-08.json",
+        "2012-03-15.json",
+        "2012-03-19.json",
+        "2012-06-22.json",
+        "2012-06-29.json",
+        "2012-07-04.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "model.mzn",
+    "data/1vERFuvviS.json",
+    "data/1YHXeG1xYs.json",
+    "data/9aGFgDaHX7.json",
+    "data/A3PZaPjnUz.json",
+    "data/avdoaYnfXq.json",
+    "data/BnMUR3YMRk.json",
+    "data/HgSWGJHxY5.json",
+    "data/jZ9pQqRxJ2.json",
+    "data/LeTaZW8Ij5.json",
+    "data/v1HjuSBQMb.json",
+    "data/vWQp9idqMs.json",
+    "data/Ws5Q6fhGi5.json",
+    "data/y21PnVA2Hj.json",
+    "data/YfFfEiuCQo.json"
+  ],
+  "openFiles": [
+    "model.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

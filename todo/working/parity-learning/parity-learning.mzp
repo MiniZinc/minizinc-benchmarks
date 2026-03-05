@@ -1,0 +1,18 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "parity-learning.mzn",
+    "data/44_22_5.2.json",
+    "data/44_22_5.3.json",
+    "data/48_24_6.1.json",
+    "data/48_24_6.2.json",
+    "data/52_26_6.1.json",
+    "data/52_26_6.2.json",
+    "data/52_26_6.3.json"
+  ],
+  "openFiles": [
+    "parity-learning.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

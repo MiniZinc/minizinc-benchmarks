@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "slow_convergence.mzn",
+    "data/0100.json",
+    "data/0200.json",
+    "data/0300.json",
+    "data/0400.json",
+    "data/0500.json",
+    "data/0600.json",
+    "data/0700.json",
+    "data/0800.json",
+    "data/0900.json",
+    "data/1000.json"
+  ],
+  "openFiles": [
+    "slow_convergence.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

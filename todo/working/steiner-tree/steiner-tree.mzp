@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "steiner-tree.mzn",
+    "data/es10fst03.stp.json",
+    "data/es10fst10.stp.json",
+    "data/es20fst08.stp.json",
+    "data/es20fst09.stp.json",
+    "data/es20fst14.stp.json"
+  ],
+  "openFiles": [
+    "steiner-tree.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

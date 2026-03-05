@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "sparse_mds.mzn",
+    "data/australian_train5.json",
+    "data/backache_train4.json",
+    "data/breast-cancer_train4.json",
+    "data/cleve_train5.json",
+    "data/colic_train4.json"
+  ],
+  "openFiles": [
+    "sparse_mds.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

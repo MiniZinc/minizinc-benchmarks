@@ -9,6 +9,15 @@
     "sliding_sum"
   ],
   "challenges": [
-    "2022"
+    {
+      "year": 2022,
+      "data": [
+        "data/rws-instance-e-100-s-2.json",
+        "data/rws-instance-e-25-s-7.json",
+        "data/rws-instance-e-30-s-9.json",
+        "data/rws-instance-e-80-s-1.json",
+        "data/rws-instance-e-90-s-2.json"
+      ]
+    }
   ]
 }

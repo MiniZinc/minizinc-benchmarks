@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "accap.mzn",
+    "data/accap_a10_f80_t50.json",
+    "data/accap_a12_f100_t60.json",
+    "data/accap_a18_f140_t85.json",
+    "data/accap_a20_f160_t90.json",
+    "data/accap_a30_f300_t120.json",
+    "data/accap_a3_f20_t10.json",
+    "data/accap_a40_f800_t180.json",
+    "data/accap_a4_f30_t15.json",
+    "data/accap_a5_f40_t20.json",
+    "data/accap_a8_f50_t30.json",
+    "data/accap_instance3.json",
+    "data/accap_instance5.json",
+    "data/accap_instance6.json",
+    "data/accap_instance8.json",
+    "data/accap_instance9.json"
+  ],
+  "openFiles": [
+    "accap.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

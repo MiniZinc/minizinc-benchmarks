@@ -1,0 +1,22 @@
+{
+  "name": "tsptw",
+  "type": "real",
+  "globals": [
+    "circuit"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2025,
+      "instances": [
+        "n100w120.003.json",
+        "n20w140.005.json",
+        "n20w160.001.json",
+        "n20w180.004.json",
+        "n80w180.003.json"
+      ]
+    }
+  ]
+}

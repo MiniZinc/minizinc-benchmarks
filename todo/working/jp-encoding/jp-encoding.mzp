@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "jp-encoding.mzn",
+    "data/data100.json",
+    "data/data1000.json",
+    "data/data1400.json",
+    "data/data1700.json",
+    "data/data1900.json",
+    "data/data200.json",
+    "data/data300.json",
+    "data/data400.json",
+    "data/data800.json",
+    "data/data900.json"
+  ],
+  "openFiles": [
+    "jp-encoding.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

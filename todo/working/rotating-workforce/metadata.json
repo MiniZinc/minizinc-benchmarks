@@ -1,0 +1,33 @@
+{
+  "name": "rotating-workforce",
+  "type": "real",
+  "kind": "sat",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "global_cardinality_low_up",
+    "regular"
+  ],
+  "challenges": [
+    {
+      "year": 2018,
+      "instances": [
+        "Example1014.json",
+        "Example103.json",
+        "Example1479.json",
+        "Example1780.json",
+        "Example593.json"
+      ]
+    },
+    {
+      "year": 2019,
+      "instances": [
+        "Example1174.json",
+        "Example1242.json",
+        "Example1337.json",
+        "Example1370.json",
+        "Example789.json"
+      ]
+    }
+  ]
+}

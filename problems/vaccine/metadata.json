@@ -8,6 +8,15 @@
     "lex_lesseq"
   ],
   "challenges": [
-    "2022"
+    {
+      "year": 2022,
+      "data": [
+        "data/v11.json",
+        "data/v7.json",
+        "data/v8.json",
+        "data/v857.json",
+        "data/v946.json"
+      ]
+    }
   ]
 }

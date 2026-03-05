@@ -1,0 +1,30 @@
+{
+  "name": "hrc",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2017,
+      "instances": [
+        "exp1-1-5145.json",
+        "exp1-1-5670.json",
+        "exp1-1-945.json",
+        "exp2-1-4795.json",
+        "exp2-1-5180.json"
+      ]
+    },
+    {
+      "year": 2019,
+      "instances": [
+        "exp1-1-5110.json",
+        "exp1-1-5425.json",
+        "exp1-1-5460.json",
+        "exp2-1-5145.json",
+        "exp2-1-5600.json"
+      ]
+    }
+  ]
+}

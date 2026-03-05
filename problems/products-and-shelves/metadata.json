@@ -10,6 +10,15 @@
   "sbc": true,
   "rc": false,
   "challenges": [
-    "2025"
+    {
+      "year": 2025,
+      "data": [
+        "data/ps-25-01.json",
+        "data/ps-25-03.json",
+        "data/ps-50-06.json",
+        "data/ps-50-09.json",
+        "data/toy.json"
+      ]
+    }
   ]
 }

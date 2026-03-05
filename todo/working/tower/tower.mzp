@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "tower.mzn",
+    "data/100_100_20_100-04.json",
+    "data/tower_050_050_10_050-03.json",
+    "data/tower_070_070_15_070-02.json",
+    "data/tower_070_070_15_070-04.json",
+    "data/tower_070_070_15_070-06.json",
+    "data/tower_070_070_15_070-08.json",
+    "data/tower_070_070_15_070-09.json",
+    "data/tower_070_070_15_085-09.json",
+    "data/tower_070_070_15_100-04.json",
+    "data/tower_070_070_15_100-05.json",
+    "data/tower_070_070_30_100-02.json",
+    "data/tower_070_070_30_100-05.json",
+    "data/tower_300_300_40_200-00.json",
+    "data/tower_500_500_50_300-01.json",
+    "data/tower_500_500_50_300-05.json"
+  ],
+  "openFiles": [
+    "tower.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

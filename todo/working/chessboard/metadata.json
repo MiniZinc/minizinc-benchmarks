@@ -1,0 +1,23 @@
+{
+  "name": "chessboard",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "global_cardinality",
+    "lex_lesseq"
+  ],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "chessboard3.json",
+        "chessboard4.json",
+        "chessboard_n12_1.json",
+        "chessboard_n39_2.json",
+        "chessboard_n9_1.json"
+      ]
+    }
+  ]
+}

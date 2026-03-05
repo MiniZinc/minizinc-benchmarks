@@ -1,0 +1,30 @@
+{
+  "name": "diameterc-mst",
+  "type": "combi",
+  "kind": "min",
+  "rc": true,
+  "sbc": true,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "c_v15_a105_d7.json",
+        "c_v20_a190_d5.json",
+        "s_v20_a50_d4.json",
+        "s_v20_a50_d5.json",
+        "s_v40_a100_d5.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "c_v15_a105_d6.json",
+        "c_v15_a105_d9.json",
+        "c_v20_a190_d4.json",
+        "c_v20_a190_d9.json",
+        "s_v40_a100_d7.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "tpp",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "subcircuit"
+  ],
+  "challenges": [
+    {
+      "year": 2012,
+      "instances": [
+        "tpp_3_3_30_1.json",
+        "tpp_3_5_20_1.json",
+        "tpp_5_3_20_1.json",
+        "tpp_5_5_20_1.json",
+        "tpp_7_3_20_1.json",
+        "tpp_7_5_20_1.json",
+        "tpp_7_5_30_1.json"
+      ]
+    },
+    {
+      "year": 2016,
+      "instances": [
+        "tpp_4_5_20_1.json",
+        "tpp_5_3_30_1.json",
+        "tpp_6_3_20_1.json",
+        "tpp_7_3_20_1.json",
+        "tpp_7_3_30_1.json"
+      ]
+    }
+  ]
+}

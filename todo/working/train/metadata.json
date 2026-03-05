@@ -1,0 +1,41 @@
+{
+  "name": "train",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2012,
+      "instances": [
+        "instance.12.json",
+        "instance.15.json",
+        "instance.2.json",
+        "instance.3.json",
+        "instance.6.json",
+        "instance.7.json"
+      ]
+    },
+    {
+      "year": 2014,
+      "instances": [
+        "instance.1.json",
+        "instance.13.json",
+        "instance.14.json",
+        "instance.8.json",
+        "instance.9.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "instance.10.json",
+        "instance.16.json",
+        "instance.17.json",
+        "instance.4.json",
+        "instance.5.json"
+      ]
+    }
+  ]
+}

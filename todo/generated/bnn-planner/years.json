@@ -1,0 +1,32 @@
+{
+  "cellda_y_10s.mzn": {
+    "years": [
+      2020
+    ],
+    "chosen_year": 2020
+  },
+  "inventory_4_8s.mzn": {
+    "years": [
+      2020
+    ],
+    "chosen_year": 2020
+  },
+  "navigation_5x5_10s.mzn": {
+    "years": [
+      2020
+    ],
+    "chosen_year": 2020
+  },
+  "sysadmin_4_2s.mzn": {
+    "years": [
+      2020
+    ],
+    "chosen_year": 2020
+  },
+  "sysadmin_5_4s.mzn": {
+    "years": [
+      2020
+    ],
+    "chosen_year": 2020
+  }
+}

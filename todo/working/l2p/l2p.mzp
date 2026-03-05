@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "linear-to-program.mzn",
+    "data/l2p1.json",
+    "data/l2p12.json",
+    "data/l2p13.json",
+    "data/l2p16.json",
+    "data/l2p2.json"
+  ],
+  "openFiles": [
+    "linear-to-program.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

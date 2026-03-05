@@ -1,0 +1,58 @@
+{
+  "name": "black-hole",
+  "type": "combi",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "inverse",
+    "table"
+  ],
+  "challenges": [
+    {
+      "year": 2009,
+      "instances": [
+        "01.json",
+        "03.json",
+        "05.json",
+        "07.json",
+        "09.json",
+        "11.json",
+        "13.json",
+        "15.json",
+        "17.json",
+        "19.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "10.json",
+        "14.json",
+        "17.json",
+        "20.json",
+        "9.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "12.json",
+        "16.json",
+        "18.json",
+        "4.json",
+        "6.json"
+      ]
+    },
+    {
+      "year": 2025,
+      "instances": [
+        "layout_14.json",
+        "layout_17.json",
+        "layout_25.json",
+        "layout_27.json",
+        "layout_3.json"
+      ]
+    }
+  ]
+}

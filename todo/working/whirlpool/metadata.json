@@ -1,0 +1,20 @@
+{
+  "name": "whirlpool",
+  "type": "puzzle",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "d12.json",
+        "d21.json",
+        "d29.json",
+        "d30.json",
+        "d8.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "wwtpp.mzn",
+    "data/ex02840_2400_100.json",
+    "data/ex04020_2400_100.json",
+    "data/ex04140_2400_100.json",
+    "data/ex04240_2400_100.json",
+    "data/ex05080_2400_100.json",
+    "data/ex05160_2400_100.json",
+    "data/ex05680_2400_100.json",
+    "data/ex07120_2400_100.json",
+    "data/ex08560_2400_100.json",
+    "data/ex10000_2400_100.json"
+  ],
+  "openFiles": [
+    "wwtpp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

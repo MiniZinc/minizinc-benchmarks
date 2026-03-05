@@ -1,0 +1,30 @@
+{
+  "name": "grid-colouring",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "10_10.json",
+        "12_13.json",
+        "15_16.json",
+        "5_6.json",
+        "7_8.json"
+      ]
+    },
+    {
+      "year": 2015,
+      "instances": [
+        "10_5.json",
+        "13_11.json",
+        "19_17.json",
+        "4_11.json",
+        "4_8.json"
+      ]
+    }
+  ]
+}

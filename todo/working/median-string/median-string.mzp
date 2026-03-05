@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "median_string_dp.mzn",
+    "data/p1_15_20-1.json",
+    "data/p2_10_8-0.json",
+    "data/p2_10_8-3.json",
+    "data/p2_2_20-2.json",
+    "data/p2_4_20-0.json"
+  ],
+  "openFiles": [
+    "median_string_dp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

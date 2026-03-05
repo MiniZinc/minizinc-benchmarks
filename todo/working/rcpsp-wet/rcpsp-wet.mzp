@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "rcpsp-wet.mzn",
+    "data/j30_1_3-wet.json",
+    "data/j30_27_5-wet.json",
+    "data/j30_43_10-wet.json",
+    "data/j30_44_8-wet.json",
+    "data/j60_19_6-wet.json",
+    "data/j60_28_3-wet.json",
+    "data/j60_36_8-wet.json",
+    "data/j90_10_10-wet.json",
+    "data/j90_19_7-wet.json",
+    "data/j90_48_4-wet.json"
+  ],
+  "openFiles": [
+    "rcpsp-wet.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

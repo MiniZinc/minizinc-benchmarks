@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "cvrptw_w_reload.mzn",
+    "data/A_1v_7l_w_reload.json",
+    "data/A_4v_22l.json",
+    "data/A_7v_48l.json",
+    "data/D_3v_25l_w_reload.json",
+    "data/toy_D_2v_4l_w_reload.json"
+  ],
+  "openFiles": [
+    "cvrptw_w_reload.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

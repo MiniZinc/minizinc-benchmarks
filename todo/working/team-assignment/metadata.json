@@ -1,0 +1,34 @@
+{
+  "name": "team-assignment",
+  "type": "real",
+  "kind": "max",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "all_different",
+    "bin_packing",
+    "bin_packing_load"
+  ],
+  "challenges": [
+    {
+      "year": 2018,
+      "instances": [
+        "data1_6_24.json",
+        "data2_4_15.json",
+        "data2_5_6.json",
+        "data2_6_12.json",
+        "data3_6_28.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "data1_4_6.json",
+        "data1_6_6.json",
+        "data2_6_15.json",
+        "data3_4_31.json",
+        "data3_5_31.json"
+      ]
+    }
+  ]
+}

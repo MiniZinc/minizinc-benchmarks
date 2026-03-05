@@ -1,0 +1,22 @@
+{
+  "name": "rel2onto",
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2017,
+      "instances": [
+        "3_9.json",
+        "5_17.json",
+        "5_28.json",
+        "5_5.json",
+        "5_6.json"
+      ]
+    }
+  ]
+}

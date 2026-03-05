@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "steelmillslab.mzn",
+    "data/bench_13_0.json",
+    "data/bench_14_1.json",
+    "data/bench_15_11.json",
+    "data/bench_16_10.json",
+    "data/bench_17_7.json",
+    "data/bench_19_5.json",
+    "data/bench_19_6.json",
+    "data/bench_20_15.json",
+    "data/bench_20_8.json",
+    "data/bench_2_19.json"
+  ],
+  "openFiles": [
+    "steelmillslab.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

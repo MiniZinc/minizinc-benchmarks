@@ -1,0 +1,22 @@
+{
+  "name": "crosswords",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2017,
+      "instances": [
+        "grid-05.02_dict-55.json",
+        "grid-05.04_dict-80.json",
+        "grid-19.05_dict-80.json",
+        "grid-23.10_dict-35.json",
+        "grid-puzzle06_dict-55.json"
+      ]
+    }
+  ]
+}

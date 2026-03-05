@@ -1,0 +1,33 @@
+{
+  "name": "seat-moving",
+  "type": "combi",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "all_different",
+    "all_different_except_0"
+  ],
+  "challenges": [
+    {
+      "year": 2018,
+      "instances": [
+        "sm-10-12-00.json",
+        "sm-10-20-05.json",
+        "sm-15-12-00.json",
+        "sm-15-20-00.json",
+        "sm-20-20-00.json"
+      ]
+    },
+    {
+      "year": 2021,
+      "instances": [
+        "sm-10-11-00.json",
+        "sm-10-13-00.json",
+        "sm-20-13-00.json",
+        "sm-20-16-00.json",
+        "sm-20-20-02.json"
+      ]
+    }
+  ]
+}

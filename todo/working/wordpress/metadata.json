@@ -1,0 +1,21 @@
+{
+  "name": "wordpress",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2022,
+      "instances": [
+        "LICENSE",
+        "Wordpress10_Offers500.json",
+        "Wordpress11_Offers500.json",
+        "Wordpress12_Offers500.json",
+        "Wordpress7_Offers500.json",
+        "Wordpress8_Offers500.json"
+      ]
+    }
+  ]
+}

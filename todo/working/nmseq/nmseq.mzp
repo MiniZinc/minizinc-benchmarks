@@ -1,0 +1,31 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "nmseq.mzn",
+    "data/020.json",
+    "data/040.json",
+    "data/060.json",
+    "data/080.json",
+    "data/100.json",
+    "data/143.json",
+    "data/150.json",
+    "data/176.json",
+    "data/200.json",
+    "data/202.json",
+    "data/207.json",
+    "data/269.json",
+    "data/300.json",
+    "data/393.json",
+    "data/395.json",
+    "data/400.json",
+    "data/478.json",
+    "data/500.json",
+    "data/83.json",
+    "data/99.json"
+  ],
+  "openFiles": [
+    "nmseq.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

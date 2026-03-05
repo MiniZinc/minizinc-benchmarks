@@ -1,0 +1,42 @@
+{
+  "name": "spot5",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "table"
+  ],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "1502.json",
+        "29.json",
+        "412.json",
+        "42.json",
+        "5.json"
+      ]
+    },
+    {
+      "year": 2015,
+      "instances": [
+        "1401.json",
+        "28.json",
+        "414.json",
+        "503.json",
+        "54.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "1405.json",
+        "1506.json",
+        "404.json",
+        "507.json",
+        "509.json"
+      ]
+    }
+  ]
+}

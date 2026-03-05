@@ -1,0 +1,35 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "filter.mzn",
+    "data/ar_1_1.json",
+    "data/ar_1_2.json",
+    "data/ar_1_3.json",
+    "data/ar_2_3.json",
+    "data/ar_2_4.json",
+    "data/dct_1_1.json",
+    "data/dct_1_2.json",
+    "data/dct_1_3.json",
+    "data/dct_2_2.json",
+    "data/dct_2_3.json",
+    "data/dct_3_4.json",
+    "data/dfq_1_1.json",
+    "data/ewf_1_1.json",
+    "data/ewf_1_2.json",
+    "data/ewf_2_1.json",
+    "data/ewf_4_3.json",
+    "data/fir16_1_1.json",
+    "data/fir16_1_2.json",
+    "data/fir_1_1.json",
+    "data/fir_1_2.json",
+    "data/fir_1_3.json",
+    "data/fir_1_4.json",
+    "data/fir_2_2.json",
+    "data/fir_2_3.json"
+  ],
+  "openFiles": [
+    "filter.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

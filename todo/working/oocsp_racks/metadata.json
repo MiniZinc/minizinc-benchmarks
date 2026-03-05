@@ -1,0 +1,33 @@
+{
+  "name": "oocsp_racks",
+  "type": "real",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "global_cardinality",
+    "increasing"
+  ],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "oocsp_racks_030_e6_cc.json",
+        "oocsp_racks_030_ea4_cc.json",
+        "oocsp_racks_030_f7_cc.json",
+        "oocsp_racks_030_mii8.json",
+        "oocsp_racks_100_r1.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "oocsp_racks_030_f7.json",
+        "oocsp_racks_030_mii8_cc.json",
+        "oocsp_racks_050_e5.json",
+        "oocsp_racks_050_r1.json",
+        "oocsp_racks_100_r1_cc.json"
+      ]
+    }
+  ]
+}

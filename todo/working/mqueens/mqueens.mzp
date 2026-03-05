@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "mqueens2.mzn",
+    "data/n11.json",
+    "data/n12.json",
+    "data/n13.json",
+    "data/n20.json",
+    "data/n31.json"
+  ],
+  "openFiles": [
+    "mqueens2.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

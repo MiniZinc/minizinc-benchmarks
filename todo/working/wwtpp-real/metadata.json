@@ -1,0 +1,30 @@
+{
+  "name": "wwtpp-real",
+  "type": "real",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "ex04240_2400_100.json",
+        "ex05680_2400_100.json",
+        "ex07120_2400_100.json",
+        "ex08560_2400_100.json",
+        "ex10000_2400_100.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "ex02840_2400_100.json",
+        "ex04020_2400_100.json",
+        "ex04140_2400_100.json",
+        "ex05080_2400_100.json",
+        "ex05160_2400_100.json"
+      ]
+    }
+  ]
+}

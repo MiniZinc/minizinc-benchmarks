@@ -1,0 +1,20 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "zephyrus.mzn",
+    "data/12__10__8__3.json",
+    "data/12__6__6__3.json",
+    "data/12__6__8__3.json",
+    "data/12__8__6__3.json",
+    "data/14__10__6__3.json",
+    "data/14__10__8__3.json",
+    "data/14__6__6__3.json",
+    "data/14__6__8__3.json",
+    "data/14__8__6__3.json"
+  ],
+  "openFiles": [
+    "zephyrus.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

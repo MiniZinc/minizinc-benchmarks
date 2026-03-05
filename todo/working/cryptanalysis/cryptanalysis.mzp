@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "step1_aes.mzn",
+    "data/kb128_n5_obj11.json",
+    "data/kb128_n5_obj14.json",
+    "data/kb128_n5_obj16.json",
+    "data/kb128_n5_obj17.json",
+    "data/kb192_n7_obj10.json"
+  ],
+  "openFiles": [
+    "step1_aes.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

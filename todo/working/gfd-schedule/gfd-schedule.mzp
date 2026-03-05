@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "gfd-schedule.mzn",
+    "data/n120f5d50m50k20.json",
+    "data/n180f7d50m30k18.json",
+    "data/n30f3d30m7k4.json",
+    "data/n50f7d40m10k4.json",
+    "data/n75f5d30m20k20.json"
+  ],
+  "openFiles": [
+    "gfd-schedule.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

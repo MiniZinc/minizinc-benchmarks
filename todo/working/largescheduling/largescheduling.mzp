@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "largecumulative.mzn",
+    "data/instance-0100-1.json",
+    "data/instance-0100-4.json",
+    "data/instance-0400-2.json",
+    "data/instance-0400-4.json",
+    "data/instance-0800-1.json",
+    "data/instance-0800-4.json",
+    "data/instance-1600-2.json",
+    "data/instance-1600-4.json",
+    "data/instance-3200-3.json",
+    "data/instance-3200-4.json"
+  ],
+  "openFiles": [
+    "largecumulative.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

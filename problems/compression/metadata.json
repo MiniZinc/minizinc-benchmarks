@@ -7,6 +7,15 @@
   "sbc": false,
   "rc": false,
   "challenges": [
-    "2024"
+    {
+      "year": 2024,
+      "data": [
+        "data/bin_10.json",
+        "data/bin_20.json",
+        "data/bin_7.json",
+        "data/bin_8.json",
+        "data/lipsum_10.json"
+      ]
+    }
   ]
 }

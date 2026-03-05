@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "graph_clear_cp.mzn",
+    "data/planar_n20_seed2022_14.json",
+    "data/planar_n20_seed2022_15.json",
+    "data/planar_n20_seed2022_16.json",
+    "data/planar_n30_seed2022_4.json",
+    "data/planar_n30_seed2022_8.json"
+  ],
+  "openFiles": [
+    "graph_clear_cp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "cargo",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative",
+    "diffn"
+  ],
+  "challenges": [
+    {
+      "year": 2013,
+      "instances": [
+        "challenge04_1s_626.json",
+        "challenge05_1s_954.json",
+        "challenge07_1s_133.json",
+        "challenge08_222f_3475.json",
+        "challenge10_15966f_2060.json"
+      ]
+    },
+    {
+      "year": 2017,
+      "instances": [
+        "challenge01_0s_1913.json",
+        "challenge02_0s_1139.json",
+        "challenge06_1s_3927.json",
+        "challenge16_10720f_4243.json",
+        "challenge19_31058f_2548.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "challenge12_1422f_1644.json",
+        "challenge20_27613f_2435.json",
+        "challenge22.json",
+        "challenge24.json",
+        "challenge25.json"
+      ]
+    }
+  ]
+}

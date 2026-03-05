@@ -1,0 +1,20 @@
+{
+  "name": "still-life-wastage",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2012,
+      "instances": [
+        "09.json",
+        "10.json",
+        "11.json",
+        "12.json",
+        "13.json"
+      ]
+    }
+  ]
+}

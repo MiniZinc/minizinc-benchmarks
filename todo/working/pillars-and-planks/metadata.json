@@ -1,0 +1,22 @@
+{
+  "name": "pillars-and-planks",
+  "type": "puzzle",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "diffn"
+  ],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "p-d10.json",
+        "p-d12.json",
+        "p-d17.json",
+        "p-d2.json",
+        "p-d7.json"
+      ]
+    }
+  ]
+}

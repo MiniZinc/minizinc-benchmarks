@@ -1,0 +1,77 @@
+{
+  "name": "nonogram",
+  "type": "puzzle",
+  "kind": "sat",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "regular"
+  ],
+  "challenges": [
+    {
+      "year": 2009,
+      "instances": [
+        "non_awful_2.json",
+        "non_awful_4.json",
+        "non_fast_1.json",
+        "non_fast_10.json",
+        "non_fast_11.json",
+        "non_fast_5.json",
+        "non_fast_7.json",
+        "non_fast_9.json",
+        "non_med_2.json",
+        "non_med_4.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "non_awful_1.json",
+        "non_awful_1.out",
+        "non_awful_2.out",
+        "non_awful_3.out",
+        "non_awful_4.out",
+        "non_awful_5.out",
+        "non_fast_1.out",
+        "non_fast_10.out",
+        "non_fast_11.out",
+        "non_fast_2.out",
+        "non_fast_3.json",
+        "non_fast_3.out",
+        "non_fast_4.out",
+        "non_fast_5.out",
+        "non_fast_6.json",
+        "non_fast_6.out",
+        "non_fast_7.out",
+        "non_fast_8.out",
+        "non_fast_9.out",
+        "non_med_1.json",
+        "non_med_1.out",
+        "non_med_2.out",
+        "non_med_3.json",
+        "non_med_3.out",
+        "non_med_4.out"
+      ]
+    },
+    {
+      "year": 2012,
+      "instances": [
+        "non_awful_3.json",
+        "non_awful_5.json",
+        "non_fast_11.json",
+        "non_fast_4.json",
+        "non_fast_8.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "dom_06.json",
+        "dom_08.json",
+        "dom_10.json",
+        "dom_12.json",
+        "dom_14.json"
+      ]
+    }
+  ]
+}

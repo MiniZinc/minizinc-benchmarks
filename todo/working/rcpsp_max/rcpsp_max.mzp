@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "rcpsp_max.mzn",
+    "data/psp_c_314.json",
+    "data/psp_c_51.json",
+    "data/psp_d_244.json",
+    "data/psp_d_335.json",
+    "data/psp_j20_34.json",
+    "data/psp_j30_123.json",
+    "data/psp_j30_169.json",
+    "data/psp_j30_33.json",
+    "data/psp_ubo200_57.json",
+    "data/psp_ubo500_33.json"
+  ],
+  "openFiles": [
+    "rcpsp_max.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

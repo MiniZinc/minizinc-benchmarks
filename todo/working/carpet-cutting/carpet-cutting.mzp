@@ -1,0 +1,36 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "cc_base.mzn",
+    "data/cc_rnd_12_3.json",
+    "data/cc_rnd_16_1.json",
+    "data/cc_rnd_4_4.json",
+    "data/cc_rnd_8_1.json",
+    "data/cc_rnd_8_2.json",
+    "data/mzn_rnd_test.01.json",
+    "data/mzn_rnd_test.02.json",
+    "data/mzn_rnd_test.03.json",
+    "data/mzn_rnd_test.04.json",
+    "data/mzn_rnd_test.05.json",
+    "data/mzn_rnd_test.06.json",
+    "data/mzn_rnd_test.07.json",
+    "data/mzn_rnd_test.08.json",
+    "data/mzn_rnd_test.09.json",
+    "data/mzn_rnd_test.10.json",
+    "data/mzn_rnd_test.11.json",
+    "data/mzn_rnd_test.12.json",
+    "data/mzn_rnd_test.13.json",
+    "data/mzn_rnd_test.14.json",
+    "data/mzn_rnd_test.15.json",
+    "data/mzn_rnd_test.16.json",
+    "data/mzn_rnd_test.17.json",
+    "data/mzn_rnd_test.18.json",
+    "data/mzn_rnd_test.19.json",
+    "data/mzn_rnd_test.20.json"
+  ],
+  "openFiles": [
+    "cc_base.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

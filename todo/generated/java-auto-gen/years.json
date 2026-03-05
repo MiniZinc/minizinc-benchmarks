@@ -1,0 +1,32 @@
+{
+  "binpack_11.mzn": {
+    "years": [
+      2016
+    ],
+    "chosen_year": 2016
+  },
+  "pizza_8_3.mzn": {
+    "years": [
+      2016
+    ],
+    "chosen_year": 2016
+  },
+  "plusexample_6.mzn": {
+    "years": [
+      2016
+    ],
+    "chosen_year": 2016
+  },
+  "projplan1_15_15.mzn": {
+    "years": [
+      2016
+    ],
+    "chosen_year": 2016
+  },
+  "routing_7.mzn": {
+    "years": [
+      2016
+    ],
+    "chosen_year": 2016
+  }
+}

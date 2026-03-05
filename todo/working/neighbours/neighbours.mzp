@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "neighbours-rect.mzn",
+    "data/neighbours1.json",
+    "data/neighbours3.json",
+    "data/neighbours5.json",
+    "data/neighbours7.json",
+    "data/neighbours9.json",
+    "data/neightbours-new-14.json",
+    "data/neightbours-new-15.json",
+    "data/neightbours-new-17.json",
+    "data/neightbours-new-19.json",
+    "data/neightbours-new-2.json",
+    "data/neightbours-new-20.json",
+    "data/neightbours-new-4.json",
+    "data/neightbours-new-5.json",
+    "data/neightbours-new-6.json",
+    "data/neightbours-new-7.json"
+  ],
+  "openFiles": [
+    "neighbours-rect.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

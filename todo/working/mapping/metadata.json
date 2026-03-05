@@ -1,0 +1,55 @@
+{
+  "name": "mapping",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "bin_packing_load",
+    "count",
+    "maximum",
+    "network_flow_cost"
+  ],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "full2x2.json",
+        "mesh2x2_mpeg.json",
+        "mesh3x3_2.json",
+        "mesh3x3_mpeg_2.json",
+        "ring_2.json"
+      ]
+    },
+    {
+      "year": 2016,
+      "instances": [
+        "mesh2x2_1.json",
+        "mesh2x2_mp3.json",
+        "mesh3x3_mp3.json",
+        "mesh4x4_1.json",
+        "ring_1.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "full2x2_mp3.json",
+        "mesh3x3_mp3_2.json",
+        "mesh3x3_mpeg.json",
+        "mesh_star_2.json",
+        "ring_mp3.json"
+      ]
+    },
+    {
+      "year": 2021,
+      "instances": [
+        "mesh2x2_2.json",
+        "mesh3x3_4.json",
+        "mesh4x4_2.json",
+        "mesh_star_mpeg.json",
+        "ring_3.json"
+      ]
+    }
+  ]
+}

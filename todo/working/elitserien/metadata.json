@@ -1,0 +1,56 @@
+{
+  "name": "elitserien",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different",
+    "global_cardinality_closed",
+    "inverse",
+    "member",
+    "regular"
+  ],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "handball11.json",
+        "handball12.json",
+        "handball13.json",
+        "handball14.json",
+        "handball19.json"
+      ]
+    },
+    {
+      "year": 2016,
+      "instances": [
+        "handball17.json",
+        "handball20.json",
+        "handball3.json",
+        "handball5.json",
+        "handball7.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "handball1.json",
+        "handball15.json",
+        "handball16.json",
+        "handball18.json",
+        "handball6.json"
+      ]
+    },
+    {
+      "year": 2023,
+      "instances": [
+        "handball10.json",
+        "handball2.json",
+        "handball4.json",
+        "handball8.json",
+        "handball9.json"
+      ]
+    }
+  ]
+}

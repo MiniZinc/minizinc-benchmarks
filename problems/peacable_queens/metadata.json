@@ -9,7 +9,15 @@
     "value_precede"
   ],
   "challenges": [
-    "2021",
-    "2024"
+    {
+      "year": 2021,
+      "data": [
+        "data/11.json",
+        "data/25.json",
+        "data/40.json",
+        "data/50.json",
+        "data/8.json"
+      ]
+    }
   ]
 }

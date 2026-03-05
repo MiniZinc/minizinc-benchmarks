@@ -1,0 +1,36 @@
+{
+  "name": "p1f-pjs",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_different",
+    "circuit",
+    "inverse",
+    "lex_less"
+  ],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "10.json",
+        "16.json",
+        "17.json",
+        "20.json",
+        "21.json"
+      ]
+    },
+    {
+      "year": 2021,
+      "instances": [
+        "12.json",
+        "14.json",
+        "17.json",
+        "18.json",
+        "22.json",
+        "LICENSE"
+      ]
+    }
+  ]
+}

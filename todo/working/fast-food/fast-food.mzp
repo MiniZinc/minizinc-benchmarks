@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "fastfood.mzn",
+    "data/ff10.json",
+    "data/ff2.json",
+    "data/ff21.json",
+    "data/ff3.json",
+    "data/ff53.json",
+    "data/ff58.json",
+    "data/ff59.json",
+    "data/ff61.json",
+    "data/ff63.json",
+    "data/ff71.json"
+  ],
+  "openFiles": [
+    "fastfood.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

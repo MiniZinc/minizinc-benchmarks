@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "rel2onto.mzn",
+    "data/3_9.json",
+    "data/5_17.json",
+    "data/5_28.json",
+    "data/5_5.json",
+    "data/5_6.json"
+  ],
+  "openFiles": [
+    "rel2onto.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

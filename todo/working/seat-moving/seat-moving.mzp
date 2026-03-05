@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "seat-moving.mzn",
+    "data/sm-10-11-00.json",
+    "data/sm-10-12-00.json",
+    "data/sm-10-13-00.json",
+    "data/sm-10-20-05.json",
+    "data/sm-15-12-00.json",
+    "data/sm-15-20-00.json",
+    "data/sm-20-13-00.json",
+    "data/sm-20-16-00.json",
+    "data/sm-20-20-00.json",
+    "data/sm-20-20-02.json"
+  ],
+  "openFiles": [
+    "seat-moving.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

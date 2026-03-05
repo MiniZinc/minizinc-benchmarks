@@ -1,0 +1,16 @@
+{
+  "max_pattern": 10,
+  "max_pattern_len": 10,
+  "full_text": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+  ]
+}

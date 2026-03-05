@@ -1,0 +1,32 @@
+{
+  "name": "largescheduling",
+  "type": "combi",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "instance-0100-1.json",
+        "instance-0400-2.json",
+        "instance-0800-1.json",
+        "instance-1600-2.json",
+        "instance-3200-3.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "instance-0100-4.json",
+        "instance-0400-4.json",
+        "instance-0800-4.json",
+        "instance-1600-4.json",
+        "instance-3200-4.json"
+      ]
+    }
+  ]
+}

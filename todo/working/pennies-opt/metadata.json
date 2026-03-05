@@ -1,0 +1,23 @@
+{
+  "name": "pennies-opt",
+  "type": "puzzle",
+  "kind": "max",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_different",
+    "decreasing"
+  ],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "n12.json",
+        "n5.json",
+        "n7.json",
+        "n8.json",
+        "n9.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "maximum-dag.mzn",
+    "data/25_01.json",
+    "data/25_03.json",
+    "data/25_04.json",
+    "data/25_06.json",
+    "data/31_02.json"
+  ],
+  "openFiles": [
+    "maximum-dag.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

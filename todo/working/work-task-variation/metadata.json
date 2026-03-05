@@ -1,0 +1,25 @@
+{
+  "name": "work-task-variation",
+  "type": "real",
+  "globals": [
+    "global_cardinality",
+    "regular"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2025,
+      "instances": [
+        "LICENSE",
+        "README.md",
+        "generated-seed-1-length-16-open-14-workers-12-block-15.json",
+        "generated-seed-10-length-12-open-10-workers-12-block-5.json",
+        "generated-seed-3-length-10-open-8-workers-12-block-15.json",
+        "generated-seed-4-length-14-open-12-workers-12-block-15.json",
+        "generated-seed-8-length-12-open-10-workers-10-block-15.json"
+      ]
+    }
+  ]
+}

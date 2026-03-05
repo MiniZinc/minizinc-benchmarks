@@ -10,7 +10,15 @@
     "strictly_decreasing"
   ],
   "challenges": [
-    "2022",
-    "2025"
+    {
+      "year": 2022,
+      "data": [
+        "data/common-emitter-complex.json",
+        "data/common-emitter-simple.json",
+        "data/envelope-detector.json",
+        "data/nand-gate.json",
+        "data/opamp-integrator.json"
+      ]
+    }
   ]
 }

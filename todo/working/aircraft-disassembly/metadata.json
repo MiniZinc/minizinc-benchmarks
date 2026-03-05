@@ -1,0 +1,22 @@
+{
+  "name": "aircraft-disassembly",
+  "type": "real",
+  "globals": [
+    "cumulative"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2024,
+      "instances": [
+        "B737NG-600-01-Anon.json",
+        "B737NG-600-02-Anon.json",
+        "B737NG-600-04-Anon.json",
+        "B737NG-600-06-Anon.json",
+        "B737NG-600-09-Anon.json"
+      ]
+    }
+  ]
+}

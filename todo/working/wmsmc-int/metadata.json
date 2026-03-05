@@ -1,0 +1,21 @@
+{
+  "name": "wmsmc-int",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2021,
+      "instances": [
+        "LICENSE",
+        "batch_0_case_115_instance_0_small_subset_elements_3_sumreqs_1295_candidates_41.json",
+        "batch_0_case_115_instance_1_base_full_elements_3_sumreqs_702_candidates_86.json",
+        "batch_0_case_253_instance_6_small_cost_elements_4_sumreqs_472_candidates_16.json",
+        "batch_1_case_426_instance_3_base_full_elements_3_sumreqs_117_candidates_59.json",
+        "batch_2_case_710_instance_4_base_subset_elements_6_sumreqs_161_candidates_70.json"
+      ]
+    }
+  ]
+}

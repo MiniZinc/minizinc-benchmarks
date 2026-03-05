@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "tcgc2.mzn",
+    "data/k10_31.json",
+    "data/k10_34.json",
+    "data/k2_42.json",
+    "data/k5_05.json",
+    "data/k9_39.json"
+  ],
+  "openFiles": [
+    "tcgc2.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

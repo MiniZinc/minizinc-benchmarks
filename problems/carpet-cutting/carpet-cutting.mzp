@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "cc_base.mzn",
+    "data/cc_rnd_12_3.json",
+    "data/cc_rnd_16_1.json",
+    "data/cc_rnd_4_4.json",
+    "data/cc_rnd_8_1.json",
+    "data/cc_rnd_8_2.json"
+  ],
+  "openFiles": [
+    "cc_base.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,29 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "depot_placement.mzn",
+    "data/a280_4.json",
+    "data/a280_6.json",
+    "data/att48_5.json",
+    "data/att48_6.json",
+    "data/rat99_4.json",
+    "data/rat99_5.json",
+    "data/rat99_6.json",
+    "data/st70_4.json",
+    "data/st70_5.json",
+    "data/st70_6.json",
+    "data/ts225_5.json",
+    "data/ts225_6.json",
+    "data/u159_4.json",
+    "data/u159_6.json",
+    "data/ulysses16_5.json",
+    "data/ulysses22_4.json",
+    "data/ulysses22_5.json",
+    "data/ulysses22_6.json"
+  ],
+  "openFiles": [
+    "depot_placement.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

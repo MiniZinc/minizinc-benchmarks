@@ -1,0 +1,21 @@
+{
+  "name": "roster-sickness",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2022,
+      "instances": [
+        "LICENSE",
+        "large-2-2.json",
+        "large-2.json",
+        "large-4-2.json",
+        "large-4.json",
+        "small-4.json"
+      ]
+    }
+  ]
+}

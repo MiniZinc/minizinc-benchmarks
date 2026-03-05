@@ -7,6 +7,15 @@
     "all_equal"
   ],
   "challenges": [
-    "2023"
+    {
+      "year": 2023,
+      "data": [
+        "data/easy_1.json",
+        "data/easy_3.json",
+        "data/hard_0.json",
+        "data/medium_6.json",
+        "data/very_hard_5.json"
+      ]
+    }
   ]
 }

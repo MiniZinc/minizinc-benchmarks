@@ -1,0 +1,20 @@
+{
+  "name": "minimal-decision-sets",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "australian_train5.json",
+        "backache_train4.json",
+        "breast-cancer_train4.json",
+        "cleve_train5.json",
+        "colic_train4.json"
+      ]
+    }
+  ]
+}

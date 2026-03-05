@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "macc.mzn",
+    "data/175.json",
+    "data/307.json",
+    "data/37.json",
+    "data/455.json",
+    "data/46.json"
+  ],
+  "openFiles": [
+    "macc.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

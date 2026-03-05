@@ -1,0 +1,32 @@
+{
+  "zephyrus-FH-2-15.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  },
+  "zephyrus_15_10.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  },
+  "zephyrus_20_20.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  },
+  "zephyrus_5_20.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  },
+  "zephyrus_5_4.mzn": {
+    "years": [
+      2015
+    ],
+    "chosen_year": 2015
+  }
+}

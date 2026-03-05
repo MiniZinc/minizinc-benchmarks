@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "model.mzn",
+    "data/data1_4_6.json",
+    "data/data1_6_24.json",
+    "data/data1_6_6.json",
+    "data/data2_4_15.json",
+    "data/data2_5_6.json",
+    "data/data2_6_12.json",
+    "data/data2_6_15.json",
+    "data/data3_4_31.json",
+    "data/data3_5_31.json",
+    "data/data3_6_28.json"
+  ],
+  "openFiles": [
+    "model.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

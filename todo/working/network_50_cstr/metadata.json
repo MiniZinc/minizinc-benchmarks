@@ -1,0 +1,20 @@
+{
+  "name": "network_50_cstr",
+  "type": "real",
+  "globals": [],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2024,
+      "instances": [
+        "MODEL1507180015.json",
+        "MODEL1507180022.json",
+        "MODEL2204150001.json",
+        "MODEL2204190004.json",
+        "toy_network_1000_m.json"
+      ]
+    }
+  ]
+}

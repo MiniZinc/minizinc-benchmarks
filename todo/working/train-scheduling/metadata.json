@@ -1,0 +1,24 @@
+{
+  "name": "train-scheduling",
+  "type": "real",
+  "globals": [
+    "all_different",
+    "cumulative",
+    "disjunctive"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2024,
+      "instances": [
+        "trains05.json",
+        "trains09.json",
+        "trains12.json",
+        "trains15.json",
+        "trains18.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "products-and-shelves",
+  "type": "real",
+  "globals": [
+    "diffn_nonstrict_k",
+    "increasing",
+    "lex_chain_lesseq",
+    "seq_precede_chain"
+  ],
+  "kind": "min",
+  "sbc": true,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2025,
+      "instances": [
+        "ps-25-01.json",
+        "ps-25-03.json",
+        "ps-50-06.json",
+        "ps-50-09.json",
+        "toy.json"
+      ]
+    }
+  ]
+}

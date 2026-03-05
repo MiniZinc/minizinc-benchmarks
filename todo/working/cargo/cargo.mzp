@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "cargo_coarsePiles.mzn",
+    "data/challenge01_0s_1913.json",
+    "data/challenge02_0s_1139.json",
+    "data/challenge04_1s_626.json",
+    "data/challenge05_1s_954.json",
+    "data/challenge06_1s_3927.json",
+    "data/challenge07_1s_133.json",
+    "data/challenge08_222f_3475.json",
+    "data/challenge10_15966f_2060.json",
+    "data/challenge12_1422f_1644.json",
+    "data/challenge16_10720f_4243.json",
+    "data/challenge19_31058f_2548.json",
+    "data/challenge20_27613f_2435.json",
+    "data/challenge22.json",
+    "data/challenge24.json",
+    "data/challenge25.json"
+  ],
+  "openFiles": [
+    "cargo_coarsePiles.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

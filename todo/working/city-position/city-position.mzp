@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "city-position.mzn",
+    "data/city-5-05.json",
+    "data/city-5-06.json",
+    "data/city-5-08.json",
+    "data/city-7-04.json",
+    "data/city-8-06.json"
+  ],
+  "openFiles": [
+    "city-position.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

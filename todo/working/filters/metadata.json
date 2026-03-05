@@ -1,0 +1,58 @@
+{
+  "name": "filters",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "diffn",
+    "maximum"
+  ],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "ar_1_1.json",
+        "ar_1_3.json",
+        "ar_2_4.json",
+        "dct_1_2.json",
+        "dct_2_3.json",
+        "dct_3_4.json",
+        "ewf_4_3.json",
+        "fir16_1_2.json",
+        "fir_1_2.json",
+        "fir_2_2.json"
+      ]
+    },
+    {
+      "year": 2012,
+      "instances": [
+        "ar_1_2.json",
+        "dct_1_1.json",
+        "ewf_1_1.json",
+        "fir16_1_1.json",
+        "fir_1_1.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "ar_2_3.json",
+        "dct_2_2.json",
+        "dfq_1_1.json",
+        "ewf_2_1.json",
+        "fir_2_3.json"
+      ]
+    },
+    {
+      "year": 2016,
+      "instances": [
+        "ar_1_3.json",
+        "dct_1_3.json",
+        "ewf_1_2.json",
+        "fir_1_3.json",
+        "fir_1_4.json"
+      ]
+    }
+  ]
+}

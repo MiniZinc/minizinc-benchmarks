@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "rotating-workforce.mzn",
+    "data/Example1014.json",
+    "data/Example103.json",
+    "data/Example1174.json",
+    "data/Example1242.json",
+    "data/Example1337.json",
+    "data/Example1370.json",
+    "data/Example1479.json",
+    "data/Example1780.json",
+    "data/Example593.json",
+    "data/Example789.json"
+  ],
+  "openFiles": [
+    "rotating-workforce.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

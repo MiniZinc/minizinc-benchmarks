@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "mario.mzn",
+    "data/mario_easy_2.json",
+    "data/mario_easy_4.json",
+    "data/mario_easy_5.json",
+    "data/mario_medium_1.json",
+    "data/mario_medium_3.json",
+    "data/mario_medium_4.json",
+    "data/mario_medium_5.json",
+    "data/mario_n_medium_1.json",
+    "data/mario_n_medium_2.json",
+    "data/mario_n_medium_3.json",
+    "data/mario_n_medium_4.json",
+    "data/mario_n_medium_5.json",
+    "data/mario_t_hard_1.json",
+    "data/mario_t_hard_2.json",
+    "data/mario_t_hard_5.json"
+  ],
+  "openFiles": [
+    "mario.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

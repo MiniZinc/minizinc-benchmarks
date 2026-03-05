@@ -1,0 +1,43 @@
+{
+  "name": "traveling-tppv",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "all_different",
+    "regular"
+  ],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "circ14bnonbal.json",
+        "circ20gnonbal.json",
+        "circ8bbal.json",
+        "circ8cbal.json",
+        "circ8ebal.json"
+      ]
+    },
+    {
+      "year": 2017,
+      "instances": [
+        "circ14anonbal.json",
+        "circ20hnonbal.json",
+        "circ20inonbal.json",
+        "circ8abal.json",
+        "circ8dbal.json"
+      ]
+    },
+    {
+      "year": 2022,
+      "instances": [
+        "circ14cnonbal.json",
+        "circ14enonbal.json",
+        "circ20bnonbal.json",
+        "circ20fnonbal.json",
+        "circ20jnonbal.json"
+      ]
+    }
+  ]
+}

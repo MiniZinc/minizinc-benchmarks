@@ -1,0 +1,32 @@
+{
+  "name": "steelmillslab",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "bin_packing_load"
+  ],
+  "challenges": [
+    {
+      "year": 2017,
+      "instances": [
+        "bench_13_0.json",
+        "bench_14_1.json",
+        "bench_15_11.json",
+        "bench_16_10.json",
+        "bench_19_5.json"
+      ]
+    },
+    {
+      "year": 2019,
+      "instances": [
+        "bench_17_7.json",
+        "bench_19_6.json",
+        "bench_20_15.json",
+        "bench_20_8.json",
+        "bench_2_19.json"
+      ]
+    }
+  ]
+}

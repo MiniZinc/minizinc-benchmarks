@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "lot_sizing_cp.mzn",
+    "data/pigment15a.psp.json",
+    "data/pigment15b.psp.json",
+    "data/pigment15c.psp.json",
+    "data/pigment15d.psp.json",
+    "data/pigment20a.psp.json",
+    "data/pigment20b.psp.json",
+    "data/pigment20c.psp.json",
+    "data/pigment30a.psp.json",
+    "data/pigment30b.psp.json",
+    "data/pigment30c.psp.json"
+  ],
+  "openFiles": [
+    "lot_sizing_cp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "fbd1",
+  "type": "real",
+  "globals": [
+    "all_different"
+  ],
+  "kind": "min",
+  "sbc": false,
+  "rc": false,
+  "challenges": [
+    {
+      "year": 2025,
+      "instances": [
+        "FBDk04.json",
+        "FBDk06.json",
+        "FBDk07.json",
+        "FBDk08.json",
+        "FBDk09.json"
+      ]
+    }
+  ]
+}

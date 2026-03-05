@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "rcmsp.mzn",
+    "data/easy_3.json",
+    "data/easy_4.json",
+    "data/easy_5.json",
+    "data/easy_6.json",
+    "data/hard_1.json",
+    "data/hard_11.json",
+    "data/hard_2.json",
+    "data/medium_1.json",
+    "data/medium_2.json",
+    "data/medium_3.json"
+  ],
+  "openFiles": [
+    "rcmsp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

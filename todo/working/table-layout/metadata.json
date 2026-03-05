@@ -1,0 +1,30 @@
+{
+  "name": "table-layout",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2011,
+      "instances": [
+        "en-1000-1274-line521.json",
+        "en-1000-1439-line292.json",
+        "en-1000-1615-line479.json",
+        "en-1250-1074-line298.json",
+        "en-760-310-line795.json"
+      ]
+    },
+    {
+      "year": 2023,
+      "instances": [
+        "p1000_m10_r200_c15.json",
+        "p1000_m20_r200_c20.json",
+        "p1000_m3_r100_c10.json",
+        "p2000_m10_r500_c20.json",
+        "p2000_m16_r1000_c200.json"
+      ]
+    }
+  ]
+}

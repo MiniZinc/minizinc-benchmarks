@@ -7,6 +7,15 @@
     "all_different"
   ],
   "challenges": [
-    "2022"
+    {
+      "year": 2022,
+      "data": [
+        "data/sudoku_p20.json",
+        "data/sudoku_p22.json",
+        "data/sudoku_p23.json",
+        "data/sudoku_p29.json",
+        "data/sudoku_p90.json"
+      ]
+    }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "rcpsp-wet-diverse.mzn",
+    "data/j30_27_5-wet-diverse-3.json",
+    "data/j30_27_5-wet-diverse-4.json",
+    "data/j30_44_8-wet-diverse-4.json",
+    "data/j60_19_6-wet-diverse-3.json",
+    "data/j90_48_4-wet-diverse-3.json"
+  ],
+  "openFiles": [
+    "rcpsp-wet-diverse.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

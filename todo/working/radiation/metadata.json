@@ -1,0 +1,64 @@
+{
+  "name": "radiation",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2008,
+      "instances": [
+        "01.json",
+        "02.json",
+        "03.json",
+        "04.json",
+        "05.json",
+        "06.json",
+        "07.json",
+        "08.json",
+        "09.json"
+      ]
+    },
+    {
+      "year": 2012,
+      "instances": [
+        "m06_15_15.json",
+        "m07_07_20.json",
+        "m12_10_20.json",
+        "m18_12_05.json",
+        "m40_10_02.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "i6-11.json",
+        "i6-7.json",
+        "i7-15.json",
+        "i8-7.json",
+        "i9-23.json"
+      ]
+    },
+    {
+      "year": 2015,
+      "instances": [
+        "i14-9.json",
+        "i6-11.json",
+        "i6-21.json",
+        "i7-9.json",
+        "i9-11.json"
+      ]
+    },
+    {
+      "year": 2020,
+      "instances": [
+        "i6-9.json",
+        "i7-21.json",
+        "i8-40.json",
+        "i8-9.json",
+        "i9-21.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "mznc2017_aes_opt.mzn",
+    "data/r1.json",
+    "data/r10.json",
+    "data/r11.json",
+    "data/r12.json",
+    "data/r13.json",
+    "data/r14.json",
+    "data/r15.json",
+    "data/r2.json",
+    "data/r3.json",
+    "data/r4.json",
+    "data/r5.json",
+    "data/r6.json",
+    "data/r7.json",
+    "data/r8.json",
+    "data/r9.json"
+  ],
+  "openFiles": [
+    "mznc2017_aes_opt.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

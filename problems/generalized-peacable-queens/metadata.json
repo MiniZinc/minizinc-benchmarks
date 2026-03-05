@@ -11,6 +11,15 @@
     "value_precede_chain"
   ],
   "challenges": [
-    "2022"
+    {
+      "year": 2022,
+      "data": [
+        "data/n11_q5.json",
+        "data/n13_q5.json",
+        "data/n25_q4.json",
+        "data/n8_q3.json",
+        "data/n9_q5.json"
+      ]
+    }
   ]
 }

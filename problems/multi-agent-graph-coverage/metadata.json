@@ -7,6 +7,15 @@
     "all_different"
   ],
   "challenges": [
-    "2023"
+    {
+      "year": 2023,
+      "data": [
+        "data/rnd_n10_p1500_c15_s1.json",
+        "data/rnd_n10_p2000_c15_s1.json",
+        "data/rnd_n20_p1000_c10_s1.json",
+        "data/rnd_n40_p1000_c20_s1.json",
+        "data/rnd_n75_p1000_c50_s1.json"
+      ]
+    }
   ]
 }

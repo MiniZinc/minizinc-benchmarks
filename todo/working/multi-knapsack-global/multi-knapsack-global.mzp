@@ -1,0 +1,19 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "mknapsack_global.mzn",
+    "data/mknap1-5.json",
+    "data/mknap1-6.json",
+    "data/mknap2-1.json",
+    "data/mknap2-10.json",
+    "data/mknap2-2.json",
+    "data/mknap2-20.json",
+    "data/mknap2-32.json",
+    "data/mknap2-40.json"
+  ],
+  "openFiles": [
+    "mknapsack_global.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

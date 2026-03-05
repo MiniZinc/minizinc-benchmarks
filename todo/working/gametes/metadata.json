@@ -1,0 +1,24 @@
+{
+  "name": "gametes",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": true,
+  "globals": [
+    "all_different_except_0",
+    "count",
+    "increasing"
+  ],
+  "challenges": [
+    {
+      "year": 2023,
+      "instances": [
+        "gamete_nl20_m30_12983649.json",
+        "gamete_nl20_m30_778477.json",
+        "gamete_nl20_m40_10408565.json",
+        "gamete_nl7_m10_134.json",
+        "gamete_nl7_m10_181.json"
+      ]
+    }
+  ]
+}

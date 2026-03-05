@@ -1,0 +1,26 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "ship-schedule.cp.mzn",
+    "data/3Ships.json",
+    "data/4Ships.json",
+    "data/5Ships.json",
+    "data/5ShipsMixed.json",
+    "data/6Ships.json",
+    "data/6ShipsMixed.json",
+    "data/6ShipsMixedUnconst.json",
+    "data/7Ships.json",
+    "data/7ShipsMixed.json",
+    "data/7ShipsMixedUnconst.json",
+    "data/7ShipsUnconst.json",
+    "data/8Ships.json",
+    "data/8ShipsMixed.json",
+    "data/8ShipsMixedUnconstr.json",
+    "data/8ShipsUnconst.json"
+  ],
+  "openFiles": [
+    "ship-schedule.cp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

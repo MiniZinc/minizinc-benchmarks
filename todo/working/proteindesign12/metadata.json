@@ -1,0 +1,42 @@
+{
+  "name": "proteindesign12",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "table"
+  ],
+  "challenges": [
+    {
+      "year": 2013,
+      "instances": [
+        "1HZ5.12p.19aa.usingEref_self.json",
+        "1HZ5.12p.9aa.usingEref_self.json",
+        "1PGB.11p.9aa.usingEref_self.json",
+        "1UBI.13p.9aa.usingEref_self.json",
+        "2TRX.11p.8aa.usingEref_self.json"
+      ]
+    },
+    {
+      "year": 2018,
+      "instances": [
+        "1CM1.17p.19aa.usingEref_self.json",
+        "1HZ5.12p.9aa.usingEref_self_x.json",
+        "1PGB.11p.9aa.usingEref_self_x.json",
+        "2DHC.14p.19aa.usingEref_self.json",
+        "2PCY.18p.8aa.usingEref_self.json"
+      ]
+    },
+    {
+      "year": 2025,
+      "instances": [
+        "1HZ5.12p.19aa.usingEref_self.json",
+        "1HZ5.12p.9aa.usingEref_self.json",
+        "1UBI.13p.19aa.usingEref_self.json",
+        "1UBI.13p.9aa.usingEref_self_x.json",
+        "2TRX.11p.8aa.usingEref_self_x.json"
+      ]
+    }
+  ]
+}

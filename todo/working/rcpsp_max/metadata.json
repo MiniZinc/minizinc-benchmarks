@@ -1,0 +1,27 @@
+{
+  "name": "rcpsp_max",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2010,
+      "instances": [
+        "psp_c_314.json",
+        "psp_c_51.json",
+        "psp_d_244.json",
+        "psp_d_335.json",
+        "psp_j20_34.json",
+        "psp_j30_123.json",
+        "psp_j30_169.json",
+        "psp_j30_33.json",
+        "psp_ubo200_57.json",
+        "psp_ubo500_33.json"
+      ]
+    }
+  ]
+}

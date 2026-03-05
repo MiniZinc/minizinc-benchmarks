@@ -1,0 +1,55 @@
+{
+  "name": "vrp",
+  "type": "real",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2009,
+      "instances": [
+        "A-n34-k5.vrp.json",
+        "A-n44-k7.vrp.json",
+        "A-n55-k9.vrp.json",
+        "A-n65-k9.vrp.json",
+        "B-n39-k5.vrp.json",
+        "B-n50-k8.vrp.json",
+        "B-n64-k9.vrp.json",
+        "P-n19-k2.vrp.json",
+        "P-n45-k5.vrp.json",
+        "P-n55-k7.vrp.json"
+      ]
+    },
+    {
+      "year": 2011,
+      "instances": [
+        "A-n32-k5.vrp.json",
+        "A-n64-k9.vrp.json",
+        "B-n43-k6.vrp.json",
+        "B-n56-k7.vrp.json",
+        "P-n50-k10.vrp.json"
+      ]
+    },
+    {
+      "year": 2012,
+      "instances": [
+        "A-n38-k5.vrp.json",
+        "A-n62-k8.vrp.json",
+        "B-n51-k7.vrp.json",
+        "P-n20-k2.vrp.json",
+        "P-n60-k15.vrp.json"
+      ]
+    },
+    {
+      "year": 2013,
+      "instances": [
+        "A-n33-k6.vrp.json",
+        "A-n63-k10.vrp.json",
+        "B-n52-k7.vrp.json",
+        "P-n16-k8.vrp.json",
+        "P-n51-k10.vrp.json"
+      ]
+    }
+  ]
+}

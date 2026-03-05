@@ -1,0 +1,22 @@
+{
+  "name": "openshop",
+  "type": "combi",
+  "kind": "min",
+  "rc": false,
+  "sbc": false,
+  "globals": [
+    "cumulative"
+  ],
+  "challenges": [
+    {
+      "year": 2014,
+      "instances": [
+        "gp10-4.json",
+        "j7per10-1.json",
+        "j8per0-2.json",
+        "tai20-4.json",
+        "tai20-6.json"
+      ]
+    }
+  ]
+}

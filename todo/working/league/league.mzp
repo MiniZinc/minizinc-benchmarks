@@ -1,0 +1,22 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "league.mzn",
+    "data/model100-21-12.json",
+    "data/model15-4-3.json",
+    "data/model20-3-5.json",
+    "data/model20-5-4.json",
+    "data/model30-4-6.json",
+    "data/model30-8-4.json",
+    "data/model40-5-11.json",
+    "data/model50-4-4.json",
+    "data/model55-13-15.json",
+    "data/model55-3-12.json",
+    "data/model90-18-20.json"
+  ],
+  "openFiles": [
+    "league.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

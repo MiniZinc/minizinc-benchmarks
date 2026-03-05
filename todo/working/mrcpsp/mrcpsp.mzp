@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "mrcpsp.mzn",
+    "data/j30_15_5.json",
+    "data/j30_17_10.json",
+    "data/j30_1_10.json",
+    "data/j30_25_5.json",
+    "data/j30_29_3.json",
+    "data/j30_33_5.json",
+    "data/j30_37_4.json",
+    "data/j30_41_8.json",
+    "data/j30_53_3.json",
+    "data/j30_54_2.json"
+  ],
+  "openFiles": [
+    "mrcpsp.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

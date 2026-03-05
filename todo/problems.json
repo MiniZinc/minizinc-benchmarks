@@ -1,0 +1,1400 @@
+{
+  "accap": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["diffn"]
+  },
+  "amaze": {
+    "type": "puzzle",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["count"]
+  },
+  "amaze2": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "amaze3": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": true,
+    "sbc": false,
+    "globals": ["count"]
+  },
+  "arithmetic-target": {
+    "type": "puzzle",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["all_different_except_0", "count"]
+  },
+  "atsp": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "bacp": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "black-hole": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["inverse", "table"]
+  },
+  "blocks-world": {
+    "type": "puzzle",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["global_cardinality_closed", "increasing"]
+  },
+  "bnn-planner": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "cable-tree-wiring": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "cargo": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative", "diffn"]
+  },
+  "carpet-cutting": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["cumulative", "diffn"]
+  },
+  "celar": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "chessboard": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": true,
+    "sbc": true,
+    "globals": ["global_cardinality", "lex_lesseq"]
+  },
+  "city-position": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": []
+  },
+  "code-generator": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": true,
+    "globals": [
+      "all_different",
+      "cumulative",
+      "decreasing",
+      "diffn",
+      "diffn_nonstrict",
+      "maximum",
+      "minimum",
+      "table",
+      "value_precede_chain"
+    ]
+  },
+  "collaborative-construction": {
+    "type": "combi",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": []
+  },
+  "concert-hall-cap": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": true,
+    "globals": ["all_different_except_0", "value_precede_chain"]
+  },
+  "costas-array": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": true,
+    "sbc": true,
+    "globals": ["all_different"]
+  },
+  "crosswords": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "cryptanalysis": {
+    "type": "real",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "community-detection": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["value_precede_chain", "global_cardinality_low_up"]
+  },
+  "community-detection-rnd": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": true,
+    "globals": ["seq_precede_chain", "global_cardinality_low_up"]
+  },
+  "cvrp": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["circuit"]
+  },
+  "cyclic-rcpsp": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "debruijn_binary": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different", "global_cardinality"]
+  },
+  "depot-placement": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["all_different"]
+  },
+  "diameterc-mst": {
+    "type": "combi",
+    "kind": "min",
+    "rc": true,
+    "sbc": true,
+    "globals": []
+  },
+  "elitserien": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": [
+      "all_different",
+      "global_cardinality_closed",
+      "inverse",
+      "member",
+      "regular"
+    ]
+  },
+  "evm-super-compilation": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["global_cardinality_low_up"]
+  },
+  "fast-food": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "fillomino": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "filters": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["diffn", "maximum"]
+  },
+  "fjsp": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "flowshop-workers": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": []
+  },
+  "fox-geese-corn": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": true,
+    "sbc": false,
+    "globals": []
+  },
+  "freepizza": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "gametes": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["all_different_except_0", "count", "increasing"]
+  },
+  "gbac": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["bin_packing_load", "global_cardinality_low_up_closed"]
+  },
+  "generalized-peacable-queens": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": false,
+    "sbc": true,
+    "globals": [
+      "all_equal",
+      "global_cardinality",
+      "lex_lesseq",
+      "regular",
+      "value_precede_chain"
+    ]
+  },
+  "gfd-schedule": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["nvalue", "at_most"]
+  },
+  "gfd-schedule2": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["at_most", "cumulative", "nvalue"]
+  },
+  "ghoulomb": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "grid-colouring": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "groupsplitter": {
+    "type": "combi",
+    "kind": "max",
+    "rc": true,
+    "sbc": true,
+    "globals": ["count", "table"]
+  },
+  "hoist-benchmark": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": []
+  },
+  "hrc": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "is": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["circuit", "table"]
+  },
+  "java-auto-gen": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different", "element"]
+  },
+  "java-routing": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different", "element"]
+  },
+  "jp-encoding": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["count"]
+  },
+  "kidney-exchange": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": true,
+    "globals": ["all_different", "bin_packing", "seq_precede_chain"]
+  },
+  "l2p": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "largescheduling": {
+    "type": "combi",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "league": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["count"]
+  },
+  "league-2013": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["count"]
+  },
+  "liner-sf-repositioning": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different", "all_different_except_0"]
+  },
+  "lot-sizing": {
+    "type": "combi",
+    "kind": "min",
+    "rc": true,
+    "sbc": true,
+    "globals": ["all_different", "at_least", "at_most", "global_cardinality"]
+  },
+  "mapping": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["bin_packing_load", "count", "maximum", "network_flow_cost"]
+  },
+  "mario": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["subcircuit"]
+  },
+  "maximum-dag": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "ma-path-finding": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "median-string": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "minimal-decision-sets": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "monomatch": {
+    "type": "",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "mqueens": {
+    "type": "puzzle",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["lex_lesseq"]
+  },
+  "mrcpsp": {
+    "type": "combi",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["cumulative", "element"]
+  },
+  "mspsp": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "multi-agent-graph-coverage": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "multi-knapsack": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "multi-knapsack-global": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["knapsack"]
+  },
+  "MZNC_connect": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "neighbours": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": true,
+    "sbc": true,
+    "globals": ["lex_lesseq"]
+  },
+  "nfc": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["network_flow_cost"]
+  },
+  "nmseq": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "nonogram": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["regular"]
+  },
+  "nside": {
+    "type": "real",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative", "global_cardinality_low_up"]
+  },
+  "opd": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["lex_greatereq"]
+  },
+  "on-call-rostering": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["count"]
+  },
+  "oocsp_racks": {
+    "type": "real",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["global_cardinality", "increasing"]
+  },
+  "open-stacks": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "openshop": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "opt-cryptanalysis": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["table"]
+  },
+  "p1f": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["all_different", "inverse", "lex_less"]
+  },
+  "p1f-pjs": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["all_different", "circuit", "inverse", "lex_less"]
+  },
+  "parity-learning": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "pattern-set-mining": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["lex_less"]
+  },
+  "peacable_queens": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["count", "regular", "value_precede"]
+  },
+  "pennies-opt": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": false,
+    "sbc": true,
+    "globals": ["all_different", "decreasing"]
+  },
+  "pentominoes": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["regular"]
+  },
+  "pentominoes-zayenz": {
+    "type": "",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["regular"]
+  },
+  "perfect_square": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "physician-scheduling": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["global_cardinality_low_up", "nvalue"]
+  },
+  "pillars-and-planks": {
+    "type": "puzzle",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["diffn"]
+  },
+  "prize-collecting": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "project-planning": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "prop_stress": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "proteindesign12": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["table"]
+  },
+  "ptv": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["count"]
+  },
+  "quasigroup7": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "racp": {
+    "type": "combi",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "radiation": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "rcpsp": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "rcpsp_max": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "rcpsp-wet": {
+    "type": "combi",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "rcpsp-wet-diverse": {
+    "type": "combi",
+    "kind": "max",
+    "rc": true,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "rectangle-packing": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "rectangle-packing-2014": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative", "diffn"]
+  },
+  "rel2onto": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "road-construction": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "roster": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["at_least", "at_most", "exactly"]
+  },
+  "roster-shifts-bool": {
+    "type": "combi",
+    "kind": "max",
+    "rc": true,
+    "sbc": true,
+    "globals": []
+  },
+  "roster-sickness": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "rotating-workforce": {
+    "type": "real",
+    "kind": "sat",
+    "rc": true,
+    "sbc": true,
+    "globals": ["global_cardinality_low_up", "regular"]
+  },
+  "rotating-workforce-scheduling": {
+    "type": "real",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["global_cardinality_low_up", "regular", "sliding_sum"]
+  },
+  "routing-flexible": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "rubik": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "search_stress": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "search_stress2": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "seat-moving": {
+    "type": "combi",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["all_different", "all_different_except_0"]
+  },
+  "sdn-chain": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "ship-schedule": {
+    "type": "real",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "shortest_path": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "skill-allocation": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "slow_convergence": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "smelt": {
+    "type": "puzzle",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["cumulative"]
+  },
+  "soccer-computational": {
+    "type": "real",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "solbat": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "speck-optimisation": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_equal"]
+  },
+  "spot5": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["table"]
+  },
+  "stable-goods": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "stack-cuttingstock": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["cumulative"]
+  },
+  "steelmillslab": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["bin_packing_load"]
+  },
+  "steiner-systems": {
+    "type": "combi",
+    "kind": "sat",
+    "rc": false,
+    "sbc": true,
+    "globals": []
+  },
+  "steiner-tree": {
+    "type": "combi",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": []
+  },
+  "still_life": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "still-life-wastage": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "stochastic-fjsp": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "stochastic-vrp": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["circuit"]
+  },
+  "stripboard": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": true,
+    "globals": ["all_different", "diffn", "disjunctive", "strictly_decreasing"]
+  },
+  "sudoku_fixed": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "sudoku_opt": {
+    "type": "puzzle",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different"]
+  },
+  "sugiyama": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "table-layout": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "tc-graph-color": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "tdtsp": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["inverse"]
+  },
+  "team-assignment": {
+    "type": "real",
+    "kind": "max",
+    "rc": true,
+    "sbc": true,
+    "globals": ["all_different", "bin_packing", "bin_packing_load"]
+  },
+  "test-scheduling": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": true,
+    "globals": ["cumulative", "disjunctive", "value_precede_chain"]
+  },
+  "tower": {
+    "type": "real",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["argmax"]
+  },
+  "tpp": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["subcircuit"]
+  },
+  "train": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "travelling-thief": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different", "inverse"]
+  },
+  "traveling-tppv": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": ["all_different", "regular"]
+  },
+  "triangular": {
+    "type": "puzzle",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": ["inverse"]
+  },
+  "trucking": {
+    "type": "combi",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "unit-commitment": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "vaccine": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": true,
+    "globals": ["global_cardinality_low_up", "lex_lesseq"]
+  },
+  "valve-network": {
+    "type": "combi",
+    "kind": "max",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "vrp-fs": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "vrp-submission": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": false,
+    "globals": ["circuit"]
+  },
+  "vrp": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "vrplc": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": true,
+    "globals": ["circuit", "cumulative"]
+  },
+  "whirlpool": {
+    "type": "puzzle",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "wmsmc-int": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "wordpress": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "wwtp_random": {
+    "type": "real",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "wwtpp-real": {
+    "type": "real",
+    "kind": "sat",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "yumi-dynamic": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": [
+      "all_equal",
+      "all_different",
+      "circuit",
+      "cumulative",
+      "diffn",
+      "increasing",
+      "table",
+      "value_precede",
+      "value_precede_chain"
+    ]
+  },
+  "yumi-static": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": [
+      "all_equal",
+      "all_different",
+      "circuit",
+      "cumulative",
+      "diffn",
+      "increasing",
+      "table",
+      "value_precede",
+      "value_precede_chain"
+    ]
+  },
+  "zephyrus": {
+    "type": "real",
+    "kind": "min",
+    "rc": false,
+    "sbc": false,
+    "globals": []
+  },
+  "zephyrus-2016": {
+    "type": "real",
+    "kind": "min",
+    "rc": true,
+    "sbc": true,
+    "globals": ["lex_greatereq", "lex_less"]
+  },
+  "aircraft-disassembly": {
+    "type": "real",
+    "globals": ["cumulative"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "compression": {
+    "type": "combi",
+    "globals": ["global_cardinality"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "graph-clear": {
+    "type": "combi",
+    "globals": ["all_different"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "harmony": {
+    "type": "puzzle",
+    "globals": ["all_equal", "count_eq", "min", "strictly_decreasing"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "monitor-placement-1id": {
+    "type": "real",
+    "globals": [],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "network_50_cstr": {
+    "type": "real",
+    "globals": [],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "portal": {
+    "type": "puzzle",
+    "globals": [],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "tiny-cvrp": {
+    "type": "real",
+    "globals": [],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "train-scheduling": {
+    "type": "real",
+    "globals": ["all_different", "cumulative", "disjunctive"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "word-equations": {
+    "type": "combi",
+    "globals": ["nvalue"],
+    "kind": "max",
+    "sbc": false,
+    "rc": false
+  },
+  "cgt": {
+    "type": "real",
+    "globals": ["all_different", "strictly_increasing"],
+    "kind": "min",
+    "sbc": true,
+    "rc": false
+  },
+  "EchoSched": {
+    "type": "real",
+    "globals": [],
+    "kind": "min",
+    "sbc": false,
+    "rc": true
+  },
+  "fbd1": {
+    "type": "real",
+    "globals": ["all_different"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "gt-sort": {
+    "type": "combi",
+    "globals": ["all_different", "strictly_increasing"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "hitori": {
+    "type": "puzzle",
+    "globals": ["all_different_except_0", "connected"],
+    "kind": "max",
+    "sbc": false,
+    "rc": false
+  },
+  "ihtc-2024-kletzander": {
+    "type": "real",
+    "globals": ["cumulative"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "ihtc-2024-marte": {
+    "type": "real",
+    "globals": ["bin_packing_load", "cumulative", "nvalue"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "mondoku": {
+    "type": "puzzle",
+    "globals": ["global_cardinality", "value_precede_chain"],
+    "kind": "min",
+    "sbc": true,
+    "rc": false
+  },
+  "products-and-shelves": {
+    "type": "real",
+    "globals": [
+      "diffn_nonstrict_k",
+      "increasing",
+      "lex_chain_lesseq",
+      "seq_precede_chain"
+    ],
+    "kind": "min",
+    "sbc": true,
+    "rc": false
+  },
+  "tsptw": {
+    "type": "real",
+    "globals": ["circuit"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  },
+  "work-task-variation": {
+    "type": "real",
+    "globals": ["global_cardinality", "regular"],
+    "kind": "min",
+    "sbc": false,
+    "rc": false
+  }
+}

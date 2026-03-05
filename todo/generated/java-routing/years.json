@@ -1,0 +1,67 @@
+{
+  "trip_6_2.mzn": {
+    "years": [
+      2021
+    ],
+    "chosen_year": 2021
+  },
+  "trip_7_4.mzn": {
+    "years": [
+      2021
+    ],
+    "chosen_year": 2021
+  },
+  "trip_7_5.mzn": {
+    "years": [
+      2021
+    ],
+    "chosen_year": 2021
+  },
+  "trip_8_2.mzn": {
+    "years": [
+      2021
+    ],
+    "chosen_year": 2021
+  },
+  "trip_8_3.mzn": {
+    "years": [
+      2021
+    ],
+    "chosen_year": 2021
+  },  "empty.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "trip_6_3.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "trip_7_1.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "trip_7_2.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "trip_8_1.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  },
+  "trip_8_5.mzn": {
+    "years": [
+      2013
+    ],
+    "chosen_year": 2013
+  }
+}

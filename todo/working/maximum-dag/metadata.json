@@ -1,0 +1,20 @@
+{
+  "name": "maximum-dag",
+  "type": "combi",
+  "kind": "max",
+  "rc": false,
+  "sbc": false,
+  "globals": [],
+  "challenges": [
+    {
+      "year": 2016,
+      "instances": [
+        "25_01.json",
+        "25_03.json",
+        "25_04.json",
+        "25_06.json",
+        "31_02.json"
+      ]
+    }
+  ]
+}

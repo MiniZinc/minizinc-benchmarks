@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "model.mzn",
+    "data/1vERFuvviS.json",
+    "data/9aGFgDaHX7.json",
+    "data/avdoaYnfXq.json",
+    "data/BnMUR3YMRk.json",
+    "data/vWQp9idqMs.json"
+  ],
+  "openFiles": [
+    "model.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

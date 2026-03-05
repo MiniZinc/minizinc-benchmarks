@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "opd.mzn",
+    "data/flener_et_al_10_350_100.json",
+    "data/flener_et_al_15_350_100.json",
+    "data/medium_10_100_30.json",
+    "data/medium_13_250_80.json",
+    "data/small_bibd_06_50_25.json",
+    "data/small_bibd_06_60_30.json",
+    "data/small_bibd_08_28_14.json",
+    "data/small_bibd_10_30_09.json",
+    "data/small_bibd_11_22_10.json",
+    "data/small_bibd_13_26_06.json"
+  ],
+  "openFiles": [
+    "opd.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

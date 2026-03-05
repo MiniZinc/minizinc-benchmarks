@@ -7,6 +7,15 @@
   "sbc": false,
   "rc": false,
   "challenges": [
-    "2025"
+    {
+      "year": 2025,
+      "data": [
+        "data/i02.json",
+        "data/i07.json",
+        "data/i09.json",
+        "data/test03.json",
+        "data/test05.json"
+      ]
+    }
   ]
 }

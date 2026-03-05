@@ -5,6 +5,15 @@
   "sbc": false,
   "globals": [],
   "challenges": [
-    "2023"
+    {
+      "year": 2023,
+      "data": [
+        "data/horizon12.json",
+        "data/horizon19.json",
+        "data/horizon20.json",
+        "data/horizon28.json",
+        "data/horizon6.json"
+      ]
+    }
   ]
 }

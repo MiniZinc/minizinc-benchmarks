@@ -8,6 +8,15 @@
     "lex_lesseq"
   ],
   "challenges": [
-    "2023"
+    {
+      "year": 2023,
+      "data": [
+        "data/chessboard3.json",
+        "data/chessboard4.json",
+        "data/chessboard_n12_1.json",
+        "data/chessboard_n39_2.json",
+        "data/chessboard_n9_1.json"
+      ]
+    }
   ]
 }

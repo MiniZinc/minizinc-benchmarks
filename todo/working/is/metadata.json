@@ -1,0 +1,43 @@
+{
+  "name": "is",
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "circuit",
+    "table"
+  ],
+  "challenges": [
+    {
+      "year": 2015,
+      "instances": [
+        "1YHXeG1xYs.json",
+        "A3PZaPjnUz.json",
+        "HgSWGJHxY5.json",
+        "jZ9pQqRxJ2.json",
+        "y21PnVA2Hj.json"
+      ]
+    },
+    {
+      "year": 2020,
+      "instances": [
+        "A3PZaPjnUz.json",
+        "LeTaZW8Ij5.json",
+        "Ws5Q6fhGi5.json",
+        "YfFfEiuCQo.json",
+        "v1HjuSBQMb.json"
+      ]
+    },
+    {
+      "year": 2025,
+      "instances": [
+        "1vERFuvviS.json",
+        "9aGFgDaHX7.json",
+        "BnMUR3YMRk.json",
+        "avdoaYnfXq.json",
+        "vWQp9idqMs.json"
+      ]
+    }
+  ]
+}

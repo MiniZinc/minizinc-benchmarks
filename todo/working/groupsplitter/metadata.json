@@ -1,0 +1,43 @@
+{
+  "name": "groupsplitter",
+  "type": "combi",
+  "kind": "max",
+  "rc": true,
+  "sbc": true,
+  "globals": [
+    "count",
+    "table"
+  ],
+  "challenges": [
+    {
+      "year": 2017,
+      "instances": [
+        "u12g1pref0.json",
+        "u12g1pref1.json",
+        "u15g3pref2.json",
+        "u5g1pref0.json",
+        "u6g3pref0.json"
+      ]
+    },
+    {
+      "year": 2019,
+      "instances": [
+        "u12g2pref1.json",
+        "u15g5pref0.json",
+        "u6g1pref1.json",
+        "u7g2pref1.json",
+        "u9g1pref1.json"
+      ]
+    },
+    {
+      "year": 2025,
+      "instances": [
+        "u12g2pref0.json",
+        "u12g2pref2.json",
+        "u15g1pref2.json",
+        "u15g3pref0.json",
+        "u15g5pref1.json"
+      ]
+    }
+  ]
+}

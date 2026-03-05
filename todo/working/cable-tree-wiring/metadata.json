@@ -1,0 +1,32 @@
+{
+  "name": "cable-tree-wiring",
+  "type": "real",
+  "kind": "min",
+  "rc": true,
+  "sbc": false,
+  "globals": [
+    "all_different"
+  ],
+  "challenges": [
+    {
+      "year": 2020,
+      "instances": [
+        "A031.json",
+        "A073.json",
+        "R046.json",
+        "R189.json",
+        "R196.json"
+      ]
+    },
+    {
+      "year": 2024,
+      "instances": [
+        "A022.json",
+        "A033.json",
+        "A041.json",
+        "A046.json",
+        "R193.json"
+      ]
+    }
+  ]
+}

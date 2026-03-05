@@ -1,0 +1,21 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "vrplc_service.mzn",
+    "data/vrplc10_5_20_s3.json",
+    "data/vrplc11_5_15_s3.json",
+    "data/vrplc11_5_15_s4.json",
+    "data/vrplc13_11_15_s3.json",
+    "data/vrplc13_11_20_s4.json",
+    "data/vrplc9_5_10_s1.json",
+    "data/vrplc9_5_10_s2.json",
+    "data/vrplc9_5_10_s3.json",
+    "data/vrplc9_5_15_s2.json",
+    "data/vrplc9_5_15_s3.json"
+  ],
+  "openFiles": [
+    "vrplc_service.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}
