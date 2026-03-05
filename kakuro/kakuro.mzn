@@ -7,179 +7,97 @@
 % each "word" is a permutation of a subset of {1, 2, 3, ..., 9} summing
 % to a given value.
 
-include "globals.mzn";
+include "all_different.mzn";
 
-int: h;                                 % The number of rows in the grid.
-int: w;                                 % The number of columns in the grid.
-set of int: ROW = 1..h;
-set of int: COL = 1..w;
-set of int: digit = 0..9;               % 0 indicates "blacked out".
+% 0 indicates "blacked out" and it cannot be used, 1 means that is must be used.
+array [int, int] of 0..1: grid_data;
+set of int: Row = index_set_1of2(grid_data);
+set of int: Col = index_set_2of2(grid_data);
 
-array [ROW, COL] of 0..1: grid_data;    % "Blacked out" squares.  As above
-                                        % 0 indicates blacked out.
-
-array [ROW, COL] of var digit: grid;
-                                        % The puzzle grid.
-int: n_h;                               % The number of horizontal clues in
-                                        %   the puzzle.
-array [1..n_h, 1..4] of int: h_clue;    % clue[i, 1], clue[i, 2] is the
-                                        %   row, col of the clue cell
-                                        %   (which is blacked out);
-                                        %   clue[i, 3], clue[i, 4] are the
-                                        %   length and sum of the word.
-int: n_v;                               % The number of vertical clues in
-                                        %   the puzzle.
-array [1..n_v, 1..4] of int: v_clue;    % clue[i, 1], clue[i, 2] is the
-                                        %   row, col of the clue cell
-                                        %   (which is blacked out);
-                                        %   clue[i, 3], clue[i, 4] are the
-                                        %   length and sum of the word.
-int: clue_row = 1;
-int: clue_col = 2;
-int: clue_len = 3;
-int: clue_sum = 4;
+% The puzzle grid, absent indicates blacked out.
+array [Row, Col] of var opt 1..9: grid;
+type Clue = record(int: row, int: col, int: len, int: sum);
+% Horizontal clue cells (which are blacked out), with target word length and sum.
+list of Clue: h_clue;
+% Vertical clue cells (which are blacked out), with target word length and sum.
+list of Clue: v_clue;
 
 % We use a separate grid_data parameter so that we can write out the value
 % for grid as MiniZinc data in the solution.  We cannot feed that solution
 % back into the original model if the data files refer to grid directly.
 %
-constraint forall (r in ROW) (
-    forall (c in COL) (
-        if grid_data[r, c] = 0 then grid[r, c] = 0 else true endif)
-    );
+constraint forall (r in Row, c in Col) (
+	grid_data[r,c] = 0 <-> absent(grid[r, c])
+);
 
-    % Each word must be composed of distinct digits greater than zero
-    % and sum to its target value.
-    %
-constraint
-    forall (i in 1..n_h) (
-        let
-        {
-            int: r = h_clue[i, clue_row],
-            int: c = h_clue[i, clue_col],
-            int: l = h_clue[i, clue_len],
-            int: s = h_clue[i, clue_sum],
-            array [1..l] of var digit: word = [grid[r, c + j] | j in 1..l]
-        }
-        in
+% Each word must be composed of distinct digits and sum to its target value.
+%
+predicate kakuro(list of var int: x, int: s) =
+	all_different(x) /\ sum(x) = s /\ magic_constraint(s, x);
 
-            % Word digits must be positive.
-            forall (j in 1..l) (word[j] > 0)
+constraint forall (clue in h_clue) (
+	let {
+		constraint forall(j in 1..clue.len)(
+			assert(grid_data[clue.row, clue.col + j] = 1, "horizontal clue \(clue) uses a blacked-out cell")
+		);
+		any: word = deopt([grid[clue.row, clue.col + j] | j in 1..clue.len])
+	} in kakuro(word, clue.sum)
+);
 
-            % Word digits must sum to the clue.
-        /\  sum(word)  =  s
+constraint forall (clue in v_clue) (
+	let {
+		constraint forall(j in 1..clue.len)(
+			assert(grid_data[clue.row + j, clue.col] = 1, "vertical clue \(clue) uses a blacked-out cell")
+		);
+		any: word = deopt([grid[clue.row + j, clue.col] | j in 1..clue.len])
+	} in kakuro(word, clue.sum)
+);
 
-            % Word digits must all be different.
-        /\  alldifferent(word)
+% There are various "magic" sums with unique combinations, such as
+% These are described by the following forms:
+% - sum 1..k                    E.g.,  6 = sum {1, 2, 3}
+% - sum 1..k union {k + 2}      E.g.,  7 = sum {1, 2, 4}
+% - sum k..9                    E.g., 24 = sum {7, 8, 9}
+% - sum {k} union k+2..9        E.g., 29 = sum {5, 7, 8, 9}
+%
+% TODO: add these pruning constraints where possible.
+type Magic = record(int: len, int: sum, int: lo, int: hi, int: ex);
+list of Magic: magic = [
+	(len: 2, sum: 3, lo: 1, hi: 2, ex: 0),
+	(len: 2, sum: 4, lo: 1, hi: 3, ex: 2),
+	(len: 3, sum: 6, lo: 1, hi: 3, ex: 0),
+	(len: 3, sum: 7, lo: 1, hi: 4, ex: 3),
+	(len: 4, sum: 10, lo: 1, hi: 4, ex: 0),
+	(len: 4, sum: 11, lo: 1, hi: 5, ex: 4),
+	(len: 5, sum: 15, lo: 1, hi: 5, ex: 0),
+	(len: 5, sum: 16, lo: 1, hi: 6, ex: 5),
+	(len: 6, sum: 21, lo: 1, hi: 6, ex: 0),
+	(len: 6, sum: 22, lo: 1, hi: 7, ex: 6),
+	(len: 7, sum: 28, lo: 1, hi: 7, ex: 0),
+	(len: 7, sum: 29, lo: 1, hi: 8, ex: 7),
+	(len: 8, sum: 36, lo: 1, hi: 8, ex: 0),
+	(len: 8, sum: 37, lo: 1, hi: 9, ex: 8),
+	(len: 9, sum: 45, lo: 1, hi: 9, ex: 0),
+	(len: 2, sum: 17, lo: 8, hi: 9, ex: 0),
+	(len: 2, sum: 16, lo: 7, hi: 9, ex: 8),
+	(len: 3, sum: 24, lo: 7, hi: 9, ex: 0),
+	(len: 3, sum: 23, lo: 6, hi: 9, ex: 7),
+	(len: 4, sum: 30, lo: 6, hi: 9, ex: 0),
+	(len: 4, sum: 29, lo: 5, hi: 9, ex: 6),
+	(len: 5, sum: 35, lo: 5, hi: 9, ex: 0),
+	(len: 5, sum: 34, lo: 4, hi: 9, ex: 5),
+	(len: 6, sum: 39, lo: 4, hi: 9, ex: 0),
+	(len: 6, sum: 38, lo: 3, hi: 9, ex: 4),
+	(len: 7, sum: 42, lo: 3, hi: 9, ex: 0),
+	(len: 7, sum: 41, lo: 2, hi: 9, ex: 3),
+	(len: 8, sum: 44, lo: 2, hi: 9, ex: 0)
+];
 
-            % Apply a "magic word" constraint if possible.
-        /\  magic_constraint(l, s, word)
-
-    );
-
-constraint
-    forall (i in 1..n_v) (
-        let
-        {
-            int: r = v_clue[i, clue_row],
-            int: c = v_clue[i, clue_col],
-            int: l = v_clue[i, clue_len],
-            int: s = v_clue[i, clue_sum],
-            array [1..l] of var digit: word = [grid[r + j, c] | j in 1..l]
-        }
-        in
-
-            % Word digits must be positive.
-            forall (j in 1..l) (word[j] > 0)
-
-            % Word digits must sum to the clue.
-        /\  sum(word)  =  s
-
-            % Word digits must all be different.
-        /\  alldifferent(word)
-
-            % Apply a "magic word" constraint if possible.
-        /\  magic_constraint(l, s, word)
-
-    );
-
-    % There are various "magic" sums with unique combinations, such as
-    % These are described by the following forms:
-    % - sum 1..k                    E.g.,  6 = sum {1, 2, 3}
-    % - sum 1..k union {k + 2}      E.g.,  7 = sum {1, 2, 4}
-    % - sum k..9                    E.g., 24 = sum {7, 8, 9}
-    % - sum {k} union k+2..9        E.g., 29 = sum {5, 7, 8, 9}
-    %
-    % TODO: add these pruning constraints where possible.
-
-int: n_magic = 28;
-int: magic_len = 1;
-int: magic_sum = 2;
-int: magic_lo  = 3;
-int: magic_hi  = 4;
-int: magic_ex  = 5;
-array [1..n_magic, 1..5] of int: magic = [|
-    % Each row describes a "magic" word:
-    % - sum
-    % - length
-    % - lowest digit
-    % - highest digit
-    % - excluded digit (if any, otherwise 0)
-    2, 3, 1, 2, 0|
-    2, 4, 1, 3, 2|
-    3, 6, 1, 3, 0|
-    3, 7, 1, 4, 3|
-    4, 10, 1, 4, 0|
-    4, 11, 1, 5, 4|
-    5, 15, 1, 5, 0|
-    5, 16, 1, 6, 5|
-    6, 21, 1, 6, 0|
-    6, 22, 1, 7, 6|
-    7, 28, 1, 7, 0|
-    7, 29, 1, 8, 7|
-    8, 36, 1, 8, 0|
-    8, 37, 1, 9, 8|
-    9, 45, 1, 9, 0|
-    2, 17, 8, 9, 0|
-    2, 16, 7, 9, 8|
-    3, 24, 7, 9, 0|
-    3, 23, 6, 9, 7|
-    4, 30, 6, 9, 0|
-    4, 29, 5, 9, 6|
-    5, 35, 5, 9, 0|
-    5, 34, 4, 9, 5|
-    6, 39, 4, 9, 0|
-    6, 38, 3, 9, 4|
-    7, 42, 3, 9, 0|
-    7, 41, 2, 9, 3|
-    8, 44, 2, 9, 0
-|];
-
-predicate magic_constraint(int: l, int: s, array [int] of var digit: word)  =
-    forall (i in 1..n_magic) (
-        if l = magic[i, magic_len] /\ s = magic[i, magic_sum] then
-            let
-            {
-                int: lo = magic[i, magic_lo],
-                int: hi = magic[i, magic_hi],
-                int: ex = magic[i, magic_ex]
-            }
-            in
-                forall (j in index_set(word)) (
-                    lo <= word[j]
-                /\  word[j] <= hi
-                /\  word[j] != ex
-                )
-        else
-            true
-        endif
-    );
-
-    % Any solution will do.
-    %
-solve satisfy;
-
-output ["grid = ", show(grid), "\n"];
-
-%----------------------------------------------------------------------------%
-%----------------------------------------------------------------------------%
+predicate magic_constraint(int: s, array [int] of var int: word) =
+	let {
+		int: l = length(word);
+	} in forall (m in magic where l = m.len /\ s = m.sum, x in word) (
+		m.lo <= x
+		/\ x <= m.hi
+		/\ x != m.ex
+	);
