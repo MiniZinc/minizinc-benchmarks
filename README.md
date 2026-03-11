@@ -42,3 +42,7 @@ All models in this repository should satisfy the following quality criteria:
 - Do not use `lb`, `ub`, `dom`, unless well justified (such as in user-defined predicates)
 - Do not use multiple model files instead of data files unless absolutely necessary
 - Comply with MiniZinc challenge search strategy rules
+
+## Readme generation prompt
+
+For each `.mzn` files in `todo/working` where there is no corresponding `README.md`, invoke a `minizinc-explainer` subagent and provide it with that file. Ensure the subagent is only invoked with one file. Do this sequentially and report each file you are invoking the subagent with.
