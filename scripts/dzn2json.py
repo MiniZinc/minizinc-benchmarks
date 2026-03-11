@@ -5,7 +5,7 @@ here = Path(__file__).parent
 converter = here / "dzn2json.mzn"
 
 root = here.parent
-for dzn in root.glob("todo/working/*/data/*.dzn"):
+for dzn in root.glob("problems/*/data/*.dzn"):
     target = dzn.with_suffix(".json")
     if target.exists():
         # print(f"{dzn} already has a JSON file, skipping.")

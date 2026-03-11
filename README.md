@@ -10,7 +10,7 @@ They are derived from models used in the MiniZinc Challenge.
 
 **Note:** Some models will not work with their current data until the next release of MiniZinc.
 
-- [ ] Expand to all Challenge models
+- [x] Expand to all Challenge models
 - [x] Use LLM to generate descriptions of problems for readmes
 - [ ] Review the readmes
 - [x] Generate projects openable in the IDE/playground

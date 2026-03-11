@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 
 root = Path(__file__).parent.parent
-for mzn in root.glob("todo/working/*/*.mzn"):
+for mzn in root.glob("problems/*/*.mzn"):
     p = mzn.parent
     data_files = [df.relative_to(p).as_posix() for df in p.glob("data/*.json")]
     mzn_file = mzn.relative_to(p).as_posix()

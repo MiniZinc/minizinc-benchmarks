@@ -13,7 +13,7 @@ def canonical_global(g):
 
 
 if __name__ == "__main__":
-    root = Path(__file__).parent.parent / "todo"
+    root = Path(__file__).parent.parent / "problems"
     sbc = r"^([^%]*[^\w%])?symmetry_breaking_constraint\s*\("
     rc = r"^([^%]*[^\w%])?redundant_constraint\s*\("
     for mzn in root.rglob("*.mzn"):
@@ -44,10 +44,8 @@ if __name__ == "__main__":
                 "sbc": has_sbc,
                 "rc": has_rc,
                 "globals": [canonical_global(g) for g in obj["globals"]],
-                "challenges": []
+                "challenges": [],
             }
-            target.write_text(
-                json.dumps(result, indent=2), encoding="utf-8"
-            )
+            target.write_text(json.dumps(result, indent=2), encoding="utf-8")
         except Exception as e:
             print(f"Failed to get problem info for {mzn}: {e}")
