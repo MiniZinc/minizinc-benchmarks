@@ -81268,7 +81268,7 @@
     true,
     true
   ],
-  "atom_regs": [
+  "atom_regs_input": [
     {
       "set": []
     },
@@ -106420,7 +106420,7 @@
       }
     ]
   ],
-  "long_latency_def": [
+  "long_latency_def_input": [
     79,
     83,
     85,

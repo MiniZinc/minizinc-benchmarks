@@ -1,0 +1,16 @@
+{
+  "version": 105,
+  "projectFiles": [
+    "community-detection.mzn",
+    "data/rnd_n100_e1000_s50_d30_c6_p70.json",
+    "data/rnd_n100_e5000_s500_d300_c4_p50.json",
+    "data/rnd_n100_e50_s10_d5_c10_p30.json",
+    "data/rnd_n100_e50_s50_d30_c9_p30.json",
+    "data/rnd_n50_e2500_s10_d5_c4_p90.json"
+  ],
+  "openFiles": [
+    "community-detection.mzn"
+  ],
+  "selectedBuiltinConfigId": "org.gecode.gecode",
+  "selectedBuiltinConfigVersion": "default"
+}

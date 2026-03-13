@@ -4530,7 +4530,7 @@
     true,
     true
   ],
-  "atom_regs": [
+  "atom_regs_input": [
     {
       "set": []
     },
@@ -5899,7 +5899,7 @@
   "quasi_adj_from": [],
   "quasi_adj_to": [],
   "long_latency_index": [],
-  "long_latency_def": [
+  "long_latency_def_input": [
     207,
     209,
     211,

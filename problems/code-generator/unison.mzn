@@ -83,13 +83,14 @@ array[int] of int: bb_maxcycle;
 array[int] of int: bb_optional_min;
 
 %% see JSON operands, instructions, type
-array[int] of set of int: op_operands;
-array[int] of set of int: op_instructions;
-array[int] of int: op_type;
-array[int] of bool: op_mand;
+array[0..MAXO] of set of int: op_operands;
+array[0..MAXO] of set of int: op_instructions;
+array[0..MAXO] of int: op_type;
+array[0..MAXO] of bool: op_mand;
 
 %% see JSON atoms
-array[int] of set of int: atom_regs; % atom -> registers
+array[int] of set of int: atom_regs_input;
+any: atom_regs = array1d(-1..length(atom_regs_input) - 2, atom_regs_input); % atom -> registers
 
 %% see JSON calleesaved, callersaved, infinite, bounded, range
 set of int: calleesaved;
@@ -100,9 +101,9 @@ array[int] of set of int: range;
 
 %% see JSON cap, con, dur, off
 array[int] of int: res_cap;
-array[int,int] of int: res_con;
-array[int,int] of int: res_dur;
-array[int,int] of int: res_off;
+array[int,0..MAXI] of int: res_con;
+array[int,0..MAXI] of int: res_dur;
+array[int,0..MAXI] of int: res_off;
 
 %% see JSON congr
 array[int] of set of int: congr;
@@ -131,34 +132,35 @@ array[int] of int: quasi_adj_to;
 
 %% see JSON long_latency
 array[int,int] of set of int: long_latency_index;
-array[int] of int: long_latency_def;
-array[int] of int: long_latency_use;
+array[int] of int: long_latency_def_input;
+any: long_latency_def = array1d(0..length(long_latency_def_input) - 1, long_latency_def_input); 
+array[0..length(long_latency_def_input) - 1] of int: long_latency_use;
 
 %% see JSON operands
-array[int] of int: operand_definer; % operand -> defining op
+array[0..MAXP] of int: operand_definer; % operand -> defining op
 
 %% see JSON use
-array[int] of bool: operand_use;
+array[0..MAXP] of bool: operand_use;
 
 %% see JSON last_use
-array[int] of bool: operand_lastuse;
+array[0..MAXP] of bool: operand_lastuse;
 
 %% see JSON temps
-array[int] of set of int: operand_temps;
+array[0..MAXP] of set of int: operand_temps;
 
 %% see JSON class, operands, instructions
-array[int,int] of int: operand_atom; % operand x operation -> atom
+array[0..MAXP,0..MAXI] of int: operand_atom; % operand x operation -> atom
 
 %% see JSON temps
 array[int] of set of int: related_temps;
 
 %% see JSON definer, temps, width, minlive
-array[int] of int: temp_definer; % temp -> defining op
-array[int] of int: temp_def;     % temp -> defining operand
-array[int] of int: temp_width;   % temp -> width
-array[int] of int: temp_minlive; % temp -> minlive
-array[int] of set of int: temp_uses; % temp -> set of use operands
-array[int] of set of int: temp_domain; % temp -> domain of regs
+array[0..MAXT] of int: temp_definer; % temp -> defining op
+array[0..MAXT] of int: temp_def;     % temp -> defining operand
+array[0..MAXT] of int: temp_width;   % temp -> width
+array[0..MAXT] of int: temp_minlive; % temp -> minlive
+array[0..MAXT] of set of int: temp_uses; % temp -> set of use operands
+array[0..MAXT] of set of int: temp_domain; % temp -> domain of regs
 
 %% see JSON packed, pinstrs
 array[int,int] of int: packed_pq;
@@ -205,7 +207,7 @@ array[int] of int: domuse_r;
 array[int,int] of int: infassign;
 
 %% see JSON space
-array[int] of int: space;
+array[-1..length(atom_regs_input) - 2] of int: space;
 
 %% see JSON dominates
 array[int] of int: dominate_ing;
