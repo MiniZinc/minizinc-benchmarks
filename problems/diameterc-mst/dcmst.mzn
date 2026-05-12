@@ -34,8 +34,8 @@ constraint objective = sum(i in edges)(bool2int(es[i])*ws[i]);
 constraint sum(i in edges)(bool2int(es[i])) = nbV - 1;
 
 
-% In order to get the diameter, choose a root for the tree and set the height of all other ndoes to 
-% be less than the radius. 
+% Diameter control via rooted-depth representation:
+% every selected parent-child link increases depth by one and depths stay <= radius.
 %var nodes: root;
 var 1..max(nbV, nbE): root;
 array [nodes] of var 0..radius: h;     %Height of nodes
@@ -79,7 +79,8 @@ constraint
     endif;
 
 
-%Redundant constraints: Edge e1 doinated edge e2 in all the folloing situations.
+% Redundant pruning constraints (do not change semantics, help search).
+% Edge e1 dominates e2 in the following situations.
 constraint redundant_constraint(forall (e1, e2 in edges where ws[e1] < ws[e2] /\ en[e1,1] == en[e2,1]) (h[en[e1,2]] <= h[en[e2,2]] -> p[en[e1,1]] != en[e2,2]));
 constraint redundant_constraint(forall (e1, e2 in edges where ws[e1] < ws[e2] /\ en[e1,2] == en[e2,2]) (h[en[e1,1]] <= h[en[e2,1]] -> p[en[e1,2]] != en[e2,1]));
 constraint redundant_constraint(forall (e1, e2 in edges where ws[e1] < ws[e2] /\ en[e1,1] == en[e2,2]) (h[en[e1,2]] <= h[en[e2,1]] -> p[en[e1,1]] != en[e2,1]));

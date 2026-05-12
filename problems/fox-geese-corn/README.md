@@ -79,3 +79,11 @@ So the best solution is the one that leaves the most valuable combination of sur
 ## Related background
 
 This model is closely related to the classic river-crossing puzzle often called **fox, goose, and corn** (or similar variants such as **fox, goose, and beans**), where unsafe combinations cannot be left alone on one bank. The present MiniZinc model extends that idea by allowing larger quantities, return trips, and an explicit value-maximization objective.
+
+## Model update summary
+
+Added concise inline comments in foxgeesecorn.mzn to clarify:
+
+- trip-load decision variable roles,
+- objective interpretation on east-bank value,
+- optimization direction (maximize recovered value).

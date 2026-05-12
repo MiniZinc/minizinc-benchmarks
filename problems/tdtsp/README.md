@@ -71,3 +71,11 @@ So this README is a **best-effort interpretation of the model code** rather than
 - MiniZinc global constraint used: `inverse` (via `include "inverse.mzn"`).
 - `metadata.json` indicates this model appears in MiniZinc Challenge instance sets for **2015** and **2017**.
 - No explicit academic citation/DOI/source URL is present in this folder.
+
+## Model update summary
+
+Added concise inline comments in tdtsp.mzn to clarify:
+
+- route, position, and time variable semantics,
+- precedence and forbidden-interval feasibility constraints,
+- objective intent as minimizing final completion time.

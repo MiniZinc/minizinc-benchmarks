@@ -165,6 +165,7 @@ function int: order_number(Items: item_type, int: k) =
 % =============== OBJECTIVE =====================================================
 
 int: upper_bound = max(change_cost)*nb_orders + inventory_cost*(nb_orders*nb_periods);
+% objective is total setup-change plus inventory holding cost.
 var 0..upper_bound: objective;
 
 % the objective is the sum of the total change costs and the total inventory costs

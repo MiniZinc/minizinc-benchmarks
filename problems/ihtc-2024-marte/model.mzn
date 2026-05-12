@@ -614,6 +614,7 @@ var int: unscheduled_patients = sum(p in PATIENTS)(admission_days[p] > max(DAYS)
 
 %% Objective
 
+% weighted sum over all soft-constraint penalties from S1..S8.
 var int: objective = sum([
   weights.room_mixed_age * total_age_group_differences,
   weights.nurse_eccessive_workload * total_excess_nurse_workload,

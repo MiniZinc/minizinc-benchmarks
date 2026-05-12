@@ -105,6 +105,7 @@ solve
             | t in reverse(arg_sort(duration)), i in 1..2],
             input_order, indomain_min, complete )
     ])
+            % objective minimizes the finish time of the last scheduled test.
     minimize objective;
 
 %------------------------------------------------------------------------------%

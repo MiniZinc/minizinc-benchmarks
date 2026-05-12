@@ -54,5 +54,6 @@ constraint forall([n[j] != Q[i] | i,j in main_factors where i < j]);
 constraint forall([n[j] != 3*n[i] | i,j in main_factors where i < j]);
 
 % Find an optimal design.
+% objective is design size N; solver minimizes compact construction.
 var int: objective = N;
 solve :: int_search(n ++ [n_star], smallest, indomain_min) minimize objective;

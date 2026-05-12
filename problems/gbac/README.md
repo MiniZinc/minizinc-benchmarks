@@ -57,3 +57,11 @@ A lower objective value is better; zero would mean a perfectly balanced schedule
 Bettinelli, A., Cacchiani, V., Roberti, R., & Toth, P. (2008). _An Overview of Curriculum-Based Course Timetabling_. Presented at CPAIOR 2008. DOI: [10.1007/978-3-540-88439-2_11](http://dx.doi.org/10.1007/978-3-540-88439-2_11)
 
 Model originally by Jean-Noel Monette, modified by Gustav Bjordal, with contributions from Fatima Zohra Lebbah, Justin Pearson, and Pierre Flener.
+
+## Model update summary
+
+Added concise inline comments in gbac.mzn to clarify:
+
+- primary assignment variable meaning,
+- objective composition (load balance plus undesirable penalties),
+- weighted optimization interpretation.

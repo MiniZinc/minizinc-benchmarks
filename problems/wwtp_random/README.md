@@ -65,3 +65,10 @@ Identifiable in-file reference:
 - Author comment in model header: **Miquel Bofill** (`mbofill@ima.udg.edu`).
 
 If you want, I can also add a short “How to run” section (MiniZinc CLI/example command) once you confirm the intended `.dzn` instance file(s).
+## Model update summary
+
+Added concise inline comments in `wwtpp.mzn` to clarify:
+
+- the three main variable groups (`buf`, `bout`, `c`) and their roles in tank storage/release,
+- plant capacity and tank balance constraints, and
+- boundary conditions (initial and final tank states).

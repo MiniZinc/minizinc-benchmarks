@@ -55,3 +55,11 @@ The model also includes a **redundant constraint** block (marked with `redundant
 - Zhou, N.-F. (2016). _A Constraint-Based Approach to Multi-Agent Path Finding_ (Picat implementation). Available at [http://picat-lang.org/](http://picat-lang.org/).
 - Sharon, G., Stern, R., Felner, A., & Sturtevant, N. R. (2015). Conflict-based search for optimal multi-agent pathfinding. _Artificial Intelligence_, 219, 40–66.
 - Stern, R., et al. (2019). Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks. _Proceedings of the International Symposium on Combinatorial Search (SoCS)_.
+
+## Model update summary
+
+Added concise inline comments in mapf.mzn to clarify:
+
+- occupancy and arrival-time decision variable semantics,
+- objective interpretation as MAPF sum-of-costs,
+- solver intent under fixed makespan horizon.

@@ -53,3 +53,11 @@ The model references three sets of well-known benchmark instances:
 ## Notes
 
 This model was adapted from Ralph Becket's `jobshop.mzn` by Diarmuid Grimes. The primary difference from a job-shop model is the absence of any fixed task ordering within a job. The no-overlap constraints are expressed both via a custom `no_overlap` predicate and redundantly using the `cumulative` global constraint, which may help solvers reason more effectively.
+
+## Model update summary
+
+Added concise inline comments in openshop.mzn to clarify:
+
+- task start-time decision variable semantics,
+- objective interpretation as makespan,
+- minimization intent for open-shop completion time.

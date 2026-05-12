@@ -99,6 +99,7 @@ array[1..m, 1..n] of var 1..n: p;
 % Objective for ordering of solutions
 int: obj_lb = sum(i in 1..n)(i);
 int: obj_ub = sum(i in 1..n)(i * n);
+% objective orders equivalent perfect 1-factorizations canonically.
 var obj_lb..obj_ub: objective = sum(i in 1..n) (i * p[1, i]);
 
 %------------------------------------------------------------------------%

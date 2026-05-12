@@ -68,3 +68,11 @@ This model relates to the study of _almost-stable_ matchings in the HRC setting:
 - Manlove, D. F. (2013). _Algorithmics of Matching Under Preferences_. World Scientific. (Chapter on HRC.)
 
 > **Note**: The exact data instances and the specific classification of blocking pair types (Types 1, 2a/2b, 3a, 3bcd) used in this model closely follow the framework in Manlove et al. (2017), but this has not been independently verified against the paper. An expert familiar with that work should confirm the correspondence.
+
+## Model update summary
+
+Added concise inline comments in hrc.mzn to clarify:
+
+- single/couple assignment channeling variables,
+- objective semantics as unmatched-resident count,
+- weighting of unmatched couples as two residents.

@@ -104,3 +104,11 @@ The instance data file must supply bounds on how many objects of each class may 
 
 - Schenner, G. & Taupe, R. (2016). _OOCSP rack configuration example for MiniZinc Challenge 2016_. Siemens AG Österreich. (Model source comments.)
 - [MiniZinc Challenge 2016](https://www.minizinc.org/challenge2016/results2016.html)
+
+## Model update summary
+
+Added concise inline comments in oocsp_racks.mzn to clarify:
+
+- object/class association variable roles,
+- satisfaction-only solve interpretation,
+- search intent for valid rack configuration instances.

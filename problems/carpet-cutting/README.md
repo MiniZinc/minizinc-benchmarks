@@ -84,3 +84,11 @@ This problem appears to originate from industrial carpet-laying applications and
 > Belov, G., Kartak, V., Rohling, H., & Scheithauer, G. (2010). _One-dimensional relaxations and LP bounds for orthogonal packing_. _International Transactions in Operational Research_, 16(6), 745–766.
 
 _(Note: the exact provenance of this specific carpet-cutting formulation has not been confirmed. If you know the original source, please update this section.)_
+
+## Model update summary
+
+Added concise inline comments in cc_base.mzn to clarify:
+
+- roll-length objective variable semantics,
+- room-carpet origin decision variables on roll axes,
+- cumulative-constraint intent for roll-capacity enforcement.

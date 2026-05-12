@@ -58,3 +58,11 @@ Minimise `objective`, which accumulates the penalty weight `costs[softctrw[j]]` 
 ## Instances
 
 The benchmark includes instances from the original CELAR dataset (`CELAR6` and `CELAR7` sub-instances) as well as additional graph-based and scenario instances (`graph05`, `graph11`, `scen06`, `scen07`). These range from small sub-problems to larger, harder scenarios used to stress-test solvers.
+
+## Model update summary
+
+Added concise inline comments in celar.mzn to clarify:
+
+- frequency decision-variable semantics,
+- soft-violation penalty construction in the objective,
+- optimization direction and search-stage intent.

@@ -125,6 +125,7 @@ constraint
 %-----------------------------------------------------------------------------%
 % Objective.
 
+% objective minimizes weighted earliness and tardiness from desired starts.
 solve
    :: int_search( s, first_fail, indomain_min, complete )
    minimize objective;

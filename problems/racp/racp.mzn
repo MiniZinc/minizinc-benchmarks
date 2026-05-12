@@ -238,6 +238,7 @@ ann: search2 = seq_search([
     int_search(s, smallest, indomain_min, complete)
 ]);
 
+% objective minimizes total resource availability cost across capacities.
 solve
    :: search1
    minimize objective;

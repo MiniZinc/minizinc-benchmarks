@@ -94,3 +94,11 @@ If you know the original publication or formal puzzle source, adding it here wou
   https://www.reddit.com/r/generative/comments/1fxp5ng/irregular_mondoku_art/
 - MiniZinc global constraints (including `global_cardinality`):  
   https://docs.minizinc.dev/en/stable/lib-globals-counting.html
+
+## Model update summary
+
+Added concise inline comments in mondoku-gcc-model-balance.mzn to clarify:
+
+- group-start helper variable semantics,
+- objective interpretation as worst imbalance,
+- optimization intent for balanced row/column color usage.

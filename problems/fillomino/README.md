@@ -74,3 +74,11 @@ For a puzzle user, `what` is the main solution. The other two arrays help explai
 
 - Nikoli, “Fillomino” puzzle rules: <https://www.nikoli.co.jp/en/puzzles/fillomino/>
 - Wikipedia, “Fillomino”: <https://en.wikipedia.org/wiki/Fillomino>
+
+## Model update summary
+
+Added concise inline comments in fillomino.mzn to clarify:
+
+- region/size/value variable roles,
+- helper-variable intent (`when`) for region growth,
+- solve mode as pure satisfaction.

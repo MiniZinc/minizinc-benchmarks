@@ -66,3 +66,11 @@ So among all valid deployments, it prefers the cheapest combination of VM usage 
 - Existing benchmark description: `problems/wordpress/README.md`
 - Metadata/challenge entry: `problems/wordpress/metadata.json` (MiniZinc Challenge 2022 data listed)
 - In-file attribution comments mention Andrei Iovescu (original model design) and Bogdan David (adaptation).
+
+## Model update summary
+
+Added concise inline comments in wordpress.mzn to clarify:
+
+- assignment, occupancy, and VM-type decision variable semantics,
+- capacity and architecture feasibility constraints,
+- objective intent as minimizing deployment cost.

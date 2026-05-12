@@ -66,3 +66,11 @@ The model **minimises** the sum of delays over a central subset of vessels (from
 ## Notes
 
 This problem is characteristic of **stockyard management** at bulk commodity terminals, a well-studied topic in operations research and scheduling. Related work includes scheduling models for coal export terminals (e.g., in Australian and Brazilian mining logistics) where stacker/reclaimer scheduling is a key operational challenge. The structure of the model — combining 2D non-overlapping rectangle placement with cumulative machine capacity constraints — is consistent with published approaches in this domain, though a specific academic reference for this exact formulation has not been identified.
+
+## Model update summary
+
+Added concise inline comments in cargo_coarsePiles.mzn to clarify:
+
+- decision variable roles for stacking/reclaiming times and pad positions,
+- distinction between discretized and scaled time variables,
+- objective meaning as aggregate vessel delay minimization.

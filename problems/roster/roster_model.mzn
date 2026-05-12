@@ -248,6 +248,7 @@ constraint
 % This model works well on all the data instances provided, but unfortunately
 % small changes to the model can unpredictably, and dramatically, impact performance.
 
+% objective minimizes evening-to-morning and isolated-rest soft violations.
 solve
     :: int_search(flatroster, first_fail, indomain_min, complete)
     minimize objective;

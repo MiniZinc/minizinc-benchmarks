@@ -60,3 +60,11 @@ This problem appeared in the **MiniZinc Challenge** in [2010](https://www.minizi
 - MiniZinc Challenge 2010: <https://www.minizinc.org/challenge2010/>
 - MiniZinc Challenge 2013: <https://www.minizinc.org/challenge2013/>
 - Wikipedia: [Golomb ruler](https://en.wikipedia.org/wiki/Golomb_ruler)
+
+## Model update summary
+
+Added concise inline comments in ghoulomb.mzn to clarify:
+
+- distinction between helper rulers and optimized ruler,
+- objective semantics as second-ruler span,
+- search intent over concatenated ruler variables.

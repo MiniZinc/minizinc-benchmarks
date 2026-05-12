@@ -51,6 +51,7 @@ set of int: Cols = 1..m;    % The set of columns
 % Variables
 
 array[Rows,Cols] of var 1..5: x;    % The number of residents
+% objective is total assigned score over the whole grid.
 var n*m..5*n*m: objective;          % The total number of all residents
 
 

@@ -28,6 +28,7 @@ int: z;                             % Normally the optimal value
 array[VRange] of var 0..1: x;               % Whether an item is packed
 array[CRange] of var 0..ub_array(b): bVar;  % Total weight in a bin
 
+% objective is total packed profit across all selected items.
 var 0..sum(c): objective;
 
 constraint objective = sum(i in VRange)(c[i] * x[i]);   % Total profit

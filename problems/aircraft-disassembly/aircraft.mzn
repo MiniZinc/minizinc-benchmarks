@@ -62,8 +62,11 @@ array[ACT] of int: occupancy; % occupancy requirement
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
 % DECISION VARIABLES
+% start[a] is the scheduled start time for activity a.
 array[ACT] of var TIME: start; % start time
+% assign[a,r] indicates whether resource r is assigned to activity a.
 array[ACT,RESOURCE] of var bool: assign; % assignment of resources to activities
+% contrib[a,r,s] indicates whether resource r contributes skill s to activity a.
 array[ACT,RESOURCE,SKILL] of var bool: contrib; % skill contribution assignment
 array[UNREL] of var bool: overlap; % overlapping of unrelated activities 
 
@@ -142,7 +145,8 @@ constraint forall(m in M, i in resAct[m])(
 % constraint for act_leq_act 
 constraint forall(i, j in ACT where i < j)( act_leq_act[i, j] \/ act_leq_act[j, i]); 
 
-% minimize the makespan
+% Objective: lexicographic-style weighting, primarily minimize makespan,
+% then minimize total labor cost among equal-makespan schedules.
 var int: objective = 100000 * max(start) + sum(a in ACT, r in RESOURCE)(resource_cost[r] * dur[a] * assign[a, r]); 
 solve :: seq_search([
   int_search(start, input_order, indomain_min),

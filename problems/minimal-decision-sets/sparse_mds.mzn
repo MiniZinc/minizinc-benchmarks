@@ -62,6 +62,7 @@ constraint forall(i in ITEM)
          
 % minimize number of 
 var 0..I: misclassified = sum(m);         
+% objective balances misclassification count against decision-set size.
 var int: objective = misclassified + Lambda*k;
 solve :: int_search([ if j = 1 then feat[i] else sign[i] endif | i in NODE, j in 1..2 ], input_order, indomain_min) 
           minimize objective;           

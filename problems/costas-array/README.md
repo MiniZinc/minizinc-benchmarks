@@ -49,3 +49,11 @@ Costas arrays were introduced by John P. Costas in the context of sonar and rada
 - MathWorld entry: [https://mathworld.wolfram.com/CostasArray.html](https://mathworld.wolfram.com/CostasArray.html)
 
 The model was contributed by Barry O'Sullivan (Cork Constraint Computation Centre, Ireland, September 2009).
+
+## Model update summary
+
+Added concise inline comments in `CostasArray.mzn` to clarify:
+
+- the core variables (`costas` permutation and `differences` triangular table),
+- the row-uniqueness constraint that defines the Costas array property,
+- the symmetry-breaking and redundant constraints used to assist solving.

@@ -47,3 +47,11 @@ $$\text{objective} = \text{board\_w} \times \text{board\_h}$$
 - **Author:** Jason Nguyen, Monash University (2022)
 - **Licence:** MIT
 - Stripboard (Veroboard) background: [Wikipedia – Stripboard](https://en.wikipedia.org/wiki/Stripboard)
+
+## Model update summary
+
+Added concise inline comments in stripboard.mzn to clarify:
+
+- placement and routing decision variable semantics,
+- feasibility interpretation for non-overlap and net connectivity,
+- minimization intent for board-area objective.

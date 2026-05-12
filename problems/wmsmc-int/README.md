@@ -54,3 +54,11 @@ Identifiable references from the model header:
 - Model by **Mikael Zayenz Lagerkvist (2021)**.
 - Licensed under **MIT License**: <https://opensource.org/licenses/MIT>
 - Notes indicate modifications by **MiniZinc Challenge Organisers**.
+
+## Model update summary
+
+Added concise inline comments in multisetcover.mzn to clarify:
+
+- candidate-copy and cost decision variable semantics,
+- multiset coverage feasibility constraints,
+- objective intent as minimizing total weighted cover cost.

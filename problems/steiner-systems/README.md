@@ -74,3 +74,11 @@ The benchmark includes five instances used in the MiniZinc Challenge 2021:
 - Hanani, H. (1960). _On quadruple systems_. Canadian Journal of Mathematics, 12, 145–157.
 - Stinson, D. R. (2004). _Combinatorial Designs: Constructions and Analysis_. Springer.
 - Wikipedia: [Steiner system](https://en.wikipedia.org/wiki/Steiner_system)
+
+## Model update summary
+
+Added concise inline comments in steiner-systems.mzn to clarify:
+
+- block-set decision variable semantics for design construction,
+- intersection and ordering feasibility interpretation,
+- satisfaction-only solve intent for valid Steiner systems.

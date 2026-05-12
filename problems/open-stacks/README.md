@@ -18,6 +18,14 @@ This is a well-known combinatorial optimisation problem, sometimes called the **
 
 The derived value `norders[i]` counts the total number of products ordered by customer `i`.
 
+## Model update summary
+
+Added concise inline comments in `open_stacks_01.mzn` to clarify:
+
+- the product manufacturing schedule (`s`) as a permutation of all products,
+- the cumulative order-tracking array (`o`) and how it evolves with each production step, and
+- the peak stack count objective and the logic for determining when a stack is open/closed.
+
 ## Decision Variables
 
 | Variable | Description                                                                                                                       |

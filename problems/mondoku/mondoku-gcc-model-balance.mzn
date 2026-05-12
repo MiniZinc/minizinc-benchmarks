@@ -111,6 +111,7 @@ constraint symmetry_breaking_constraint(value_precede_chain(Colors, array1d(puzz
 
 
 % Objective is to minimize the maximum difference for any row or column, as one way to keep it all balanced
+% objective is worst-case color-count imbalance over all rows and columns.
 var int: objective = max(diff_across ++ diff_down);
 
 %

@@ -119,3 +119,11 @@ Additional provenance from [metadata.json](metadata.json):
 - benchmark name: `spot5`
 - uses the global constraint `table`
 - appears in MiniZinc Challenge instance sets for 2014, 2015, and 2022.
+
+## Model update summary
+
+Added concise inline comments in spot5.mzn to clarify:
+
+- assignment decision variable semantics over acquisition options,
+- table-constraint feasibility interpretation for compatibility limits,
+- minimization intent for weighted rejection penalties.

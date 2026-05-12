@@ -59,3 +59,11 @@ A computed **lower bound** (`lb_lambda`) for λ is derived analytically from the
 ## Model Authors
 
 Pierre Flener and Jean-Noël Monette (model loosely based on Ralph Becket's BIBD model).
+
+## Model update summary
+
+Added concise inline comments in opd.mzn to clarify:
+
+- incidence-matrix decision variable semantics,
+- objective meaning as minimized lambda overlap,
+- optimization intent for low-correlation pairwise designs.

@@ -122,12 +122,12 @@ int: MaxRmRecSize = max(i in RmRecs)(max(rm_rec_len[i], rm_rec_wid[i]));
 %------------------------------------------------------------------------------%
 % Variables
 
-    % Roll length
+    % Roll length objective to minimize.
 var MinRollLen..MaxRollLen: objective;
 
     % Room carpets
-array [Rooms] of var DomX: rm_x;
-array [Rooms] of var DomY: rm_y;
+array [Rooms] of var DomX: rm_x;   % x-origin on roll (length axis)
+array [Rooms] of var DomY: rm_y;   % y-origin on roll (width axis)
 array [Rooms] of var Ori:  rm_vori;
 array [Rooms] of var bool: rm_ori_0_or_180;
 array [Rooms] of var bool: rm_ori_0_or_90;

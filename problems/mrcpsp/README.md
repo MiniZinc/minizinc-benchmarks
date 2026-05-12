@@ -94,3 +94,11 @@ per activity.
 - Sprecher, A., & Drexl, A. (1998). _Multi-mode resource-constrained project scheduling by a
   simple, general and powerful sequencing algorithm_. European Journal of Operational Research,
   107(2), 431–450.
+
+## Model update summary
+
+Added concise inline comments in mrcpsp.mzn to clarify:
+
+- start/mode/resource decision variable roles,
+- objective semantics as project makespan,
+- minimization intent for terminal activity completion time.

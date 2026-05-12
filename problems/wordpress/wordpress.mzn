@@ -316,6 +316,7 @@ constraint upperBound(AssignmentMatrix, VM, DNS_LoadBalancer, 1);
  ****                           ****
  ***********************************/
 var int: objective = sum(k in 1..VM)(Price[k]);
+% objective minimizes total VM deployment price.
 solve :: int_search(
   array1d(AssignmentMatrix) ++
   OccupancyVector ++

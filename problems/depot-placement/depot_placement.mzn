@@ -44,6 +44,7 @@ int: PSize;
 %   you can set the depot to a non-existent location
 % int: Depot = 0 ;
 %   ...or a variable over all the possible locations  
+% Depot location: decision variable ranging over all possible locations.
 var 1..TSize: Depot;
 
 % Total number of locations (Warehouses plus customers) in the problem.
@@ -79,24 +80,19 @@ int: ASize = TourLength + 1;
 int: BSize = TourLength + 1;  
 
 %----------------------------------------------------------------------------%
+%----------------------------------------------------------------------------%
 %
 % Variables
 %
 
-% Need two "NextCity" arrays when there's a depot!
-% This is the easy TSP model, with the awkward cost function
-% The tour for truck A, simply listed the locations visited
-% in the order of visits.
-% Each truck can visit any location.
-%
-array[1..ASize] of var 1..TSize: TourALoc ;
+% Tour representation for truck A: ordered list of locations visited in sequence.
+% Each truck can visit any location (subject to constraint restrictions).
+array[1..ASize] of var 1..TSize: TourALoc;
 
-% The tour for truck B.
-%
-array[1..BSize] of var 1..TSize: TourBLoc ;
+% Tour representation for truck B: ordered list of locations visited.
+array[1..BSize] of var 1..TSize: TourBLoc;
 
-% Set the complete distance table (see the .dzn files for actua numbers).
-%
+% Distance matrix: distances between all pairs of locations.
 array[1..14, 1..14] of int: AllDist;
 
 int: MaxTotDist = sum([max([AllDist[N,M] |M in 1..TSize]) | N in 1..TSize]) ;

@@ -132,6 +132,7 @@ array[allMatches] of var allBlocksInFunctionPlusNull: place;
 array[allBlocksInFunctionPlusNull] of var allBlocksInFunctionPlusNull: succ;
 
 % Cost.
+% objective minimizes execution-frequency-weighted latency of selected matches.
 var 0..sum (m in allMatches diff Dominated)( latencyOfMatch[m]* max ([execFrequencyOfBlocksPlusNull[x] | x in allBlocksInFunction])): objective;
 
 

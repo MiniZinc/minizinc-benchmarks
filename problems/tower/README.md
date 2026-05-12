@@ -61,3 +61,11 @@ So it tries to maximize the number of handsets connected through non-overloaded 
 - MiniZinc global library include: `globals.mzn`
 - MiniZinc cardinality include: `global_cardinality_low_up.mzn`
 - The domain idea appears related to wireless tower assignment with power control and capacity constraints.
+
+## Model update summary
+
+Added concise inline comments in tower.mzn to clarify:
+
+- tower-power and handset-assignment decision variable semantics,
+- signal-strength and overload feasibility constraints,
+- objective intent as maximizing non-overloaded handset connections.

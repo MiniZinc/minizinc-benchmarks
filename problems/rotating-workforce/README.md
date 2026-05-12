@@ -67,3 +67,11 @@ Nysret Musliu, Andreas Schutt, Peter J. Stuckey (2018).
 **"Solver Independent Rotating Workforce Scheduling."**  
 _Integration of Constraint Programming, Artificial Intelligence, and Operations Research (CPAIOR 2018)_, LNCS 10848, pp. 429–445.  
 <https://link.springer.com/chapter/10.1007/978-3-319-93031-2_31>
+
+## Model update summary
+
+Added concise inline comments in rotating-workforce.mzn to clarify:
+
+- cyclic plan decision variable semantics across workers and days,
+- regular/gcc modeling intent for shift-sequence feasibility,
+- satisfaction-only solve intent (no optimization objective).

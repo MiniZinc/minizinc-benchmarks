@@ -52,3 +52,11 @@ The solution is printed as a grid of characters:
 - Wiggers, W. (2004). _A comparison of approaches to solving nonograms_. Proceedings of the 16th Belgium-Netherlands Artificial Intelligence Conference (BNAIC 2004).
 - Ueda, N., & Nagao, T. (1996). _NP-completeness results for Nonogram via Parsimonious Reductions_. Technical Report TR96-0008, Tokyo Institute of Technology.
 - Simpson, G. (1987–). The puzzle was independently created by Non Ishida and Tetsuya Nishio in Japan and popularised under the name _Nonogram_ / _Picross_.
+
+## Model update summary
+
+Added concise inline comments in `non.mzn` to clarify:
+
+- that row/column clues are enforced via automata and `regular`,
+- where the clue-specific DFA is constructed, and
+- the intent of the row and column constraint blocks.

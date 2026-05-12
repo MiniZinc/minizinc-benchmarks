@@ -64,3 +64,11 @@ This gives both the selected per-cell dimensions and the final minimized total t
 - Model source: `TableLayout.mzn` in this folder.
 - Language reference (general MiniZinc concepts): https://docs.minizinc.dev/
 - MiniZinc global/standard library overview: https://docs.minizinc.dev/en/stable/lib.html
+
+## Model update summary
+
+Added concise inline comments in TableLayout.mzn to clarify:
+
+- cell-configuration and table-dimension decision variable semantics,
+- width/height feasibility interpretation for the selected layout,
+- objective intent as minimizing the final table height.

@@ -15,6 +15,7 @@ var 0..n_periods * max(worker_count): objective;
 constraint forall (t in Periods) (w[t] >= worker_count[t]);
 
 constraint network_flow_cost(
+  % Arc endpoints: first n_periods arcs model on-duty workers, next n_periods arcs model shift starts.
   array2d(
     1..2 * n_periods,
     1..2,
@@ -31,12 +32,13 @@ constraint network_flow_cost(
   ), % arc
   [0 | t in Periods], % balance
   [1 | i in Periods] ++
-  [0 | i in Periods], % weight
+  [0 | i in Periods], % weight (only on-duty worker arcs contribute to objective)
   array1d(1..n_periods, w) ++ array1d(1..n_periods, f), % flow
   objective % cost
 );
 
 constraint forall (t in 0..n_periods - 1) (
+  % Workers present in period t are those whose shifts started in the previous shift_periods periods.
   w[t] = sum (i in 1..shift_periods) (f[(t + i) mod n_periods])
 );
 

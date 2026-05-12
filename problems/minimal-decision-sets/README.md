@@ -95,3 +95,11 @@ Related background you may want to check:
 - Malioutov and Meel (2018), _Minds: Multi-Value Rule Sets from Data_ (and related sparse rule-learning work).
 
 If exact attribution is needed, an additional repository history or publication link would help an expert confirm provenance.
+
+## Model update summary
+
+Added concise inline comments in sparse_mds.mzn to clarify:
+
+- node feature/sign decision variable semantics,
+- objective trade-off between errors and model size,
+- minimization interpretation for sparse decision sets.

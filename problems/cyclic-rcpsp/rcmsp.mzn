@@ -79,6 +79,7 @@ var Times: makespan =
     % The objective:
     %   1. minimize the period of the schedule, i.e., "s[n_tasks]"
     %   2. minimize the makespan of one iteration, i.e., "makespan"
+% Encoded lexicographic objective: period first, then makespan.
 var 0.. (t_max * (1 + t_max)): objective =
     s[n_tasks] * t_max + makespan;
 

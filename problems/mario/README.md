@@ -62,3 +62,11 @@ Instances vary in size and difficulty (easy, medium, hard) based on the number o
 ## Authors
 
 Amaury Ollagnier, Jean-Guillaume Fages
+
+## Model update summary
+
+Added concise inline comments in mario.mzn to clarify:
+
+- successor/path decision variable semantics,
+- objective interpretation as collected gold,
+- optimization direction under fuel constraints.

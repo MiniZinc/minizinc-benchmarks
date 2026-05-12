@@ -70,3 +70,11 @@ The output also includes:
 - Model comments cite insights from Smith et al. (CP 2004).
 
 > Note on citation detail: the MiniZinc file references “Smith et al., CP'2004”, but does not include full bibliographic metadata (full title, authors list, pages, DOI). If you need a precise academic citation, an additional literature lookup is recommended.
+
+## Model update summary
+
+Added concise inline comments in peaceable_queens_mznc2021.mzn to clarify:
+
+- board-state decision variable semantics,
+- objective interpretation as balanced peaceful queen count,
+- maximization intent under non-attacking color constraints.

@@ -11,6 +11,7 @@ array [NODE, NODE] of int: edge_weights;
 
 int: m = count (i, j in NODE) (edge_weights[i, j] > 0);
 enum EDGE = Edge(1..m);
+% Flatten positive-weight edges into an indexed edge list.
 any: edges = array1d(EDGE, [(i, j) | i, j in NODE where edge_weights[i, j] > 0]);
 
 int: z_lb = 1;
@@ -21,8 +22,10 @@ int: c_sweep = max(i in NODE) (node_weights[i] + sum(j in NODE) (edge_weights[i,
 array [NODE] of var NODE: var_t;
 array [EDGE] of var NODE: var_l;
 array [EDGE] of var NODE: var_u;
+% var_s[t] and var_b[t] are sweep and blocking costs at time t.
 array [NODE] of var 1..c_sweep: var_s;
 array [NODE] of var 0..c_block: var_b;
+% var_i[e,t] indicates whether edge e must stay blocked at time t.
 array [EDGE, NODE] of var bool: var_i;
 var z_lb..z_ub: var_z;
 
@@ -40,8 +43,10 @@ constraint forall (i, t in NODE) (
 constraint all_different(var_t);
 
 constraint forall (e in EDGE, edge = edges[e], i = edge.1, j = edge.2) (
+  % var_l/var_u capture the active interval between endpoint clear times.
   if var_t[i] < var_t[j] then var_l[e] = var_t[i] /\ var_u[e] = var_t[j] endif /\
   if var_t[j] < var_t[i] then var_l[e] = var_t[j] /\ var_u[e] = var_t[i] endif /\
+  % Edge is blocked strictly between its endpoint clear steps.
   forall (t in NODE) (if var_l[e] <= t /\ var_u[e] >= t /\ var_t[i] != t /\ var_t[j] != t then var_i[e, t] endif)
 );
 

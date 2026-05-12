@@ -54,11 +54,19 @@ array[NODES, NODES] of int: distance = array2d(NODES,NODES,[
 % Variables
 % =================================================%
 
+% Core routing variables:
+% successor[n]: next node visited from node n (forms a circuit over all nodes).
 array[NODES] of var NODES: successor; 
-array[NODES] of var NODES: predecessor; % redundant predecessor variables
-array[NODES] of var VEHICLE: vehicle; % which vehicle visits which customer?
-array[NODES] of var LOAD: load; % load when arriving at node n in NODES
-array[NODES] of var TIME: arrivalTime; % the time at which the vehicle serving node i will arrive at i
+% predecessor[n]: node visited immediately before node n (redundant; strengthens propagation).
+array[NODES] of var NODES: predecessor;
+% vehicle[n]: which vehicle (1..nbVehicles) is responsible for visiting node n.
+array[NODES] of var VEHICLE: vehicle;
+% Capacity and timing tracking:
+% load[n]: accumulated cargo load on the vehicle when arriving at node n.
+array[NODES] of var LOAD: load;
+% arrivalTime[n]: time at which the serving vehicle arrives at node n.
+array[NODES] of var TIME: arrivalTime;
+% objective: total travel time across all vehicle routes (to be minimised).
 var 0..timeBudget: objective;
 
 % =================================================%

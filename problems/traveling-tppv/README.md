@@ -76,3 +76,11 @@ The model prints:
 - Problem family: **Traveling Tournament Problem with Predefined Venues (TTPPV)**.
 - Challenge usage in this repository metadata: MiniZinc Challenge years **2014**, **2017**, **2022** for CIRC-labeled instances.
 - Related classical context: Traveling Tournament Problem (sports timetabling literature), with TTPPV as a venue-fixed variant.
+
+## Model update summary
+
+Added concise inline comments in ttppv.mzn to clarify:
+
+- opponent, venue, and travel decision variable semantics,
+- round-robin and streak-limit feasibility constraints,
+- objective intent as minimizing total team travel.

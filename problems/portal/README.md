@@ -66,3 +66,11 @@ Extra constraints remove obviously redundant action patterns (for example immedi
 
 - MiniZinc model source: `portal.mzn` (same folder)
 - Game concept inspiration: Valve’s _Portal_ series (high-level thematic inspiration; no formal citation in the model)
+
+## Model update summary
+
+Added concise inline comments in portal.mzn to clarify:
+
+- player/portal state decision variable semantics over time,
+- objective meaning as earliest goal-reaching step,
+- minimization intent for shortest feasible action plan.

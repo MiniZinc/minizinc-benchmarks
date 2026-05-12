@@ -95,5 +95,5 @@ var int: total_ETA = sum(v in 1..num_vehicles)(
     )
 );
 
-% Objective function to minimize distance
+% objective minimizes total ETA cost across the selected vehicle routes.
 solve :: int_search([order[v, c] | v in 1..num_vehicles, c in 1..total_places+1], first_fail, indomain_min, complete) minimize total_ETA;

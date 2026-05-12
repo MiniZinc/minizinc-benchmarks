@@ -77,3 +77,11 @@ The model prints:
 - In-file comments indicate this is an example solution for **FIT3022 Assignment 1** (dated 6 May 2008).
 - In-file note mentions a **2009 MiniZinc Challenge** formulation in `roster_model.old`.
 - Uses global predicates from MiniZinc’s `globals.mzn` (`exactly`, `at_least`, `at_most`).
+
+## Model update summary
+
+Added concise inline comments in roster_model.mzn to clarify:
+
+- weekly/day shift assignment decision variable semantics,
+- soft-violation interpretation for eve-morn and isolated-rest patterns,
+- minimization intent for roster quality penalties.

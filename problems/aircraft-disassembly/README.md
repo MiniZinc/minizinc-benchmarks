@@ -84,3 +84,11 @@ The large weight on makespan (100,000) means the primary goal is to **finish as 
 - Zhong, A. (2022). _Aircraft Disassembly Scheduling — Constraint Programming model_ (this model's author attribution).
 
 > **Note for reviewers**: The exact academic paper(s) that introduced this specific aircraft disassembly formulation were not conclusively identified. If you are aware of a direct publication, please add the full citation here.
+
+## Model update summary
+
+Added concise inline comments in aircraft.mzn to clarify:
+
+- decision variable roles (`start`, `assign`, `contrib`),
+- objective interpretation (makespan-first, then labor cost),
+- that updates are documentation-only and semantics-preserving.

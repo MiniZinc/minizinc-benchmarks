@@ -45,6 +45,7 @@ var int: number_assigned_shifts = sum (e in EMPLOYEE, s in SHIFT) (assigned[e, s
 var int: summed_abs_contract_diff = sum (e in EMPLOYEE) (abs(contract_diff[e]));
 par int: W = 1 + max(max (e in EMPLOYEE) (contract[e]), max (s in SHIFT) (stop_time[s] - start_time[s])); % Weight factor for objective to be lexicographical
 var int: objective = W*number_assigned_shifts - summed_abs_contract_diff;
+% objective prioritizes coverage, then minimizes workload imbalance.
 solve :: search maximize objective;
 ann: search = bool_search(assigned, input_order, indomain_max, complete);
 

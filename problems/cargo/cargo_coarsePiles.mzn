@@ -42,8 +42,10 @@ array[PILES] of int: ones = [1 | o in PILES];
 
 % ---------------------- VARIABLES -------------------------------
 
+% tS__/tS: stack start times (discretized and scaled).
 array[PILES] of var 0..T div discrStackStart: tS__;
 array[PILES] of var 0..T: tS = [tS__[o]*discrStackStart | o in PILES];
+% h__: discretized pad position for each pile.
 array[PILES] of var 0 .. (H div discrPadPos): h__;
 array[PILES] of var 0..T: tR;
 array[PILES] of var 0..T div discrStackStart: dT__;
@@ -91,6 +93,7 @@ constraint cumulative(tR, dR, ones, reclN);
 
 
 % --------------- OBJECTIVE --------------------------------------------
+% Minimize aggregate vessel delay (excluding first/last 5 vessels).
 
 int: obj_min = sum(v in 5..nV-5)(lb(tReady[v]) - eta[v] - dRtotal[v]);
 int: obj_max = sum(v in 5..nV-5)(ub(tReady[v]) - eta[v] - dRtotal[v]);

@@ -271,6 +271,7 @@ constraint forall(i in 1..card(weekend_days) - 1) (
 
 var 0..(4 * num_days): objective;
 
+% objective aggregates fairness and soft-violation penalties across the roster.
 constraint objective =
     sum(adj_days) + sum(wed_before_weekend) + week_day_bt + weekend_bt;
 

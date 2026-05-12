@@ -56,6 +56,7 @@ int: obj_max = sum(i, j in 0..N)(Distance[i+1, j+1]);
 var obj_min..obj_max: objective =
     sum( i in 0..N, j in 0..N ) (Distance[i+1, j+1] * x[i, j]); 
 
+% objective minimizes total route distance across all vehicle arcs.
 solve 
     :: int_search(u ++ [x[i, j] | i in 1..N, j in 1..N],
         first_fail, indomain_min, complete) 

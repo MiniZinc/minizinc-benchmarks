@@ -30,6 +30,7 @@ constraint forall(j in Reactions)  ((Vs[j] > 0) <-> (Zs[j] == true));        % Z
 constraint forall(i in Metabolites) (sum(j in Reactions)(Vs[j] * S[i,j]) = 0);      % Sv = 0, steady-state
 constraint forall(i in Reversibles) (sum(j in Reactions)(Zs[j] * Revs[i,j]) <= 1);  % Respecting reversibilities
 
+% objective minimizes active reactions to obtain a smallest-support feasible mode.
 solve :: bool_search(Zs, first_fail, indomain_min, complete) 
          minimize sum(Zs);
 

@@ -31,6 +31,14 @@ It also defines `sum_d = sum(d)`, used as a safe upper bound for time variables.
 - `s[i]` (start time of task `i`): integer variable in `0..sum_d`.
 - `objective` (makespan): integer variable in `0..sum_d`, representing the project end time.
 
+## Model update summary
+
+Added concise inline comments in `rcpsp.mzn` to clarify:
+
+- the task scheduling variables (`s`) and project makespan (`objective`),
+- the precedence constraints between tasks and successor relations, and
+- the redundant non-overlapping constraints for resource-conflicting task pairs.
+
 ## Core constraints
 
 1. **Precedence constraints**  

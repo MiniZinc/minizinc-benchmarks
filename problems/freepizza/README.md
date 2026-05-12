@@ -79,3 +79,11 @@ However, the file does **not** state the original business source, competition s
 - Included in this repository as the MiniZinc benchmark **freepizza**.
 - The local metadata indicates that it appeared in the **MiniZinc Challenge 2015** benchmark set.
 - No explicit academic paper or original problem-source citation is included in the model or metadata, so the exact literature source could not be confirmed from the available files.
+
+## Model update summary
+
+Added concise inline comments in freepizza.mzn to clarify:
+
+- voucher-assignment decision variable semantics,
+- objective interpretation as total paid amount,
+- that edits are readability-only and behavior-preserving.

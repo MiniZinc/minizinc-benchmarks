@@ -26,12 +26,15 @@ int: n; % Size of Costas array
 %------------------------------------------------------------------------------%
 % Variables
 
+% costas: the permutation representing the Costas array.
 array[1..n] of var 1..n: costas;
+% differences[i,j] = costas[j] - costas[j-i] for i < j (triangular difference table).
 array[1..n,1..n] of var -n+1..n-1: differences;
 
 %------------------------------------------------------------------------------%
 % Constraints
 
+% All elements are distinct (valid permutation).
 constraint 
     alldifferent(costas);
 
@@ -49,27 +52,21 @@ constraint
 	);
 	
 
-% // All entries in a particular row of the difference triangle must be distint.
-% forall( i in 1..n-1 ) 
-%    alldifferent( all (j in 1..n: j>i) differences[<i,j>] );
+% Row uniqueness: all differences in each row i must be distinct.
+% This is the defining property of a Costas array.
 constraint 
     forall(i in 1..n-1)(
 	    alldifferent(j in 1..n where i < j)(differences[i,j])
 	);
 
 
-% // All the following are redundant - only here to speed up search.
-
-% // Symmetry Breaking
-% costas[1] < costas[n];
+% Symmetry breaking: eliminates mirror-image solutions.
 constraint 
     symmetry_breaking_constraint(
         if 1 < n then costas[1] < costas[n] else true endif
     );
 
-
-% // We can never place a 'token' in the same row as any other.
-% forall (p in pairs) differences[p] <> 0;
+% Redundant constraint: no difference can be zero (implied by permutation, helps solver).
 constraint 
     redundant_constraint(
         forall(i,j in 1..n where i < j)(

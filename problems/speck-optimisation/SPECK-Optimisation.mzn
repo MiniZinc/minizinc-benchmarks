@@ -84,4 +84,4 @@ solve
        bool_search(L, input_order, indomain_min),
        bool_search(R, input_order, indomain_min),
      ])
-minimize objective;
+  minimize objective; % objective minimizes total differential trail cost.

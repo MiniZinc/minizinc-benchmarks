@@ -44,6 +44,7 @@ array[1..no_flows] of var 0..10000: cost;
 % var 0..10000: load_cost;
 % var 0..10000: cpu_cost;
 var 0..10000: communication_cost;
+% objective minimizes the worst per-processor combined compute and communication load.
 var 0..10000: objective;
 
 array[1..2*no_flows] of var 1..k: flow_processor;

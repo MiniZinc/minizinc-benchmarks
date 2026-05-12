@@ -44,6 +44,7 @@ constraint forall(p1, p2 in PIZZA)((how[p1] < how[p2] /\ how[p1] = -how[p2])
 
 
 int: total = sum(price);
+% objective is total amount paid (non-free pizzas).
 var 0..total: objective = sum(p in PIZZA)((how[p] <= 0)*price[p]);
 
 solve :: int_search(how, input_order, indomain_min, complete)

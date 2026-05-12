@@ -103,3 +103,11 @@ Identifiable references from the model itself:
 - Included global constraint library file: `count.mzn` (MiniZinc standard/global constraint support)
 
 No external domain paper or data-source citation is embedded in `pax_model.mzn`, so problem-specific references are not directly identifiable from this file alone.
+
+## Model update summary
+
+Added concise inline comments in pax_model.mzn to clarify:
+
+- passenger-to-service assignment and onboard-count variable semantics,
+- objective interpretation as crowding penalty aggregation,
+- minimization intent under time-window compatibility constraints.

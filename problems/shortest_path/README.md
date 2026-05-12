@@ -81,3 +81,11 @@ therefore depends on how well it exploits the network-flow structure.
   _Numerische Mathematik_, 1, 269–271.
 - Ahuja, R. K., Magnanti, T. L., & Orlin, J. B. (1993). _Network Flows: Theory,
   Algorithms, and Applications_. Prentice Hall.
+
+## Model update summary
+
+Added concise inline comments in shortest_path.mzn to clarify:
+
+- edge-selection flow decision variable semantics,
+- source/sink conservation interpretation,
+- minimization intent for path length.

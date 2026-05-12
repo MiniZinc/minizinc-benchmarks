@@ -83,3 +83,11 @@ A lower objective value means a more balanced and comfortable roster.
 Model by **Julien Fischer** (Opturion Pty Ltd, <jfischer@opturion.com>).
 
 > **Note:** No academic paper has been identified for this specific model. If you are aware of a published reference, please update this README.
+
+## Model update summary
+
+Added concise inline comments in oc-roster.mzn to clarify:
+
+- roster assignment and fairness variable semantics,
+- objective composition from soft penalties,
+- minimization intent for balanced on-call schedules.

@@ -86,6 +86,7 @@ int: maxObj = sum(i in Teams, k in Travels)(ub(travel[i, k]));
 var 0..maxObj: objective; 
 constraint objective = sum (i in Teams, k in Travels) (travel[i,k]);
 
+% objective minimizes the total travel distance of the predefined-venue schedule.
 solve 
     :: seq_search([
         int_search([opponent[i, j] | i in Teams, j in Rounds], input_order, indomain_min, complete),

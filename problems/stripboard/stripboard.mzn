@@ -161,6 +161,7 @@ constraint disjunctive(
 var 1..max_w: board_w;
 var 1..max_h: board_h;
 var int: objective = board_w * board_h;
+% objective minimizes board area while satisfying net connectivity.
 solve :: seq_search(
   [int_search([component_orientation[c], component_x[c], component_y[c]], input_order, indomain_median) | c in reverse(sort_by(COMPONENT, [footprint_w[c] * footprint_h[c] | c in COMPONENT]))] ++
   [int_search([link_x[l], link_y[l], link_length[l]], input_order, indomain_median) | l in LINKS] ++

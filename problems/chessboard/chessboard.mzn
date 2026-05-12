@@ -1,48 +1,52 @@
 % Nontaking armies of pieces
 %    place knights, rooks, queens, bishops on a n*n chessboard
-%    so that none take each other. 
-enum PIECE = { N, B, R, Q, e }; % pieces
+%    so that none take each other.
+enum PIECE = { N, B, R, Q, e }; % pieces: N=knight, B=bishop, R=rook, Q=queen, e=empty
 int: n;                     % size of chessboard
-array[PIECE] of int: value; % value of each piece to place
-array[PIECE] of int: limit; % limit on each piece to place
+array[PIECE] of int: value; % value (score) of each piece type
+array[PIECE] of int: limit; % maximum number of each piece to place
 
 set of int: ROW = 1..n;
 set of int: COL = 1..n;
+% x[r,c]: piece occupying cell (r, c).
 array[ROW,COL] of var PIECE: x;
 
-
 include "global_cardinality.mzn";
-array[PIECE] of var 0..n*n: cnt; % counts on each piece
+% cnt[p]: count of how many times piece p appears on the board.
+array[PIECE] of var 0..n*n: cnt;
 % count the number of pieces used
 constraint global_cardinality(array1d(x), PIECE, cnt);
-% enforce upper bound
+% enforce upper bound on each piece type
 constraint forall(p in PIECE where p != e)(cnt[p] <= limit[p]);
-% enforce lower bound on empty
+% enforce lower bound on empty squares
 constraint cnt[e] >= n*n - sum(limit) + limit[e];
 
-% if a rook or queen in a ROW nothing else
+% Rooks and Queens: exclusive row control.
+% If a Rook or Queen is in any cell of a row, no other non-empty piece can occupy that row.
 constraint forall(r in ROW)
                  (exists(c in COL)(x[r,c] in { R, Q }) ->
                   count(c in COL)(x[r,c] != e) <= 1);
-% af a rook or queen in a COL nothing else
+% if a rook or queen in a COL nothing else
 constraint forall(c in COL)
                  (exists(r in ROW)(x[r,c] in { R, Q }) ->
                   count(r in ROW)(x[r,c] != e) <= 1);
-% redundant
+% Redundant: total rooks+queens cannot exceed board width.
 constraint cnt[R] + cnt[Q] <= n;
 
-% if a bishop or queen on an up diagonal nothing else
+% Bishops and Queens: exclusive diagonal control on upward diagonals.
+% If a Bishop or Queen is on an upward diagonal, no other non-empty piece can occupy that diagonal.
 constraint forall(d in 3..2*n-1)  % omit singleton diagonals
                  (exists(r in ROW)(x[r,d-r] in { B, Q }) ->
                   count(r in ROW)(x[r,d-r] != e) <= 1);
-% if a bishop or queen on an down diagonal nothing else
+% Bishops and Queens: exclusive diagonal control on downward diagonals.
 constraint forall(d in -n+2..n-2) % omit singleton diagonals
                 (exists(r in ROW)(x[r,r+d] in { B, Q }) ->
                  count(r in ROW)(x[r,r+d] != e) <= 1);
-% redundant
+% Redundant: total bishops+queens cannot exceed number of diagonals.
 constraint redundant_constraint(cnt[B] + cnt[Q] <= 2*n-1);
 
-% knights dont take anything
+% Knights: squares attacked via L-shaped move must remain empty.
+% Knight move: 2 squares in one direction, 1 square perpendicular (distance 3 in Chebyshev metric).
 constraint forall(r in ROW, c in COL)
                  (x[r,c] = N ->
                   forall(rr in r-2..r+2, cc in c - 2..c+2 
@@ -50,7 +54,7 @@ constraint forall(r in ROW, c in COL)
                                abs(r - rr) +abs(c - cc) = 3)
                         (x[rr,cc] = e));  
                         
-% redundant
+% Redundant: knights on board cannot exceed half the cells (since board is bipartite and knights move to opposite color).
 constraint redundant_constraint(cnt[N] <= (n*n + 1) div 2);
          
 array[ROW,COL] of var 1..5: y;
@@ -63,8 +67,10 @@ solve :: int_search(array1d(y), input_order, indomain_min)
 var int: obj;
 constraint obj = sum(r  in ROW, c in COL)(value[x[r,c]]);
 
-% dominance rules
+% Dominance rules: prevent placing Queens when cheaper pieces (Rooks, Bishops) are not fully used.
+% If Queen value <= Bishop value, can only place Queens if all allowed Bishops are already placed.
 constraint if value[Q] <= value[B] then cnt[Q] > 0 -> cnt[B] = limit[B] endif;
+% If Queen value <= Rook value, can only place Queens if all allowed Rooks are already placed.
 constraint if value[Q] <= value[R] then cnt[Q] > 0 -> cnt[R] = limit[R] endif;
 
 

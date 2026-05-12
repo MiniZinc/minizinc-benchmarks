@@ -98,3 +98,11 @@ So this README describes the implemented optimization model faithfully, but some
 From the repository metadata, this model appears as the `steelmillslab` benchmark and includes instances used in the **MiniZinc Challenge 2017** and **2019**.
 
 The problem name strongly suggests the well-known **Steel Mill Slab Design** benchmark, but the exact paper or original industrial source is **not explicitly referenced in the model file**, so that identification should be treated as likely rather than certain.
+
+## Model update summary
+
+Added concise inline comments in `steelmillslab.mzn` to clarify:
+
+- how bin_packing_load computes load on each slab,
+- the precomputed frees array and its role in waste calculation, and
+- the constraint limiting distinct colours per slab.

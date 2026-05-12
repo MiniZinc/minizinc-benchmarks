@@ -145,6 +145,7 @@ ann: heuristic = seq_search([
     bool_search(sde[.., Weekend, ..],    order, indomain_max),
     bool_search(sde[.., .., ..],         order, indomain_max),
 ]);
+% satisfaction model searches any schedule meeting all rotation rules.
 solve :: heuristic satisfy;
 
 function string: display(ShiftsAndOff: shift) = 

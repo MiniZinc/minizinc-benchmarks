@@ -11,18 +11,22 @@ int: p; % numer of products
 set of int: Custs = 1..c;
 set of int: Prods = 1..p;
 
-array[Custs,Prods] of 0..1: orders; % which customer orders which product
+% Orders matrix: binary array indicating which customers ordered which products.
+array[Custs,Prods] of 0..1: orders;
 
+% Total number of products ordered by each customer.
 array[Custs] of int: norders = [ sum(j in Prods)(orders[i,j]) | i in Custs ];
-	     %% total orders of each customer
 
 %-- Decision variables --------------------------------------------------------
 
-array[Prods] of var Prods: s; % schedule of products
+% Production schedule: a permutation of all products, defining manufacturing order.
+array[Prods] of var Prods: s;
 
-%-- Auxilliary variables ------------------------------------------------------
+%-- Auxiliary variables ------------------------------------------------------
 
-array[Custs,0..p] of var 0..max(norders): o ; % orders filled after time t
+% Cumulative orders fulfilled: o[i,t] counts how many products customer i has received by time t.
+array[Custs,0..p] of var 0..max(norders): o;
+% Objective: peak number of simultaneously open stacks across all time steps.
 var 0..c: objective;
 
 %-- Constraints ---------------------------------------------------------------

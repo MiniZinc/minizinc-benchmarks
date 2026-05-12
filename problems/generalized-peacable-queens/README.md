@@ -52,3 +52,11 @@ The solved board is printed with `.` for empty squares and a letter (`A`, `B`, `
 - Bierlee, H. (2022). _Generalized Peaceable Queens_ (MiniZinc model). Licensed under the MIT License.
 - Smith, B. M., Stergiou, K., & Walsh, T. (2004). _Modelling the Peaceable Queens Problem_. Workshop on Constraint Modelling and Reformulation, CP 2004.
 - OEIS Foundation. _A250000: Peaceable Queens_. [https://oeis.org/A250000](https://oeis.org/A250000)
+
+## Model update summary
+
+Added concise inline comments in peaceable_queens.mzn to clarify:
+
+- board occupation variable semantics,
+- objective meaning as per-army queen count,
+- optimization interpretation under equal-army-size constraints.

@@ -59,6 +59,7 @@ int: INF = 9999 ;  % Infinity
 array[0..N] of var 0..p_ub: r;  % Removal time from each tank 
 constraint forall(i in 0..N)( r[i] <= objective );
 
+% objective is the cyclic period; minimizing it maximizes throughput.
 var p_lb..p_ub: objective;  % Cycle period
 array [0..N] of var 1..Hoists: hoist ;  % Which hoist removes job from each tank
 constraint symmetry_breaking_constraint(hoist[0]=1) ;  % Symmetry breaking constraint

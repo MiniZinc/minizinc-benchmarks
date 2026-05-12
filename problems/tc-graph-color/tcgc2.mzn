@@ -51,6 +51,7 @@ constraint forall (s in STEPS) (valid_coloring([a[s,n] | n in NODES],heads,tails
 constraint forall (i in 1..max_s-1) ( i < s -> sum (n in NODES) (a[i,n] != a[i+1,n]) <= k);
 constraint forall (i in 1..max_s-1) (i >= s -> forall (n in NODES) (a[i,n] == a[i+1,n]));
 
+% objective minimizes the number of steps needed to reach the target coloring.
 solve 
 ::seq_search([
 	int_search([s],input_order,indomain_min,complete),

@@ -73,3 +73,12 @@ The map symbols represent plank ends/body and pillar edges/interior.
 
 - MiniZinc global constraint library: `diffn` (included via `include "diffn.mzn"`).
 - This explanation is based on the model source file: `pillars-planks-solution.mzn`.
+
+## Model update summary
+
+Added concise inline comments in `pillars-planks-solution.mzn` to clarify:
+
+- plank and pillar position arrays and their meaning,
+- the extended arrays that encode ground as index 0 with special height,
+- the no-overlap diffn constraint and support relationships, and
+- how pillar-support constraints link vertical alignment between objects.

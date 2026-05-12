@@ -53,3 +53,11 @@ This model is a pure **feasibility** problem. The solver simply searches for a s
 
 - Nysret Musliu, Andreas Schutt, and Peter J. Stuckey. _The Rotating Workforce Scheduling Problem_. In Proceedings of the 17th International Conference on Principles and Practice of Constraint Programming (CP 2011), Lecture Notes in Computer Science, Springer, 2011.
 - Model copyright © 2022 Mikael Zayenz Lagerkvist (MIT License).
+
+## Model update summary
+
+Added concise inline comments in rotating-workforce-scheduling.mzn to clarify:
+
+- weekly shift assignment decision variable semantics,
+- regular/sliding-sum feasibility interpretation for rest and nights,
+- satisfaction-only solve intent for valid rotating rosters.

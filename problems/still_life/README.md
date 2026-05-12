@@ -58,3 +58,11 @@ The goal is to **maximise the total number of live cells** while satisfying all 
 - **Model author**: Ralph Becket `<rafe@csse.unimelb.edu.au>`, University of Melbourne.
 - Conway's Game of Life: M. Gardner, "Mathematical Games — The fantastic combinations of John Conway's new solitaire game 'life'", _Scientific American_, 223(4):120–123, 1970.
 - The still-life problem has been studied as a constraint satisfaction benchmark; see, e.g., B. Bremermann, and work within the MiniZinc benchmark suite.
+
+## Model update summary
+
+Added concise inline comments in still_life.mzn to clarify:
+
+- cell-state and neighbour-count decision variable semantics,
+- still-life feasibility interpretation of Life rules,
+- maximization intent for live-cell density.

@@ -57,3 +57,11 @@ This is a **satisfaction** problem — there is no quantity being minimised or m
 - MiniZinc Challenge 2014: <https://www.minizinc.org/challenge2014/challenge.html>
 - MiniZinc Challenge 2019: <https://www.minizinc.org/challenge2019/challenge.html>
 - Numberlink puzzle (general description): Nikoli, _Numberlink_, <https://www.nikoli.co.jp/en/puzzles/numberlink/>
+
+## Model update summary
+
+Added concise inline comments in amaze3.mzn to clarify:
+
+- board decision-variable meaning,
+- redundant-constraint purpose for pruning,
+- solve mode as pure satisfaction (no optimization).

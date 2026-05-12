@@ -80,9 +80,10 @@ array[1..17, 1..3] of int: layout;
 % Variables
 %------------------------------------------------------------------------%
 
-% Card at position
+% Card sequence representation:
+% x[i]: which card (1-52) is played at step i in the sequence.
 array[1..52] of var 1..52: x;
-% Position of card
+% y[c]: at which step is card c played (inverse of x; linked by inverse constraint).
 array[1..52] of var 1..52: y;
 
 
@@ -90,11 +91,11 @@ array[1..52] of var 1..52: y;
 % Constraints
 %------------------------------------------------------------------------%
 
-% Ace of Spades is first card
+% Starting constraint: Ace of Spades (card 1) must be played first.
 constraint x[1] == 1;
 
-
-% Consecutive cards match
+% Rank adjacency: consecutive cards in sequence must differ by exactly 1 in rank.
+% (Ace is adjacent to both 2 and King; enforced via neighbours table.)
 constraint
 	forall(i in 1..51) (
 		 table([x[i], x[i+1]], neighbours)

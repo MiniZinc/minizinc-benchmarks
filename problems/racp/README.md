@@ -82,3 +82,11 @@ The model prints:
 The model header states it is derived from:
 
 - Stefan Kreter, Andreas Schutt, Peter J. Stuckey, Jürgen Zimmermann (2018). _Mixed-integer Linear Programming and Constraint Programming Formulations for Solving Resource Availability Cost Problems_. European Journal of Operational Research, 266(2), 472–486. https://doi.org/10.1016/j.ejor.2017.10.014
+
+## Model update summary
+
+Added concise inline comments in racp.mzn to clarify:
+
+- task start and resource capacity decision variable semantics,
+- cumulative/precedence modeling role for feasibility,
+- minimization intent for resource availability cost.

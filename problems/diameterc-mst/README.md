@@ -65,3 +65,11 @@ The Diameter-Constrained Minimum Spanning Tree is a well-studied combinatorial o
 - Santos, A. C., de Sousa, A., Alvelos, F., Dzalbs, I. (various years) — several works have applied constraint programming and integer programming to DC-MST variants.
 
 > **Note:** The specific source or academic paper for this MiniZinc model is not definitively known. If you are aware of the original publication, please update this section.
+
+## Model update summary
+
+Added concise inline comments in dcmst.mzn to clarify:
+
+- diameter enforcement through rooted depth variables (h, p),
+- odd/even diameter center handling via edge-center vs node-center roots,
+- purpose of redundant pruning constraints for search efficiency.

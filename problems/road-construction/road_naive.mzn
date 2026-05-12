@@ -50,6 +50,7 @@ var obj_min..obj_max: objective;
 
 constraint objective = sum (x,y in N where x<y) (sp[x,y,n]);
 
+% objective minimizes total final pairwise shortest-path distance.
 solve 
 	:: seq_search([
 		bool_search([construct[x,y] | x,y in N], input_order, indomain_max, complete),

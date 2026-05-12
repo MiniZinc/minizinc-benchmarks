@@ -67,6 +67,7 @@ solve
 		int_search(p, first_fail, indomain_min, complete),
 		int_search([objective], input_order, indomain_min, complete)
 	])
+	% objective minimizes weighted penalties for rejected acquisitions.
 	minimize objective;
 
 constraint

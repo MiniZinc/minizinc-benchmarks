@@ -274,6 +274,7 @@ array[int] of set of int: sets;
 
 %% problem variables
 
+% objective captures weighted schedule/register-allocation quality.
 var 0..MAXF: objective;
 array[0..MAXO] of var bool: a;
 array[0..MAXO] of var 1..MAXINSNS: ii; % same as in gecode-solver
@@ -528,6 +529,8 @@ constraint
     );
 
 %% objective, bounds on (out) cycle
+%% optimize_cycles=true minimizes weighted block completion cycles;
+%% otherwise it minimizes modeled resource-consumption cost.
 
 constraint
     forall(b in 1..MAXB) (

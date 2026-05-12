@@ -109,3 +109,11 @@ hot code paths.
 - Roberto Castañeda Lozano, Mats Carlsson, Gabriel Hjort Blindell, and
   Christian Schulte, "Combinatorial Register Allocation and Instruction
   Scheduling", _ACM Transactions on Programming Languages and Systems_, 41(3), 2019. [doi:10.1145/3301321](https://doi.org/10.1145/3301321)
+
+## Model update summary
+
+Added concise inline comments in model.mzn to clarify:
+
+- core selection/location decision variable roles,
+- objective semantics as weighted latency over selected matches,
+- preservation of solver behavior and constraints.

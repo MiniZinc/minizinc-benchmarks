@@ -46,6 +46,7 @@ constraint
         endif
     );
 
+% objective minimizes total length of selected source-to-target flow edges.
 solve minimize sum(e in Edges)( L[e] * x[e] );
 
 output [ "SP_Length = ", show(sum(e in Edges)( L[e] * x[e] )), ";\n",

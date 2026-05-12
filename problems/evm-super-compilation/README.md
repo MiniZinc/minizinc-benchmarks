@@ -97,3 +97,11 @@ The model comments reference a "CAV paper" (Computer-Aided Verification) as the 
 > Elvira Albert, Pablo Gordillo, Albert Rubio, Peter Schrammel. _GASOL: Gas Analysis and Optimization for Ethereum Smart Contracts_. Or a related CAV/FMCAD paper on EVM stack optimization.
 
 **Note:** The exact paper citation is uncertain. If you have more context about the origin of this model, please update this section with the correct reference.
+
+## Model update summary
+
+Added concise inline comments in evmopt-generic.mzn to clarify:
+
+- meaning of the primary objective variable (`length`),
+- solve-stage intent and optimization target,
+- relation between optimization target and opcode-sequence minimality.

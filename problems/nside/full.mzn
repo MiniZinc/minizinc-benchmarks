@@ -118,6 +118,7 @@ var 0..perterb_obj_ub: perterb_obj = max(i in DAY)(
         g[w] * perterb[road[w,a], i] * (i = d[w]+a)
     )
 );                            
+% objective maximizes worksheet importance minus worst-day perturbation.
 var -ub(perterb_obj)..ub(importance_obj): objective; 
 constraint objective = importance_obj - perterb_obj;
                            

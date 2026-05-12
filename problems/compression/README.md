@@ -79,3 +79,11 @@ This model appeared in the **MiniZinc Challenge 2024** with five benchmark insta
 The formulation is an original constraint programming model of combined dictionary + prefix-code compression. It is closely related to the concepts underlying classical algorithms such as LZ77/LZ78 and Huffman coding, but frames the joint optimisation as a single CP problem rather than applying the two stages independently.
 
 > **Note for experts:** It is unclear whether this model is directly derived from a specific academic publication. If you are aware of a reference, please update this README accordingly.
+
+## Model update summary
+
+Added concise inline comments in compression.mzn to clarify:
+
+- cover semantics for mapping each text byte to a pattern-position pair,
+- tree-depth cost interpretation as codeword length,
+- objective decomposition into dictionary and encoded-reference costs.

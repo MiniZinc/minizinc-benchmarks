@@ -68,3 +68,11 @@ This model appears to have been written by Kelvin Davis (2023). The problem is r
 - Servin, B., Martin, O. C., Mézard, M., & Hospital, F. (2004). "Toward a Theory of Optimal Marker-Assisted Gene Pyramiding." _Genetics_, 168(1), 513–523.
 
 If you are aware of a more specific publication associated with this exact formulation, please update this reference.
+
+## Model update summary
+
+Added concise inline comments in gametes.mzn to clarify:
+
+- crossover-control variable roles (`source`, `swap`),
+- objective semantics as number of crossing nodes,
+- optimization direction for minimal breeding plan size.

@@ -14,7 +14,9 @@ array [1..num_strings] of int: str_length;
 %------------------------------------------------------------------------------
 % Variables
 
+% Candidate median string (0 is padding / no character).
 array [1..max_length_strings] of var 0..max_char: median;
+% distances[i] is the edit distance between input string i and median.
 array [1..num_strings] of var 0..2*max_length_strings: distances;
 
 int: obj_ub = num_strings * 2 * max_length_strings;
@@ -25,6 +27,7 @@ var 0..obj_ub: objective;
 
 predicate lcs_global(array[int] of var int: S1, array[int] of var int: S2, var int: ED) =
 
+	  % Dynamic-programming table T computes insertion/deletion distance.
 	  let { int: l1 = min(index_set(S1)) - 1;
 	        int: l2 = min(index_set(S2)) - 1;
 		int: u1 = max(index_set(S1));
@@ -63,6 +66,7 @@ constraint forall(i in max_length_median+1..max_length_strings)(
   median[i] = 0
 );
 
+% Minimize total distance from median to all input strings.
 constraint objective = sum(i in 1..num_strings)(distances[i]);
 
 %------------------------------------------------------------------------------

@@ -138,6 +138,7 @@ solve
 	    int_search([cost], first_fail, indomain_split, complete),
 	    int_search([objective], first_fail, indomain_min, complete),
     ])
+	% objective minimizes step count first, then movement cost.
     minimize objective;
 
 %------------------------------------------------------------------------------%

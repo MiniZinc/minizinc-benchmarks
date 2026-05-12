@@ -144,6 +144,7 @@ constraint forall (v in otherVoices, t in 1..maxTime - max_stationary) (not all_
 constraint forall (v in otherVoices, t in 1..maxTime where t mod 8 = 1) (max (u in t..t + 7) (music[v, Time(u)]) - min (u in t..t + 7) (music[v, Time(u)]) > 4);
 
 % Objective
+% objective penalizes large leaps and non-preferred chord voicings.
 var int: objective :: output = sum(max_jump) + non_root + non_doubled_root;
 
 enum SearchVar = { ChordVar } ++ VoiceVar(Voice);

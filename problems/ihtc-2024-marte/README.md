@@ -74,3 +74,11 @@ The problem specification was defined by the IHTC 2024 competition organisers. F
 > https://ihtc2024.github.io/
 
 This MiniZinc model was written by **Michael Marte** (`informarte@freenet.de`) and subsequently modified by the MiniZinc Challenge Organisers to allow running under finite-domain (FD) solvers.
+
+## Model update summary
+
+Added concise inline comments in model.mzn to clarify:
+
+- key assignment variables for patients and nurses,
+- weighted objective semantics across S1..S8 penalties,
+- optimization intent preserving original model behavior.

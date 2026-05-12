@@ -19,7 +19,9 @@ array[Cavities] of var Positions: pfc;
 constraint all_different(pfc);
 
 
+% Hard precedence constraints.
 constraint forall (i in index_set_1of2(AtomicConstraints)) ( pfc[AtomicConstraints[i,1]] < pfc[AtomicConstraints[i,2]] );
+% At least one precedence in each disjunctive pair must hold.
 constraint forall (i in index_set_1of2(DisjunctiveConstraints)) (
   ( pfc[DisjunctiveConstraints[i,1]] < pfc[DisjunctiveConstraints[i,2]] \/
     pfc[DisjunctiveConstraints[i,3]] < pfc[DisjunctiveConstraints[i,4]] ) /\
@@ -28,6 +30,7 @@ constraint forall (i in index_set_1of2(DisjunctiveConstraints)) (
   else true endif
 );
 
+% If a paired chamber is processed first, its mate must follow immediately.
 constraint forall (i in index_set(DirectSuccessors)) (
   if DirectSuccessors[i]<= b then
     pfc[DirectSuccessors[i]] < pfc[DirectSuccessors[i]+b] -> pfc[DirectSuccessors[i]] +1 = pfc[DirectSuccessors[i]+b]
@@ -36,6 +39,7 @@ constraint forall (i in index_set(DirectSuccessors)) (
   endif
 );
 
+% Objective terms with lexicographic priority: S, then M, then L, then N.
 var int: S = if b=0 then 0 else sum(i in CableStarts) (abs(pfc[i]-pfc[i+b]) > 1) endif;
 var int: M = if b=0 then 0 else
 	(max(i in ChamberPairs) 

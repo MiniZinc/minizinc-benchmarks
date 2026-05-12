@@ -81,3 +81,11 @@ Identifiable sources from the repository:
 - Included in MiniZinc Challenge benchmark metadata for 2018 and 2020
 
 The model header also says “See README file for a detail description”, but that original source README is not present here, so this summary is based on the MiniZinc model itself and the accompanying metadata.
+
+## Model update summary
+
+Added concise inline comments in ecp.mzn to clarify:
+
+- match-result and final-position decision variable semantics,
+- rank-interval and position-constraint feasibility interpretation,
+- satisfaction-only solve intent for standings scenarios.

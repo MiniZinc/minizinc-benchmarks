@@ -54,3 +54,11 @@ This encourages schedules where workers perform longer, less-interrupted runs of
 
 - MiniZinc Challenge 2025: [https://www.minizinc.org/challenge/](https://www.minizinc.org/challenge/)
 - Original model authors: Mikael Zayenz Lagerkvist and Magnus Rattfeldt (2025)
+
+## Model update summary
+
+Added concise inline comments in work-task-variation.mzn to clarify:
+
+- schedule, run, and frequency-cost decision variable semantics,
+- workload coverage and shift-structure feasibility constraints,
+- objective intent as minimizing run and variation penalties.

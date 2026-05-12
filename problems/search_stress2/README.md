@@ -76,3 +76,11 @@ The four equality predicates are specifically engineered to limit constraint pro
 ## References
 
 - MiniZinc Challenge 2009: <https://www.minizinc.org/challenge2009/results2009.html>
+
+## Model update summary
+
+Added concise inline comments in `search_stress2.mzn` to clarify:
+
+- that `eq1`..`eq4` are alternate equality encodings used for stress testing,
+- how the row-to-row equality chain is built, and
+- that the final endpoint inequality intentionally creates an UNSAT benchmark.

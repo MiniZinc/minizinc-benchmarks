@@ -64,3 +64,11 @@ which is easy to post-process or inspect.
 - Model source in this repository: `todo/working/whirlpool/whirlpool-x.mzn`.
 - Repository metadata (classification/challenge info): `todo/working/whirlpool/metadata.json` (type: puzzle, kind: sat, challenge year listed as 2020).
 - No external paper/URL reference is explicitly embedded in the model file or metadata.
+
+## Model update summary
+
+Added concise inline comments in whirlpool-x.mzn to clarify:
+
+- grid-permutation decision variable semantics,
+- local/ring whirlpool feasibility constraints,
+- satisfaction-only solve intent for perfect-diagonal instances.

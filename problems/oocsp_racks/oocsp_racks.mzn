@@ -426,3 +426,4 @@ solve
 ::int_search(nrofobjects ++ Configuration_configtype ++ Frame_rack ++ Module_frame ++ Module_element ++ Rack_configuration ++ Element_configuration , input_order, indomain_min,complete)
 
 satisfy;
+  % satisfaction model: find any valid rack configuration meeting all class/assoc constraints.

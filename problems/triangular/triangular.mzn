@@ -40,6 +40,7 @@ constraint
 %------------------------------------------------------------------------------%
 % Search and Objective
 
+% objective maximizes the number of hearts placed on the triangular grid.
 solve 
     :: search
     maximize objective;

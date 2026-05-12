@@ -80,3 +80,11 @@ This problem appears to be an original constraint programming formulation of the
 
 - Mozilla's **chardet** library (originally by Shanjian Li and Rong Gong), which uses frequency tables and state machines for encoding detection.
 - The general problem of encoding detection is discussed in: Géry, M., & Haddad, H. (2003). _Evaluation of Web Documents Automatic Language and Encoding Recognition_. Proceedings of the 2003 ACM symposium on Applied computing.
+
+## Model update summary
+
+Added concise inline comments in jp-encoding.mzn to clarify:
+
+- roles of byte_status, encoding, and char_start decision arrays,
+- objective construction from per-encoding score tables,
+- unknown-byte penalty as a strong classification fallback cost.

@@ -63,3 +63,11 @@ The goal is to **maximise the total sum** of all numbers assigned across the ent
 
 IBM Research, _Ponder This Challenge — December 2012_.
 https://www.research.ibm.com/haifa/ponderthis/challenges/December2012.html
+
+## Model update summary
+
+Added concise inline comments in neighbours-rect.mzn to clarify:
+
+- grid assignment decision variable semantics,
+- objective interpretation as total neighbourhood score,
+- maximization intent with neighbour-chain constraints.

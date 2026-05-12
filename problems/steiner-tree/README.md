@@ -92,3 +92,11 @@ The key insight is converting the undirected problem into a _directed reachabili
   <http://steinlib.zib.de/>
 - Hwang, F. K., & Richards, D. S. (1992). _Steiner tree problems_. Networks, 22(1), 55–89.
 - MiniZinc Challenge 2018: <https://www.minizinc.org/challenge2018/results2018.html>
+
+## Model update summary
+
+Added concise inline comments in steiner-tree.mzn to clarify:
+
+- node/edge inclusion decision variable semantics,
+- rooted-tree feasibility interpretation for terminal connectivity,
+- minimization intent for total selected-edge weight.

@@ -4,10 +4,13 @@ set of int: ROW = 1..n;
 set of int: COL = 1..n;
 set of int: NUM = 1..n;
 set of int: NUM0 = 0..n;
+% Puzzle clues: the given numbers in each cell.
 array[ROW,COL] of NUM: clue;
 
-% decisions, which squares are marked as black
+% Decision variables:
+% filled[r,c] = true if cell is shaded (blacked out), false if unshaded.
 array[ROW,COL] of var bool: filled;
+% x[r,c] = cell value: equals clue if unshaded, 0 if shaded (for uniqueness checking).
 array[ROW,COL] of var NUM0: x =
   [(r,c): if filled[r,c] then 0 else clue[r,c] endif | r in ROW, c in COL];
 
@@ -19,8 +22,8 @@ constraint forall(r in ROW, c in COL)
                      /\ count(clue[..,c],clue[r,c]) = 1 
                  then filled[r,c] = false endif);
 */
-%% if two identical clues are adjacent all equal clue values in
-%% the row/col have to be filled in (since one of these two will not be)
+%% If two identical clues are adjacent, all other identical clues in same row/col must be shaded.
+%% (If the two adjacent identical clues are not shaded, then one must be shaded, leaving only one in the row/col.)
 constraint forall(r in ROW)
                  (let { int: cc = arg_max(
                         [ clue[r,c] = clue[r,c+1] | c in 1..n-1 ] 
@@ -37,12 +40,12 @@ constraint forall(c in COL)
                      forall(r in 1..n where r != rr /\ r != rr + 1 /\ 
                                       clue[r,c] = clue[rr,c])(filled[r,c])
                   endif);
-%% a cell between two identical cells cannot be filled
+%% No two shaded cells can be adjacent (horizontally or vertically).
 constraint forall(r in 2..n-1, c in COL)
                  (if clue[r-1,c] = clue[r+1,c] then not filled[r,c] endif);
 constraint forall(r in ROW, c in 2..n-1)
                  (if clue[r,c-1] = clue[r,c+1] then not filled[r,c] endif);
-%% simple corners
+%% Corners: if all three cells (corner + two adjacent) have same clue, corner must be shaded.
 constraint if clue[1,1] = clue[1,2] /\ clue[1,1] = clue[2,1] then filled[1,1] endif;
 constraint if clue[1,n] = clue[1,n-1] /\ clue[1,n] = clue[2,n] then filled[1,n] endif;
 constraint if clue[n,1] = clue[n,2] /\ clue[n,1] = clue[n-1,1] then filled[n,1] endif;

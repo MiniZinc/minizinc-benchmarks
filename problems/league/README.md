@@ -48,6 +48,14 @@ Each group will contain either `n_persons_in_group` or `n_persons_in_group − 1
 
 The central decision is the `assign_to` array — once players are assigned to groups, all other variables are determined.
 
+## Model update summary
+
+Added concise inline comments in `league.mzn` to clarify:
+
+- the problem parameters (`ranking`, `country`, group size limits),
+- the derived group count calculation,
+- the key decision variables for group assignment and group statistics (`n_persons`, `assign_to`).
+
 ---
 
 ## Constraints

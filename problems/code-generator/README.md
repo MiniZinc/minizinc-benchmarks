@@ -96,3 +96,11 @@ This model is the MiniZinc encoding used by the Unison integrated code generatio
 > _Principles and Practice of Constraint Programming (CP)_, 2012.
 
 The Unison project and source code are available at: http://unison-code.github.io
+
+## Model update summary
+
+Added concise inline comments in unison.mzn to clarify:
+
+- key decision-variable roles in integrated code generation,
+- objective-mode switch controlled by `optimize_cycles`,
+- semantics of cycle-based vs resource-based optimization.

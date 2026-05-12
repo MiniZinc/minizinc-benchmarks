@@ -82,3 +82,11 @@ The diagonal term (`dum = sum_i W[i,i]`) accounts for self-loop corrections in t
 - Newman, M. E. J. (2006). _Modularity and community structure in networks_. Proceedings of the National Academy of Sciences, 103(23), 8577–8582.
 - Wagstaff, K., Cardie, C., Rogers, S., & Schrödl, S. (2001). _Constrained K-means Clustering with Background Knowledge_. ICML 2001. (Background on must-link/cannot-link constraints.)
 - Guns, T., Dries, A., Tack, G., Nijssen, S., & De Raedt, L. (2013). _MiningZinc: A declarative framework for constraint-based pattern mining_. IJCAI 2013.
+
+## Model update summary
+
+Added concise inline comments in community-detection.mzn to clarify:
+
+- community-label decision variable semantics,
+- objective interpretation as scaled modularity,
+- separation of assignment constraints vs optimization target.

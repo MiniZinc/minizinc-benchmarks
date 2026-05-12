@@ -161,6 +161,7 @@ var 0..numPers*numDepartments: workingRisk = sum (i in 1..numPers where persRisk
   stationDepartment[lastStation[i,numDays]]
 );
 
+% objective balances staffing count, preference quality, risk, and station churn.
 var int: objective = workingPers * persWeight + preferences * preferenceWeight + workingRisk * riskWeight + stationChanges * stationWeight;
 
 solve :: search2

@@ -70,3 +70,11 @@ The problem itself is studied extensively in the operations research literature.
 > Shih, W. (1979). _A branch and bound method for the multiconstraint zero-one knapsack problem._ Journal of the Operational Research Society, 30(4), 369–378.
 
 This benchmark set appeared in the MiniZinc Challenge in **2015** and **2019**.
+
+## Model update summary
+
+Added concise inline comments in mknapsack_global.mzn to clarify:
+
+- packed-item and bin-load decision variable roles,
+- objective semantics as total profit,
+- maximization intent under multi-resource capacity limits.

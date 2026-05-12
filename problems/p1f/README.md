@@ -76,3 +76,11 @@ Likely relevant mathematical background includes:
 - Literature on 1-factorizations and Hamiltonian decompositions of complete graphs.
 
 I cannot confirm the exact paper this specific MiniZinc encoding was first published in from the model file alone. If you need an exact citation, a good next step is to trace this model via MiniZinc Challenge benchmark archives or Gecode/MiniZinc example repositories authored by Lagerkvist.
+
+## Model update summary
+
+Added concise inline comments in p1f.mzn to clarify:
+
+- matching matrix decision variable semantics,
+- objective role as canonical ordering tie-break,
+- optimization intent preserving perfect-factorization constraints.

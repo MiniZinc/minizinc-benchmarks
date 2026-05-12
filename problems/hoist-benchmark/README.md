@@ -68,3 +68,11 @@ This model accompanies the following publications by M. Wallace and N. Yorke-Smi
 ## Instance Naming Convention
 
 Data files are named `PU_M_H_X.json`, where `M` is the `Multiplier`, `H` is the number of `Hoists`, and `X` is an instance index. For example, `PU_2_4_3.json` is instance 3 with multiplier 2 and 4 hoists.
+
+## Model update summary
+
+Added concise inline comments in hoist-benchmark.mzn to clarify:
+
+- removal-time and hoist-assignment variable semantics,
+- objective interpretation as cycle period,
+- throughput meaning of period minimization.

@@ -49,3 +49,11 @@ $$\text{objective} = \sum_{o \in \text{Offer}} \text{price}[o] \times (\texttt{a
 - The model was authored by **Graeme Gange** (University of Melbourne) in April 2018.
 - No specific academic paper has been identified as the direct source of this problem instance; it may have originated as a benchmark for the [MiniZinc Challenge](https://www.minizinc.org/challenge.html). If you are aware of a primary reference, please update this README.
 - The `price` values may be negative, which means some concerts represent a financial loss and would only be accepted if necessary to fill time — though under pure revenue maximisation they would simply be rejected.
+
+## Model update summary
+
+Added concise inline comments in concert-hall-cap.mzn to clarify:
+
+- assignment semantics for accepted vs rejected offers,
+- clique construction for overlap-based hall exclusivity constraints,
+- objective interpretation as total accepted offer value.

@@ -111,6 +111,7 @@ constraint forall(c in curricula, p in periods)(
 
 %objective
 var int: objective;
+% weighted objective: load balancing penalty + undesirable assignment penalty.
 constraint objective = w1 * norm + w2 * undesirable_violation;
 
 %------------------------------------------------------------------------------%

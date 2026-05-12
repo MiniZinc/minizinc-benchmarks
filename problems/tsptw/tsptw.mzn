@@ -51,6 +51,7 @@ constraint circuit(pred) :: domain;
 constraint forall (l in Locations) (departure[l] <= late[l]);
 % Search strategy: first try to create the Hamiltonian circuit, then try to
 %                  reduce the arrival times.
+% objective minimizes the time of the tour returning to the depot.
 solve :: seq_search([int_search(pred, first_fail, indomain_min),
                      int_search([arrival[l] | l in arg_sort(early)],
                                 input_order, indomain_min)])

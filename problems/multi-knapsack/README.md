@@ -45,3 +45,11 @@ The included data instances (`mknap1-*` and `mknap2-*`) are drawn from the well-
 
 - Beasley, J. E. (1990). OR-Library: Distributing test problems by electronic mail. _Journal of the Operational Research Society_, 41(11), 1069–1072. Benchmark instances available at: http://people.brunel.ac.uk/~mastjjb/jeb/orlib/mknapinfo.html
 - Chu, P. C., & Beasley, J. E. (1998). A genetic algorithm for the multidimensional knapsack problem. _Journal of Heuristics_, 4(1), 63–86.
+
+## Model update summary
+
+Added concise inline comments in mknapsack.mzn to clarify:
+
+- binary item-selection variable semantics,
+- feasibility role of fixed-profit constraint with known z,
+- proof-of-optimality interpretation of solve satisfy.

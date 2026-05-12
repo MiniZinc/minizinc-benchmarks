@@ -48,10 +48,12 @@ int: UNIT_SELL_COUNT = count (x in trades, i in 1..x.units) (x.trade = Sell);
 enum UNIT_BUY = UnitBuy(1..UNIT_BUY_COUNT);
 enum UNIT_SELL = UnitSell(1..UNIT_SELL_COUNT);
 
+% Expand multi-unit trades into per-unit buy/sell records so each sold unit
+% can be matched to a specific bought unit.
 any: unit_buys = array1d(UNIT_BUY, [(date: x.date, stock: x.stock, price: x.price) | x in trades where x.trade = Buy, i in 1..x.units]);
 any: unit_sells = array1d(UNIT_SELL, [(date: x.date, stock: x.stock, price: x.price) | x in trades where x.trade = Sell, i in 1..x.units]);
 
-% The bought unit which was sold
+% origin[u] is the bought unit matched to sold unit u.
 array [UNIT_SELL] of var UNIT_BUY: origin;
 
 % Cannot sell the same unit twice
@@ -78,7 +80,7 @@ any: losses = sum (u in UNIT_SELL, sale = unit_sells[u], bought = unit_buys[orig
     bought.price - sale.price
 );
 
-% The taxable capital gains x2
+% Taxable gains multiplied by 2 to encode the 50% discount using integers only.
 any: double_capital_gains =
   if undiscountable_gains > losses then
     discountable_gains + 2 * undiscountable_gains - 2 * losses

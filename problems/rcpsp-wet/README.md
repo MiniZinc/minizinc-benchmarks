@@ -83,3 +83,11 @@ Intuition:
 - MiniZinc global constraint library: `cumulative.mzn`.
 - Problem family: Resource-Constrained Project Scheduling Problem (RCPSP), extended with weighted earliness/tardiness (WET).
 - Header attribution in the model: The University of Melbourne and NICTA (2009–2016).
+
+## Model update summary
+
+Added concise inline comments in rcpsp-wet.mzn to clarify:
+
+- task start-time decision variable semantics,
+- weighted earliness/tardiness objective interpretation,
+- minimization intent under precedence and resource constraints.

@@ -60,3 +60,11 @@ These constraints reflect the approximate real geography of Japan, and are hardc
 
 - This model appears to be an original formulation rather than one published in a specific academic paper. If a reference is known, it would be worth adding here.
 - The symmetry-breaking constraints are tied to specific named cities (Hokkaido, Chiba, Okinawa) by their positions in the array rather than by name matching. Care should be taken when adding new instances to ensure city ordering matches these assumptions.
+
+## Model update summary
+
+Added concise inline comments in city-position.mzn to clarify:
+
+- coordinate decision variables x and y as map placements,
+- objective bound construction for safe error-domain sizing,
+- objective meaning as total absolute distance mismatch.

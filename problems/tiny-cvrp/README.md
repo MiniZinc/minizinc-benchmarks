@@ -84,3 +84,11 @@ Because of these choices, treat the model as a compact/experimental CVRP variant
 - License header in the model: **MIT License**.
 
 No explicit paper citation, benchmark source URL, or original author metadata is embedded directly in this `.mzn` file.
+
+## Model update summary
+
+Added concise inline comments in TinyCVRP_ExactlyOneSolution.mzn to clarify:
+
+- vehicle-visit and order decision variable semantics,
+- capacity and visit-uniqueness feasibility constraints,
+- objective intent as minimizing total ETA cost.

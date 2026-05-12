@@ -14,8 +14,10 @@ int: size;
 array[1..ntiles,1..Dstart] of int: tiles;
 array[1..size] of int: dfa;
 
+% Flattened board; ntiles+1 is used as explicit end-of-row sentinel.
 array[1..width*height] of var filled..ntiles+1: board;
 
+% Sentinel can appear only in the last column of each row.
 constraint forall (h in 1..height, w in 1..width-1) (
     board[(h-1)*width+w] != ntiles+1);
 
@@ -33,6 +35,7 @@ constraint
                 [ dfa[i] | i in tiles[t,Dstart]+1..tiles[t,Dstart]+q*s] )
     }
     in
+      % Enforce each tile-specific automaton on the same board sequence.
       regular(board,q,s,d,1,f)
   );
 

@@ -50,6 +50,8 @@ var int: total_cost;
 constraint
     total_cost = sum(i in 1..N)(sum(t in 1..T )( Cost[i] * x[i,t] ));
 
+% objective minimizes total truck usage cost across all periods.
+
 output 
 [ "% Cost = ",  show(total_cost), "\n" ] ++ 
 [ "% X = \n%\t" ] ++

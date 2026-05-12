@@ -91,3 +91,11 @@ From in-file metadata/comments:
 - Author: **Kathryn Francis**.
 
 If you want formal literature references for TPP variants, those are not explicitly listed in this file and would need external bibliographic lookup.
+
+## Model update summary
+
+Added concise inline comments in tpp.mzn to clarify:
+
+- purchase-location and successor decision variable semantics,
+- travel/purchase cost feasibility constraints,
+- objective intent as minimizing total travel plus purchase cost.

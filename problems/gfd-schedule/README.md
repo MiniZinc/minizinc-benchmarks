@@ -78,3 +78,11 @@ The origin of this specific problem formulation is not entirely clear. It resemb
 industrial testing or quality-control scheduling scenarios where batches of products
 must be tested using shared laboratory equipment within time windows. If you have
 more context about the original application domain, please update this README.
+
+## Model update summary
+
+Added concise inline comments in gfd-schedule.mzn to clarify:
+
+- item/group/facility variable roles,
+- weighted objective semantics (`100 * deadLinePenalty + nGroups`),
+- readability-only nature of the edits.

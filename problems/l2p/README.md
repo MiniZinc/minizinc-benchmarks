@@ -72,3 +72,11 @@ The model relies on the CEGIS framework for completeness: because correctness is
 
 - MiniZinc Challenge 2013. [https://www.minizinc.org/challenge2013/](https://www.minizinc.org/challenge2013/)
 - Solar-Lezama, A. (2008). _Program Synthesis by Sketching_. PhD thesis, UC Berkeley. (Background on CEGIS-based synthesis.)
+
+## Model update summary
+
+Added concise inline comments in linear-to-program.mzn to clarify:
+
+- line assignment decision variable semantics,
+- objective meaning as shortest valid return line,
+- search intent for minimal synthesized program length.

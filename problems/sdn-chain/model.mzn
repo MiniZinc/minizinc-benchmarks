@@ -361,6 +361,7 @@ constraint
 
 
 % solve satisfy;
+% objective minimizes inter-domain gateway link cost for feasible SFC deployment.
 solve :: seq_search([
 	int_search(selected_domain, input_order, indomain_min),
 	int_search(selected_nodes, input_order, indomain_min),

@@ -93,3 +93,12 @@ One detail is not explicitly documented in the model: whether a “depot” shou
 - The model matches the classical **p-median / facility location** idea on a line.
 - It appears in this benchmark collection as the **fast-food** MiniZinc challenge model.
 - No explicit paper or source citation is included in the model file or metadata, so the exact original publication could not be confirmed from the available files.
+
+## Model update summary
+
+Added concise inline comments in `fastfood.mzn` to clarify:
+
+- why one representative restaurant per position is used in output,
+- why depot positions are restricted to restaurant positions,
+- why depot ordering is enforced (symmetry breaking), and
+- how objective bounds and the nearest-depot objective expression are intended to guide search and readability.

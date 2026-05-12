@@ -86,3 +86,11 @@ A few details are therefore uncertain:
 Identifiable references are limited.
 The folder metadata shows this benchmark appeared in the **MiniZinc Challenge 2014** instance set.
 No paper, author, or original industrial source is cited directly inside the model file.
+
+## Model update summary
+
+Added concise inline comments in smelt.mzn to clarify:
+
+- order/recipe timing and line assignment decision variable semantics,
+- resource-flow and production-rule feasibility interpretation,
+- weighted minimization intent prioritizing fewer violations then makespan.

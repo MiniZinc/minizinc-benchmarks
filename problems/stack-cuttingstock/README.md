@@ -100,3 +100,11 @@ Related background references include:
 - Faggioli, E., & Bentivoglio, C. A. (1998). _Heuristic and exact methods for the cutting sequencing problem_. European Journal of Operational Research, 110(3), 564–575.
 
 If a more specific source for this exact MiniZinc model becomes known, this section should be updated.
+
+## Model update summary
+
+Added concise inline comments in stack-cutstock-cumu.mzn to clarify:
+
+- pattern usage and repetition decision variable semantics,
+- stack-limit feasibility interpretation via cumulative overlap,
+- minimization intent for total stock pieces consumed.

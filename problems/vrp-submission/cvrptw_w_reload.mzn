@@ -207,6 +207,7 @@ constraint
 constraint
 objective = sum (depot in END_DEPOT_NODES) (arrivalTime[depot]) - sum (depot in START_DEPOT_NODES) (arrivalTime[depot]);
 
+% objective minimizes total route completion time over all vehicles.
 solve :: seq_search([int_search(successor, first_fail, indomain_split, complete),
 		     int_search(vehicle, first_fail, indomain_split, complete),
                int_search(arrivalTime, first_fail, indomain_min, complete)

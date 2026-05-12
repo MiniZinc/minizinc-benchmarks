@@ -22,12 +22,15 @@ array[int] of par int: order = arg_sort(ordSize);
 
 array[int] of var 1..nbSlabs: ordered = [ assign[order[nbOrders-p+1]] | p in 1..nbOrders ];
 
+% At most 2 distinct colours per slab.
 constraint forall(i in 1..nbSlabs) (
   sum([ bool2int(exists(o in 1..nbOrders where ordCol[o]=c)(assign[o] = i)) | c in 1..nbColours ]) <= 2
   );
 
+% Compute total size on each slab using bin_packing_load.
 array[1..nbSlabs] of var 0..max(sizes): loads = bin_packing_load(assign, [ordSize[i] | i in 1..nbOrders]);
 
+% For each load l, precompute the smallest viable slab size (waste = size - l).
 array[0..max(sizes)] of par int: frees = 
   array1d(0..max(sizes), [min([c - l | c in sizes where c >= l]) | l in 0..max(sizes)]);
 

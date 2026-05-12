@@ -48,6 +48,7 @@ constraint
    diffn(x, y, squars, squars)
 ;
 
+% satisfaction model finds any non-overlapping complete square placement.
 solve :: seq_search([
       int_search([x[n-i+1] | i in 1..n], smallest, indomain_min, complete),
       int_search([y[n-i+1] | i in 1..n], smallest, indomain_min, complete)

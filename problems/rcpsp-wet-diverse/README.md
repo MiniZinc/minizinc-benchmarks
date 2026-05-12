@@ -97,3 +97,11 @@ Identifiable from the model source:
 - Problem class: RCPSP/WET (Resource-Constrained Project Scheduling with Weighted Earliness/Tardiness).
 
 No explicit paper citation is embedded in this `.mzn` file.
+
+## Model update summary
+
+Added concise inline comments in rcpsp-wet-diverse.mzn to clarify:
+
+- multi-solution start-time decision variable semantics,
+- bi-objective dominance-grid interpretation,
+- maximization intent for diverse Pareto coverage.

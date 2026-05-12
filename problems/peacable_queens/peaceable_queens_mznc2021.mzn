@@ -135,6 +135,7 @@ constraint symmetry_breaking_constraint(value_precede(BLACK,WHITE,array1d(x)));
 array[int] of int: OPT = [0, 0, 1, 2, 4, 5, 7, 9, 12, 14, 17, 21, 24, 28, 32];
 % constraint objective >= OPT[n];
 
+% objective maximizes equal-sized black and white peaceful queen placements.
 solve :: int_search(array1d(x), input_order, indomain_min, complete) maximize objective;
 
 output [

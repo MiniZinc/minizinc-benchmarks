@@ -72,6 +72,7 @@ array[VACCINE] of var int: information =
              | v in VACCINE ]);
 
 var int: objective = min(information);
+% objective maximizes the worst vaccine information score across all vaccines.
 solve :: int_search(array1d(vg), input_order, indomain_max)
       maximize objective;
 

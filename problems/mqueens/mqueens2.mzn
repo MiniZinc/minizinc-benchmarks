@@ -8,10 +8,14 @@ int: n; % size
 %------------------------------------------------------------------------------%
 % Variables
 
+% Queen placement: filled[i,j] = true if queen is placed at row i, column j.
 array[1..n,1..n] of var bool: filled;
+% Integer encoding of filled (0 or 1 per cell), used in objective and constraints.
 array[1..n,1..n] of var 0..1: f = 
      array2d(1..n,1..n,[bool2int(filled[i,j]) | i,j in 1..n]);
+% q[i] = column position of queen in row i (0 if row i contains no queen).
 array[1..n] of var 0..n: q;
+% objective = number of queens placed.
 var 0..n: objective;
 
 %------------------------------------------------------------------------------%

@@ -36,21 +36,22 @@ array [Tasks] of set of int: suc;	% The task successors
 %-----------------------------------------------------------------------------%
 % Model variables.
 %
-array [Tasks] of var 0..sum_d: s;       % The start times
-var 0..sum_d: objective;                       % The total end time (makespan)
+% Task scheduling: start time for each task in the project.
+array [Tasks] of var 0..sum_d: s;       % The start times of tasks
+% Makespan: total project completion time (the value to be minimized).
+var 0..sum_d: objective;                % The project end time (makespan)
 
 
 %-----------------------------------------------------------------------------%
 % Constraints.
 %
-
-	% successor constraints
+	% Precedence constraints: successors must start after predecessors finish.
 constraint
 	forall(i in Tasks, j in suc[i])(
     	s[i] + d[i] <= s[j]
    	);
 
-	% Redundant non-overlapping constraints
+	% Redundant: pairwise non-overlapping for resource-conflicting tasks.
 constraint
 	forall(i, j in Tasks where i < j)(
 		if exists(r in Res)(rr[r,i] + rr[r,j] > rc[r]) then

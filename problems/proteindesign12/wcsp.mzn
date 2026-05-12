@@ -64,6 +64,7 @@ array[1..num_constraints2] of var 0..max_costs2: ocosts2;
 var 0..(top-1): objective;
 
 % solve minimize objective;
+% objective minimizes total unary and binary WCSP extension costs.
 solve 
 	:: seq_search([
 		int_search(p, first_fail, indomain_min, complete),

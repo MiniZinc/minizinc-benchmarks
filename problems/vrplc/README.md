@@ -74,3 +74,11 @@ The model includes an explicit search annotation (`seq_search(...)`) over `succ`
 Identifiable source from model header:
 - Edward Lam, Pascal Van Hentenryck (2016), *A branch-and-price-and-check model for the vehicle routing problem with location congestion*, **Constraints** 21(3): 394–412.
 - Link noted in source comments: https://link.springer.com/article/10.1007/s10601-016-9241-2
+
+## Model update summary
+
+Added concise inline comments in vrplc_service.mzn to clarify:
+
+- route, timing, and load decision variable semantics,
+- pickup/delivery and congestion feasibility constraints,
+- objective intent as minimizing total route travel time.

@@ -94,3 +94,11 @@ $$\text{objective} = \sum_{l \in \text{locations}} \text{used\_locations}[l] \ti
 - For the Zephyrus problem formulation see also: Mauro, J., Nieke, M., Sartori, C., Yu,
   I. C., *"Context Aware Reconfiguration in Component Based Systems"*, NordCloud / SCASE
   workshops (2015–2016).
+
+## Model update summary
+
+Added concise inline comments in zephyrus.mzn to clarify:
+
+- component, binding, and location decision variable semantics,
+- dependency and resource feasibility constraints,
+- objective intent as minimizing deployment location cost.

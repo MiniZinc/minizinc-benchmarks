@@ -108,6 +108,7 @@ array [TIME, 1..itemsPerCity] of var bool: chosen_order = [(t, i): chosen[city_i
 
 var int: objective = 100 * profit - rental;
 
+% objective maximizes item profit while penalizing slower travel through rental cost.
 solve :: seq_search([
     int_search(order, input_order, indomain_min),
     bool_search([chosen_order[t, i] | t in reverse(TIME), i in 1..itemsPerCity], input_order, indomain_max)

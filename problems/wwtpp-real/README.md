@@ -67,3 +67,11 @@ Identifiable from model comments:
 - Problem label in file: “Waste Water Treatment Plant Scheduling Problem”.
 
 No external paper/report citation is explicitly included in `wwtpp.mzn`.
+
+## Model update summary
+
+Added concise inline comments in `wwtpp.mzn` to clarify:
+
+- the three main variable groups (`buf`, `bout`, `c`) and their roles in flow management,
+- plant capacity constraint and tank balance propagation, and
+- boundary conditions (initial and final tank states).

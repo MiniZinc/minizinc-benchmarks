@@ -66,3 +66,11 @@ $$\text{minimise} \sum_{d \in \text{END\_DEPOT\_NODES}} \texttt{arrivalTime}[d]$
 - Dantzig, G. B., & Ramser, J. H. (1959). The Truck Dispatching Problem. _Management Science_, 6(1), 80–91. — The original formulation of the vehicle routing problem.
 - Toth, P., & Vigo, D. (Eds.) (2002). _The Vehicle Routing Problem_. SIAM Monographs on Discrete Mathematics and Applications.
 - Rendl, A., Guns, T., Stuckey, P. J., & Tack, G. (2015). Stochastic minizinc. _Proceedings of CP 2015_. — Likely context for this model's origin (note: attribution is approximate; please verify against the original source).
+
+## Model update summary
+
+Added concise inline comments in `cvrp.mzn` to clarify:
+
+- the core routing variables (`successor`, `predecessor`, `vehicle`) and their roles in building routes,
+- the capacity and timing tracking arrays (`load`, `arrivalTime`), and
+- the objective function representing total travel time across all vehicle routes.

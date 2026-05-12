@@ -43,3 +43,11 @@ This is [CSPLib Problem 030](https://www.csplib.org/Problems/prob030/).
 ## Reference
 
 - Béjar, R., Manyà, F., Cabiscol, A., Fernández, C., & Gomes, C. (2003). _The Balanced Academic Curriculum Problem_. CSPLib Problem 030. https://www.csplib.org/Problems/prob030/
+
+## Model update summary
+
+Added concise inline comments in curriculum.mzn to clarify:
+
+- assignment/load decision variable roles,
+- objective variable meaning as peak period load,
+- optimization direction (minimize maximum load).

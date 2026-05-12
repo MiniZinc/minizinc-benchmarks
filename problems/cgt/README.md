@@ -76,3 +76,11 @@ The loss-offsetting logic follows Australian Tax Office (ATO) rules: capital los
 - Prices are represented as **integers** (e.g. cents), so there are no floating-point values in the model.
 - This problem was contributed to the MiniZinc Challenge 2025 and was written by Jason Nguyen at Monash University.
 - No academic paper is known to be associated with this model; it is an original contribution based on real Australian tax rules. If you are aware of prior related work in the constraint programming or operations research literature, please raise an issue.
+
+## Model update summary
+
+Added concise inline comments in cgt.mzn to clarify:
+
+- unit-level expansion from trade records into unit_buys and unit_sells,
+- the matching decision variable origin and its role in buy/sell pairing,
+- integer-only taxable-gain computation via double_capital_gains.

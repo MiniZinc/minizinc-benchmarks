@@ -59,3 +59,11 @@ This problem is a variant of the **multi-robot arc routing** or **multi-agent co
 - Corberán, Á., & Laporte, G. (Eds.). (2015). _Arc Routing: Problems, Methods, and Applications_. SIAM. (Comprehensive reference for arc routing.)
 
 The specific formulation — with directed edges, a scan/traverse distinction, and a makespan objective — most closely resembles inspection or surveillance variants of arc routing. If the problem originates from an academic publication by Peter Schneider-Kamp (University of Southern Denmark), the original reference has not been identified with certainty and should be verified.
+
+## Model update summary
+
+Added concise inline comments in graph-scan-revised.mzn to clarify:
+
+- next/visit/scan decision variable roles,
+- objective semantics as fleet completion time,
+- minimization goal for earliest full edge coverage.

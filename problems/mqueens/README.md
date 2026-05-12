@@ -33,6 +33,14 @@ This is a well-studied combinatorics problem. Related work can be found in:
 | `q[i]`        | `0..n` (per row)  | The column position of the queen in row `i`, or `0` if row `i` has no queen       |
 | `objective`   | `0..n`            | The number of rows that contain a queen (i.e., the total number of queens placed) |
 
+## Model update summary
+
+Added concise inline comments in `mqueens2.mzn` to clarify:
+
+- the queen placement variables (`filled`, `f`, `q`) and what they represent,
+- the objective variable counting the total number of queens placed,
+- the symmetry-breaking predicates and their role in reducing search space.
+
 ## Constraints
 
 ### Domination and independence (main constraint)

@@ -52,3 +52,11 @@ The CCMCP is NP-hard in general (when $2 < K < \infty$), but solvable in polynom
 Vicky Mak-Hau. _On the kidney exchange problem: cardinality constrained cycle and chain problems on directed graphs: a survey of integer programming approaches._ Journal of Combinatorial Optimization, **33**:35–59, 2017. [https://doi.org/10.1007/s10878-015-9932-4](https://doi.org/10.1007/s10878-015-9932-4)
 
 Model authors: Edward Lam (Monash University) and Vicky Mak-Hau (Deakin University).
+
+## Model update summary
+
+Added concise inline comments in ccmcp.mzn to clarify:
+
+- successor and cycle decision variable roles,
+- objective semantics as total exchange utility,
+- optimization direction for best feasible cycle packing.

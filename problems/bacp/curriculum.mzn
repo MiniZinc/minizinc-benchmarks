@@ -38,7 +38,7 @@ array [courses] of var periods: course_period;
 array [periods, courses] of var 0..1: x;
 % total load for each period
 array [periods] of var load_per_period_lb..load_per_period_ub: load;
-% optimisation target
+% objective = maximum load across all periods (to be minimized).
 var load_per_period_lb..load_per_period_ub: objective;
 
 constraint forall(p in periods) (

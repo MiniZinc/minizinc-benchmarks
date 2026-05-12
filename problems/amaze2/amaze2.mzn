@@ -23,17 +23,20 @@ array[1..M] of set of 1..M : neighbours =
     (if j > 1 then {id[i, j-1]} else {} endif) union
     (if j < Y then {id[i, j+1]} else {} endif) | i in 1..X, j in 1..Y];
 
+% Map start and end coordinates to cell IDs.
 array[1..N] of 1..M : start = 
   [id[end_points_start_x[i], end_points_start_y[i]] | i in 1..N];
 
 array[1..N] of 1..M : end = 
   [id[end_points_end_x[i], end_points_end_y[i]] | i in 1..N];
 
+% path[c] = which pair's path uses cell c (0 if unused); next[c] = following cell in path.
 array[0..M] of var 0..N : path;
 array[1..M] of var 0..M : next;
 
 constraint path[0] = 0;
 
+% Endpoints belong to their pair; start has no incoming edge; end points to itself.
 constraint forall(i in 1..N)(
     sum(j in neighbours[start[i]]) (bool2int(next[j] = start[i])) = 0 /\
     next[end[i]] = end[i] /\
@@ -41,10 +44,12 @@ constraint forall(i in 1..N)(
     path[end[i]] = i
 );
 
+% Path ID propagates along the next chain.
 constraint forall(i in 1..M where not(i in {j | j in end}))(
   path[i] = path[next[i]]
 );
 
+% Non-start active cells must have exactly one incoming neighbor.
 constraint forall(i in 1..M where not(i in {j | j in start})) (
   path[i] != 0 -> 
   (sum(j in neighbours[i]) (bool2int(next[j] = i)) = 1)

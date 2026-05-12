@@ -39,6 +39,7 @@ array[M] of var M_opt: right;
 array[M] of var M_opt: lowest;
 array[M] of var M_opt: highest;
 
+% indexes[i] selects which input number fills leaf i (0 for non-leaf/non-used entries).
 array[M] of var N_opt: indexes;
 constraint count(indexes, 0, n-1);
 constraint alldifferent_except_0(indexes);
@@ -99,7 +100,7 @@ predicate is_unused(var M: i) = (
   true
 );
 
-% Tree subtree values
+% tree_vals stores evaluated subtree values for all nodes.
 array[M] of var 0..10*target: tree_vals;
 constraint forall (i in M) (
   (tree[i] == Val -> tree_vals[i] = numbers[indexes[i]]) /\
@@ -115,6 +116,7 @@ constraint forall (i in M) (
 
 /*constraint tree_vals[1] = target;*/
 
+% Objective: prioritize closeness to target, then use fewer input numbers.
 var int: objective = 10*abs(tree_vals[1] - target) + used;
 solve :: int_search([used] ++ indexes ++ tree, input_order, indomain_min) minimize objective;
 

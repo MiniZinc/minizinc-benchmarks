@@ -8,21 +8,27 @@ int: max_capacitat;
 array [SINDUSTRIES, STIMESTEPS] of int: d;
 set of int: SINDUSTRIES = 1..INDUSTRIES;
 set of int: STIMESTEPS = 1..TIMESTEPS;
+% buf[i,j] = wastewater stored in industry i's tank at step j.
 array [SINDUSTRIES, STIMESTEPS] of var 0..max(TankCapacity): buf;
+% bout[i,j] = wastewater released from tank i at step j.
 array [SINDUSTRIES, STIMESTEPS] of var 0..max(TankFlow): bout;
+% c[i,j] = wastewater sent directly to plant from industry i at step j.
 array [SINDUSTRIES, STIMESTEPS] of var 
   0..max(array1d(1..INDUSTRIES*TIMESTEPS, d)): c;
 array [SINDUSTRIES] of int: TankFlow;
 array [SINDUSTRIES] of int: TankCapacity;
 
+% Plant capacity constraint: total intake per timestep is limited.
 constraint
    forall ( j in STIMESTEPS ) (
        sum( i in SINDUSTRIES) ( c[i, j] + bout[i, j] ) <= max_capacitat
    );
+% Tank balance: initial storage = produced - direct discharge.
 constraint
    forall ( i in SINDUSTRIES ) (
        buf[i, 1]  =  d[i, 1] - c[i, 1]
    );
+% Boundary: all tanks must be empty at end of horizon.
 constraint
    forall ( i in SINDUSTRIES ) (
        buf[i, 24]  =  0

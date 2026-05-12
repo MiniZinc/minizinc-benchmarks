@@ -143,6 +143,7 @@ solve
         int_search([ board[i, j] | i in ROWS, j in COLS], 
             first_fail, indomain_min, complete)
     ])
+	% satisfaction model finds any board consistent with all puzzle clues.
     satisfy;
 
 output [ "% " ] ++ [ 

@@ -108,3 +108,11 @@ From the model alone, it is clear that this is an optimization problem about con
 - The model header describes this as **“FBD1 design construction.”**
 - No paper or bibliographic citation is included in the model or local metadata.
 - If a literature reference is needed, the safest next step is to trace the original benchmark submission or contact the benchmark maintainers for the source publication.
+
+## Model update summary
+
+Added concise inline comments in FBD1.mzn to clarify:
+
+- objective semantics (`objective = N`),
+- optimization direction (minimize design size),
+- that updates are readability-only and preserve model behavior.

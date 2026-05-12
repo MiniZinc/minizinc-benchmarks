@@ -26,6 +26,7 @@ int: horizon = sum(i in tasks)(d[i]);   % Trivial upper bound on the horizon
 % Variables
 
 array[tasks] of var 0..horizon: s;
+% objective is makespan (latest completion time among all tasks).
 var 0..horizon: objective = max(i in tasks)(s[i] + d[i]);
 
 %------------------------------------------------------------------------------%

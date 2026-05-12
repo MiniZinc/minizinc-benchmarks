@@ -64,6 +64,14 @@ the robot's throughput.
 - Travel times use the value `-1` to indicate that a location is *unreachable* by a given arm,
   encoding the physical workspace limits of each arm.
 
+## Model update summary
+
+Added concise inline comments in yumi-static.mzn to clarify:
+
+- task assignment, sequence, and timing decision variable semantics,
+- precedence and workspace-feasibility constraints,
+- objective intent as minimizing cycle period.
+
 ## References
 
 - Johan Ludde Wessén, *YuMiScheduler* model, 2021.

@@ -101,3 +101,11 @@ Identifiable references from the source itself:
 - The puzzle family is explicitly identified as **Solitaire Battleships**.
 
 No more specific publication or external source is identified directly in the file, so any stronger attribution would require checking material outside this directory.
+
+## Model update summary
+
+Added concise inline comments in sb.mzn to clarify:
+
+- board-state and occupancy decision variable semantics,
+- fleet-shape and row/column clue feasibility interpretation,
+- satisfaction-only solve intent for valid puzzle completion.

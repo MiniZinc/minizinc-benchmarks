@@ -76,3 +76,11 @@ The model solves:
 - Model header comment: **“Model for Test Scheduling Problem (CSPlib problem 073)”**.
 - Model attribution in file header: **Gustav Björdal (2018-05-17)**.
 - Folder metadata (`metadata.json`) indicates this benchmark appears in challenge sets for **2018** and **2023**.
+
+## Model update summary
+
+Added concise inline comments in test-scheduling.mzn to clarify:
+
+- test assignment and start-time decision variable semantics,
+- machine/resource feasibility constraints,
+- objective intent as minimizing final makespan.

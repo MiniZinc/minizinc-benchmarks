@@ -82,3 +82,11 @@ You can reshape it into `height x width` to view row-by-row structure.
 - MiniZinc language and standard library docs (including global constraints): https://docs.minizinc.dev/
 - `regular` global constraint (automaton constraint) in MiniZinc documentation: https://docs.minizinc.dev/en/stable/lib-globals.html
 - Background on pentomino tilings: https://en.wikipedia.org/wiki/Pentomino
+
+## Model update summary
+
+Added concise inline comments in `pentominoes-int.mzn` to clarify:
+
+- the role of the flattened board array and row-sentinel value,
+- why the sentinel is restricted to row ends, and
+- that each `regular` call applies a tile-specific automaton over the same board sequence.

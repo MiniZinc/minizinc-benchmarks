@@ -93,3 +93,11 @@ So the optimization target is the cycle period, with additional constraints tyin
 - Model header credits **Johan Ludde Wessén** (`YuMiScheduler`, latest update noted as 2021-06-23).
 - License header in the model states **MIT License**.
 - Benchmark metadata shows usage in MiniZinc challenge sets (including 2021 and 2024 instance lists in `metadata.json`).
+
+## Model update summary
+
+Added concise inline comments in yumi-dynamic.mzn to clarify:
+
+- arm assignment, location, and timing decision variable semantics,
+- routing and collision-avoidance feasibility constraints,
+- objective intent as minimizing cyclic period.

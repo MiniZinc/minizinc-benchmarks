@@ -65,3 +65,11 @@ The large weight of 100 on the deadline penalty ensures that meeting deadlines i
 ## Notes
 
 The origin of this specific problem instance set is not immediately clear from the model file. The name "gfd-schedule" may refer to an internal benchmark or an industrial application. If you have information about the original source, please update this README with an appropriate reference.
+
+## Model update summary
+
+Added concise inline comments in gfd-schedule2.mzn to clarify:
+
+- item/group/facility variable roles,
+- weighted objective semantics (`100 * deadLinePenalty + nGroups`),
+- readability-only nature of the edits.

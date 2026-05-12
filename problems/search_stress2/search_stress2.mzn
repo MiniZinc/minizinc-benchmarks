@@ -1,4 +1,5 @@
 
+% Four equivalent but differently-encoded equality gadgets used to stress search.
 predicate eq1(var int:x, var int:y, int: n, array[int] of var int:z) =
 	  assert(index_set(z) == 1..n /\ dom(x) == 0..n /\ dom(y) == 0..n,
 	  	 " eq1: third argument must be domain size of first and second argument and the size of fourth argument",
@@ -53,6 +54,7 @@ int: n; % size of domains
 
 array[1..m,0..n] of var 0..n: t;
 
+% Chain adjacent rows with alternating equality encodings.
 constraint
     forall(i in 1..m-1)(
     	     if i mod 4 == 1 then
@@ -66,6 +68,7 @@ constraint
 	     endif endif endif
     );
 
+% Final contradiction against the equality chain (benchmark is UNSAT by design).
 constraint t[1,0] != t[m,0];
 
 solve :: int_search([ t[i,j] | i in 1..m, j in 0..n ], input_order, 

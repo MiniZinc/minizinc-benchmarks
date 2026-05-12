@@ -105,3 +105,11 @@ The model comments suggest links to common UC literature and policy context:
 - A comment mentions a startup cap related to **U.S. DoE emission** considerations.
 
 No explicit paper citation, report title, DOI, or URL is included in the model file, so exact bibliographic references cannot be confirmed from this source alone.
+
+## Model update summary
+
+Added concise inline comments in Unit-Commitment.mzn to clarify:
+
+- commitment, generation, and loss-of-load decision variable semantics,
+- operational feasibility constraints for dispatch and ramping,
+- objective intent as minimizing total operating cost.

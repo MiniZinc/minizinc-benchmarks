@@ -94,6 +94,7 @@ solve
 		bool_search(followed , input_order, indomain_min, complete),
 		int_search([makespan], input_order, indomain_min, complete)
 	])
+	% objective prioritizes rule compliance, then shorter makespan.
    	minimize objective;
 
 %------------------------------------------------------------------------------%

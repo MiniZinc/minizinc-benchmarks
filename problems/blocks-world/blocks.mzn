@@ -41,12 +41,19 @@ set of int: step0 = 0..nk;
 array[cube] of cube0: start;
 array[cube] of cube0: end;
 
+% Core state and move tracking:
+% state[c,s]: block that block c is resting on at step s (encodes full stack configuration).
 array[cube0, step0] of var cube0: state;
+% count[c,s]: number of blocks resting directly on block c at step s (max 1 per block).
 array[cube0, step0] of var 0..k: count;
+% done[s]: whether goal configuration is achieved by step s.
 array[step0] of var bool: done;
+% move[i,1]: block being moved on step i; move[i,2]: what it was resting on before.
 array[step, 1..2] of var cube0: move;
+% locked[c,s]: whether block c is "locked in" (correctly placed with supporting chain also correct).
 array[cube, step0] of var bool: locked =
   array2d(cube, step0, [locked(c,s) | c in cube, s in step0]);
+% objective: total number of moves needed (minimised).
 var 0..nk: objective;
 
 constraint
@@ -76,19 +83,23 @@ constraint
 			     )
   );
 
+% Goal is reached when current state equals end configuration.
 constraint
   forall(i in step0)(state[cube,i] = end <-> done[i]);
 
+% Enforce state transitions: either apply a valid move or stay still.
 constraint
   forall(i in step)(
     if done[i-1] then nomove(i-1, i) else move(i-1, i) endif
   );
 
+% move(i0, i): exactly one block changes state, and it must be on top (no block on it).
 predicate move(int: i0, int: i) =
     move[i,1] != 0 /\
     forall(c in cube)(state[c,i0] != state[c,i] <-> c = move[i,1]) /\
     count[move[i,1],i0] = 0;
 
+% nomove(i0, i): no block moves; configuration stays identical.
 predicate nomove(int: i0, int: i) =
     move[i,1] = 0 /\
     state[..,i0] = state[..,i];

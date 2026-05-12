@@ -63,3 +63,11 @@ The solver seeks an assignment of valid words to all clues such that this sum is
   - Beacham, A., Chen, X., Sillito, J., & van Beek, P. (2001). _Constraint programming lessons learned from crosswords_. IJCAI-01 Workshop on Modelling and Solving Problems with Constraints.
 
 > **Note for reviewers**: The origin and authorship of this specific MiniZinc model (and its associated data files) are not entirely clear. If you know the original source, please update this README accordingly.
+
+## Model update summary
+
+Added concise inline comments in `crossword_opt.mzn` to clarify:
+
+- the decision variables for letter assignment (`xx`) and word selection (`ww`) per clue,
+- the relationship between clue words and grid letter placement, and
+- the objective function that maximizes the total score of letters placed.

@@ -57,3 +57,11 @@ The data instances are named using the pattern `{jobs}-{machines}-?-{speeds}_{id
 - `13-14-0-2_6.json` — 13 jobs, 14 machines, 2 speed levels, instance 6
 
 The meaning of the third numeric field (shown as `0` in the examples above) is not confirmed. It may represent a problem variant or generation parameter.
+
+## Model update summary
+
+Added concise inline comments in JSP0.mzn to clarify:
+
+- operation-level start-time and speed-scaling decision variables,
+- derived makespan and energy expressions,
+- combined objective interpretation (time + energy).

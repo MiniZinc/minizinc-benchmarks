@@ -98,3 +98,11 @@ References mentioned in the model source:
 - SATLIB parity benchmark description: http://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/DIMACS/PARITY/descr.html
 
 Uncertainty note: this README is based on the MiniZinc model comments and code. I have not independently verified the current availability of the SATLIB URL or whether a peer-reviewed publication supersedes the cited technical report.
+
+## Model update summary
+
+Added concise inline comments in parity-learning.mzn to clarify:
+
+- parity-bit and sample-parity variable roles,
+- objective semantics as minimal disagreement count,
+- minimization intent under bounded noise assumptions.

@@ -83,4 +83,5 @@ constraint objective = sum(c in Candidates) (candidate_weights[c] * candidate_co
 % The problem is a minimization problem
 %
 
+% objective minimizes weighted cost of selected candidate copies.
 solve :: int_search(candidate_copies, input_order, indomain_min, complete) minimize objective;

@@ -14,7 +14,9 @@ array[JOBS,MACHINES,1..SPEED] of int: energy;
 array[JOBS,MACHINES] of int: precedence;
 
 % variables
+% start_time[j,m] is the start time of job j on machine m.
 array[JOBS,MACHINES] of var 0..sum(time): start_time :: output;
+% SpeedScaling[j,m] selects processing-speed level for each operation.
 array[JOBS,MACHINES] of var 1..SPEED: SpeedScaling :: output;
 
 
@@ -36,6 +38,7 @@ constraint forall(j1 in JOBS, j2 in JOBS, m in MACHINES where j1 < j2)(
 var int: makespan :: output                    = max([start_time[j,m] + time[j,m,SpeedScaling[j,m]] | m in MACHINES, j in JOBS]);
 var int: consumedEnergy :: output              = sum(m in MACHINES, j in JOBS) (energy[j,m,SpeedScaling[j,m]]);
 
+% Joint objective balances completion time and energy consumption.
 var int: objective = makespan + consumedEnergy;
 
 % solve :: int_search(

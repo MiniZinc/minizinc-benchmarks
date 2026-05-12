@@ -83,3 +83,11 @@ You can draw all such squares on a `size × size` grid to visualize the packing.
 
 - N. Beldiceanu, E. Bourreau, H. Simonis, _A Note on Perfect Square Placement_ (as cited in the model comments).
 - MiniZinc global constraint library (`globals.mzn`), including `diffn`.
+
+## Model update summary
+
+Added concise inline comments in perfect_square.mzn to clarify:
+
+- placement decision variable semantics for square coordinates,
+- non-overlap intent enforced by diffn,
+- satisfaction-only solve intent for feasible packings.

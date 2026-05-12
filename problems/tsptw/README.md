@@ -76,3 +76,11 @@ So it tries to minimize the time when the tour gets back to the depot (equivalen
 - Model file: `tsptw.mzn` in this folder.
 - Header attribution in model: Copyright 2025 Frej Knutar Lewander (MIT-style license text included in-file).
 - MiniZinc global used: `circuit` from `globals.mzn`.
+
+## Model update summary
+
+Added concise inline comments in tsptw.mzn to clarify:
+
+- predecessor and arrival-time decision variable semantics,
+- circuit and time-window feasibility constraints,
+- objective intent as minimizing return-to-depot time.

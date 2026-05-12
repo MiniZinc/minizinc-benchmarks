@@ -88,3 +88,11 @@ an assignment of symbols to cards that satisfies all three constraints above.
 - Wikipedia — [Dobble](https://en.wikipedia.org/wiki/Dobble)
 - Wikipedia — [Projective plane](https://en.wikipedia.org/wiki/Projective_plane)
 - Zayenz Lagerkvist, M. (2021). _Monomatch MiniZinc model._ MIT License.
+
+## Model update summary
+
+Added concise inline comments in monomatch.mzn to clarify:
+
+- set-valued card decision variable roles,
+- pairwise-single-overlap constraint intent,
+- satisfaction search interpretation (no optimization objective).

@@ -140,6 +140,7 @@ int: m = n-1;
 array[1..m, 1..n] of var 1..n: p;
 
 % Objective for ordering of solutions
+% objective orders equivalent perfect 1-factorizations canonically.
 var int: objective;
 
 

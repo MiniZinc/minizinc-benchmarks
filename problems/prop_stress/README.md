@@ -62,3 +62,12 @@ Identifiable from the model itself:
 - Repository context: MiniZinc benchmark collection (`minizinc-benchmarks`).
 
 No explicit external publication or author reference is embedded in `prop_stress.mzn`.
+
+## Model update summary
+
+Added concise inline comments in `prop_stress.mzn` to clarify:
+
+- the monotonic propagation chains on `y` and `x`,
+- the tightening relation from `y[0]` to later `y[i]`,
+- the linking constraint between arrays, and
+- how the final inequality closes the contradiction used in this UNSAT stress benchmark.

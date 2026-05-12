@@ -61,6 +61,7 @@ constraint subcircuit(succ);
 constraint succ[numcities] != numcities;
 
 
+% objective minimizes combined travel and purchase cost for the purchaser tour.
 solve :: seq_search([
      int_search(succ, input_order, indomain_min, complete),
      int_search(purchaseLoc, input_order, indomain_min, complete) 

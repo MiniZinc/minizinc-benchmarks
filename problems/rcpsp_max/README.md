@@ -71,3 +71,11 @@ This README intentionally does **not** explain or evaluate search strategy detai
 - Model header comment credits: **The University of Melbourne and NICTA (2010)**.
 - Uses MiniZinc global constraint: `cumulative` (from `globals.mzn`).
 - Folder metadata (`metadata.json`) marks this as a minimization benchmark challenge entry (2010 instances).
+
+## Model update summary
+
+Added concise inline comments in rcpsp_max.mzn to clarify:
+
+- start-time and makespan decision variable semantics,
+- lag/resource feasibility interpretation of constraints,
+- minimization intent for project completion time.

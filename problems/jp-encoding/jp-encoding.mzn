@@ -123,8 +123,11 @@ array[1..len] of int: stream;
 %------------------------------------------------------------------------------%
 % Variables
 
+% byte_status tracks structural role of each byte inside candidate encodings.
 array[1..len] of var 0..b_unknown: byte_status;
+% encoding is the predicted encoding class for each byte.
 array[1..len] of var 0..e_unknown: encoding;
+% char_start indicates whether a byte starts a character (1) or continues one (0).
 array[1..len] of var 0..1: char_start;
 
 var 0..len: n_unknown;
@@ -132,6 +135,7 @@ var 0..len: n_unknown;
 int: maxObj = len * (max(i in 1..256)(eucjp_score[i] + sjis_score[i] + utf8_score[i]) + 1000);
 var 0..maxObj: objective;
 
+% Minimize encoding likelihood costs plus a strong penalty for unknown bytes.
 constraint objective
   = sum (i in 1..len) (
       bool2int(encoding[i] == e_euc_jp) * eucjp_score[stream[i]+1]

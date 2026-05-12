@@ -16,6 +16,7 @@ int: n = rel_len; % number of nodes in the graph
 % decision variables
 array[1..makespan1,1..k,1..n] of var 0..1: B;
 array[1..k] of var 1..makespan1: ET; % the end time of agent a is ET[a]
+% objective is sum-of-costs: total arrival times of all agents.
 var k..(k*makespan1) : objective;
 constraint objective = sum(ET);
 

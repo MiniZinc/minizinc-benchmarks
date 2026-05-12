@@ -567,6 +567,7 @@ ann: ff_search = int_search(array1d(plan_sort), first_fail, indomain_min, comple
 %------------------------------------------------------------------------------%
 % Solve item
 
+% satisfaction model searches any feasible rotating schedule.
 solve :: ff_search satisfy;
 
 %------------------------------------------------------------------------------%

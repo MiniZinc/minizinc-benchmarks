@@ -72,6 +72,7 @@ array[HANDSET] of var int: connection_quality = [not overloaded[tower[h]] | h in
 var int: objective = sum(connection_quality);
 
 
+% objective maximizes the number of handsets on non-overloaded towers.
 solve ::seq_search([
   int_search(tower, first_fail, indomain_min),
   int_search(power, first_fail, indomain_min)

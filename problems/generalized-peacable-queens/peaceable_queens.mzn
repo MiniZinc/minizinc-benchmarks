@@ -94,6 +94,7 @@ constraint global_cardinality(x, array1d(Squares diff {EMPTY}, Squares diff {EMP
 constraint all_equal(counts[Squares diff {EMPTY}]); % all armies must be of equal size
 
 % maximize the size of the armies
+% objective equals per-army queen count (all_equal enforces identical army sizes).
 var int: objective = counts[Q(Armies[1])];
 solve :: int_search(x, input_order, indomain_min) maximize objective;
 

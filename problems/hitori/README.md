@@ -12,6 +12,14 @@ The standard puzzle asks for a feasible solution. This model formulates an **opt
 
 A reference for the standard Hitori puzzle can be found at [puzzle-hitori.com](https://www.puzzle-hitori.com/).
 
+## Model update summary
+
+Added concise inline comments in `hitori.mzn` to clarify:
+
+- the puzzle variables (`filled` for shading, `x` for effective cell values),
+- the rule constraints for adjacent cell shading and identical clue handling, and
+- the corner case constraints for cells surrounded by identical clues.
+
 ## Input Parameters
 
 | Parameter | Type                        | Description                                       |

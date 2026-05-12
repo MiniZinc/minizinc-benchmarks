@@ -95,3 +95,11 @@ Because of these assumptions, results should be viewed as **decision-support sch
 - The model appears to be part of the MiniZinc benchmark set for the problem named `train`.
 - In local metadata, it is associated with MiniZinc Challenge instance sets from years 2012, 2014, and 2018.
 - No explicit paper citation or external bibliographic reference is embedded directly in `train.mzn` or local `metadata.json`.
+
+## Model update summary
+
+Added concise inline comments in train.mzn to clarify:
+
+- arrival, departure, and passenger-flow decision variable semantics,
+- timetable and capacity feasibility constraints,
+- objective intent as minimizing passenger-weighted destination arrival time.

@@ -45,3 +45,11 @@ The data files are named `{base}_{n}.json`. For instance, `02_03.json` sets `bas
 - N. G. de Bruijn, "A combinatorial problem," _Koninklijke Nederlandse Akademie van Wetenschappen, Proceedings_, vol. 49, pp. 758–764, 1946. The original paper introducing these sequences.
 - Hakan Kjellerstrand, MiniZinc model and Swedish blog post: <http://www.hakank.org/webblogg/archives/001209.html>
 - Interactive de Bruijn sequence generators by the same author: <http://www.hakank.org/comb/debruijn.cgi>
+
+## Model update summary
+
+Added concise inline comments in debruijn_binary.mzn to clarify:
+
+- the core sequence variables (x, binary, bin_code, gcc),
+- the cyclic n-1 overlap condition defining de Bruijn adjacency,
+- the wrap-around overlap from the last word back to the first.

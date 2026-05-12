@@ -32,6 +32,7 @@ constraint
 
 constraint x[1] != x[n*k+1];
 
+% satisfaction model proves infeasibility for the stress-test construction.
 solve ::
       int_search(x, first_fail, indomain_min)
       satisfy;

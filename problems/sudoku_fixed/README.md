@@ -60,3 +60,11 @@ All 91 original instances are also available from Hakan Kjellerstrand's MiniZinc
 - Original 91 puzzle instances: <http://www.hakank.org/minizinc/sudoku_problems2/>
 - Gecode Sudoku example (source of the puzzle instances): <http://www.gecode.org/gecode-doc-latest/sudoku_8cpp-source.html>
 - MiniZinc Challenge: <https://www.minizinc.org/challenge/>
+
+## Model update summary
+
+Added concise inline comments in sudoku_fixed.mzn to clarify:
+
+- grid decision variable semantics and clue handling,
+- row/column/region feasibility interpretation,
+- satisfaction-only solve intent with fixed search.

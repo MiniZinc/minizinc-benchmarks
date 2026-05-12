@@ -127,6 +127,7 @@ solve
         int_search(atposition, input_order, indomain_min, complete),
         int_search(tvar, smallest, indomain_min, complete)
     ])
+    % objective minimizes the completion time of the time-dependent tour.
     minimize objective;
 
 %------------------------------------------------------------------------------%

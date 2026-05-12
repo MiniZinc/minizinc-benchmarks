@@ -72,3 +72,11 @@ The maximum number of moves considered is bounded by `n × k` (the product of th
 
 - Winograd, T. (1971). _Procedures as a Representation for Data in a Computer Program for Understanding Natural Language_. MIT AI Technical Report 235. (Original context for the Blocks World domain.)
 - Slaney, J., & Thiébaux, S. (2001). Blocks World revisited. _Artificial Intelligence_, 125(1–2), 119–153.
+
+## Model update summary
+
+Added concise inline comments in `blocks.mzn` to clarify:
+
+- the main state-tracking arrays (`state`, `count`, `done`, `move`, `locked`) and their roles,
+- the two predicates `move` and `nomove` that enforce state transitions, and
+- how configurations evolve one block-move at a time from start to goal.

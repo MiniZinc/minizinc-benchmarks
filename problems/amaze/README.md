@@ -63,3 +63,11 @@ A valid solution connects each `1` to the other `1` and each `2` to the other `2
 - Numberlink puzzle overview: [Wikipedia — Numberlink](https://en.wikipedia.org/wiki/Numberlink)
 - The puzzle is also marketed commercially as **Flow Free** by Big Duck Games.
 - For a constraint programming treatment of similar path/connection puzzles, see: Trick, M. (2001). _A Dynamic Programming Approach for Consistency and Propagation for Knapsack Constraints_. CPAIOR. (General CP puzzle solving techniques.)
+
+## Model update summary
+
+Added concise inline comments in amaze.mzn to clarify:
+
+- board variable semantics (`0` empty, `1..N` path identifiers),
+- endpoint/interior path interpretation,
+- objective meaning as weighted path compactness.

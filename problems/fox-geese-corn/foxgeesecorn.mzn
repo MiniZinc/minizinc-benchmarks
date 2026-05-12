@@ -85,6 +85,7 @@ constraint forall(i in 1..t)(fox[i] + geese[i] + corn[i] <= k);
 
 constraint forall(i in 1..t)(i > trips -> fox[i] = 0 /\ geese[i] = 0 /\ corn[i] = 0);
 
+% Maximize weighted value of items on the east bank after final trip.
 constraint objective = efox[trips] * pf + egeese[trips] * pg + ecorn[trips] * pc;
 
 %------------------------------------------------------------------------------

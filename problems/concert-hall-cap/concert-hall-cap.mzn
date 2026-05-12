@@ -17,9 +17,11 @@ array [Offer] of int: price;
 
 set of int: Time = min(start)..max(end);
 
+% assign[o] is the selected hall for offer o, or 0 if offer o is rejected.
 array [Offer] of var Hall0: assign;
 
 function bool: overlaps(Offer: o, Time: t) = start[o] <= t /\ t < end[o];
+% A clique contains offers that overlap at a reference start time.
 array [Offer] of set of Offer: cliques = [ { p | p in Offer where overlaps(p, start[o]) } | o in Offer ];
 function bool: clique_is_maximal(set of Offer: c) = forall (d in cliques where card(d) > card(c)) (not (c subset d));
 
@@ -59,6 +61,7 @@ constraint
 
 int: lb_obj = min(0, sum(o in Offer where price[o] < 0)(price[o]));
 int: ub_obj = max(0, sum(o in Offer where price[o] > 0)(price[o]));
+% objective is total accepted offer value.
 var lb_obj..ub_obj: objective;
 constraint objective = sum (o in Offer) (price[o] * (assign[o] > 0));
 

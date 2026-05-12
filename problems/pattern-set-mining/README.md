@@ -83,3 +83,11 @@ The model prints:
 
 - Luc De Raedt, Tias Guns, and Siegfried Nijssen. _Constraint Programming for Itemset Mining_ (CP4IM project page): http://dtai.cs.kuleuven.be/CP4IM/
 - Tias Guns, Siegfried Nijssen, and Luc De Raedt. _Itemset mining: A constraint programming perspective_. Artificial Intelligence, 175(12–13), 2011. DOI: https://doi.org/10.1016/j.artint.2011.05.002
+
+## Model update summary
+
+Added concise inline comments in pattern_set_mining.mzn to clarify:
+
+- pattern and transaction-coverage decision variable semantics,
+- objective interpretation as positive-minus-negative coverage,
+- maximization intent for discriminative pattern-set quality.

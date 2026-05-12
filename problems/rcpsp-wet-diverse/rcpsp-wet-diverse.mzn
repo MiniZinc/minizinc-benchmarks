@@ -162,6 +162,7 @@ constraint
 var 0..emax*tmax: objective = sum(dominated);
 
 % Maximize the hypervolume: the number of dominated points
+% objective maximizes dominated objective-space points for diverse trade-offs.
 solve 
       :: int_search(array1d(st), smallest, indomain_min)
       maximize objective;

@@ -32,6 +32,7 @@ constraint forall (node in leaf_nodes) (x[node]);
 constraint forall (comp in 1..b) (exists([x[node] | node in bi_comp[comp]]));
 
 % the goal is to minimize the number of monitors
+% objective is implicit in minimize(sum(x)): total selected monitors.
 solve :: bool_search(x ++ y, input_order, indomain_min) minimize(sum(x));
 
 output ["nb monitors = \(sum(x))\n",

@@ -103,3 +103,11 @@ For `numbers = [1, 2, 2, 3, 3, 5, 6, 6, 7, 8, 9]` and `target = 4108`, the model
 - The problem is closely related to the **Countdown numbers game** described in:
   > S. Hutton, "The Countdown Problem," _Journal of Functional Programming_, 12(6):609–616, 2002. [doi:10.1017/S0956796801004300](https://doi.org/10.1017/S0956796801004300)
 - Expression tree search and arithmetic puzzle solving are also studied in the context of **program synthesis** and **symbolic regression**.
+
+## Model update summary
+
+Added concise inline comments in model.mzn to clarify:
+
+- tree/index variable roles for expression construction,
+- subtree evaluation array (`tree_vals`) semantics,
+- objective meaning (target closeness first, then expression size).

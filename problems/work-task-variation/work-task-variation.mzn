@@ -152,6 +152,7 @@ constraint forall (r in Resources, a in Activities) (
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 var int: objective :: output = cost;
+% objective minimizes run and activity-frequency variation costs.
 solve :: int_search(schedule, first_fail, indomain_min) minimize objective;
 
 output ["objective = \(cost)\n"];

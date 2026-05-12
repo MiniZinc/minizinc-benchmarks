@@ -76,3 +76,11 @@ What can be identified from this repository:
 - `metadata.json` indicates use in the **MiniZinc Challenge 2020**.
 
 If a more precise academic reference exists, it is not recorded in the local model or metadata available here.
+
+## Model update summary
+
+Added concise inline comments in `stable-goods-solution.mzn` to clarify:
+
+- the role of rank and required lookup arrays in encoding preferences,
+- which person receives exactly one choice from their preference list, and
+- how supply constraints ensure no overfulfillment.

@@ -12,6 +12,7 @@ enum Pattern = P(1..max_pattern);
 array[Pattern] of var record(index_set(full_text): start, 0..max_pattern_len: len): slice;
 
 %%% Definition of helper structure to ensure the full text is covered by the patterns
+% cover[i] picks which pattern and which position in that pattern generates full_text[i].
 array[index_set(full_text)] of record(var Pattern: pat, var 1..max_pattern_len: index): cover;
 
 % The byte covered matches the pattern that covers it
@@ -51,7 +52,7 @@ constraint global_cardinality(
   parent_count
 );
 
-% Cost of a node is the one more than the cost of its parent
+% cost of a leaf equals its codeword length in the prefix-code tree.
 array[CodeTree] of var 0..max_pattern: cost;
 constraint cost[Root] = 0;
 constraint forall(n in NonRootNodes) (cost[n] = ((cost[parent[n]] ~+ 1) default 0));
@@ -59,7 +60,7 @@ constraint forall(n in NonRootNodes) (cost[n] = ((cost[parent[n]] ~+ 1) default 
 % Number of times a pattern is used
 array[Pattern] of var int: uses = [p: count(c in cover) (c = (pat: p, index: 1)) | p in Pattern];
 
-%%% Objective: Minimize the size of the encoding
+%%% Objective: dictionary bytes + encoded references using tree code lengths.
 var int: objective = sum (p in Pattern) (slice[p].len * 8 + cost[Leaf(p)] * (uses[p] + 1));
 solve :: seq_search([
   int_search([used_nodes], input_order, indomain_min),

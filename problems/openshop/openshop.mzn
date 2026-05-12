@@ -66,6 +66,7 @@ array [jobs, tasks] of var 0.. max_duration: job_task_start;
 
     % The finishing time is the time of the last task to complete.
     %
+% objective is makespan over all job-machine tasks.
 var min_duration..max_duration: objective;
 
 

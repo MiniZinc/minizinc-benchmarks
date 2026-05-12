@@ -142,6 +142,7 @@ solve
         int_search(bestPosition, first_fail, indomain_max, complete),
         int_search(worstPosition, first_fail, indomain_min, complete),
     ])
+    % satisfaction model searches any standings completion meeting constraints.
     satisfy;
 
 %------------------------------------------------------------------------------%

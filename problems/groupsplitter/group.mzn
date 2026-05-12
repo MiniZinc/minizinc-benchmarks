@@ -215,6 +215,7 @@ var objlb..objub: objective;
 constraint objective = (
   eta * sum (user_weight_map1) + (10-eta) * sum (user_pub_rating_map1) + (10-eta) * sum (user_pub_rating_map2) + eta * sum (user_weight_map2) );
 
+% objective maximizes weighted personal and public ratings across both phases.
 solve :: seq_search([
     int_search(user_group_map1,first_fail, indomain_min, complete),
     int_search(user_group_map2,first_fail, indomain_min, complete),

@@ -24,6 +24,7 @@ constraint
 		number_of_v(s, s[i], i-1)
 	);
 
+% satisfaction model: find any magic sequence meeting all counting equalities.
 solve :: int_search(s, input_order, indomain_min, complete)
 	satisfy;
 

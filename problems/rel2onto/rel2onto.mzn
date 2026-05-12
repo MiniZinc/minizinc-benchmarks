@@ -177,6 +177,7 @@ ann: kruskal  = int_search([es[sorted_edges[e]] | e in edges], input_order, indo
 ann: kruskal2 = int_search([es[sorted_edges[nbE + 1 - e]] | e in edges], input_order, indomain_min, complete);
 
 
+% objective minimizes combined tree edge cost and attribute matching cost.
 solve 
     ::seq_search([
         %cheap_matches, 

@@ -239,6 +239,7 @@ constraint objective = sum(l in locations)(used_locations[l] * costs[l]);
 array [locations] of locations: costs_asc  = arg_sort(costs);
 array [locations] of locations: costs_desc = reverse(costs_asc);
 
+% objective minimizes total cost of used deployment locations.
 solve 
     :: seq_search([
         int_search([used_locations[costs_desc[i]] | i in locations], 

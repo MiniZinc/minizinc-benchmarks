@@ -66,3 +66,11 @@ The model comments point to WCSP format documentation:
 - http://graphmod.ics.uci.edu/group/WCSP_file_format
 
 Model author note in comments: Simon de Givry.
+
+## Model update summary
+
+Added concise inline comments in wcsp.mzn to clarify:
+
+- assignment and realized-cost decision variable semantics,
+- table-constraint role for unary/binary extension costs,
+- minimization intent for total WCSP objective value.

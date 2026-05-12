@@ -8,44 +8,19 @@
 include "globals.mzn";
 
 %
-% Parameter: max persons in one group
+% Parameters
 %
-int: n_persons_in_group;
+int: n_persons_in_group;  % Max persons per group
+int: n;                     % Total number of persons
+array [1..n] of int: ranking;  % Ranking (skill level) of each person
+array [1..n] of int: country;  % Country of origin for each person
 
-% n_persons_in_group = 3;
+% Derived parameters
+int: n_groups = (n + n_persons_in_group - 1) div n_persons_in_group;  % Number of groups
 
-%
-% Parameter: number of persons
-%
-int: n;
-
-% n = 15;
-
-%
-% Parameter: ranking of persons
-%
-array [1..n] of int: ranking;
-
-% ranking = [ 1, 2, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 6 ];
-
-%
-% Parameter: where does he/she come from
-%
-array [1..n] of int: country;
-
-% country = [ 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 3, 2, 1 ];
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% How many groups in this model?
-int: n_groups = (n + n_persons_in_group - 1) div n_persons_in_group;
-
-% How many people in each group
-array [1..n_groups] of var 0..n_persons_in_group : n_persons;
-
-% Which group person is assigned to 
-array [1..n] of var 1..n_groups: assign_to;
+% Decision variables:
+array [1..n_groups] of var 0..n_persons_in_group : n_persons;  % Number of persons per group
+array [1..n] of var 1..n_groups: assign_to;  % Which group person is assigned to
 
 % Ranking in each groups
 array [1..n_groups] of var min(ranking)..max(ranking): max_rank;

@@ -70,3 +70,11 @@ The objective therefore rewards completing high-importance worksheets while pena
 
 - The variable `g[w] = 0` (not executed) is coupled to `d[w] = est[w]` as a modelling convention to fix unused start times to a canonical value.
 - The problem originates from real-world road maintenance scheduling (the name "N-SITE" suggests an industry or government project context). An exact academic reference has not been confirmed; if you are aware of a publication describing this problem, please add a citation here.
+
+## Model update summary
+
+Added concise inline comments in full.mzn to clarify:
+
+- worksheet execution and timing decision variable roles,
+- objective decomposition (importance minus perturbation),
+- optimization direction for robust maintenance planning.

@@ -43,3 +43,11 @@ This problem belongs to a family of combinatorial colouring problems related to 
 The problem is also a natural benchmark for constraint programming solvers, as it combines a tight combinatorial structure with a minimisation objective, making it challenging for both exact and heuristic methods.
 
 > **Note**: The precise academic origin of this specific MiniZinc formulation is uncertain. If you are aware of a specific paper or competition this model derives from, please update this README with the appropriate reference.
+
+## Model update summary
+
+Added concise inline comments in GridColoring.mzn to clarify:
+
+- grid colour decision variable semantics,
+- objective interpretation as minimal colour bound,
+- optimization intent for rectangle-avoidance colouring.

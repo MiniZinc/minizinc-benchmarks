@@ -50,3 +50,11 @@ Instances from the MiniZinc Challenges range from 3 to 8 ships (e.g., `4Ships`, 
 - Model authored by **Elena Kelareva** (2011).
 - Featured in the **MiniZinc Challenge** competitions in 2011, 2012, and 2014.
 - MiniZinc Challenge: <https://www.minizinc.org/challenge.html>
+
+## Model update summary
+
+Added concise inline comments in ship-schedule.cp.mzn to clarify:
+
+- transit timing and sailing decision variable semantics,
+- separation/berth/tug feasibility interpretation,
+- maximization intent for draft-weighted cargo throughput.

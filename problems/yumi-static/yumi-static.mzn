@@ -783,6 +783,7 @@ function set of int: location_domain(int: task) =
   endif;
 
 
+% objective minimizes cycle period for the static dual-arm schedule.
 solve :: seq_search([
 		     int_search(agent, smallest, indomain_min, complete),
 		     int_search(location, smallest, indomain_min, complete),

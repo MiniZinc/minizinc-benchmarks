@@ -28,6 +28,14 @@ This is the **naive** formulation of the magic sequence problem. It uses **reifi
 | ---- | ------- | --------------------------- |
 | `n`  | integer | The length of the sequence. |
 
+## Model update summary
+
+Added concise inline comments in nmseq.mzn to clarify:
+
+- sequence variable and counting-constraint semantics,
+- satisfaction-only solve interpretation,
+- search intent for naive magic-sequence propagation benchmarking.
+
 ## Decision Variables
 
 | Name | Domain                   | Description                                                                                                  |

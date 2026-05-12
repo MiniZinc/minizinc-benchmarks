@@ -51,6 +51,7 @@ array[1..num_softconstraints] of int: softctrk;
 array[1..num_softconstraints] of int: softctrw;
 
 % the assignments
+% f[i] is the assigned frequency for communication link i.
 array[1..num_variables] of var min_freq..max_freq: f;
 
 int: obj_min = sum(j in 1..num_softconstraints)(min(0, costs[softctrw[j]]));
@@ -67,6 +68,7 @@ solve
 
 % Constraints
 constraint
+	% Penalize soft-constraint violations using provided weight categories.
    	objective = sum(j in 1..num_softconstraints)( 
    		costs[softctrw[j]] * 
 			bool2int(abs(f[softctrx[j]] - f[softctry[j]]) <= softctrk[j])

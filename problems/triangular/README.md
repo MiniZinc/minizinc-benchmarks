@@ -93,3 +93,11 @@ This makes it easier to read the selected grid points visually.
 
 - In-file source note: *Daily Telegraph and Sunday Times* (as written in model comments).
 - Model file: `triangular.mzn` in this directory.
+
+## Model update summary
+
+Added concise inline comments in triangular.mzn to clarify:
+
+- heart-placement decision variable semantics,
+- triangle-avoidance feasibility constraints,
+- objective intent as maximizing the number of marked grid points.

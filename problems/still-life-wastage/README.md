@@ -63,3 +63,11 @@ Instance files supply a single value of `n`; typical benchmark instances use $n 
 - Chu, G., Stuckey, P. J., et al. (2012). Referenced directly in the model's redundant-constraint comment.
 - Smith, B. M. (2002). _A Dual Graph Translation of a Problem in 'Life'_. CP 2002. — An early influential encoding of the Still Life problem.
 - [Conway's Game of Life — Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+
+## Model update summary
+
+Added concise inline comments in still-life.mzn to clarify:
+
+- live-cell and wastage decision variable semantics,
+- still-life feasibility interpretation under Game of Life rules,
+- maximization intent for stable live-cell density.

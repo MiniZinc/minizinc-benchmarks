@@ -11,6 +11,7 @@ array [0..63] of int : P = array1d(0..63,[0, 16, 32, 48, 1, 17, 33, 49, 2, 18, 3
 array [0..R, 0..bl-1] of var 0..1 : x;
 array [0..R-1, 0..bl-1] of var 0..1 : xp;
 array [0..16*R-1] of var {3,2,0}: prb;
+% objective is total differential trail weight (sum of round S-box penalties).
 var 1..bl: objective; 
 %%%%Permutation
 constraint forall (r in 0..R-1, j in 0..63) (

@@ -75,6 +75,7 @@ var lb_obj..ub_obj: objective;
 
 solve 
     :: int_search(Team, input_order, indomain_min, complete) 
+    % objective maximizes request satisfaction while keeping teams balanced.
     maximize objective;
 
 %-----------------Output--------------

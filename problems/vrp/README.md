@@ -64,3 +64,11 @@ The output prints:
 ## References (identifiable)
 - Miller, C. E., Tucker, A. W., & Zemlin, R. A. (1960). Integer programming formulation of traveling salesman problems. *Journal of the ACM*, 7(4), 326–329. (basis of MTZ-style subtour elimination)
 - Standard CVRP formulation literature (depot/customer routing with capacity-constrained vehicles).
+
+## Model update summary
+
+Added concise inline comments in vrp.mzn to clarify:
+
+- arc and load-variable decision semantics,
+- degree and capacity feasibility constraints,
+- objective intent as minimizing total route distance.

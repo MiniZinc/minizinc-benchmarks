@@ -158,7 +158,7 @@ array[STEP] of var OPCODE: op;  % operation at each (not initial) step
 
 % This one is used for precedence constraints 
 array[OPCODE] of var STEP0: first; % first time an op occurs as a setp (otherwise, step = 0); 
-% This one is used for the main objective value
+% Main objective variable: effective number of non-NOP operations.
 var STEP: length;  % number of operations that will be performed
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -597,6 +597,7 @@ solve
             int_search(stack, input_order, indomain_min),
             int_search(op, input_order, indomain_min),
          ])
+   % Optimize for shortest valid opcode sequence.
       % :: int_search(op, input_order, indomain_min)
       % :: int_search([length], input_order, indomain_min) 
       minimize length;

@@ -83,3 +83,11 @@ Minimise the weighted sum:
 $$\text{makespan} + \text{tardiness} + \text{waste}$$
 
 All three components are measured in compatible units and summed directly. A good solution finishes all work quickly, delivers orders on time, and avoids unnecessary overproduction.
+
+## Model update summary
+
+Added concise inline comments in atsp.mzn to clarify:
+
+- core decision variables (`job_program`, `job_length`, mould assignments),
+- production/sequence semantics for jobs,
+- objective interpretation as makespan + tardiness + waste.

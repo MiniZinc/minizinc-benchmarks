@@ -85,3 +85,11 @@ where:
 - The model uses symmetry-breaking constraints to reduce equivalent assignments: user 1 is always placed in group 1 for both phases, and subsequent users are constrained to join an existing group or the next new group.
 - The problem is marked as a combinatorial optimisation problem (`combi`) with a maximisation objective.
 - A specific academic paper describing this model could not be confirmed. The authors listed in the model header are Jacopo Mauro (University of Bologna / INRIA) and Tong Liu (University of Bologna). An expert familiar with their publications may be able to provide a precise citation.
+
+## Model update summary
+
+Added concise inline comments in group.mzn to clarify:
+
+- phase-wise group and activity assignment variable semantics,
+- objective interpretation as weighted personal/public satisfaction,
+- maximization intent for two-stage recommendation quality.

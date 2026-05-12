@@ -77,6 +77,7 @@ solve
         [ a[r, c] | r, c in 1..n ],
         input_order, indomain_max, complete
     )
+    % objective maximizes number of live cells in a stable pattern.
     maximize objective;
 
 % ===== Output =====

@@ -142,3 +142,11 @@ This balances **throughput** (admitting more patients) against **timeliness**
 - Hindahl, K., Kletzander, L., Musliu, N. (2025). _A MiniZinc Model for the Integrated
   Healthcare Timetabling Competition 2024_. Proceedings of the MiniZinc Challenge 2025.
   _(Note: exact publication details are uncertain — please verify.)_
+
+## Model update summary
+
+Added concise inline comments in model4_opt.mzn to clarify:
+
+- admission/room/OT decision variable roles,
+- weighted objective composition (selection vs delay),
+- readability-only intent of these updates.

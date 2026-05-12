@@ -52,3 +52,11 @@ $$\min \sum_{i=1}^{n} x_i$$
 - The two redundant constraints (leaf nodes and biconnected components) do not change the set of feasible solutions but help the solver prune the search space more efficiently.
 - This problem is related to the broader literature on **network tomography** and **identifying codes** in graphs. The 1-identifiability condition is closely connected to work on monitor placement for end-to-end network measurement (see, e.g., Bejerano & Rastogi, _Robust Monitoring of Link States in MPLS/IP Networks_, IEEE INFOCOM 2003, and later work on identifying codes for network monitoring).
 - If you are familiar with the specific paper or dataset this instance originates from, please update this README with the appropriate citation.
+
+## Model update summary
+
+Added concise inline comments in monitor_1id.mzn to clarify:
+
+- monitor/path activation variable semantics,
+- 1-identifiability coverage intent,
+- minimization objective as monitor count.

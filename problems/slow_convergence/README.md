@@ -104,3 +104,11 @@ Identifiable from the repository metadata:
 - `metadata.json` marks it as a satisfaction/combinatorial benchmark and associates challenge instances with **year 2008**.
 
 No paper, competition note, or original author reference is given in the model file itself, so a more precise citation could not be confirmed from the available files.
+
+## Model update summary
+
+Added concise inline comments in `slow_convergence.mzn` to clarify:
+
+- the monotonic chain constraints on `y` and `x`,
+- the tightening lower-bound relationship from `y[0]` to later `y[i]`, and
+- the linking constraint between `y[n]` and `x[0]`.

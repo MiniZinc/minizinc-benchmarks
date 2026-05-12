@@ -107,7 +107,7 @@ constraint
         (a != b) = (size[a] != size[b])
     );
 
-% Any solution will do.  Try labelling by area.
+% Satisfaction model: any valid Fillomino completion is acceptable.
 solve
     :: seq_search([
         int_search([area[r, c] | r in row, c in col],

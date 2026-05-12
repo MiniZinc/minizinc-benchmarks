@@ -19,7 +19,7 @@ array[1..R] of int: from;
 array[1..R] of int: to;
 array[1..R] of int: distance;
 
-
+% Candidate 2D map coordinates for each city.
 array[1..N] of var 0..max(distance): x;
 array[1..N] of var 0..max(distance): y;
 
@@ -42,7 +42,7 @@ function var int: approx_distance(var int: x1, var int: y1, var int: x2, var int
     } in ((1007 * maxd) + (441 * mind))
 );
 
-% penalty
+% Objective upper bound used for a safe domain on total absolute error.
 int: ub_objective = sum(i in 1..R)(
     let {
         int: max1 = distance[i] * 1024 - (1007 + 441) * max(distance),
@@ -51,6 +51,7 @@ int: ub_objective = sum(i in 1..R)(
 );
 var 0..ub_objective: objective;
 
+% Minimize mismatch between given distances and approximated geometric distances.
 constraint objective = sum(i in 1..R) (
     let {
       var int: d = distance[i] * 1024 - approx_distance(x[from[i]], y[from[i]], x[to[i]], y[to[i]])

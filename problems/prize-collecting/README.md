@@ -61,3 +61,11 @@ The model also computes helper bounds (`min_p`, `max_p`, `max_obj`) to define va
 - Problem name from metadata: **prize-collecting**.
 - Metadata indicates this benchmark appears in **MiniZinc Challenge 2011** and **MiniZinc Challenge 2016** instance sets.
 - No explicit external publication or URL is provided in the local metadata/model files.
+
+## Model update summary
+
+Added concise inline comments in pc.mzn to clarify:
+
+- successor and position decision variable semantics,
+- objective meaning as summed selected-edge prizes,
+- maximization intent for prize-collecting route quality.

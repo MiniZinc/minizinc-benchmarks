@@ -177,6 +177,7 @@ ann: search = seq_search([
   int_search( veh,  first_fail, indomain_min, complete),
 ]);
 
+% objective minimizes total travel time across all routed arcs.
 solve 
     :: search 
     minimize objective;

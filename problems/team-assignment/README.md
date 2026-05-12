@@ -58,3 +58,11 @@ The model prints:
 - Model header indicates: **Optimal Team Assignment**, submitted to the **MiniZinc Challenge 2018**.
 - Author listed in file: **Erik Thörnbald (Uppsala University)**.
 - Uses MiniZinc global constraints via `include "globals.mzn"`.
+
+## Model update summary
+
+Added concise inline comments in model.mzn to clarify:
+
+- team-assignment and score variable semantics,
+- balance and request-satisfaction feasibility interpretation,
+- objective intent as maximizing happiness while penalizing imbalance.

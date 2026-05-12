@@ -83,3 +83,11 @@ Identifiable repository references:
 - model file: `skill_allocation_only.mzn`
 
 No explicit paper, authorship, or external problem-source citation is embedded in the model or local metadata, so a stronger bibliographic reference cannot be confirmed from the available files.
+
+## Model update summary
+
+Added concise inline comments in skill_allocation_only.mzn to clarify:
+
+- job-allocation and learned-skill decision variable semantics,
+- capacity and travel-cap feasibility interpretation,
+- minimization intent for total training additions.

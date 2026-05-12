@@ -113,3 +113,11 @@ Gerault, D., Minier, M., & Solnon, C. (2016).
 _Constraint Programming Models for Chosen Key Differential Cryptanalysis._  
 In _Proceedings of the 22nd International Conference on Principles and Practice of Constraint Programming (CP 2016)_, Lecture Notes in Computer Science, vol. 9892. Springer, Cham.  
 https://doi.org/10.1007/978-3-319-44953-1_24
+
+## Model update summary
+
+Added concise inline comments in step1_aes.mzn to clarify:
+
+- AES difference-state variable roles (`deltaX`, `deltaY`, `deltaSR`, `deltaK`),
+- feasibility-style objective-bound equation used in step 1,
+- search-phase intent for objective-driving and bit-level variables.

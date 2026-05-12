@@ -55,3 +55,11 @@ Intuitively, the machine prefers cables whose two ends appear next to each other
 - The instances are named with a prefix of `A` (likely _automotive_) or `R` (possibly _random_ or a different category — the exact naming convention is uncertain and may benefit from clarification by the problem originator).
 - This problem was submitted to the MiniZinc Challenge. For further background on the industrial context and constraint model, see:
   > Bart Bogaerts, Stephan Gocht, Ciaran McCreesh, Jakob Nordström. _Certified Symmetry and Dominance Breaking for Combinatorial Optimisation._ AAAI 2022. _(Note: this reference is tentative — the exact originating publication for this specific model is not confirmed and should be verified.)_
+
+## Model update summary
+
+Added concise inline comments in `ctw.mzn` to clarify:
+
+- hard versus disjunctive precedence constraints,
+- the direct-successor rule for paired chambers, and
+- the interpretation and priority order of objective components `S`, `M`, `L`, and `N`.

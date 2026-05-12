@@ -59,6 +59,14 @@ The model **minimizes the makespan**:
 
 In practical terms, it tries to finish the full set of jobs as early as possible.
 
+## Model update summary
+
+Added concise inline comments in `fjsp.mzn` to clarify:
+
+- the task timing and duration variables (`start`, `dur`) and their roles in building a schedule,
+- the machine selection boolean variables (`b`) that encode alternative machine choices, and
+- the objective variable representing the makespan to be minimized.
+
 ## Notes and assumptions
 
 This model is clear and compact, but it appears to assume that the tasks of each job are numbered in execution order, since the precedence rule links task `i` to task `i + 1`. If an instance uses a different numbering scheme, that part should be checked by another expert.

@@ -40,6 +40,7 @@ solve
                    | c in CUT, p in PROD, j in 0..1 ], input_order, indomain_min, complete),
         int_search( used, input_order, indomain_min, complete)
     ])
+	% objective minimizes total number of stock pieces used.
     minimize objective;
 
 % symmetry elimination: unused cuts are at the beginning

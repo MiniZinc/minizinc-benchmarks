@@ -41,6 +41,7 @@ constraint objective = sum(i in 1..n)(prize[i]);
 %------------------------------------------------------------------------------%
 % Solve item
 
+% objective maximizes total collected prize over selected successor choices.
 solve 
     :: seq_search([
         int_search(next, largest, indomain_max, complete),

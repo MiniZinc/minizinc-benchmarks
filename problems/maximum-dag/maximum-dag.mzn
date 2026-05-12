@@ -22,6 +22,7 @@ array[edges] of int: heads;
 array[1..2,edges] of int: endpairs = array2d(1..2,edges,tails++heads);
 
 
+% objective is the number of selected edges in the acyclic subgraph.
 var 0..nbE: objective; %Total weight
 
 array[edges] of var bool: chosen;     % edges selected to be in DAG

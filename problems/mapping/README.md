@@ -91,3 +91,11 @@ This objective encourages both load balancing (no single processor is overloaded
 - The model uses the MiniZinc global constraints `network_flow_cost` and `bin_packing_load`.
 - The network is modelled with two virtual "super-nodes" (source and sink) appended to the `k` physical processors, giving `n = k + 2` nodes in total.
 - The model was authored by Krzysztof Kuchcinski.
+
+## Model update summary
+
+Added concise inline comments in mapping.mzn to clarify:
+
+- actor/flow assignment variable roles,
+- objective semantics as max processor load-plus-communication,
+- minimization intent for balanced NoC mapping.

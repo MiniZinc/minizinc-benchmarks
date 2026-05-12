@@ -60,3 +60,11 @@ Instances are parameterised by the number of rounds `R`. The benchmark suite inc
 - A. Bogdanov, L. R. Knudsen, G. Leander, C. Paar, A. Poschmann, M. J. B. Robshaw, Y. Seurin, C. Vikkelsoe. **PRESENT: An Ultra-Lightweight Block Cipher.** _CHES 2007_, LNCS 4727, pp. 450–466. Springer, 2007.
 - E. Biham, A. Shamir. **Differential Cryptanalysis of DES-like Cryptosystems.** _Journal of Cryptology_, 4(1):3–72, 1991.
 - This problem appeared in the **MiniZinc Challenge 2017, 2018, and 2021**.
+
+## Model update summary
+
+Added concise inline comments in mznc2017_aes_opt.mzn to clarify:
+
+- round-state decision variable roles,
+- objective semantics as differential weight,
+- minimization intent for best trail probability bound.

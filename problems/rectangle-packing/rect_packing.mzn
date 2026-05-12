@@ -64,9 +64,9 @@ int: min_width  = ceil(  sqrt( int2float( min_area ) ) );
 % Model variables.
 %
 
-    % X-coordinate of the square's origin (left lower corner)
-array [ Squares ] of var 0..max_width : X;
-    % Y-coordinate of the square's origin (left lower corner)
+    % Square positions: X and Y coordinates of each square's lower-left corner.
+array [ Squares ] of var 0..max_width : X;     % X-coordinates
+    % Y-coordinates of the square's origin (left lower corner)
 array [ Squares ] of var 0..max_height: Y;
     
     % Auxiliary X-variables needed for the search strategy

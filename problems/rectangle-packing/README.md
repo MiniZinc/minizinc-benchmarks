@@ -43,6 +43,14 @@ Container variables:
 - `Width`, `Height`
 - `Area`
 
+## Model update summary
+
+Added concise inline comments in `rect_packing.mzn` to clarify:
+
+- the square position variables (`X`, `Y` for each square's lower-left corner),
+- the parameter bounds (widths, heights, areas) that tighten the search space, and
+- the core no-overlap and containment constraints.
+
 The model also defines helper variables (`X_div`, `X_rem`, `Y_div`, `Y_rem`) for internal decomposition of coordinates.
 
 ## Core constraints (beginner view)

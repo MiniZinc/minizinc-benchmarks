@@ -61,3 +61,11 @@ where `nbFullyConnected` is a constant (unavoidable crossings) and `nbCrossings`
 
 - K. Sugiyama, S. Tagawa, and M. Toda, _"Methods for Visual Understanding of Hierarchical System Structures,"_ IEEE Transactions on Systems, Man, and Cybernetics, vol. 11, no. 2, pp. 109–125, 1981. The foundational paper describing the layered graph drawing framework.
 - P. Eades and N. C. Wormald, _"Edge crossings in drawings of bipartite graphs,"_ Algorithmica, vol. 11, pp. 379–403, 1994. Analysis of the crossing-minimisation sub-problem.
+
+## Model update summary
+
+Added concise inline comments in sugiyama2.mzn to clarify:
+
+- layer-position decision variable semantics,
+- crossing-count feasibility interpretation,
+- objective intent as total edge-crossing minimization.

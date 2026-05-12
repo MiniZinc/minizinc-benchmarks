@@ -54,3 +54,11 @@ Relevant background literature:
 - Schuster, S., Dandekar, T., & Fell, D. A. (1999). Detection of elementary flux modes in biochemical networks: a promising tool for pathway analysis and metabolic engineering. _Trends in Biotechnology_, 17(2), 53–60.
 
 > **Note**: The exact publication associated with this specific model file has been inferred from the copyright notice. If you have access to the original paper, please update this reference.
+
+## Model update summary
+
+Added concise inline comments in efm_cstr.mzn to clarify:
+
+- flux/support decision variable semantics,
+- objective interpretation as minimal support size,
+- minimization intent for compact feasible flux modes.

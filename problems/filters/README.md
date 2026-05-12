@@ -95,3 +95,11 @@ One detail that may need confirmation from a domain expert is the exact benchmar
 The model header credits **Krzysztof Kuchcinski**, and the benchmark strongly resembles work on **high-level synthesis** and **scheduling of digital signal processing / filter computations** under limited hardware resources.
 
 However, from the repository contents alone, the exact paper or publication source cannot be identified with confidence. If a precise academic reference is needed, another expert should verify the original benchmark provenance before citing a specific publication.
+
+## Model update summary
+
+The model now derives an internal `Operation` enum from the existing `add` and `mul` input sets. That keeps the data format unchanged while making the operation type explicit in the duration and resource-capacity constraints.
+
+In practice, this means the schedule logic now reads in terms of named operation kinds instead of repeated membership checks against raw integer sets.
+
+Targeted inline comments were also added in `filter.mzn` around precedence, resource bounds, `diffn` packing, and makespan computation so the intent of each constraint block is clearer when reading the model top-to-bottom.

@@ -59,6 +59,7 @@ constraint forall(s in SAMPLES)(
 var 0..max_errors: num_errors = sum(s in SAMPLES)(
     bool2int(sample_outputs[s] != computed_parities[s]));
 
+% objective minimizes disagreement count between learned and observed parities.
 solve :: bool_search(parity_bits, input_order, indomain_max, complete)
     minimize num_errors;
 

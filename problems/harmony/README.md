@@ -60,3 +60,11 @@ Four-part harmonization is a classic problem in music AI. Relevant background ca
 - Tsang, E., & Marsden, A. (1997). _Harmony in Constraint Satisfaction_. Proceedings of the IJCAI Workshop on Music and AI.
 
 > **Note for experts**: The exact provenance of this specific model is uncertain. If you recognise it as originating from a particular paper or competition, please update this reference section.
+
+## Model update summary
+
+Added concise inline comments in harmony.mzn to clarify:
+
+- melody/chord decision variable roles,
+- objective composition across voicing penalties,
+- optimization intent for smooth and stable harmonization.

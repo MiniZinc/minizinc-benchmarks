@@ -101,3 +101,11 @@ From this file alone, explicit references are limited to:
 - comment: “Changes by the MiniZinc Challenge Organisers” indicating a disabled incorrect constraint.
 
 No external paper, URL, or original problem citation is explicitly included in `bool-model.mzn`.
+
+## Model update summary
+
+Added concise inline comments in bool-model.mzn to clarify:
+
+- employee-shift assignment and workload-difference variable semantics,
+- overlap/qualification feasibility interpretation,
+- lexicographic-style maximization intent for coverage and balance.

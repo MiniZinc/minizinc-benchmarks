@@ -33,6 +33,7 @@ set of int: nDomain = 0..n-1;
 
 array[nDomain, nDomain] of var nDomain: quasiGroup;
 
+% satisfaction model searches any quasigroup fulfilling axiom-7 constraints.
 solve :: int_search([quasiGroup[row, col] | row, col in nDomain], first_fail, indomain_min) satisfy;
 
 constraint

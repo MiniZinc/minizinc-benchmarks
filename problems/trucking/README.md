@@ -1,8 +1,5 @@
 # Trucking (MiniZinc model) — Beginner-friendly explanation
 
-## What problem is this model solving?
-This model chooses which trucks to use in each time period so that transport demand is met at minimum cost.
-
 You are given:
 - `T` time periods,
 - `N` trucks,
@@ -75,3 +72,11 @@ From the model header comments:
 - Note: “Original model comes from Peters Student Tim” (as written in source comment)
 
 No external paper/report citation is explicitly provided in the model file.
+
+## Model update summary
+
+Added concise inline comments in trucking.mzn to clarify:
+
+- truck-usage decision variable semantics,
+- demand-cover and spacing feasibility constraints,
+- objective intent as minimizing total truck usage cost.

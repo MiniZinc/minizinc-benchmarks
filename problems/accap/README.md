@@ -66,3 +66,11 @@ Instances are named using the pattern `accap_a{A}_f{F}_t{T}`, where `A` is the n
 ## References
 
 - T. R. Lalita and G. S. R. Murthy, "The airport check-in counter allocation problem: A survey," _arXiv preprint arXiv:2208.13544_, 2022. <https://arxiv.org/abs/2208.13544>
+
+## Model update summary
+
+Added concise inline comments in `accap.mzn` to clarify:
+
+- the key decision variables (`yCoor`, `D`, `S`) and what they represent in the problem,
+- the four main constraints (C1–C4): non-overlapping, capacity, clustering, and objective definition,
+- how the two objectives (peak counter use and airline clustering) are combined.

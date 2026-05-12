@@ -71,3 +71,12 @@ This minimises the **peak resource usage** across the entire clearing sequence.
 1. Kuroiwa, R., & Beck, J. C. (2023). _Domain-Independent Dynamic Programming: Generic State Space Search in Heuristic Search_. Proceedings of ICAPS. Source model: [didp-models/graph-clear](https://github.com/Kurorororo/didp-models/tree/main/graph-clear).
 2. LaPaugh, A. S. (1993). _Recontamination does not help to search a graph_. Journal of the ACM, 40(2), 224–245.
 3. Koloun, S., & Megiddo, N. (1998). _Cops and robbers is EXPTIME-complete_. (Background on graph searching complexity.)
+
+## Model update summary
+
+Added targeted inline comments in `graph_clear_cp.mzn` to explain:
+
+- how the indexed edge list is built from positive-weight adjacency entries,
+- the role of sweep/blocking cost variables,
+- the meaning of the edge-block indicator variable `var_i`, and
+- how `var_l`/`var_u` define each edge's blocking interval across time.

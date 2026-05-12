@@ -65,6 +65,7 @@ constraint forall(e in EDGE)(exists(d in DRONE)(scan[d,e] \/ scan[d,reverse[e]])
 constraint forall(e in EDGE, d in DRONE)(not(scan[d,e] /\ scan[d,reverse[e]]));
 %constraint forall(e in EDGE, d1 in DRONE, d2 in DRONE)(if (scan[d1,e] \/ scan[d1,reverse[e]]) /\ d2 != d1 then not(scan[d2,e] \/ scan[d2,reverse[e]]) endif);
 
+% objective is fleet completion time: latest end among all drones.
 var TIME: endtime;
 constraint endtime = max(d in DRONE)(visit[d,end]);
 

@@ -71,6 +71,7 @@ var 0..dlp_max: deadLinePenalty;
 
 int: obj_min = lb(deadLinePenalty) * 100 + lb(nGroups);
 int: obj_max = ub(deadLinePenalty) * 100 + ub(nGroups);
+% weighted objective prioritizes deadline penalty over number of groups.
 var obj_min..obj_max: objective;
 
 

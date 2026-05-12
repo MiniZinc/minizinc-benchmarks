@@ -76,6 +76,7 @@ constraint forall (i in 0..n) (wastage_sum[n+1] >= wastage_sum[i] + 2*((n-i) div
 
 % solve goal
 
+% objective maximizes stable live-cell count through wastage relation.
 solve :: int_search([x[i,j] | i, j in 1..n], input_order, indomain_max, complete) maximize OBJECTIVE;
 
 output [

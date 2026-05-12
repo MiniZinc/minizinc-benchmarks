@@ -77,4 +77,12 @@ A closely related line of work studies flow-shop scheduling with a limited human
 
 - T.C. Edwin Cheng, Guoqing Wang, and Chelliah Sriskandarajah, _One-operator–two-machine flowshop scheduling with setup and dismounting times_, Computers & Operations Research, 26(7), 1999, pp. 715–730. DOI: 10.1016/S0305-0548(98)00087-2.
 
+## Model update summary
+
+Added concise inline comments in flowshop-workers.mzn to clarify:
+
+- core optional-interval scheduling variables,
+- objective expression as final completion time,
+- documentation-only nature of the update.
+
 That paper is more specialized than this benchmark, but it addresses the same broad idea of combining flow-shop timing with worker-operated setup/takedown activities.

@@ -68,3 +68,11 @@ So the solver tries to spend the budget on roads that make travel between all no
 
 - Author line in source comment: **Rehan Abdul Aziz** (`raziz@student.unimelb.edu.au`).
 - Methodology resemblance: iterative shortest-path relaxation (conceptually related to all-pairs shortest-path dynamic programming, e.g., Floyd–Warshall-style updates).
+
+## Model update summary
+
+Added concise inline comments in road_naive.mzn to clarify:
+
+- road-construction and shortest-path decision variable semantics,
+- budget-constrained network design interpretation,
+- minimization intent for total pairwise travel distance.

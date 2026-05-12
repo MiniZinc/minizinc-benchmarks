@@ -61,3 +61,11 @@ Identifiable from model header comments:
 - Generator repository: https://github.com/zayenz/minizinc-pentominoes-generator
 - Model author: Mikael Zayenz Lagerkvist
 - License note in model: MIT license (https://opensource.org/licenses/MIT)
+
+## Model update summary
+
+Added concise inline comments in pentominoes.mzn to clarify:
+
+- board and marker-augmented sequence variable semantics,
+- regular-constraint role for generated placement validity,
+- satisfaction-only solve intent (no optimization objective).

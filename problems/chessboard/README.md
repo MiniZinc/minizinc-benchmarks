@@ -55,3 +55,11 @@ The non-attacking placement of chess pieces is a classical topic in combinatoric
 - The single-piece case (non-attacking queens) is the well-known $n$-Queens problem; see: E. Sosič and J. Gu, _Efficient Local Search With Conflict Minimization: A Case Study of the n-Queens Problem_, IEEE TKDE, 1994.
 
 > **Note for experts:** The model's auxiliary variable `y` and the `svalue` array (which ranks pieces by descending value) are used purely as a search hint and do not add any constraints beyond those already encoded in `x`. The correctness of the dominance-rule constraints (relating Queens to Rooks and Bishops) may warrant review for edge cases where `value[Q]` equals `value[R]` or `value[B]`.
+
+## Model update summary
+
+Added concise inline comments in `chessboard.mzn` to clarify:
+
+- the piece placement array (`x`) and piece-counting logic,
+- the piece-specific non-capture constraints (rooks/queens row control, bishops/queens diagonals, knight L-moves), and
+- the dominance rules that prevent wasteful placement of higher-valued pieces when cheaper alternatives are available.

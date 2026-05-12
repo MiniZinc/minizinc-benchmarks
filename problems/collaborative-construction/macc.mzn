@@ -111,6 +111,7 @@ constraint forall(t in TTT, i in GRID) (
 % -----------------
 
 % Action of the agents at each position and time step
+% agent_action encodes whether an agent moves, manipulates a block, or is absent.
 array[TT,WORLD] of var ACTION: agent_action;
 array[TT,WORLD] of var WORLD: agent_next_position;
 array[TT,GRID] of var GRID: agent_block_position;
@@ -309,6 +310,7 @@ constraint forall(t in TTT, i in GRID) (redundant_constraint(
 % ------------------
 
 var int: objective = sum(t in TT, i in GRID) (bool2int(agent_action[t,i] != UNUSED));
+% Minimize total active agent-time usage over the planning horizon.
 
 solve :: seq_search([
   int_search(agent_action,         first_fail, indomain_min, complete),

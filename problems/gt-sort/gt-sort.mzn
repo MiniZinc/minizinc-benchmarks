@@ -80,6 +80,7 @@ constraint forall(i in L diff {max(L)})( % for layer i, constrain parents in lay
 % minimize sum of values in all nodes (includes first layer)
 % TODO don't count the 0's in the sets
 var int: obj ::output =  sum(xi in x)(card(xi));
+% WORST mode negates obj so a minimization solve can emulate maximization.
 var int: objective = if run = WORST then -obj else obj endif;
 solve :: seq_search([
   set_search(x, input_order, indomain_min),

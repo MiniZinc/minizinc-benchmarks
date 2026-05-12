@@ -26,6 +26,7 @@ array[VERTICES] of var VERTICES: succ;           % Successor variable indicating
 array[VERTICES] of var VERTICES: cycle;          % Index of a cycle
 
 int: obj_ub = sum(i in VERTICES)(max(j in VERTICES)(edge_weight[i,j]));
+% objective is total utility of selected exchange arcs across all cycles.
 var 0..obj_ub: objective;                        % Objective variable
 
 % Check

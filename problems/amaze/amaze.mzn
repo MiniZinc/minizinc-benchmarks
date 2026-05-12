@@ -21,6 +21,7 @@ array[1..N] of 1..Y: end_points_end_y;
 
 % We put a boundary around the board to make it simpler to deal with the edges.
 %
+% board[x,y] = path id (1..N), or 0 for empty / boundary cell.
 array[0..X + 1, 0..Y + 1] of var 0..N: board;
 
 % Constrain all the cells in the boundary to be empty.
@@ -80,6 +81,7 @@ constraint forall(x in 1..X, y in 1..Y) (
 
 solve 
     :: int_search(array1d(1..(X + 2) * (Y + 2), board), input_order, indomain_min, complete)
+    % Minimize weighted filled cells for a compact path embedding.
     minimize sum(board);
 
 output [show_int(floor(log10(int2float(N)) + 1.0), board[x, y]) ++

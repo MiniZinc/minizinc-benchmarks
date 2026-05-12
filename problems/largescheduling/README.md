@@ -43,3 +43,11 @@ The benchmark includes instances ranging from **100 to 3200 tasks**, with durati
 The instances were created by **Pierre Schaus** for a paper submitted to the **21st International Conference on Principles and Practice of Constraint Programming (CP 2015)**. The specific paper associated with these instances is believed to be related to efficient propagation of the cumulative constraint for large-scale problems; however, the exact paper title could not be confirmed — an expert familiar with Pierre Schaus's CP 2015 contributions may be able to provide a precise citation.
 
 > Schaus, P. et al. (2015). _[Paper on scalable cumulative constraint propagation, CP 2015]_. Proceedings of the 21st International Conference on Principles and Practice of Constraint Programming (CP 2015).
+
+## Model update summary
+
+Added concise inline comments in largecumulative.mzn to clarify:
+
+- task start-time decision variable role,
+- objective semantics as schedule makespan,
+- optimization direction for earliest completion.

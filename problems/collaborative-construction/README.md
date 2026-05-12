@@ -71,3 +71,11 @@ This model is based on the following paper:
 > [https://ed-lam.com/papers/macc2020.pdf](https://ed-lam.com/papers/macc2020.pdf)
 
 Model authored by Edward Lam ([edward.lam@monash.edu](mailto:edward.lam@monash.edu)).
+
+## Model update summary
+
+Added concise inline comments in macc.mzn to clarify:
+
+- action-state variables for movement/block manipulation,
+- carrying-state interpretation across time,
+- objective meaning as total active agent-time minimization.

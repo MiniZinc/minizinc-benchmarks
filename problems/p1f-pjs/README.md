@@ -72,3 +72,11 @@ Likely relevant background references:
 - Surveys and papers on the **Perfect 1-Factorization Conjecture** (especially for complete graphs of even order).
 
 Uncertainty note: the exact paper source for this specific MiniZinc encoding is not explicitly cited in the model file; the author attribution in the header is to Mikael Zayenz Lagerkvist (2009). If you need a precise bibliographic citation for this exact encoding, an additional repository history or publication lookup would be needed.
+
+## Model update summary
+
+Added concise inline comments in p1f-pjs.mzn to clarify:
+
+- matching matrix decision variable semantics,
+- objective role as canonical ordering tie-break,
+- optimization intent preserving perfect-factorization constraints.

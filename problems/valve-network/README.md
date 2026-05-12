@@ -83,3 +83,11 @@ For each minute, it prints:
 - Advent of Code 2022, Day 16: https://adventofcode.com/2022/day/16
 - Commented source reference in model: https://github.com/zayenz/advent-of-code-2022
 - Model author (from file header): Mikael Zayenz Lagerkvist
+
+## Model update summary
+
+Added concise inline comments in valve-network.mzn to clarify:
+
+- position, action, and open-state decision variable semantics,
+- minute-by-minute movement and valve-opening feasibility constraints,
+- objective intent as maximizing accumulated released flow.

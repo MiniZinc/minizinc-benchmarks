@@ -50,6 +50,7 @@ constraint forall(r in ROWS, c in COLS)(
 
 % solve :: int_search([config[r,c] | r in ROWS, c in COLS], dom_w_deg, indomain_min, complete)
 % solve :: int_search([config[r,c] | r in ROWS, c in COLS], input_order, indomain_min, complete)
+% objective minimizes total table height for the chosen cell configurations.
 solve :: int_search([config[r,c] | r in ROWS, c in COLS], first_fail, indomain_min, complete)
 	  minimize totalheight;
 

@@ -29,6 +29,7 @@ constraint forall (i in ConstraintRange) (
 	   );
 
 % fix objective fct to optimal value
+% feasibility model: verifies existence of a solution with known optimal profit z.
 constraint sum (j in VariableRange) (c[j]*x[j]) = z;
 
 %------------------------------------------------------------------------------%

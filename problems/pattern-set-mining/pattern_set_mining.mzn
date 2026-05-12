@@ -40,6 +40,7 @@ array [1..K,1..NrT_neg] of var bool: TransN;
 array [1..NrT_pos] of var bool: Trans_pos;
 array [1..NrT_neg] of var bool: Trans_neg;
 
+% objective maximizes positive coverage minus negative coverage.
 var -NrT_neg..NrT_pos : objective = 
   sum(t in 1..NrT_pos) (bool2int(Trans_pos[t])) -
   sum(t in 1..NrT_neg) (bool2int(Trans_neg[t]));

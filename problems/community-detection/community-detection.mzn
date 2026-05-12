@@ -36,6 +36,7 @@ int: dum = sum(i in 1..n)(W[i,i]);
 %------------------------------------------------------------------------------%
 % Variables
 
+% x[i] is the community assigned to node i.
 array[1..n] of var 1..k: x;
 var 1..k: kk = max(x);
 
@@ -60,8 +61,7 @@ constraint
         [n | i in 1..k]
     );
 
-    % Objective
-    %
+    % Objective: maximize modularity score induced by equal-community pairs.
 constraint
     objective = 2 * ( 
         sum(i in 1..n)(

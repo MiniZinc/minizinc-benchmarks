@@ -74,22 +74,23 @@ set of int: Times = 0..t_max;
 %-----------------------------------------------------------------------------%
 % Variables
 
-    % Start time variables for tasks
+    % Start time variables for each task.
     %
 array [Tasks] of var Times: start =
     [ let { var task_mins[t]..task_maxs[t]: s } in s | t in Tasks ];
 
-    % Duration variables for tasks
+    % Duration variable for each task (determined by chosen machine alternative).
     %
 array [Tasks] of var Durs: dur =
     [ if task_mind[t] = task_maxd[t] then task_mind[t] else
         let { var task_mind[t]..task_maxd[t]: d } in d endif
     |   t in Tasks ];
 
-    % Variables whether an optional task is executed
+    % Machine selection variables: b[o] is true if optional task o (machine alternative) is chosen.
     %
 array [OptTs] of var bool: b;
 
+% Objective: makespan (time by which all jobs are finished).
 var Times: objective;
 
 %-----------------------------------------------------------------------------%

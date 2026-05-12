@@ -29,8 +29,11 @@ include "globals.mzn";
 int: base;  % the base to use, i.e. the alphabet 0..base-1
 int: n;  % number of bits to use (n = 4 -> 0..base^n-1 = 0..2^4 -1, i.e. 0..15)
 int: m = ceil(pow(int2float(base), int2float(n)));  % the length of the sequence k^n. Use this for "classic" de Bruijn sequences
+% x[i] is the i-th n-digit word, encoded as an integer in base `base`.
 array[1..m] of var 0..ceil(pow(int2float(base), int2float(n)))-1: x; 
+% binary[i,j] is digit j of encoded word x[i].
 array[1..m, 1..n] of var 0..base-1: binary;              % binary representation of the numbers
+% bin_code is the final de Bruijn symbol sequence.
 array[1..m] of var 0..base-1: bin_code;                  % the sequence in base-representation
 array[0..base-1] of var int: gcc;                        % number of occurrences of the values in bin_code
 
@@ -85,12 +88,12 @@ constraint
          binary[i,j] = t[j]
         )
     )
-    /\ % the de Bruijn condition: 
-       % the first elements in binary[i] is the same as the last elements in binary[i-1]
+     /\ % De Bruijn overlap condition:
+       % consecutive words share n-1 digits (cyclic shift by one symbol).
       forall(i in 2..m) (
         forall(j in 2..n) ( binary[i-1, j] = binary[i, j-1] )
      ) 
-    /\ % ... and around the corner
+     /\ % ... and wrap around from the last word to the first.
     forall(j in 2..n) ( binary[m, j] = binary[1, j-1] )
 
     %

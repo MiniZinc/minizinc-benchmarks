@@ -114,6 +114,7 @@ constraint skip_obj = sum(s in SERVICE, n in STOPNO)
                          (skip_cost[route[sroute[s],n]]*(1-stopped[s,n]));                         
                          
 var 0..sum(skip_cost) + card(SERVICE) * makespan: objective = delay_obj + skip_obj;
+% objective minimizes combined lateness and stop-skipping penalties.
 solve :: seq_search([
    int_search(array1d(arrive) ++ array1d(depart) ++ array1d(wait), smallest, indomain_min),
    bool_search(stopped, smallest, indomain_min),

@@ -57,4 +57,5 @@ constraint all_different(cards);
 
 % Workaround for incorrect definition of set_search in nosets.mzn
 bool: nosets_set_search = show(set_search([{}], input_order, indomain_min, complete)) = "seq_search([bool_search(set2bools(xx[i]),a1,a2,a3) | i in index_set(xx), ])";
+% satisfaction model: search only aims to find any feasible card set family.
 solve :: set_search(cards, input_order, if nosets_set_search then indomain_max else indomain_min endif) satisfy;

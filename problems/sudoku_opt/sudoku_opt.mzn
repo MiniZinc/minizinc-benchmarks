@@ -53,6 +53,7 @@ constraint
   objective = sum([x[i,j]*(-1)^(i+j) | i,j in 1..n]) 
 ;
 
+% optimization model searches for a valid Sudoku completion with minimum checkerboard sum.
 solve :: int_search(x, first_fail, indomain_min) minimize objective;        
 
 output 

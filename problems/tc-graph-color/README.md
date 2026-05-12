@@ -80,3 +80,11 @@ Reason: the coefficient `(k * max_s + 1)` is larger than any possible total tran
 
 ## Reference(s)
 - Primary source in this folder: `tcgc2.mzn` (header comments and model content).
+
+## Model update summary
+
+Added concise inline comments in tcgc2.mzn to clarify:
+
+- time-step and node-color decision variable semantics,
+- reconfiguration feasibility across intermediate colorings,
+- objective intent as minimizing the number of steps to the target.

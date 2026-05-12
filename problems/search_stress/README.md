@@ -74,3 +74,11 @@ The measure of interest is solver run-time and the number of search nodes explor
 - The model is described in its own header as a _"search stress test for propagation engines"_, suggesting it originates in the constraint-programming benchmarking community, but no specific publication or author is credited in the file.
 - The choice of search annotation (`first_fail`, `indomain_min`) influences the order in which nodes are explored but does not affect the final UNSAT result.
 - Whether a solver can detect the infeasibility through pure propagation (without branching) depends on the strength of its global reasoning; most general-purpose solvers will require significant backtracking.
+
+## Model update summary
+
+Added concise inline comments in search_stress.mzn to clarify:
+
+- graph-coloring decision variable semantics for stress construction,
+- unsatisfiable ring-closing contradiction interpretation,
+- satisfaction-only solve intent for infeasibility proof.

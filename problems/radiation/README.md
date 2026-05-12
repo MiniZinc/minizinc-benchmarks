@@ -74,3 +74,11 @@ Reason: reducing `Beamtime` by 1 always improves objective more than any possibl
 - Header comment: "Radiation problem, MiniZinc 2.0.4 version".
 - `metadata.json` indicates this benchmark appears in MiniZinc Challenge instance sets (years listed: 2008, 2012, 2013, 2015, 2020).
 - No explicit paper citation is embedded in `radiation.mzn` or `metadata.json`.
+
+## Model update summary
+
+Added concise inline comments in radiation.mzn to clarify:
+
+- beamtime/shape-count decomposition variable semantics,
+- intensity reconstruction and increment-bound constraint intent,
+- lexicographic minimization interpretation of the objective.

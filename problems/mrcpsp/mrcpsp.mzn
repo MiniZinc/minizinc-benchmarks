@@ -66,6 +66,7 @@ array[Mod] of var bool: mrun;
 array[Act] of var 0..UB: start;
 array[Act] of var min(mdur)..max(mdur): adur = [let {var {mdur[m] | m in mode[i]}: x} in x | i in Act];
 array[Res,Act] of var min_mrreq..max_mrreq: arreq = array2d(Res,Act,[let {var {mrreq[k,m] | m in mode[i]}: x} in x | k in Res, i in Act]);
+% objective is project makespan (latest finish of terminal activities).
 var 0..UB: objective;
 
 %---------------------------------------------------------------------------%

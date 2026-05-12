@@ -12,18 +12,22 @@ int: available_height;
 set of int: WIDTH = 0..available_width-1;
 set of int: HEIGHT = 0..available_height-1; 
 
+% Plank positions: xk, yk are left endpoint and height of each plank.
 array[PLANK] of var WIDTH: xk;
 array[PLANK] of var HEIGHT: yk;
 
+% Extend arrays with ground (index 0); ground has width=available_width and height=-1.
 set of int: PLANK0 = 0..planks;
 array[PLANK0] of int: plank_widthx = array1d(PLANK0, [available_width] ++ plank_width);
 array[PLANK0] of var WIDTH: xkx = array1d(PLANK0, [0] ++ xk);
 array[PLANK0] of var -1..available_height-1: ykx = array1d(PLANK0, [-1] ++ yk);
 
 
+% Pillar positions: xr, yr are left-bottom corner of each pillar.
 array[PILLAR] of var WIDTH: xr;
 array[PILLAR] of var HEIGHT: yr;
 
+% Planks and pillars must fit within available bounds.
 constraint forall(p in PLANK)(xk[p] + plank_width[p]<= available_width);
 
 constraint forall(p in PILLAR)(xr[p] + pillar_width[p]<= available_width);
@@ -38,19 +42,22 @@ constraint symmetry_breaking_constraint(forall(p1,p2 in PILLAR where p1 < p2 /\ 
 
 
 
+% No-overlap constraint: treat planks as height-1 rectangles; pillars as full-height.
 include "diffn.mzn";
 constraint diffn(xk ++ xr, yk ++ yr, plank_width++pillar_width, [1 | p in PLANK] ++ pillar_height);
 
-% each plank is supported at both ends by a pillar
+% Each plank must be supported at both ends by pillars (not on ground).
 array[PLANK] of var PILLAR: left;
 array[PLANK] of var PILLAR: right;
+% Left support: pillar covers plank's left endpoint; heights align.
 constraint forall(p in PLANK)( xr[left[p]] <= xk[p] /\ xr[left[p]] + pillar_width[left[p]] > xk[p] 
                                /\ yk[p] = yr[left[p]] + pillar_height[left[p]] );
 constraint forall(p in PLANK)( xr[right[p]] <= xk[p] + plank_width[p] - 1 /\ xr[right[p]] + pillar_width[right[p]] > xk[p] + plank_width[p]-1 
                                /\ yk[p] = yr[right[p]] + pillar_height[right[p]] );
 
-% each pillar sits on exaclty one plank
+% Each pillar sits on exactly one support (plank or ground at PLANK0).
 array[PILLAR] of var PLANK0: support;  
+% Pillar must be fully contained within its support surface; heights must align.
 constraint forall(p in PILLAR)
                  (xr[p] >= xkx[support[p]] /\ xr[p] + pillar_width[p] <= xkx[support[p]] + plank_widthx[support[p]]
                   /\ yr[p] = ykx[support[p]] + 1);

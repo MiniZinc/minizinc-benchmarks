@@ -40,6 +40,7 @@ predicate nonogram_col(
 
 predicate nonogram(array[int] of var 1..2: A, array [int] of int: cons) = 
     let {
+          % Build a tiny DFA from clue sequence for use with regular().
           int: n = if cons[1] = 0 then 0 else max(index_set(cons)) endif,
           array [1..n + 1, 1..2] of int: consarr =
               if cons[1] = 0 then [|1, 0|] 
@@ -53,13 +54,16 @@ predicate nonogram(array[int] of var 1..2: A, array [int] of int: cons) =
               )
               endif
      } in (
+         % Sequence A must be accepted by the clue automaton.
          regular(A, n + 1, 2, consarr, 1, {n + 1})
      );
 
+% Enforce all row clues.
 constraint forall(i in 1..Y) (
     nonogram_row(A, [rows[i, j] | j in 1..maxlen where rows[i, j] >= 0], i)
 );
 
+% Enforce all column clues.
 constraint forall(i in 1..X) (
     nonogram_col(A, [cols[i, j] | j in 1..maxlen where cols[i, j] >= 0], i)
 );

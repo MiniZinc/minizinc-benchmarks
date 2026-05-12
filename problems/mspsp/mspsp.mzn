@@ -50,6 +50,7 @@ set of int: Times = 0 .. tmax;
 
 array [Tasks] of var Times: s;         % Start times
 array [Workers, Tasks] of var bool: w; % Assignment of workers to tasks
+% objective is project makespan minimized over feasible schedules.
 var Times: objective;                  % Project duration (makespan)
 
 %-----------------------------------------------------------------------------%

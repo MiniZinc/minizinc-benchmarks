@@ -68,3 +68,11 @@ Identifiable references from the model comments:
 - Model provenance note in file comments:
   - Translation from an ESSENCE'/Minion Translator example (`quasiGroup7.eprime`)
   - Commented author attribution: Hakan Kjellerstrand (`hakank.org/minizinc`)
+
+## Model update summary
+
+Added concise inline comments in quasigroup7.mzn to clarify:
+
+- quasigroup table decision variable semantics,
+- axiom-7 and Latin-square feasibility interpretation,
+- satisfaction-only solve intent (no optimization objective).

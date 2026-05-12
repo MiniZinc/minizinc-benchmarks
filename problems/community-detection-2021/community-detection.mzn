@@ -46,8 +46,10 @@ int: obj_ub = sum (i, j in NODE where i < j /\ B[i, j] > 0) (B[i, j]);
 %------------------------------------------------------------------------------%
 % Variables
 
+% x[i] is the community label assigned to node i.
 array [NODE] of var COMMUNITY: x :: add_to_output;
 
+% objective is modularity (scaled by l) over node pairs placed in the same community.
 var obj_lb..obj_ub: objective = sum (i, j in NODE where i < j /\ x[i] = x[j]) (B[i, j]);
 
 %------------------------------------------------------------------------------%

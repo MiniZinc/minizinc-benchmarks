@@ -143,6 +143,7 @@ predicate crossedGamete(
   )
 );
 
+% objective is the number of crossing nodes used in the breeding tree.
 var 0..nTreeCells: objective = count(treeType, Node);
 solve :: int_search(
   array1d(xs) ++

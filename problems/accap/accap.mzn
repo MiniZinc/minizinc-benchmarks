@@ -48,33 +48,38 @@ array[FLIGHT] of set of TIME: ISet =
 %------------------------------------------------------------------------------
 % Variables and parameters
 
-array[FLIGHT] of int: xCoor;           %starting time
-array[FLIGHT] of var COUNTER: yCoor;   %lower-bottom corner of the rectangle (counter) : variable
-array[FLIGHT] of int: opDur;           %Length - opening Duration
-array[FLIGHT] of int: cNum;            %Height - required numebr of counters
-var max(cNum)..((airlines + 1) * sum(cNum)): objective;   %objective: variable
+% xCoor[f]: fixed start time of check-in for flight f.
+array[FLIGHT] of int: xCoor;
+% yCoor[f]: lowest counter ID allocated to flight f (variable; determines placement).
+array[FLIGHT] of var COUNTER: yCoor;
+% opDur[f]: duration (time slots) that check-in must remain open for flight f.
+array[FLIGHT] of int: opDur;
+% cNum[f]: number of consecutive counters required for flight f.
+array[FLIGHT] of int: cNum;
+% objective: combined cost (peak counter use + intra-airline spread).
+var max(cNum)..((airlines + 1) * sum(cNum)): objective;
 
-% Distance between two flights :variable
+% S[a]: measure of spread for airline a (max gap between its flight counter blocks).
 array[AIRLINE] of var 0..sum(cNum): S;  
 
-% Domain of D(maximum counter use) :variable
+% D: peak counter ID used (maximum counter utilisation across all time steps).
 var max(cNum)..sum(cNum): D; 
 
 %------------------------------------------------------------------------------
 % Constraints
 
-% C1: Non-overlapping constraint
+% C1: Non-overlapping: treat each flight as a rectangle (time × counter range); no two overlap.
 constraint diffn(xCoor, yCoor, opDur, cNum); 
 
-% C2: Capacity constraint
+% C2: Capacity: all used counters must lie within 1..D.
 constraint forall(f in FLIGHT)( (yCoor[f] + cNum[f] - 1) <= D ); 
 
-% C3: Distance constraint
+% C3: Clustering: for each airline, bound the spread of its flights (gap between counter blocks).
 constraint forall(a in AIRLINE, f, g in FA[a] where f != g)(
     ((yCoor[f] + cNum[f] - 1) - (yCoor[g]) <= S[a])
-);  
+); 
  
-% C4: Objective function
+% C4: Objective combines peak counter use (D) and intra-airline spread (S).
 constraint objective = sum(a in AIRLINE)(S[a]) + D;
 
 %------------------------------------------------------------------------------

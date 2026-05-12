@@ -70,3 +70,11 @@ A smaller total means more pruning occurred (values were cut off by the threshol
 ## References
 
 - If this model is based on an academic paper, the reference could not be confirmed at the time of writing. The structure resembles work on **parallel prefix sum networks** or **greedy knapsack algorithms**. An expert familiar with the 2025 MiniZinc Challenge may be able to provide a more precise reference.
+
+## Model update summary
+
+Added concise inline comments in gt-sort.mzn to clarify:
+
+- set-layer aggregation objective definition,
+- objective sign inversion used in `WORST` mode,
+- shared minimization solve strategy across run modes.

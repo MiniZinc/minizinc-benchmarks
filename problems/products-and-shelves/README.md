@@ -69,3 +69,11 @@ Minimize the number of used shelves:
 - Model source header in `product-and-shelves.mzn` (author and license).
 - Repository metadata for this benchmark (`metadata.json`), including MiniZinc Challenge 2025 instance list.
 - Included MiniZinc global constraints: `diffn_nonstrict_k`, `increasing`, `lex_chain_lesseq`, `seq_precede_chain`.
+
+## Model update summary
+
+Added concise inline comments in product-and-shelves.mzn to clarify:
+
+- shelf-assignment and placement decision variable semantics,
+- non-overlap and containment modeling intent,
+- objective interpretation as minimizing used shelves.

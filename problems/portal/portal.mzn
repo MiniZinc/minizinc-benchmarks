@@ -194,6 +194,7 @@ constraint forall(t in Time where t < maxTime) (
 
 any: foundGoalAtStep = min(t in index_set(playerPos) where playerPos[t]=goalPos)(t);
 
+% objective minimizes first time index at which the goal is reached.
 solve
   ::int_search(playerAction, input_order, indomain_min)
 minimize foundGoalAtStep;

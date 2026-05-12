@@ -30,6 +30,7 @@ constraint forall (expression in expressions) (
     regular(board_and_markers, expression)
 );
 
+% satisfaction model searches any board assignment meeting all regular constraints.
 solve :: int_search(board, input_order, indomain_min, complete) satisfy;
 
 output [

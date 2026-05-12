@@ -59,3 +59,11 @@ The Median String Problem has been studied extensively in the literature. Releva
 - Sim, J. S., & Park, K. (2003). _The consensus string problem for a metric is NP-complete_. Journal of Discrete Algorithms, 1(1), 111–120.
 
 > **Note for reviewers:** If this model originates from a specific paper or benchmark suite, please add the corresponding citation here.
+
+## Model update summary
+
+Added concise inline comments in median_string_dp.mzn to clarify:
+
+- semantics of median and distances decision variables,
+- dynamic-programming role of table T inside lcs_global,
+- objective meaning as total edit distance across all input strings.

@@ -102,6 +102,7 @@ constraint if objective_type == 1 then
                       endif)
            endif;
 
+            % objective minimizes aggregate crowding penalty across service-station segments.
 solve :: int_search(p, input_order, indomain_min)
       minimize objective;
 

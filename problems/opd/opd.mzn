@@ -61,6 +61,7 @@ int: lb_lambda = num div denom + bool2int( num mod denom !=0);
 % Variables
 
 array [rows, cols] of var 0..1: m;  
+% objective is lambda: maximum pairwise row overlap to be minimized.
 var lb_lambda..b: objective;        % The 'lambda' variable
 
 %------------------------------------------------------------------------------%

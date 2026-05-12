@@ -134,6 +134,7 @@ constraint symmetry_breaking_constraint(
 
 var int: objective :: output = enum2int(last_loaded_shelf);
 
+% objective minimizes number of shelves used via highest loaded shelf index.
 solve :: seq_search([
 			int_search(item_shelve_size, first_fail, indomain_min, complete),
 			int_search(item_shelve_placement, first_fail, indomain_min, complete)

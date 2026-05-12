@@ -20,14 +20,14 @@ int: NBK=KC + n * BC div KC; % Number of variables to represent the components o
 array[0..n-2, 0..BC-1, 0..3] of var 0..1: deltaY; % State before ARK
 array[0..n-1, 0..BC-1,0..3] of var 0..1: deltaX; % State after ARK
 array[0..n-1, 0..BC-1,0..3] of var 0..1: deltaSR; % State after ShiftRows
-array[0..n-1, 0..BC-1,0..3] of var 0..1: deltaK; % Key
+array[0..n-1, 0..BC-1,0..3] of var 0..1: deltaK; % Round-key byte differences
 array[0..n-1, 0..BC-1,0..3,0..NBK-1] of var 0..1: Kcomp; % The components of the key
 array[0..3,0..n-1,0..BC-1,0..n-1,0..BC-1] of var 0..1: eqK; % eqK[i][r1][j1][r2][j2] => The byte values of DeltaK[r1,i,j1] and [r2,i,j2] are equal.
 array[0..n-1,0..BC-1] of var 0..4: colX; %   colX[r][j] = The sum for i in 0..3 of DeltaY[r][i][j]
 array[0..n-1,0..BC-1] of var 0..4: colSRX; % colSRX[r][j] = The sum for i in 0..3 of SR(DeltaY)[r][i][j]
 array[0..n-1,0..BC-1] of var 0..4: colK; %   colK[r][j] = The sum for i in 0..3 of DeltaK[r][i][j]
 
-%The sum to minimize
+% Objective bound equation used in this step-1 feasibility model.
 constraint sum(r in 0..n-1, j in 0..BC-1) (colSRX[r,j]) + sum(J in 0..BC*n -1 where J mod KC == KC-1 )(colK[J div BC, J mod BC])=objective; 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,7 +48,7 @@ constraint EQrelations(deltaK,Kcomp,eqK); % If (in byte values) DK[r][i][j] == D
 constraint linearMC(deltaY, deltaK, deltaX,deltaSR,eqK,colSRX); % Cardinalities before and after MC
 
 
-% The search heuristic. 
+% Search heuristic: prioritize objective-driving counts, then bit variables.
 solve :: seq_search([ 
 int_search(
 

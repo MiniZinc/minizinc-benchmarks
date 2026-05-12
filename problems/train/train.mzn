@@ -191,6 +191,7 @@ solve
             first_fail, indomain_min, complete
         )
     ])
+    % objective minimizes passenger-weighted arrival time at the destination.
     minimize objective;
 
 output [

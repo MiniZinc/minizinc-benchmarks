@@ -59,6 +59,14 @@ Minimise `objective = max(ADist, BDist)` — the total distance of the longer of
 
 The data files in this benchmark are derived from well-known **TSPLIB** instances (e.g., `ulysses22`, `att48`, `rat99`, `st70`, `ts225`, `a280`, `u159`), with a numeric suffix indicating the value of `PSize`. This problem appeared in the **MiniZinc Challenges** of 2010, 2011, and 2016.
 
+## Model update summary
+
+Added concise inline comments in `depot_placement.mzn` to clarify:
+
+- the depot location decision variable and its role as an intermediate pick-up/drop-off point,
+- the tour variables for each truck and what they represent, and
+- the distance matrix used to calculate routing costs.
+
 ## Notes
 
 - Each truck is allowed to visit at most one "foreign" customer per tour (this is a structural assumption baked into the tour size `TourLength + 1`). The model does not explicitly generalise to more than one cross-delivery per truck.

@@ -70,3 +70,11 @@ The cyclic workforce scheduling problem is a classic in operations research. Rel
 - Edie, L. C. (1954). Traffic delays at toll booths. _Operations Research_, 2(2), 107–138.
 - Balakrishnan, N., & Wong, R. T. (1990). A network model for the rotating workforce scheduling problem. _Networks_, 20(1), 25–42.
 - Burns, R. N., & Carter, M. W. (1985). Work force size and single shift schedules with variable demands. _Management Science_, 31(5), 599–607.
+
+## Model update summary
+
+Added concise inline comments in `nfc.mzn` around:
+
+- the two arc groups used in the network-flow encoding,
+- why only one arc group contributes to objective cost,
+- and the intended interpretation of the coverage equation linking shift starts `f` to active workers `w`.

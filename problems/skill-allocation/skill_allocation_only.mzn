@@ -99,6 +99,7 @@ constraint objective == sum(e in ENGS, t in TRAINING)(
    new_skills[e,t] > 0 
 );
 
+% objective minimizes total newly assigned training skills.
 solve
 ::seq_search( [
     int_search([new_skills[e,t] | t in TRAINING, e in ENGS],input_order, indomain_min, complete),

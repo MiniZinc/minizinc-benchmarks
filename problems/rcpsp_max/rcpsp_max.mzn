@@ -135,6 +135,7 @@ constraint
 % Search.
 %-----------------------------------------------------------------------------%
 
+% objective minimizes project makespan under lag and resource constraints.
 solve
    :: int_search( s, first_fail, indomain_min, complete )
    minimize objective;

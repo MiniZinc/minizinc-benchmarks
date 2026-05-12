@@ -98,3 +98,11 @@ Identifiable references from the file and naming:
 - Copyright notice in the model: **David Gerault (2023)**
 
 The model itself does not cite a paper directly. If a formal citation is needed, the most likely external reference would be the original SPECK design paper/specification, but that is not named explicitly inside the MiniZinc source.
+
+## Model update summary
+
+Added concise inline comments in SPECK-Optimisation.mzn to clarify:
+
+- round-state and per-round probability-cost decision variable semantics,
+- modular-addition differential propagation interpretation,
+- minimization intent for total trail cost.

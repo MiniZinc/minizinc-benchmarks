@@ -35,6 +35,7 @@ array[1..nbHouses] of var 1..nbHouses: succ;
 % fuel that is consumed
 var 0..fuelMax: fuel;
 % earned gold coins
+% objective is total gold collected from visited houses.
 var 0..goldTotalAmount: objective;
 
 	%%%%%%%%%%%%%%%

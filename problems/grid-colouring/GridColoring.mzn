@@ -10,6 +10,7 @@ int: m;     % Height of grid
 % Variables
 
 array[1..n,1..m] of var 1..min(n,m): x; % Colour in each grid field
+% objective is an upper bound on used colour IDs, minimized to the chromatic count.
 var 1..min(n,m): objective;             % Number of colours used
 
 %------------------------------------------------------------------------------%

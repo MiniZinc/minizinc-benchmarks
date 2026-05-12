@@ -111,3 +111,11 @@ The model prints:
 - Data split mentioned in comments:
   - `alignment.dzn` for tree-related data
   - `X.integration.dzn` for instance-specific matching data
+
+## Model update summary
+
+Added concise inline comments in rel2onto.mzn to clarify:
+
+- node/edge selection and attribute-match decision variable semantics,
+- tree-feasibility and matching-bijection modeling intent,
+- minimization intent for combined structure-plus-matching cost.

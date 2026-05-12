@@ -76,6 +76,7 @@ array[1..(m3*(m3-1)) div 2] of var 0..m3*m3: differences3 =
 constraint ghoulomb(mark3, differences3);
 
 
+% objective minimizes only the second ruler span; first and third rulers are decoys.
 var 0..m2*m2: objective = mark2[m2];
 
 solve :: int_search(mark1 ++ mark2 ++ mark3, input_order, indomain, complete)

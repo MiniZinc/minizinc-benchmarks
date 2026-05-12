@@ -104,3 +104,11 @@ So this README describes the implemented logic, but some intended policy details
 - MiniZinc library constraints/functions used directly in the model:
   - `nvalue` (via `nvalue_fn.mzn`),
   - `global_cardinality_low_up` (via `global_cardinality_low_up.mzn`).
+
+## Model update summary
+
+Added concise inline comments in physician-scheduling.mzn to clarify:
+
+- shift/station/skill assignment decision variable roles,
+- objective composition across staffing, preference, risk, and station changes,
+- minimization intent for balanced roster quality.

@@ -73,6 +73,7 @@ array[R,P] of var 0..max(length_of_stay)*num_patients: room_admission;
 constraint forall (p in P where selection[p]) (room_admission[room[p],p] == admission[p]);
 constraint forall (r in R) (cumulative([0 | c in C where oc_room[c] == r] ++ row(room_admission, r), [oc_length_of_stay[c] | c in C where oc_room[c] == r] ++ length_of_stay, [1 | c in C where oc_room[c] == r] ++ [1 | p in P], capacity[r]));
 
+% weighted objective trades off unscheduled optional patients against admission delay.
 var int: objective = count(selection, false) * weight_selection + sum(admission_delay) * weight_delay;
 solve :: seq_search([
     bool_search(selection, input_order, indomain_min),

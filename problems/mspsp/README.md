@@ -97,3 +97,11 @@ include:
 > this MiniZinc encoding are not fully documented here. If you know the specific
 > benchmark library or paper from which the instances derive, please update this
 > README accordingly.
+
+## Model update summary
+
+Added concise inline comments in mspsp.mzn to clarify:
+
+- task start and worker assignment variable semantics,
+- objective interpretation as minimized makespan,
+- scheduling intent under skill and precedence constraints.

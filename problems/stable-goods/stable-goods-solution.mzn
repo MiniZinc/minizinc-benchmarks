@@ -19,19 +19,22 @@ function GOOD: pref(PERSON: p, int: i) = good_pref[cumpref[p] + i];
 function int: req(PERSON: p, int: i) = req_pref[cumpref[p] + i];
 
 
+% Rank: position of good g in person p's preference list (0 if not listed).
 array[PERSON,GOOD] of 0..n: rank = array2d(PERSON,GOOD,
      [ max([ (pref(p,i) = g)*i | i in 1..npref[p] ]) | p in PERSON, g in GOOD ]);
+% Required: quantity person p needs if they request good g (0 if not listed).
 array[PERSON,GOOD] of 0..maxreq: required = array2d(PERSON,GOOD,
      [ max([ (pref(p,i) = g)*req(p,i) | i in 1..npref[p] ]) | p in PERSON, g in GOOD ]);
      
 
-% choose one preference for each person
+% Each person receives exactly one preference from their list.
 array[PERSON] of var 1..max(npref): preference;
 constraint forall(p in PERSON)(preference[p] <= npref[p]);
+% Derive which good and quantity each person receives.
 constraint forall(p in PERSON)(good[p] = good_pref[cumpref[p] + preference[p]]);     
 constraint forall(p in PERSON)(num[p] = req_pref[cumpref[p] + preference[p]]);               
  
-% ensure enough goods for each assignment, and calculate remainder                    
+% Supply is exhausted: allocated + remainder = available for each good.
 array[GOOD] of var 0..max(available): remainder;     
 constraint forall(g in GOOD)
                  (sum(p in PERSON)((good[p] = g)*num[p]) + remainder[g]= available[g]);                      

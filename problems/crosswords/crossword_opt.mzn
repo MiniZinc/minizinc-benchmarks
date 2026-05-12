@@ -198,10 +198,13 @@ array[CLUE] of bool: down;
 array[CLUE] of int: leng;
 
 %------------------------------------------------------------------------------%
-% Variables
-
-array[ROW,COL] of var LETTER: xx;   % Variables for the letter for each cell
-array[CLUE] of var WORD: ww;        % Variables for the word for each clue
+% Decision Variables
+%
+% xx[r,c]: the letter assigned to each cell in the grid.
+array[ROW,COL] of var LETTER: xx;   % letter for each cell (a-z or 'a' for black cells)
+% ww[clue]: index of the word (from the appropriate dictionary) chosen for each clue.
+array[CLUE] of var WORD: ww;        % word index for each clue
+% objective: total score (sum of letter values) to be maximised.
 var min(value) * (height*width) .. max(value) * (height * width): objective;
 
 %------------------------------------------------------------------------------%

@@ -63,6 +63,14 @@ Where:
 - The predecessor variable `prev` is constrained for engine chaining, but there is no explicit narrative in the model explaining all intended dispatch policies.
 - Data semantics (units for time, exact interpretation of service end preference) are inferred from variable names and constraints.
 
+## Model update summary
+
+Added concise inline comments in trains.mzn to clarify:
+
+- route timing and service-assignment decision variable semantics,
+- schedule, platform, and track-feasibility constraints,
+- objective intent as minimizing delay and stop-skipping penalties.
+
 ---
 
 ## Identifiable references

@@ -72,3 +72,11 @@ Because of these assumptions, solution quality depends strongly on how well the 
 - MiniZinc global constraint: `global_cardinality_low_up.mzn`
 - MiniZinc symmetry utility: `lex_lesseq.mzn`
 - General MiniZinc documentation: https://docs.minizinc.dev/
+
+## Model update summary
+
+Added concise inline comments in vaccine.mzn to clarify:
+
+- vaccine-assignment and trial-information decision variable semantics,
+- feasibility constraints for group capacity, balance, and overlap,
+- objective intent as maximizing the weakest vaccine information score.

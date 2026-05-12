@@ -119,6 +119,7 @@ constraint assert(forall(i in 1..NShips) (EarliestStartTimeSlotForShip[i] <= NTi
 
 %%%%%%%%%%%%%%%%%%% OBJECTIVE FUNCTION %%%%%%%%%%%%%%%%%%%
 % Maximise the objective function (specified in a separate port-specific constraints file).
+% objective maximizes cargo value induced by sailing draft and departures.
 solve 
   	:: seq_search([
 		int_search(TransitStartTimeSlot, input_order, indomain_min, complete),

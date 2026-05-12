@@ -65,8 +65,10 @@ array[demands] of set of int: compatible_demands = [
                                                     | d in demands];
 
 % decision variables
+% job_program[i] = production program for job i, or 0 if the job slot is unused.
 array[jobs] of var 0..num_programs: job_program;
 set of int: cycle_set = min_cycles_per_job..max_cycles_per_job;
+% job_length[i] = number of production cycles executed in job i.
 array[jobs] of var cycle_set: job_length;
 array[jobs, moulds, colors] of var 0..max_moulds_per_job: job_moulds;
 array[jobs, moulds, colors] of var 0..max_moulds_per_job*max_cycles_per_job: total_job_moulds;
@@ -207,4 +209,5 @@ ann : search = int_search([job_moulds[i,k,l] | i in jobs, k in moulds, l in colo
                           smallest,
                           indomain_min,
                           complete);
+% Minimize weighted production quality metric: makespan + tardiness + waste.
 solve::search minimize makespan + tardiness + waste;

@@ -174,6 +174,7 @@ constraint forall (i in Couples) (
 );
 
 var 0..2*card(Couples)+card(Singles): objective;
+% minimize unmatched residents (each unmatched couple counts as two residents).
 constraint objective = sum(i in Couples)(2 * bool2int(coup_unassigned[i])) +
         sum(i in Singles)(bool2int(single_unassigned[i]));
 

@@ -69,6 +69,14 @@ Interpretation: prefer item sets and tours that give high value but keep weighte
 - The city-item mapping includes a placeholder for city 1; this appears consistent with the comment that city 1 has no items, but exact behavior depends on data consistency.
 - The dominance constraint is sophisticated; its practical pruning effect depends on route timing and instance structure.
 
+## Model update summary
+
+Added concise inline comments in ttp.mzn to clarify:
+
+- tour and item-selection decision variable semantics,
+- knapsack and route feasibility constraints,
+- objective intent as maximizing profit while penalizing rental time.
+
 ---
 
 ## Reference

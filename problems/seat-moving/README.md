@@ -76,3 +76,11 @@ the total number of person movements within those rounds.
 
 - Submitted to the **MiniZinc Challenge 2018** (and re-used in 2021) by **Toshimitsu Fujiwara**.
 - MiniZinc Challenge: <https://www.minizinc.org/challenge/>
+
+## Model update summary
+
+Added concise inline comments in seat-moving.mzn to clarify:
+
+- seat-state and person-position decision variable semantics,
+- legal move interpretation using empty-seat or swap transitions,
+- minimization intent for steps first, then movement cost.

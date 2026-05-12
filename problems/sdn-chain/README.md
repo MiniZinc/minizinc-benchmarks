@@ -59,3 +59,11 @@ The model is parameterised; the actual network topology, VNF placements, service
 ## Reference
 
 Liu, Tong, et al. "Constraint programming for flexible Service Function Chaining deployment." *arXiv preprint* [arXiv:1812.05534](https://arxiv.org/abs/1812.05534) (2018).
+
+## Model update summary
+
+Added concise inline comments in model.mzn to clarify:
+
+- VNF/domain/link selection decision variable semantics,
+- reachability and placement feasibility interpretation,
+- minimization intent for inter-domain chaining cost.

@@ -36,4 +36,5 @@ constraint sum(i in 1..n)(x[i,n+1-i]) = n*(n+1)*(n+1) div 2;
 % output [show2d(x)];
 output ["x = array2d(\(ROW), \(COL), \(x));\n"];
 
+% satisfaction model searches for a valid whirlpool permutation meeting all rules.
 solve :: int_search(array1d(x), first_fail, indomain_min) satisfy;

@@ -75,3 +75,11 @@ From model comments:
 - Model adaptation/copyright notice names **Haakon H. Rød (2021)** under an MIT-style permission notice.
 
 If you want, I can also generate a small “how to run” section using one of the instance files in `data/` and show expected MiniZinc CLI commands.
+
+## Model update summary
+
+Added concise inline comments in cvrptw_w_reload.mzn to clarify:
+
+- successor, vehicle, load, and arrival-time decision variable semantics,
+- routing, pickup/delivery, and time-window feasibility constraints,
+- objective intent as minimizing overall route completion time.

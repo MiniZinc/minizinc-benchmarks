@@ -58,3 +58,11 @@ Cells on "white" squares of the checkerboard (where $i+j$ is even) contribute po
 - Original 91 puzzle instances (Gecode): <http://www.gecode.org/gecode-doc-latest/sudoku_8cpp-source.html>
 - Data files: <http://www.hakank.org/minizinc/sudoku_problems2/>
 - MiniZinc Challenge Organisers (added search annotation and renamed objective variable)
+
+## Model update summary
+
+Added concise inline comments in sudoku_opt.mzn to clarify:
+
+- grid/clue semantics for the optional board input,
+- row, column, and box feasibility constraints,
+- optimization intent for the checkerboard-weighted objective.

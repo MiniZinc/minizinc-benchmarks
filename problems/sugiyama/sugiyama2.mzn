@@ -88,6 +88,7 @@ constraint forall(l in Layers)(forall(n1 in Lnodes[l], n2 in Lnodes[l] where n1 
     card(endNodes[n1] union endNodes[n2]) > 1 /\ endNodes[n1] != {} /\ endNodes[n2] != {})(
     forall(n3 in endNodes[n1], n4 in endNodes[n2] where n3 != n4)(positions[n3] < positions[n4]) -> positions[n1] < positions[n2]));
 
+% objective minimizes total edge crossings between adjacent layers.
 solve :: int_search(positions, input_order, indomain_min, complete) minimize nbCrossings;
 
 output ["Number of crossings: ", show(nbFullyConnected + nbCrossings), "\nPositions: ", show(positions), "\n"];

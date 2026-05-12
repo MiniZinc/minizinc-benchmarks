@@ -55,3 +55,11 @@ The Maximum Acyclic Subgraph / Minimum Feedback Arc Set problem is well studied:
 - Ailon, N., Charikar, M., & Newman, A. (2008). _Aggregating inconsistent information: ranking and clustering_. Journal of the ACM, 55(5), 23:1–23:27. — Approximation algorithms for the problem.
 
 > **Note:** The specific origin or publication associated with this MiniZinc model is not known to the author of this README. If you are aware of the source, please update this section.
+
+## Model update summary
+
+Added concise inline comments in maximum-dag.mzn to clarify:
+
+- edge-selection and distance variable roles,
+- objective semantics as maximum acyclic edge count,
+- optimization intent for largest DAG subgraph.

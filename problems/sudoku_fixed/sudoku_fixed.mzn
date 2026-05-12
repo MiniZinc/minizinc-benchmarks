@@ -33,6 +33,7 @@ array[1..n, 1..n] of opt int: board;
 constraint forall (i, j in 1..n) (x[i, j] ~= board[i, j]);
 
 % solve :: int_search(array1d(x), dom_w_deg, indomain_split) satisfy;        
+% satisfaction model searches for a grid completion respecting Sudoku rules.
 solve :: int_search(array1d(x), first_fail, indomain_split) satisfy;        
 
 %

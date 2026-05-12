@@ -61,3 +61,11 @@ where `W` is chosen large enough to make the optimization lexicographic-like:
 - Model file: `todo/working/roster-sickness/bool-model-sickness.mzn`.
 - Metadata indicates inclusion in **MiniZinc Challenge 2022** benchmark set: `todo/working/roster-sickness/metadata.json`.
 - Header comments mention modifications by **MiniZinc Challenge Organisers**.
+
+## Model update summary
+
+Added concise inline comments in bool-model-sickness.mzn to clarify:
+
+- reassignment and contract-difference decision variable semantics,
+- overlap/qualification feasibility interpretation under preserved assignments,
+- lexicographic-style maximization intent for coverage and balance.

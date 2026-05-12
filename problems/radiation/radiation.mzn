@@ -73,6 +73,7 @@ int: obj_min = lb((m*n + 1) * Beamtime + K);
 int: obj_max = ub((m*n + 1) * Beamtime + K);
 var obj_min..obj_max: objective = (m*n + 1) * Beamtime + K;
 
+% objective lexicographically prioritizes lower beamtime then fewer shapes.
 solve 
     :: int_search(
 		[Beamtime] ++ N ++

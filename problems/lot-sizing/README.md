@@ -64,3 +64,11 @@ The included data files (`pigment15a–d`, `pigment20a–c`, `pigment30a–c`) a
 - Rendl, A. (2019). MiniZinc CP model for Discrete Lot Sizing. Satalia. (MIT License)
 - Drexl, A., & Kimms, A. (1997). Lot sizing and scheduling — Survey and extensions. _European Journal of Operational Research_, 99(2), 221–235.
 - Haase, K., & Kimms, A. (2000). Lot sizing and scheduling with sequence-dependent setup costs and times and efficient rescheduling opportunities. _International Journal of Production Economics_, 66(2), 159–169.
+
+## Model update summary
+
+Added concise inline comments in lot_sizing_cp.mzn to clarify:
+
+- production and inventory decision variable roles,
+- objective composition (setup plus holding costs),
+- optimization direction for minimum total planning cost.

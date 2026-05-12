@@ -54,3 +54,11 @@ Each problem instance provides:
 
 - The model uses a template-based approach via the `row`/`team` variables. The 14 rows of the template are pre-structured so that structural symmetries (e.g., satisfying the HAP regularity and break-distribution constraints) are partially handled by construction. Real teams are then assigned to template rows, and the divisional assignment constrains which rows a team may occupy.
 - Some constraints visible in the model are commented out (e.g., additional symmetry-breaking rules). These may be candidates for strengthening the model and are noted here for the benefit of future maintainers.
+
+## Model update summary
+
+Added concise inline comments in handball.mzn to clarify:
+
+- home/away/bye schedule variable roles,
+- season-level objective interpretation,
+- documentation-only nature of this update.

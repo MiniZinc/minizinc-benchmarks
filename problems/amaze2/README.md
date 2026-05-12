@@ -62,3 +62,11 @@ The solution is displayed as a grid. Each cell prints the index of the pair whos
 
 - MiniZinc Challenge benchmark suite: <https://www.minizinc.org/challenge/>
 - Numberlink puzzle (context): Ueda, N. & Nagao, T. (1996). _NP-completeness results for NONOGRAM via parsimonious reductions_. (Related combinatorial puzzle literature.)
+
+## Model update summary
+
+Added concise inline comments in `amaze2.mzn` to clarify:
+
+- how start/end coordinates are mapped to cell IDs,
+- the role of path and next variables in encoding directed chains, and
+- the constraints ensuring paths are simple chains with no branching.

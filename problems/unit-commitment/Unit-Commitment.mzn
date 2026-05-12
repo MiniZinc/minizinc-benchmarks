@@ -136,5 +136,8 @@ solve :: seq_search([
              int_search(loss_of_load, smallest, indomain_min),
              int_search(generation, smallest, indomain_split)             
              ])
+% objective minimizes total dispatch, switching, and load-shedding cost.
 minimize obj; 
+
+% objective minimizes total dispatch, switching, and load-shedding cost.
 

@@ -58,6 +58,7 @@ array[teams] of var 0..19: break;
 
 int: objmin = 0;
 int: objmax = sum(t in teams, p in 1..33)(1);
+% objective counts venue-unavailability violations across season rounds.
 var objmin..objmax: objective;
 
 array[teams] of var teams: row;	% row[i]=j means TEAMi gets row j of template

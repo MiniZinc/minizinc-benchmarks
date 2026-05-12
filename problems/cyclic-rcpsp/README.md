@@ -78,3 +78,11 @@ The RCMSP is closely related to classical cyclic scheduling theory. Relevant bac
 - Dinechin, B. D. (1996). _Parametric computation of margins and of minimum cumulative register lifetime dates_. ACM SIGPLAN Notices, 31(7), 141–151.
 
 > **Note**: The exact origin of this specific benchmark instance set is uncertain. If you are familiar with the data source, please update this section.
+
+## Model update summary
+
+Added concise inline comments in rcmsp.mzn to clarify:
+
+- start-time and iteration variable semantics,
+- encoded lexicographic objective structure,
+- optimization intent (period first, makespan second).

@@ -88,6 +88,7 @@ constraint pennies = sum(is_present);
 % Serarch and output
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% objective maximizes number of pennies with pairwise distinct distances.
 solve 
     :: int_search([
         % Search placement for each penny in order

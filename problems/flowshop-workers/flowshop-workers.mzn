@@ -51,6 +51,7 @@ array[1..numberProducts, 1..numberStations, 1..numberWorksteps] of 0..maxd : pro
 
 var int: objective;
 
+% objective is completion time of the final required operation.
 constraint objective = proST[numberProducts, numberStations, numberManualWorksteps[productType[numberProducts], numberStations]]+proD[numberProducts, numberStations, numberManualWorksteps[productType[numberProducts], numberStations]];
 
 solve :: seq_search([

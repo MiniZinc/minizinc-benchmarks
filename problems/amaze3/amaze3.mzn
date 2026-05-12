@@ -25,6 +25,7 @@ set of int: Dom = 0..N;
 %------------------------------------------------------------------------------%
 % Variables
 
+% board[x,y] stores the path id occupying the cell, or 0 if unused.
 array [Xs, Ys] of var Dom: board;
 
 %------------------------------------------------------------------------------%
@@ -86,7 +87,7 @@ constraint
         endif
     );
 
-    % Some redudant constraints
+    % Some redundant constraints (search pruning only)
     %
 constraint redundant_constraint(
     forall(i in Pairs)(
@@ -119,6 +120,7 @@ constraint redundant_constraint(
 
 solve
     :: int_search(array1d(1..X*Y, board), input_order, indomain_split, complete)
+    % Satisfaction model: any feasible non-crossing set of paths is accepted.
     satisfy;
 
 %------------------------------------------------------------------------------%

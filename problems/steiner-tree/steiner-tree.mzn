@@ -209,6 +209,7 @@ solve
         int_search([es[i] | i in es_search_idx] ++ [vs[i] | i in vs_search_idx], input_order, indomain_min),
         int_search([root], input_order, indomain_min)
     ])
+    % objective minimizes total weight of selected Steiner-tree edges.
     minimize objective;
 
 %------------------------------------------------------------------------------%

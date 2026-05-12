@@ -57,6 +57,7 @@ set of int: S = 1..Smax; % set of examples
 
 array[R] of var LN: line_o;
 array[I] of var ALN: line_i;
+% objective is the return line index, minimized to obtain the shortest program.
 var R: objective;
 
 	% each component is on a different line
