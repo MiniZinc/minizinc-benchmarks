@@ -138,7 +138,7 @@ constraint
 constraint 
     forall (shift in 1..5)
             (forall (day in 1..7) 
-                    (exactly(reqt[shift,day],[roster[week,day] | week in 1..weeks],shift))
+            (count(week in 1..weeks)(roster[week,day] = shift) = reqt[shift,day])
             );
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -157,7 +157,7 @@ constraint
 
 constraint
    forall (d in 1..flatsize) 
-          (at_least(1,[longflatroster[d2]|d2 in d..d+6],Rest)) ;
+             (count(d2 in d..d+6)(longflatroster[d2] = Rest) >= 1) ;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Too Much Rest Constraint
@@ -174,7 +174,7 @@ constraint
 
 constraint
     forall (d in 1..flatsize) 
-           (at_most(3,[longflatroster[d2]|d2 in d..d+3],Rest)) ;
+           (count(d2 in d..d+3)(longflatroster[d2] = Rest) <= 3) ;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Soft Constraints

@@ -76,7 +76,9 @@ constraint if value[Q] <= value[R] then cnt[Q] > 0 -> cnt[R] = limit[R] endif;
 
 
 % remove symmetries of square
-constraint symmetry_breaking_constraint(var_sqr_sym(x));
+constraint symmetry_breaking_constraint(
+  var_sqr_sym(array2d(ROW, COL, [enum2int(x[r,c]) | r in ROW, c in COL]))
+);
 
 predicate
 var_sqr_sym(array[int,int] of var int: x) =

@@ -71,5 +71,5 @@ constraint endtime = max(d in DRONE)(visit[d,end]);
 
 solve :: seq_search([
   bool_search(scan, input_order, indomain_min),
-  int_search([[visit[d, e], next[d, e]][i] | d in DRONE, e in EDGEX, i in 1..2], first_fail, indomain_min),
+  int_search([if i = 1 then visit[d, e] else enum2int(next[d, e]) endif | d in DRONE, e in EDGEX, i in 1..2], first_fail, indomain_min),
  ]) minimize endtime;

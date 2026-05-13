@@ -33,8 +33,8 @@ constraint forall(g in GROUP)(card(x[g]) <= size[g] div minsize);
 % maximum and minimum number of groups for each vaccine and age
 include "global_cardinality_low_up.mzn";
 constraint forall(v in VACCINE)
-     (global_cardinality_low_up( [ (v in x[g])*age[g] | g in GROUP ],
-                                 AGE, age_group_min, age_group_max));
+     (global_cardinality_low_up( [ (v in x[g])*enum2int(age[g]) | g in GROUP ],
+                                 [a: enum2int(a) | a in AGE], age_group_min, age_group_max));
 array[VACCINE, AGE] of var int: vaccine_age  = array2d(VACCINE, AGE, [ sum(g in GROUP where age[g] = a)(v in x[g]) | v in VACCINE, a in AGE]);                                 
  
 % difference in tested people

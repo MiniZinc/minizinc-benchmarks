@@ -57,7 +57,7 @@ function int: min_transmit_power(TOWER: t, HANDSET: h) ::promise_total =
   arg_max(sel);
 
 % minium signal strength                         
-constraint forall (h in HANDSET) ([ power[t] >= min_transmit_power(t, h) | t in TOWER ][tower[h]]);
+constraint forall (h in HANDSET) ([ power[t] >= min_transmit_power(t, h) | t in TOWER ][enum2int(tower[h])]);
 % constraint forall(h in HANDSET)(signal_strength(tower[h], h) >= min_signal_strength);
                                                                         
 % max handsets

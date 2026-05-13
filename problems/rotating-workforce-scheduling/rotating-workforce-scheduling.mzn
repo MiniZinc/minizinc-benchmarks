@@ -85,8 +85,8 @@ array[RepeatedWeeks, Days] of var ShiftsAndOff: repeated_schedule = array2d(Repe
 
 % Requirements met for each day
 constraint forall (day in Days) (
-    global_cardinality_low_up(schedule[.., day], 
-                              set2array(S(Shifts)), 
+    global_cardinality_low_up([enum2int(schedule[week, day]) | week in Weeks],
+                              [enum2int(S(shift)) | shift in Shifts], 
                               requirements[day, ..], 
                               requirements[day, ..])
 );
@@ -114,7 +114,7 @@ constraint let {
       set of int: States = 1..states;
       int: start_state = 1;
       set of int: accepting_states = States;
-      array[States, ShiftsAndOff] of {0} union States: transitions =[|
+            array[States, 1..card(ShiftsAndOff)] of {0} union States: transitions =[|
       % O  D  E  N
         1, 5, 5, 2 | % State 1, base case: if night shift, go to state 2
         1, 0, 0, 3 | % State 2, 1 night shift: if off go to state 1, if night go to state 2, else fail
@@ -123,7 +123,7 @@ constraint let {
         1, 5, 5, 0 | % State 5, 3 night shifts: if off go to state 1, all others fail
       |];
     } in
-    regular(array1d(repeated_schedule), states, ShiftsAndOff, transitions, start_state, accepting_states);
+    regular([enum2int(s) | s in array1d(repeated_schedule)], states, 1..card(ShiftsAndOff), transitions, start_state, accepting_states);
     
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

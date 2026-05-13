@@ -147,7 +147,7 @@ predicate crossedGamete(
 var 0..nTreeCells: objective = count(treeType, Node);
 solve :: int_search(
   array1d(xs) ++
-    treeType ++
+    [enum2int(tt) | tt in treeType] ++
     treeLeft ++
     treeRight ++
     array1d(source) ++

@@ -21,7 +21,7 @@ array[ROW,COL] of bool: grid;   % false - "black" cell (no letters)
     % Alphabet
     %
 enum LETTER =              {a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p, q,r,s,t,u,v,w,x,y, z};
-array[int] of int: value = [1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10];
+array[LETTER] of int: value = [1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10];
     
     % Words of length 1
     %
@@ -215,7 +215,7 @@ include "alldifferent.mzn";
 %------------------------------------------------------------------------------%
 % Predicates
 
-predicate table_row(array [int] of var int: x, array [int,int] of int: t, var int: row) =
+predicate table_row(array [int] of var LETTER: x, array [int,int] of LETTER: t, var int: row) =
     forall(i in index_set(x))(
         x[i] = t[row, i]
     );

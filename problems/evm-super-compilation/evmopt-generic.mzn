@@ -369,7 +369,7 @@ constraint trace("ucount: "++show(ucount) ++ "\n",true);
 
 %% the actual constraint ensuring the number of times each operator occurs is between lcount[o] and ucount[o]
 opt bool: gcc_bounds;
-constraint redundant_constraint(if absent(gcc_bounds) then global_cardinality_low_up(op, OPCODE, lcount, ucount) endif);
+constraint redundant_constraint(if absent(gcc_bounds) then global_cardinality(op, OPCODE, lcount, ucount) endif);
 
 %%%%% LOWER/UPPER BOUND ON THE NUMBER OF OCURRENCES OF THE SUM OF SOME OPCODES
 % the sum of all DUP occurrences (not just individual ones) cannot be greater than maxdups

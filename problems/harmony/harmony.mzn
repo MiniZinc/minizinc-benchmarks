@@ -71,7 +71,7 @@ array [Time] of var Chord: chords;
 
 constraint music[Soprano, ..] = array1d(Time, melody);
 
-any: note_numbers = [(v, t): Pitch^-1(music[v, t]) mod 12 | v in Voice, t in Time];
+array [Voice, Time] of var 0..11: note_numbers = array2d(Voice, Time, [Pitch^-1(music[v, t]) mod 12 | v in Voice, t in Time]);
 
 % The notes played must be within range
 constraint forall (v in Voice, t in Time) (music[v, t] in range[v]);
@@ -80,14 +80,14 @@ constraint forall (v in Voice, t in Time) (music[v, t] in range[v]);
 constraint forall (t in Time) (strictly_decreasing(music[.., t]));
 
 % The notes played must be the notes of the chosen chord
-any: chord_notes = [{ note_numbers[v, t] | v in Voice } | t in Time];
-constraint forall (t in Time) (chord_notes[t] = chord_offsets[chords[t]]);
+array [Time] of var set of int: chord_notes = [t: { note_numbers[v, t] | v in Voice } | t in Time];
+constraint forall (t in Time) (chord_notes[t] = [chord_offsets[c] | c in Chord][enum2int(chords[t])]);
 
 % Soprano-alto and Alto-Tenor must be <= 8ve apart
 constraint forall (t in Time) (Pitch^-1(music[Soprano, t]) - Pitch^-1(music[Alto, t]) <= 13);
 constraint forall (t in Time) (Pitch^-1(music[Alto, t]) - Pitch^-1(music[Tenor, t]) <= 13);
 
-function var int: interval(Voice: v, Voice: u, var Time: t) = abs(music[v, t] - music[u, t]) mod 12;
+function var int: interval(Voice: v, Voice: u, var Time: t) = abs(Pitch^-1(music[v, t]) - Pitch^-1(music[u, t])) mod 12;
 
 % No consecutive 5ths
 constraint forall (t in Time where t < max(Time)) (
@@ -104,10 +104,10 @@ constraint forall (t in Time where t < max(Time)) (
 );
 
 % Largest jump by each voice
-any: max_jump = [v: max (t in Time where t < max(Time)) (abs(music[v, t] - music[v, enum_next(t)])) | v in Voice];
+any: max_jump = [v: max (t in Time where t < max(Time)) (abs(Pitch^-1(music[v, t]) - Pitch^-1(music[v, enum_next(t)]))) | v in Voice];
 
 % Range used by each voice
-any: range_used = [v: max(music[v, ..]) - min(music[v, ..]) + 1 | v in Voice];
+any: range_used = [v: max(t in Time)(Pitch^-1(music[v, t])) - min(t in Time)(Pitch^-1(music[v, t])) + 1 | v in Voice];
 
 % Number of non-root position chords
 var int: non_root :: output = count (t in Time) (note_numbers[Bass, t] != min(chord_notes[t]));
@@ -141,7 +141,7 @@ constraint forall (t in 2..maxTime div 4) (array1d(chords[Time((t - 2) * 4 + 1..
 constraint forall (v in otherVoices, t in 1..maxTime - max_stationary) (not all_equal(music[v, Time(t..t + max_stationary)]));
 
 % Phrases have some movement
-constraint forall (v in otherVoices, t in 1..maxTime where t mod 8 = 1) (max (u in t..t + 7) (music[v, Time(u)]) - min (u in t..t + 7) (music[v, Time(u)]) > 4);
+constraint forall (v in otherVoices, t in 1..maxTime where t mod 8 = 1) (max (u in t..t + 7) (Pitch^-1(music[v, Time(u)])) - min (u in t..t + 7) (Pitch^-1(music[v, Time(u)])) > 4);
 
 % Objective
 % objective penalizes large leaps and non-preferred chord voicings.
@@ -151,9 +151,9 @@ enum SearchVar = { ChordVar } ++ VoiceVar(Voice);
 solve :: int_search(
   [
     if x = ChordVar then
-      let { var int: v = chords[t]; } in v
+      enum2int(chords[t])
     else
-      let { var int: v = music[VoiceVar^-1(x), t]; } in v
+      enum2int(music[VoiceVar^-1(x), t])
     endif
   |
     t in Time,

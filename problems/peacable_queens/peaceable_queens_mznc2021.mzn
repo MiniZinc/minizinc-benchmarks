@@ -43,18 +43,18 @@ array[1..n,1..n] of var Square: x :: add_to_output;
 var int: objective = count(x_i_j in array1d(x))(x_i_j == BLACK);
 
 array[Square,Square] of int: d = [|
-  EMPTY,BLACK,WHITE|
-  BLACK,BLACK,    0|
-  WHITE,    0,WHITE|];
+  enum2int(EMPTY),enum2int(BLACK),enum2int(WHITE)|
+  enum2int(BLACK),enum2int(BLACK),              0|
+  enum2int(WHITE),              0,enum2int(WHITE)|];
 
 % A DFA enforcing no white queens after black queens, and v.v.
-predicate at_peace(array[int] of var int: x) = 
+predicate at_peace(array[int] of var Square: x) = 
   regular(
-    x,
+    [enum2int(v) | v in x],
     3, % Q = 3 states (excluding fail state 0)
     3, % S = 3 inputs
     d, % d = (input,states) -> status union {0}
-    EMPTY, % starting state
+    enum2int(EMPTY), % starting state
     1..3, % accepting states: all except 0
   );
 
@@ -125,7 +125,9 @@ predicate var_perm_sym_pairwise(
 
 
 % Symmetry: every solution can be rotated and/or reflected
-constraint symmetry_breaking_constraint(var_sqr_sym(x));
+constraint symmetry_breaking_constraint(
+  var_sqr_sym(array2d(1..n, 1..n, [enum2int(x[i,j]) | i,j in 1..n]))
+);
 
 % Symmetry: all white queens can be exchanged for all black queens
 constraint symmetry_breaking_constraint(value_precede(BLACK,WHITE,array1d(x)));
@@ -136,7 +138,7 @@ array[int] of int: OPT = [0, 0, 1, 2, 4, 5, 7, 9, 12, 14, 17, 21, 24, 28, 32];
 % constraint objective >= OPT[n];
 
 % objective maximizes equal-sized black and white peaceful queen placements.
-solve :: int_search(array1d(x), input_order, indomain_min, complete) maximize objective;
+solve :: int_search([enum2int(x[i,j]) | i,j in 1..n], input_order, indomain_min, complete) maximize objective;
 
 output [
           if fix(x[i,j]) == BLACK then "B" elseif fix(x[i,j]) == WHITE then "W" else "." endif

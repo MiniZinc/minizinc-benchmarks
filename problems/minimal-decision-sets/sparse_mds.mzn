@@ -8,10 +8,10 @@ enum FEATURE;     % set of features
 FEATURE: class;   % class is one feature
 
 enum FEATUREX = anon_enum(card(FEATURE) + 1);
-var FEATURE: tof(var FEATUREX: f) = to_enum(FEATURE,f);
-var FEATUREX: tofx(var FEATURE: f) = to_enum(FEATUREX,f);
+var FEATURE: tof(var FEATUREX: f) = to_enum(FEATURE, enum2int(f));
+var FEATUREX: tofx(var FEATURE: f) = to_enum(FEATUREX, enum2int(f));
 FEATUREX: dummy = max(FEATUREX);                   % dummy feature representing unused
-FEATUREX: classx = to_enum(FEATUREX,class);                    % class feature
+FEATUREX: classx = to_enum(FEATUREX, enum2int(class));                    % class feature
 
 int: I; % number of items
 set of int: ITEM = 1..I;
@@ -64,7 +64,7 @@ constraint forall(i in ITEM)
 var 0..I: misclassified = sum(m);         
 % objective balances misclassification count against decision-set size.
 var int: objective = misclassified + Lambda*k;
-solve :: int_search([ if j = 1 then feat[i] else sign[i] endif | i in NODE, j in 1..2 ], input_order, indomain_min) 
+solve :: int_search([ if j = 1 then enum2int(feat[i]) else bool2int(sign[i]) endif | i in NODE, j in 1..2 ], input_order, indomain_min) 
           minimize objective;           
 
 % output [show(feat)];
@@ -75,7 +75,7 @@ output [
   "valid = array2d(\(NODE), \(ITEM), \(valid));\n",
   "m = array1d(\(ITEM), \(m));\n",
   "feat = array1d(\(NODE), ["];
-output ["to_enum(FEATUREX, \(feat[i]+0)), " | i in NODE];
+output ["\(feat[i]), " | i in NODE];
 output ["]);\n"];
                  
 %output [ if i = 1 then show(j) ++ ": " else "" endif ++

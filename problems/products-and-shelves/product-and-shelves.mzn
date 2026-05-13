@@ -109,13 +109,13 @@ constraint forall(s in Shelf, it in Item, d in Dimension) (
 
 % Break symmetry of between the different shelves
 constraint symmetry_breaking_constraint(
-	seq_precede_chain(item_shelving)
+	seq_precede_chain([enum2int(item_shelving[it]) | it in Item])
 );
 
 % Break symmetry of shelving of multiple of the same products
 constraint symmetry_breaking_constraint(
 	forall(p in Product) (
-		increasing([item_shelving[it] | it in Item where product[it] == p])
+		increasing([enum2int(item_shelving[it]) | it in Item where product[it] == p])
 	)
 );
 

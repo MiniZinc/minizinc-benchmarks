@@ -101,7 +101,7 @@ solve
             first_fail, indomain_min, complete
         ),
         int_search(
-            [if i = 1 then startTime[t] else usesMachine[t] endif 
+            [if i = 1 then startTime[t] else enum2int(usesMachine[t]) endif 
             | t in reverse(arg_sort(duration)), i in 1..2],
             input_order, indomain_min, complete )
     ])

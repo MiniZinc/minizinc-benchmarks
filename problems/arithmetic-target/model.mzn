@@ -118,7 +118,7 @@ constraint forall (i in M) (
 
 % Objective: prioritize closeness to target, then use fewer input numbers.
 var int: objective = 10*abs(tree_vals[1] - target) + used;
-solve :: int_search([used] ++ indexes ++ tree, input_order, indomain_min) minimize objective;
+solve :: int_search([used] ++ indexes ++ [enum2int(t) | t in tree], input_order, indomain_min) minimize objective;
 
 %/**
 % * Break Symmetry

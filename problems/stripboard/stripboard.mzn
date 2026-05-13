@@ -84,7 +84,7 @@ constraint forall (c in COMPONENT) (component_orientation[c] in allowed_orientat
 constraint let {
   array [int] of var int: x = component_x ++ link_x;
   array [int] of var int: y = component_y ++ link_y;
-  array [int] of var bool: u = [c: component_orientation[c] in {Upright, UpsideDown} | c in COMPONENT];
+  array [COMPONENT] of var bool: u = [component_orientation[c] in {Upright, UpsideDown} | c in COMPONENT];
   array [int] of var int: dx = [if u[c] then footprint_w[c] else footprint_h[c] endif | c in COMPONENT] ++ [1 | l in LINKS];
   array [int] of var int: dy = [if u[c] then footprint_h[c] else footprint_w[c] endif | c in COMPONENT] ++ [link_length[l] + 1 | l in LINKS];
   constraint board_w = max (i in index_set(x) where y[i] >= 1) (x[i] + dx[i]) - 1;
@@ -163,7 +163,7 @@ var 1..max_h: board_h;
 var int: objective = board_w * board_h;
 % objective minimizes board area while satisfying net connectivity.
 solve :: seq_search(
-  [int_search([component_orientation[c], component_x[c], component_y[c]], input_order, indomain_median) | c in reverse(sort_by(COMPONENT, [footprint_w[c] * footprint_h[c] | c in COMPONENT]))] ++
+  [int_search([enum2int(component_orientation[c]), component_x[c], component_y[c]], input_order, indomain_median) | c in reverse(sort_by(COMPONENT, [footprint_w[c] * footprint_h[c] | c in COMPONENT]))] ++
   [int_search([link_x[l], link_y[l], link_length[l]], input_order, indomain_median) | l in LINKS] ++
   [int_search(parent, input_order, indomain_median)]
 ) minimize objective;

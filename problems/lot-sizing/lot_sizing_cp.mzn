@@ -127,8 +127,8 @@ constraint
 % redundant constraints-2 (sometimes they improve performance, sometimes not)
 constraint 
    forall(o in Orders) (
-      redundant_constraint(at_least(1, production_order, o)) /\
-      redundant_constraint(at_most(1 + (nb_periods - nb_orders), production_order, o))
+      redundant_constraint(count(p in Periods)(production_order[p] = o) >= 1) /\
+      redundant_constraint(count(p in Periods)(production_order[p] = o) <= 1 + (nb_periods - nb_orders))
    ); 
 
 

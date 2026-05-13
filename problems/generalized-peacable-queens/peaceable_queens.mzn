@@ -47,20 +47,20 @@ enum Squares = {EMPTY} ++ Q(Armies);
 array[1..n,1..n] of var Squares: x; % x[i,j] designates for square i,j whether it is empty, or occupied by a queen of a particular army
 
 % A regular constraint allowing a set (row, column or diagonal) of squares to only have queens of the same army, or empty squares
-predicate at_peace(array[int] of var int: x) = 
+predicate at_peace(array[int] of var Squares: x) = 
   regular(
-    x,
+    [enum2int(v) | v in x],
     card(Squares), % number of states
     card(Squares), % number of inputs
     d, % d = (input,states) -> status union {0}
-    EMPTY, % starting state: empty
+    enum2int(EMPTY), % starting state: empty
     1..max(d), % accepting states: all except 0
   );
 
 array[Squares,Squares] of int: d = array2d(Squares,Squares,
-  Squares ++ % EMPTY,Armies[1],Armies[2], ...
+  [enum2int(s) | s in Squares] ++ % EMPTY,Armies[1],Armies[2], ...
   % Armies[row] (stay in state if encounter empty), 0 (fail if encounter other army), 0, .., Armies[row] (stay in state if encounter same army), 0, 0, ..
-  [ if col in {EMPTY,row} then row else 0 endif | row in Squares diff {EMPTY}, col in Squares ]);
+  [ if col in {EMPTY,row} then enum2int(row) else 0 endif | row in Squares diff {EMPTY}, col in Squares ]);
 
 % Example DFA transition function for q=2:
   %[|    EMPTY,Armies[1],Armies[2]|
@@ -96,10 +96,12 @@ constraint all_equal(counts[Squares diff {EMPTY}]); % all armies must be of equa
 % maximize the size of the armies
 % objective equals per-army queen count (all_equal enforces identical army sizes).
 var int: objective = counts[Q(Armies[1])];
-solve :: int_search(x, input_order, indomain_min) maximize objective;
+solve :: int_search([enum2int(x[i,j]) | i,j in 1..n], input_order, indomain_min) maximize objective;
 
 % Symmetry: every solution can be rotated and/or reflected
-constraint symmetry_breaking_constraint(var_sqr_sym(x));
+constraint symmetry_breaking_constraint(
+  var_sqr_sym(array2d(1..n, 1..n, [enum2int(x[i,j]) | i,j in 1..n]))
+);
 
 % Symmetry: we can exchange one queens in one army for another
 constraint symmetry_breaking_constraint(value_precede_chain(Squares diff {EMPTY}, array1d(x)));
@@ -107,7 +109,7 @@ constraint symmetry_breaking_constraint(value_precede_chain(Squares diff {EMPTY}
 array[int] of string: ALPHABET = [ "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" ];
 
 output [
-  if fix(x[i,j]) = EMPTY then "." elseif q <= length(ALPHABET) then ALPHABET[fix(x[i,j])-1] else show(Q^-1(fix(x[i,j]))) endif
+  if fix(x[i,j]) = EMPTY then "." elseif q <= length(ALPHABET) then ALPHABET[enum2int(fix(x[i,j]))-1] else show(Q^-1(fix(x[i,j]))) endif
   ++ if j == n then "\n" else "" endif
     | i,j in 1..n] ++
   ["n = \(n);\nq = \(q);\ncounts = \(counts);\nobjective = \(objective);\n"]

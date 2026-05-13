@@ -168,7 +168,7 @@ constraint
 % items per day
 constraint
 	forall(d in 1..MaxDay) (
-		at_most(MaxItemsPerDay, itemProcessDay, d)
+		count(i in 1..N)(itemProcessDay[i] = d) <= MaxItemsPerDay
 	);
 
 % penalty

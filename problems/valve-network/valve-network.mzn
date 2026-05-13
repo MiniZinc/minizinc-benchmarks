@@ -85,7 +85,7 @@ var int: checksum = sum(current_flow);
 % Solve and output
 % objective maximizes accumulated released flow over the planning horizon.
 solve :: int_search([ 
-    [action[s, p], position[s, p]][i] 
+    if i = 1 then enum2int(action[s, p]) else enum2int(position[s, p]) endif
   | s in Steps, p in Person, i in 1..2
 ], input_order, indomain_max)
 maximize checksum;
